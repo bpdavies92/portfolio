@@ -1,0 +1,15 @@
+p {
+    &:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+}
+
+.title-banner {
+    // background-color: #f28080f4;    
+    background-color: #303030f4;    
+    padding: .5rem;
+}
+
+.yellowBackground {
+    background-color: var(--yellow) !important;
+}
