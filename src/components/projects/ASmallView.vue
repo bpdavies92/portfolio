@@ -56,7 +56,7 @@
                 <v-col>
                     <v-img
                     cover
-                    src="@/assets/images/a-small-view/a_small_view_1.JPG"
+                    src="@/assets/images/a-small-view/a_small_view_1.jpg"
                     ></v-img>
                 </v-col>
             </v-row>
@@ -79,7 +79,7 @@
                 <v-col>
                     <v-img
                     cover
-                    src="@/assets/images/a-small-view/a_small_view_4.JPG"
+                    src="@/assets/images/a-small-view/a_small_view_4.jpg"
                     ></v-img>
                 </v-col>
             </v-row>
@@ -87,7 +87,7 @@
                 <v-col>
                     <v-img
                     cover
-                    src="@/assets/images/a-small-view/a_small_view_5.JPG"
+                    src="@/assets/images/a-small-view/a_small_view_5.jpg"
                     ></v-img>
                 </v-col>
             </v-row>
@@ -95,7 +95,7 @@
                 <v-col>
                     <v-img
                     cover
-                    src="@/assets/images/a-small-view/a_small_view_6.JPG"
+                    src="@/assets/images/a-small-view/a_small_view_6.jpg"
                     ></v-img>
                 </v-col>
             </v-row>
