@@ -21,7 +21,7 @@
         </div>
       </v-img>
       <v-card-subtitle class="pt-4">
-        {{ project.start }} - {{ project.end }}, {{ project.location }}
+        <span v-if="project.start">{{ project.start }} - </span>{{ project.end }}, {{ project.location }}
       </v-card-subtitle>
       <v-card-text>
 

@@ -38,6 +38,9 @@ const projects = () => {
         { 
             id: 2,
             slug: "afhea-independent-study",
+            start : "",
+            end : "February 2022",
+            location : "Manchester",
             title: "Associate Fellowship Independent Study",
             subtitle : "The AF independent study is an Advance HE approved independent study for individuals at Manchester Met who wish to achieve AF Fellowship. This resource was designed for people who need more flexibility and incorporates an innovative learning journal idea that participants use to reflect on a series of activities outlined in an Articulate Storyline resource.",
             description : "<p>The AF independent study is an Advance HE approved independent study for individuals at Manchester Met who wish to achieve AF Fellowship. This resource was designed for people who need more flexibility and incorporates an innovative learning journal idea that participants use to reflect on a series of activities outlined in an Articulate Storyline resource.</p>",
@@ -45,16 +48,13 @@ const projects = () => {
             tags : [ "articulate", "independent study", "quiz", "instructional design" ],
             techUsed : [
                 {
-                    tech : "Articulate Storyline",
-                    icon : "mdi-school"
-                },
-                {
                     tech : "After Effects",
                     icon : "mdi-movie-star"
                 },
+                
                 {
-                    tech : "Server",
-                    icon : "mdi-globe"
+                    tech : "Articulate Storyline",
+                    icon : "mdi-school"
                 },
                 {
                     tech : "Camera",
@@ -64,11 +64,23 @@ const projects = () => {
                     tech : "Podcast",
                     icon : "mdi-microphone"
                 },
+                {
+                    tech : "Server",
+                    icon : "mdi-server"
+                }
             ],
             skills : [
                 {
-                    skill : "Instructional Design",
-                    icon : "mdi-pencil"
+                    skill : "Code",
+                    icon : "mdi-code-braces"
+                },
+                {
+                    skill : "Design",
+                    icon : "mdi-pencil-ruler"
+                },
+                {
+                    skill : "e-learning",
+                    icon : "mdi-cast-education"
                 }
             ]
         },

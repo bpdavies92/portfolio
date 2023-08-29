@@ -2,9 +2,12 @@
   <v-app>
     <v-app-bar density="compact" image="https://images.unsplash.com/photo-1604079628040-94301bb21b91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" :elevation="2">
 
-      <template v-slot:prepend>
-          <v-btn @click="drawer = !drawer" prepend-icon="mdi-menu" stacked>Menu</v-btn>
-      </template>
+
+      <v-list>
+        <v-list-item class="pa-0">
+          <v-btn variant="text" @click="drawer = !drawer" stacked prepend-icon="mdi-menu">Menu</v-btn>
+        </v-list-item>
+      </v-list>
 
       <v-app-bar-title class="ml-12">Benjamin Davies</v-app-bar-title>
 

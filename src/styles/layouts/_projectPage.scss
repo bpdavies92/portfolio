@@ -1,0 +1,9 @@
+@use '../abstracts/breakpoints';
+
+.project {
+    &-container .d-flex {
+        @include breakpoints.respond(tab-port) {
+            display: block !important;
+        }
+    }
+}
