@@ -5,11 +5,12 @@ const projects = () => {
         { 
             id: 1,
             slug: "edi",
-            start : "",
-            end : "",
+            location : "Manchester",
+            start : "March 2022",
+            end : "November 2023",
             title: "Equality Diversity & Inclusion",
-            subtitle : "An Equality, Diversity, and Inclusion training module that all staff at Manchester Met must complete every two years. This module was created using Articulate Rise and features a variety of media types to suit different learning preferences.",
-            description : "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate omnis harum aliquid quos cumque id ipsa iste deserunt excepturi molestiae ullam obcaecati inventore ab error, voluptatum eaque quia odio quibusdam.</p><p>Eveniet voluptate nostrum inventore recusandae sed qui soluta sit, adipisci nihil in. Odit iure suscipit quia, eveniet similique reiciendis vitae! Ipsam ea perspiciatis quo porro officia quia. Quae, harum possimus!</p>",
+            subtitle : "An Equality, Diversity, and Inclusion training module that all staff at Manchester Met must complete every two years. This module was created using Articulate Rise and includes a variety of media types to accommodate different learning preferences.",
+            description : "<p>At Manchester Metropolitan University, it is mandatory for all staff to complete an Equality, Diversity, and Inclusion (EDI) training module once every two years. With funding from the Inclusive Learning Communities initiative, I was tasked with creating a second version of the EDI training I had developed a year prior. The aim was to make it more interactive and address the feedback provided by staff who had participated in the previous training.</p><p>This updated version incorporates more quiz-based summative assessments and includes a longer and more challenging summative quiz at the end. Overall, it offers a more interactive learning experience. I developed this module using Articulate Storyline, which provided me with additional tools to create custom interactions and will make it easier for other staff to update in the future.</p>",
             thumbnail : `${import.meta.env.VITE_BASE}/images/E&D-3.jpg`,
             tags : [ "articulate", "independent study", "quiz", "instructional design" ],
             techUsed : [
@@ -33,6 +34,24 @@ const projects = () => {
                     tech : "Podcast",
                     icon : "mdi-microphone"
                 },
+            ],
+            skills : [
+                {
+                    skill : "Video editing",
+                    icon : "mdi-movie-open-edit"
+                },
+                {
+                    skill : "Code",
+                    icon : "mdi-code-braces"
+                },
+                {
+                    skill : "Design",
+                    icon : "mdi-pencil-ruler"
+                },
+                {
+                    skill : "e-learning",
+                    icon : "mdi-cast-education"
+                }
             ]
         },
         { 
@@ -88,8 +107,8 @@ const projects = () => {
             id: 3,
             slug: "five-year-plan",
             title: "Five Year Plan",
-            subtitle : "My Five Year Plan is a Manchester Met initiative that focuses on program-based activities, providing students with a personal and professional development framework. In support of this, I created a video and diagram to help staff understand the project.",
-            description : "<p>My Five Year Plan is a Manchester Met initiative that focuses on program-based activities, providing students with a personal and professional development framework. In support of this, I created a video and diagram to help staff understand the project.</p>",
+            subtitle : "My Five Year Plan is a Manchester Met initiative that focuses on program-based activities, providing students with a personal and professional development framework. In support of this key Manchester Met initiative, I created a video and diagram to help staff understand the project.",
+            description : "<p>'My Five Year Plan' is a Manchester Met initiative that emphasizes program-based activities, offering students a personal and professional development framework. In support of this key Manchester Met initiative, I created a video and a diagram to help staff understand the project. The video guides viewers through the five stages of the My Five Year Plan process, offering valuable resource ideas at each stage for easy reference.</p>",
             thumbnail : `${import.meta.env.VITE_BASE}/images/header_img_5.jpg`,  
             tags : [ "video", "design", "explainer" ],
             techUsed : [
@@ -104,6 +123,10 @@ const projects = () => {
                 {
                     tech : "Premiere Pro",
                     icon : "mdi-movie-star"
+                },
+                {
+                    tech : "Illustrator",
+                    icon : "mdi-pencil"
                 }
             ],
             skills : [
@@ -113,11 +136,11 @@ const projects = () => {
                 }, 
                 {
                     skill : "Design",
-                    icon : "mdi-pencil"
+                    icon : "mdi-pencil-ruler"
                 },
                 {
                     skill : "Motion graphics",
-                    icon : "mdi-ball"
+                    icon : "mdi-motion"
                 },
                 {
                     skill : "Filming",
@@ -320,10 +343,8 @@ const projects = () => {
             slug: "critical-pedagogy-podcast",
             title: "Critical Pedagogy Podcast",
             location : "Manchester",
-            start : "",
-            end : "",   
-            dates : "on-going",
-            location : "Manchester Met, Manchester",
+            start : "December 2021",
+            end : "on-going",   
             subtitle : "The aim of the Critical Pedagogy podcast series is to illustrate the range of experimental, innovative, and inclusive pedagogical theories/strategies/activities used across all Faculties at Manchester Met. The series is external-facing and will serve as a digital repository of pedagogical knowledge that benefits staff and students alike.",
             description : "<p>The aim of the Critical Pedagogy podcast series is to illustrate the range of experimental, innovative, and inclusive pedagogical theories/strategies/activities used across all Faculties at Manchester Met. The series is external-facing and will serve as a digital repository of pedagogical knowledge that benefits staff and students alike.</p>",
             thumbnail : `${import.meta.env.VITE_BASE}/images/crit-ped-1.png`,
@@ -339,12 +360,21 @@ const projects = () => {
                 },
                 {
                     tech : "Podcast",
-                    icon : "mdi-movie-star"
+                    icon : "mdi-microphone"
                 }
             ],
             skills : [
                 {
-                    skill : "Event organisation"
+                    skill : "Audio recording",
+                    icon : "mdi-waveform"
+                },
+                {
+                    skill : "Web development",
+                    icon : "mdi-web"
+                },
+                {
+                    skill : "Audio editing",
+                    icon : "mdi-box-cutter"
                 }
             ]
         },

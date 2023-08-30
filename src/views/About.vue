@@ -1,6 +1,6 @@
 <template>
   <v-container class="mt-12">
-      <h1>About me</h1>
+      
       <v-row>
           <v-col cols="12" sm="6" md="6">
             <v-img
@@ -11,9 +11,8 @@
             </v-img>
           </v-col>
           <v-col>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eligendi quas voluptatum distinctio qui tempore amet harum perspiciatis libero, nisi recusandae pariatur porro facere optio molestiae fugiat molestias corporis vel?</p>
-            <p>Maiores veniam error, nihil quisquam repudiandae fuga dolor atque? Quae accusamus laborum recusandae voluptatum ipsum molestias mollitia totam qui, dignissimos unde, nemo perspiciatis deserunt aspernatur suscipit voluptas delectus accusantium officiis!</p>
-            <p>Iste voluptates recusandae placeat unde odit sit facilis, et molestiae ad harum maiores vero molestias dolores pariatur? Necessitatibus amet, ea tenetur voluptatibus ab vero, corrupti nihil ratione aut numquam molestias.</p>
+            <h1>About me</h1>
+            <p>I’m a developer and designer based in Manchester, UK, with nearly five years of experience at Manchester Metropolitan University. My work primarily involves developing resources focused on learning, teaching, and assessment. I hold a Master's degree from the University of Central Lancashire, which I earned in 2016. Over the years, I've had the opportunity to work across various media. Previously, I dabbled in building video game worlds and creating books. Currently, my efforts are centered around video production, web development, and e-learning. I have a strong passion for topics such as art, film, curation, and creativity.</p>
           </v-col>
       </v-row>
       <v-row>

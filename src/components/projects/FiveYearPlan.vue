@@ -4,7 +4,7 @@
     :key="i"
     >
         <v-img
-        max-height="600"
+        max-height="400"
         aspect-ratio="16/9"
         cover
         src="../../assets/images/five-year-plan/header_img_5.jpg"
