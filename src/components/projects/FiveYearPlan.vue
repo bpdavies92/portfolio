@@ -11,6 +11,7 @@
         ></v-img>
         <v-container class="mt-12">
             <h2>{{ d.title }}</h2>
+            <h3><span v-if="d.start">{{ d.start }} - </span>{{ d.end }}, {{ d.location }}</h3>
             <v-row>
                 <v-col cols="12" sm="4" md="6">
                     <h3 class="mt-6">Description</h3>

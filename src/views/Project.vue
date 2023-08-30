@@ -39,7 +39,7 @@
             return LeedConference
             case "degree-classification-calculator":
             return ClassificationCalculator
-            case "internationalisation":
+            case "working-with-international-students":
             return Internationalisation
             case "critical-pedagogy-podcast":
             return CriticalPedagogy

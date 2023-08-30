@@ -11,7 +11,7 @@
         ></v-img>
         <v-container class="mt-12">
             <h2>{{ d.title }}</h2>
-            <h3>{{ d.organisation }} | {{ d.location }} | {{ d.dates }} </h3>
+            <h3><span v-if="d.start">{{ d.start }} - </span>{{ d.end }}, {{ d.location }}</h3>
 
             <v-row>
                 <v-col cols="12" sm="4" md="6">
@@ -102,17 +102,17 @@
                     ></v-img>
                 </v-col>
                 <v-col>
-                    <v-row cols="12">
-                        <v-col>
+                    <v-row >
+                        <v-col cols="12">
                             <v-img
                             cover
                             src="../../assets/images/conference/leed-conf-12.jpg"
                             ></v-img>
                         </v-col>
                     </v-row>
-
-                    <v-row cols="12">
-                        <v-col>
+                    
+                    <v-row >
+                        <v-col cols="12">
                             <v-img
                             cover
                             src="../../assets/images/conference/leed-conf-8.jpg"

@@ -104,9 +104,11 @@ const projects = () => {
             ]
         },
         { 
-            id: 3,
-            slug: "five-year-plan",
-            title: "Five Year Plan",
+            id : 3,
+            slug : "five-year-plan",
+            title : "Five Year Plan",
+            end : "May 2021",
+            location : "Manchester",
             subtitle : "My Five Year Plan is a Manchester Met initiative that focuses on program-based activities, providing students with a personal and professional development framework. In support of this key Manchester Met initiative, I created a video and diagram to help staff understand the project.",
             description : "<p>'My Five Year Plan' is a Manchester Met initiative that emphasises program-based activities, offering students a personal and professional development framework. In support of this key Manchester Met initiative, I created a video and a diagram to help staff understand the project. The video guides viewers through the five stages of the My Five Year Plan process, offering valuable resource ideas at each stage for easy reference.</p>",
             thumbnail : `${import.meta.env.VITE_BASE}/images/header_img_5.jpg`,  
@@ -250,38 +252,83 @@ const projects = () => {
         { 
             id: 8,
             slug: "leed-learning-teaching-conference",
-            title: "LEED Learning and Teaching Conference",
+            title: "LEED Manchester Met Learning & Teaching Conference",
             organisation : "Manchester Metropolitan University",
-            dates : "July 2023",
+            end : "July 2023",
             location : "Manchester",
             subtitle : "The LEED 2023 conference focused on Learning and Teaching at Manchester Met. The aim of the conference was to give staff a chance to share good practice and network with other colleagues from across the university. Conference themes revolved around the recently published education strategy and university aims outlined within that document.",
-            description : "<p>The LEED 2023 conference focused on Learning and Teaching at Manchester Met. The aim of the conference was to give staff a chance to share good practice and network with other colleagues from across the university. Conference themes revolved around the recently published education strategy and university aims outlined within that document.</p>",
+            description : "<p>The LEED 2023 conference focused on the theme of Building a Transformational Active Learning Community. The theme takes inspiration from Manchester Met’s new Education Strategy, echoing the strategy’s commitment to delivering a broad-based educational experience linked to graduate, employer, and societal needs. Ultimately, the conference provided a platform for both professional service and academic staff to share good teaching practices and connect with one another.</p><p>Although I had input at all levels of the conference, my key contribution was the development of the website and the creation/sourcing of graphics, as well as working with the academic team at the University Teaching Academy to develop the conference program. I also created a video to help explain the key details of the conference and how people could get involved, which garnered 300+ views.</p><p>In addition to my main role in supporting the conference, I made a significant contribution to helping staff figure out how to use various pieces of technology. This included applications such as Microsoft Forms, Excel, PDF editing, and the installation of some other audio-visual equipment on the day of the conference.</p>",
             thumbnail : `${import.meta.env.VITE_BASE}/images/leed-conf-1.png`,
             tags : [ "web design", "conference", "event", "pedagogy" ],
             techUsed : [
                 {
-                    tech : "Articulate Storyline",
-                    icon : "mdi-movie-star"
-                },  
+                    tech : "Audio-visual",
+                    icon : "mdi-speaker"
+                },
                 {
                     tech : "Video",
                     icon : "mdi-film"
                 },
                 {
-                    tech : "Podcast",
+                    tech : "server",
+                    icon : "mdi-server"
+                },
+                {
+                    tech : "Office 365",
+                    icon : "mdi-microsoft-office"
+                },
+                {
+                    tech : "After Effects",
                     icon : "mdi-movie-star"
+                },
+                {
+                    tech : "Video",
+                    icon : "mdi-film"
+                },
+                {
+                    tech : "Premiere Pro",
+                    icon : "mdi-movie-star"
+                },
+                {
+                    tech : "Illustrator",
+                    icon : "mdi-pencil"
                 }
             ],
             skills : [
                 {
-                    skill : "Event organisation"
+                    skill : "Event planning",
+                    icon : "mdi-calendar-star"
+                },
+                {
+                    skill : "Curatorial skills",
+                    icon : "mdi-floor-plan"
+                },
+                {
+                    skill : "Project Management",
+                    icon : "mdi-notebook"
+                },
+                {
+                    skill : "Video editing",
+                    icon : "mdi-film"
+                }, 
+                {
+                    skill : "Design",
+                    icon : "mdi-pencil-ruler"
+                },
+                {
+                    skill : "Motion graphics",
+                    icon : "mdi-motion"
+                },
+                {
+                    skill : "Filming",
+                    icon : "mdi-camera"
                 }
             ]
         },
         { 
             id: 9,
-            slug: "internationalisation",
-            title: "Internationalisation",
+            slug: "working-with-international-students",
+            title: "Working With International Students",
             dates : "October 2022",
             location : "Manchester Met, Manchester",
             subtitle : "This resource was designed to communicate approaches for welcoming international students to higher education learning. Accompanying this resource is a video featuring Dr. Jon Wright, discussing some of the factors that can interfere with effective communication when teaching an audience of international students. For additional guidance on teaching international students, please visit the UTA Internationalisation webpage.",
