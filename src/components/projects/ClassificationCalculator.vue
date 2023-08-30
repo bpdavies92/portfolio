@@ -11,7 +11,7 @@
         ></v-img>
         <v-container class="mt-12">
             <h2>{{ d.title }}</h2>
-            <h3>{{ d.organisation }} | {{ d.location }} | {{ d.dates }} </h3>
+            <h3><span v-if="d.start">{{ d.start }} - </span>{{ d.end }}, {{ d.location }}</h3>
 
             <v-row class="mb-6">
                 <v-col cols="12" sm="4" md="6">

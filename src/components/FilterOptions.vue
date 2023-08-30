@@ -1,8 +1,12 @@
 <template>
-      <div class="d-flex justify-center mb-12">
-        <v-btn @click="router.push({ name: 'Home' })" variant="flat">All</v-btn>
-        <v-btn v-for="(d, i) in filters.sort()" :key="i" variant="flat" @click="router.push({name: 'Filter', query: {filter: d.toLowerCase()}})">{{ d }}</v-btn>
-    </div>
+      <v-list class="d-flex filter mb-12">
+        <v-list-item>
+            <v-btn @click="router.push({ name: 'Home' })" variant="flat">All</v-btn>
+        </v-list-item>
+        <v-list-item v-for="(d, i) in filters.sort()" :key="i">
+            <v-btn  variant="flat" @click="router.push({name: 'Filter', query: {filter: d.toLowerCase()}})">{{ d }}</v-btn>
+        </v-list-item>
+    </v-list>
 </template>
 
 <script setup>

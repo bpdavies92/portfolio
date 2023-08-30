@@ -214,7 +214,7 @@ const projects = () => {
             slug: "degree-classification-calculator",
             title: "Undergraduate Degree Classification",
             organisation : "Manchester Metropolitan University",
-            dates : "June 2022",
+            end : "July 2022",
             location : "Manchester",
             subtitle : "A collaboration with the Assessment team at Manchester Met, this undergraduate degree classification calculator was designed to help students calculate the grades they will need to achieve their desired degree classification. This resource was custom-made using the Vue.js JavaScript framework.",
             description : "<p>A collaboration with the Assessment team at Manchester Met, this undergraduate degree classification calculator was designed to help students calculate the grades they will need to achieve their desired degree classification. This resource was custom-made using the Vue.js JavaScript framework.</p>",
