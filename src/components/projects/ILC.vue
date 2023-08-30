@@ -7,11 +7,11 @@
         max-height="400"
         aspect-ratio="16/9"
         cover
-        src="https://images.unsplash.com/photo-1491308056676-205b7c9a7dc1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1173&q=80"
+        src="https://images.unsplash.com/photo-1629109343131-f1852028c21e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
         ></v-img>
         <v-container class="mt-12">
             <h2>{{ d.title }}</h2>
-            <h3>{{ d.organisation }} | {{ d.location }} | {{ d.dates }} </h3>
+            <h3>{{ d.start }} - {{ d.end }}, {{ d.location }}</h3>
             <v-row>
 
                 <v-col cols="12" sm="4" md="6">

@@ -108,7 +108,7 @@ const projects = () => {
             slug: "five-year-plan",
             title: "Five Year Plan",
             subtitle : "My Five Year Plan is a Manchester Met initiative that focuses on program-based activities, providing students with a personal and professional development framework. In support of this key Manchester Met initiative, I created a video and diagram to help staff understand the project.",
-            description : "<p>'My Five Year Plan' is a Manchester Met initiative that emphasizes program-based activities, offering students a personal and professional development framework. In support of this key Manchester Met initiative, I created a video and a diagram to help staff understand the project. The video guides viewers through the five stages of the My Five Year Plan process, offering valuable resource ideas at each stage for easy reference.</p>",
+            description : "<p>'My Five Year Plan' is a Manchester Met initiative that emphasises program-based activities, offering students a personal and professional development framework. In support of this key Manchester Met initiative, I created a video and a diagram to help staff understand the project. The video guides viewers through the five stages of the My Five Year Plan process, offering valuable resource ideas at each stage for easy reference.</p>",
             thumbnail : `${import.meta.env.VITE_BASE}/images/header_img_5.jpg`,  
             tags : [ "video", "design", "explainer" ],
             techUsed : [
@@ -232,14 +232,18 @@ const projects = () => {
                     icon : "mdi-movie-star"
                 }
             ],
-            skills : [
+            techUsed : [
                 {
-                    skill : "Web Development",
-                    icon : "mdi-web"
+                    tech : "After Effects",
+                    icon : "mdi-movie-star"
                 },
                 {
-                    skill : "Design",
-                    icon : "mdi-pencil"
+                    tech : "Video",
+                    icon : "mdi-film"
+                },
+                {
+                    tech : "Premiere Pro",
+                    icon : "mdi-movie-star"
                 }
             ]
         },  
@@ -300,7 +304,20 @@ const projects = () => {
             ],
             skills : [
                 {
-                    skill : "Event organisation"
+                    skill : "Video editing",
+                    icon : "mdi-film"
+                }, 
+                {
+                    skill : "Design",
+                    icon : "mdi-pencil-ruler"
+                },
+                {
+                    skill : "Motion graphics",
+                    icon : "mdi-motion"
+                },
+                {
+                    skill : "Filming",
+                    icon : "mdi-camera"
                 }
             ]
         },
@@ -308,10 +325,11 @@ const projects = () => {
             id: 10,
             slug: "inclusive-learning-communities",
             title: "Inclusive Learning Communities: Case Studies",
-            dates : "June 2022",
-            location : "Manchester Met, Manchester",
+            start : "July",
+            end : "August 2022",
+            location : "Manchester",
             subtitle : "These student narratives come from a series of focus groups that aimed to explore students' experiences at the university. Verbatim quotes are narrated by an actor to preserve student anonymity. In this selection of videos, these students share the importance of creating environments that encourage authentic vulnerability and trust.",
-            description : "<p>These student narratives come from a series of focus groups that aimed to explore students' experiences at the university. Verbatim quotes are narrated by an actor to preserve student anonymity. In this selection of videos, these students share the importance of creating environments that encourage authentic vulnerability and trust.</p>",
+            description : "<p>The selection of student narrative videos on this page comes from a series of focus groups designed to explore students' experiences at Manchester Metropolitan University. Verbatim quotes are narrated by an actor to protect student anonymity. These students emphasize the importance of creating environments that foster authentic vulnerability and trust.</p><p>This work was commissioned and funded by the Inclusive Learning Communities (ILC). It is one of several projects I worked on with them. The ILC project aims to address this disparity through our collaborative efforts with both staff and students to enhance the sense of belonging among our BAME students at the University and to transform the way they are included in our teaching practices.</p>",
             thumbnail : `${import.meta.env.VITE_BASE}/images/ilc-1.png`,
             tags : [ "video", "premiere pro", "case study", "actor" ],
             techUsed : [
@@ -330,11 +348,20 @@ const projects = () => {
                 {
                     tech : "Premiere Pro",
                     icon : "mdi-movie-star"
+                },
+                {
+                    tech : "Photoshop",
+                    icon : "mdi-image-edit"
                 }
             ],
             skills : [
                 {
-                    skill : "Video editing"
+                    skill : "Video editing",
+                    icon : "mdi-box-cutter"
+                },
+                {
+                    skill : "Filming",
+                    icon : "mdi-camera"
                 }
             ]
         },

@@ -19,7 +19,7 @@
                 <v-row>
                     <v-col class="d-flex justify-end" cols="12" md="6">
                         <div class="mt-6">
-                            <h3>Technology used</h3>
+                            <h3>Technology</h3>
                             <v-list
                             density="compact"
                             lines="0">
