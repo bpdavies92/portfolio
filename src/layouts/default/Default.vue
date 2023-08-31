@@ -35,8 +35,8 @@
         theme="light"
         v-model="drawer"
       >
-        <v-list color="transparent">
-          <v-list-item  v-for="(d, i) in drawerTitles" @click="router.push({ name: 'Project', params: { id: d.slug }})" :key="i" :title="d.title" > 
+        <v-list nav color="transparent">
+          <v-list-item link v-for="(d, i) in drawerTitles" @click="router.push({ name: 'Project', params: { id: d.slug }})" :key="i" :title="d.title" > 
             <v-tooltip
         activator="parent"
         location="end"
@@ -68,6 +68,15 @@ import { ref, computed } from 'vue';
   const router = useRouter()
   const route = useRoute()
 
+  
+  const highlightText = () => {
+    works.value.forEach((d, i) => {
+      console.log(d)
+    }) 
+  }
+
+  highlightText()
+
   const drawerTitles = computed(() => {
     return works.value.sort((a, b) => {
 
@@ -85,6 +94,20 @@ import { ref, computed } from 'vue';
 
 </script>
 
-<style>
+<style scoped>
+
+.ListItemClass {
+  color: #f5f5f5;
+}
+
+.SelectedTile:hover {
+    border-radius: 4px;
+    background: #455A64
+}
+
+.SelectedTile-active {
+  border-radius: 4px;
+  background: rgba(10, 204, 117, 0.19)
+}
 
 </style>

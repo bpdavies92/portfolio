@@ -153,6 +153,9 @@ const projects = () => {
         { 
             id: 4,
             slug: "uta-web-development",
+            start : "December 2021",
+            end: "on-going",
+            location: "Manchester",
             title: "University Teaching Academy Website",
             subtitle : "The UTA website was a significant development task. I collaborated with the academic developers from the University Teaching Academy to create a reference section on the main Manchester Met website. The objective of this project was to establish a reference site for teaching and professional services staff, providing them with independent study support for common learning and teaching issues.",
             description : "<p>The UTA website was a significant development task. I collaborated with the academic developers from the University Teaching Academy to create a reference section on the main Manchester Met website. The objective of this project was to establish a reference site for teaching and professional services staff, providing them with independent study support for common learning and teaching issues.</p>",
@@ -170,6 +173,20 @@ const projects = () => {
                 {
                     tech : "Premiere Pro",
                     icon : "mdi-movie-star"
+                }
+            ],
+            skills : [
+                {
+                    skill : "Code",
+                    icon : "mdi-code-braces"
+                },
+                {
+                    skill : "Design",
+                    icon : "mdi-pencil-ruler"
+                },
+                {
+                    skill : "e-learning",
+                    icon : "mdi-cast-education"
                 }
             ]
         },
@@ -217,9 +234,9 @@ const projects = () => {
             end : "July 2022",
             location : "Manchester",
             subtitle : "A collaboration with the Assessment team at Manchester Met, this undergraduate degree classification calculator was designed to help students calculate the grades they will need to achieve their desired degree classification. This resource was custom-made using the Vue.js JavaScript framework.",
-            description : "<p>A collaboration with the Assessment team at Manchester Met, this undergraduate degree classification calculator was designed to help students calculate the grades they will need to achieve their desired degree classification. This resource was custom-made using the Vue.js JavaScript framework.</p>",
+            description : "<p>This project was a collaberation with the Assessment team at Manchester Met to create an undergraduate degree classifiction calculator. This project was in response to the many queries the Assessment team get from students asking what grades are needed to acheave such and such a grade. </p><p>The calculator I developed allowed students to input their current grades and credits, and then experiment with what combination of credits and grades they will need to acheave their desired result. The end result acheaved the desired goal,  and since the creation of the calculator, they are able to forward the calculator to students.</p><p>Since July 2020, the calculator has been used by more than 38,000 students to calculator grades. In addition, it was nominated for 3 Manchester Met Staff Awards in 2023.</p>",
             thumbnail : "https://images.unsplash.com/photo-1564939558297-fc396f18e5c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80",
-            tags : [ "web development", "javascript", "php", "css", "mostion graphics" ],
+            tags : [ "web development", "javascript", "php", "css", "mostion graphics", "video" ],
             techUsed : [
                 {
                     tech : "After Effects",
@@ -227,17 +244,11 @@ const projects = () => {
                 },
                 {
                     tech : "Vue.js",
-                    icon : "mdi-film"
+                    icon : "mdi-vuejs"
                 },
                 {
                     tech : "Laravel",
-                    icon : "mdi-movie-star"
-                }
-            ],
-            techUsed : [
-                {
-                    tech : "After Effects",
-                    icon : "mdi-movie-star"
+                    icon : "mdi-laravel"
                 },
                 {
                     tech : "Video",
@@ -246,6 +257,20 @@ const projects = () => {
                 {
                     tech : "Premiere Pro",
                     icon : "mdi-movie-star"
+                }
+            ],
+            skills : [
+                {
+                    skill : "Code",
+                    icon : "mdi-code-braces"
+                },
+                {
+                    skill : "Design",
+                    icon : "mdi-pencil-ruler"
+                },
+                {
+                    skill : "Team skills",
+                    icon : "mdi-cast-education"
                 }
             ]
         },  
@@ -329,12 +354,12 @@ const projects = () => {
             id: 9,
             slug: "working-with-international-students",
             title: "Working With International Students",
-            dates : "October 2022",
-            location : "Manchester Met, Manchester",
+            end : "September 2022",
+            location : "Manchester",
             subtitle : "This resource was designed to communicate approaches for welcoming international students to higher education learning. Accompanying this resource is a video featuring Dr. Jon Wright, discussing some of the factors that can interfere with effective communication when teaching an audience of international students. For additional guidance on teaching international students, please visit the UTA Internationalisation webpage.",
             description : "<p>This resource was designed to communicate approaches for welcoming international students to higher education learning. Accompanying this resource is a video featuring Dr. Jon Wright, discussing some of the factors that can interfere with effective communication when teaching an audience of international students. For additional guidance on teaching international students, please visit the UTA Internationalisation webpage.</p>",
             thumbnail : `${import.meta.env.VITE_BASE}/images/internationalisation-1.png`,
-            tags : [ "articulate", "independent study", "quiz", "instructional design" ],
+            tags : [ "articulate", "independent study", "quiz", "instructional design", "video" ],
             techUsed : [
                 {
                     tech : "Articulate Storyline",
