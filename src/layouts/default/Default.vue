@@ -36,21 +36,13 @@
         v-model="drawer"
       >
         <v-list nav color="transparent">
-          <v-list-item link v-for="(d, i) in drawerTitles" @click="router.push({ name: 'Project', params: { id: d.slug }})" :key="i" :title="d.title" > 
+          <v-list-item  v-for="(d, i) in drawerTitles" @click="router.push({ name: 'Project', params: { id: d.slug }})" :key="i" :title="d.title"  :class="{ 'activeMenuItem': currentRouteName === d.slug, '': currentRouteName !== d.slug }"> 
             <v-tooltip
         activator="parent"
         location="end"
       >{{ d.title }}</v-tooltip>
           </v-list-item>
         </v-list>
-
-        <!-- <template v-slot:append>
-          <div class="pa-2">
-            <v-btn block>
-              Logout
-            </v-btn>
-          </div>
-        </template> -->
       </v-navigation-drawer>
     </v-app>
 </template>
@@ -61,12 +53,20 @@ import DefaultView from './View.vue'
 import Footer from './Footer.vue'
 import projects from '@/composables/projects';
 import { useRouter, useRoute } from 'vue-router'
-import { ref, computed } from 'vue';
+import { ref, computed, watchEffect } from 'vue';
 
   const { works } = projects()
 
   const router = useRouter()
   const route = useRoute()
+
+  const currentRouteName = ref('')
+
+  console.log(route.params.id)
+
+  watchEffect(() => {
+    currentRouteName.value = route.params.id
+  })
 
   
   const highlightText = () => {
@@ -94,20 +94,3 @@ import { ref, computed } from 'vue';
 
 </script>
 
-<style scoped>
-
-.ListItemClass {
-  color: #f5f5f5;
-}
-
-.SelectedTile:hover {
-    border-radius: 4px;
-    background: #455A64
-}
-
-.SelectedTile-active {
-  border-radius: 4px;
-  background: rgba(10, 204, 117, 0.19)
-}
-
-</style>
