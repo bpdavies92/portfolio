@@ -23,14 +23,14 @@
                 </v-col>
             </v-row>
             <v-row>
-                <v-col cols="12" sm="4" md="6">
+                <v-col>
                     <v-img
                     alt="Dignity at work page"
                     aspect-ratio="16/9"
                     src="@/assets/images/edi-module/E&D-2.jpg"
                     ></v-img>
                 </v-col>
-                <v-col cols="12" sm="4" md="6">
+                <v-col>
                     <v-img
                     alt="Home page displaying all sections of the module"
                     aspect-ratio="16/9"
