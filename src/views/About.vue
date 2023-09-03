@@ -4,9 +4,10 @@
       <v-row>
           <v-col cols="12" sm="6" md="6">
             <v-img
+            alt=""
             cover
             height="500"
-            src="https://images.unsplash.com/photo-1521119989659-a83eee488004?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=723&q=80"
+            src="https://images.unsplash.com/photo-1546497974-b213c9efb599?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3388&q=80"
             >
             </v-img>
           </v-col>

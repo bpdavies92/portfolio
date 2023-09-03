@@ -4,59 +4,16 @@
     :key="i"
     >
         <v-img
+        alt=""
         max-height="400"
         aspect-ratio="16/9"
         cover
         src="https://images.unsplash.com/photo-1564939558297-fc396f18e5c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
         ></v-img>
         <v-container class="mt-12">
-            <h2>{{ d.title }}</h2>
-            <h3><span v-if="d.start">{{ d.start }} - </span>{{ d.end }}, {{ d.location }}</h3>
-
-            <v-row class="mb-6">
-                <v-col cols="12" sm="4" md="6">
-                    <h3 class="mt-6">Description</h3>
-                    <div v-html="d.description"></div>
-                </v-col>
-
-                <v-col class="d-flex justify-end" cols="12" md="6">
-                    <v-row>
-                        <v-col>
-                            <div class="mt-6">
-                                <h3>Technology</h3>
-                                <v-list
-                                density="compact"
-                                lines="0">
-                                    <v-list-item
-                                    v-for="(d,i) in d.techUsed"
-                                    :key="i"
-                                    :prepend-icon="d.icon"
-                                    :title="d.tech"
-                                    ></v-list-item>
-                                </v-list>
-                            </div>
-                        </v-col>
-                        <v-col>
-                            <div class="mt-6">
-                                <h3>Skills</h3>
-                                <v-list
-                                density="compact"
-                                lines="0">
-                                    <v-list-item
-                                    v-for="(d,i) in d.skills"
-                                    :key="i"
-                                    :prepend-icon="d.icon"
-                                    :title="d.skill"
-                                    ></v-list-item>
-                                </v-list>
-                            </div>
-                        </v-col>
-                    </v-row>
-                </v-col>
-            </v-row>
-
+            <Description :d="d" :project="project"/>
             <v-row>
-                <v-col cols="12" sm="12" class="mt-12">
+                <v-col cols="12" sm="12">
                     <v-btn href="https://utaresources.mmu.ac.uk/classification-calculator/" block color="secondary" size="large" prepend-icon="mdi-link">Play with the calculator</v-btn>
                 </v-col>
             </v-row>
@@ -69,6 +26,7 @@
             <v-row>
                 <v-col>
                     <v-img
+                    alt="Classification calculator"
                     cover
                     src="@/assets/images/calculator/calc-1.jpg"
                     ></v-img>
@@ -81,7 +39,6 @@
 </template>
 
 <script setup>
-
+    import Description from '../Description.vue';
     const props = defineProps(['project'])
-
 </script>

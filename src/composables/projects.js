@@ -157,22 +157,18 @@ const projects = () => {
             end: "on-going",
             location: "Manchester",
             title: "University Teaching Academy Website",
-            subtitle : "The UTA website was a significant development task. I collaborated with the academic developers from the University Teaching Academy to create a reference section on the main Manchester Met website. The objective of this project was to establish a reference site for teaching and professional services staff, providing them with independent study support for common learning and teaching issues.",
-            description : "<p>The UTA website was a significant development task. I collaborated with the academic developers from the University Teaching Academy to create a reference section on the main Manchester Met website. The objective of this project was to establish a reference site for teaching and professional services staff, providing them with independent study support for common learning and teaching issues.</p>",
+            subtitle : "The UTA website was a significant development task. I collaborated with academic developers in the University Teaching Academy to create a reference section on the main Manchester Met website. The objective of this project was to establish a reference site for teaching and professional services staff, providing them with independent study support for common learning and teaching issues.",
+            description : "<p>The UTA website was a significant development task. I collaborated with academic developers from the University Teaching Academy to create a microsite for UTA on the main Manchester Met website. The objective of this project was to establish a reference site for teaching and professional services staff, providing them with independent study support for common learning and teaching issues.</p><p>Visited by more than 50,000 people per year, the UTA website serves as an outward-looking reservoir of knowledge for professional service and academic staff from anywhere in the world who want to develop themselves.</p>",
             thumbnail : `${import.meta.env.VITE_BASE}/images/uta-website-1.png`,
-            tags : [ "video", "design", "explainer" ],
+            tags : [ "web development", "design", "padagogy", "droople" ],
             techUsed : [
                 {
-                    tech : "After Effects",
+                    tech : "Droople",
                     icon : "mdi-movie-star"
                 },
                 {
                     tech : "Video",
-                    icon : "mdi-film"
-                },
-                {
-                    tech : "Premiere Pro",
-                    icon : "mdi-movie-star"
+                    icon : "mdi-camera"
                 }
             ],
             skills : [
@@ -183,10 +179,6 @@ const projects = () => {
                 {
                     skill : "Design",
                     icon : "mdi-pencil-ruler"
-                },
-                {
-                    skill : "e-learning",
-                    icon : "mdi-cast-education"
                 }
             ]
         },
@@ -229,12 +221,12 @@ const projects = () => {
         { 
             id: 6,
             slug: "degree-classification-calculator",
-            title: "Undergraduate Degree Classification",
+            title: "Undergraduate Degree Classification Calculator",
             organisation : "Manchester Metropolitan University",
             end : "July 2022",
             location : "Manchester",
             subtitle : "A collaboration with the Assessment team at Manchester Met, this undergraduate degree classification calculator was designed to help students calculate the grades they will need to achieve their desired degree classification. This resource was custom-made using the Vue.js JavaScript framework.",
-            description : "<p>This project was a collaberation with the Assessment team at Manchester Met to create an undergraduate degree classifiction calculator. This project was in response to the many queries the Assessment team get from students asking what grades are needed to acheave such and such a grade. </p><p>The calculator I developed allowed students to input their current grades and credits, and then experiment with what combination of credits and grades they will need to acheave their desired result. The end result acheaved the desired goal,  and since the creation of the calculator, they are able to forward the calculator to students.</p><p>Since July 2020, the calculator has been used by more than 38,000 students to calculator grades. In addition, it was nominated for 3 Manchester Met Staff Awards in 2023.</p>",
+            description : "<p>This project was a collaboration with the Assessment team at Manchester Met to create an undergraduate degree classification calculator. This project was in response to the many queries the Assessment team receives from students asking what grades are needed to achieve specific results.</p><p>The calculator I developed allows students to input their current grades and credits, and then experiment with what combination of credits and grades they will need to achieve their desired result. The end result achieved the desired goal, and since the creation of the calculator, it has been made available to students.</p><p>Since July 2020, the calculator has been used by more than 38,000 students to calculate grades. Additionally, it was nominated for three Manchester Met Staff Awards in 2023.</p>",
             thumbnail : "https://images.unsplash.com/photo-1564939558297-fc396f18e5c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80",
             tags : [ "web development", "javascript", "php", "css", "mostion graphics", "video" ],
             techUsed : [
@@ -282,9 +274,9 @@ const projects = () => {
             end : "July 2023",
             location : "Manchester",
             subtitle : "The LEED 2023 conference focused on Learning and Teaching at Manchester Met. The aim of the conference was to give staff a chance to share good practice and network with other colleagues from across the university. Conference themes revolved around the recently published education strategy and university aims outlined within that document.",
-            description : "<p>The LEED 2023 conference focused on the theme of Building a Transformational Active Learning Community. The theme takes inspiration from Manchester Met’s new Education Strategy, echoing the strategy’s commitment to delivering a broad-based educational experience linked to graduate, employer, and societal needs. Ultimately, the conference provided a platform for both professional service and academic staff to share good teaching practices and connect with one another.</p><p>Although I had input at all levels of the conference, my key contribution was the development of the website and the creation/sourcing of graphics, as well as working with the academic team at the University Teaching Academy to develop the conference program. I also created a video to help explain the key details of the conference and how people could get involved, which garnered 300+ views.</p><p>In addition to my main role in supporting the conference, I made a significant contribution to helping staff figure out how to use various pieces of technology. This included applications such as Microsoft Forms, Excel, PDF editing, and the installation of some other audio-visual equipment on the day of the conference.</p>",
+            description : "<p>The LEED 2023 conference focused on the theme of Building a Transformational Active Learning Community. The theme draws inspiration from Manchester Met’s new Education Strategy, echoing the strategy’s commitment to delivering a broad-based educational experience linked to graduate, employer, and societal needs. Ultimately, the conference provided a platform for both professional service and academic staff to share best teaching practices and connect with each other.</p><p>While I had input at all levels of the conference, my primary contribution was the development of the website and the creation/sourcing of graphics. I also collaborated with the academic team at the University Teaching Academy to develop the conference program. Additionally, I created a video to explain the key details of the conference and how people could get involved, which received over 300 views.</p><p>In addition to my main role in supporting the conference, I made a significant contribution by helping staff navigate various pieces of technology. This included applications such as Microsoft Forms, Excel, PDF editing, and the installation of audio-visual equipment on the day of the conference.</p>",
             thumbnail : `${import.meta.env.VITE_BASE}/images/leed-conf-1.png`,
-            tags : [ "web design", "conference", "event", "pedagogy" ],
+            tags : [ "web design", "conference", "event", "pedagogy", "video" ],
             techUsed : [
                 {
                     tech : "Audio-visual",
@@ -353,13 +345,13 @@ const projects = () => {
         { 
             id: 9,
             slug: "working-with-international-students",
-            title: "Working With International Students",
+            title: "Working with International Students",
             end : "September 2022",
             location : "Manchester",
-            subtitle : "This resource was designed to communicate approaches for welcoming international students to higher education learning. Accompanying this resource is a video featuring Dr. Jon Wright, discussing some of the factors that can interfere with effective communication when teaching an audience of international students. For additional guidance on teaching international students, please visit the UTA Internationalisation webpage.",
-            description : "<p>This resource was designed to communicate approaches for welcoming international students to higher education learning. Accompanying this resource is a video featuring Dr. Jon Wright, discussing some of the factors that can interfere with effective communication when teaching an audience of international students. For additional guidance on teaching international students, please visit the UTA Internationalisation webpage.</p>",
+            subtitle : "This resource was designed to communicate approaches for welcoming international students to higher education learning. Accompanying this resource is a video featuring Dr. Jon Wright, discussing some of the factors that can interfere with effective communication when teaching an audience of international students.",
+            description : "<p>This resource was designed to communicate approaches for welcoming international students to higher education learning. Accompanying this resource is a video featuring Dr. Jon Wright, discussing some of the factors that can interfere with effective communication when teaching an audience of international students.</p>",
             thumbnail : `${import.meta.env.VITE_BASE}/images/internationalisation-1.png`,
-            tags : [ "articulate", "independent study", "quiz", "instructional design", "video" ],
+            tags : [ "articulate", "quiz",  "video", "web development" ],
             techUsed : [
                 {
                     tech : "Articulate Storyline",
@@ -401,7 +393,7 @@ const projects = () => {
             end : "August 2022",
             location : "Manchester",
             subtitle : "These student narratives come from a series of focus groups that aimed to explore students' experiences at the university. Verbatim quotes are narrated by an actor to preserve student anonymity. In this selection of videos, these students share the importance of creating environments that encourage authentic vulnerability and trust.",
-            description : "<p>The selection of student narrative videos on this page comes from a series of focus groups designed to explore students' experiences at Manchester Metropolitan University. Verbatim quotes are narrated by an actor to protect student anonymity. These students emphasize the importance of creating environments that foster authentic vulnerability and trust.</p><p>This work was commissioned and funded by the Inclusive Learning Communities (ILC). It is one of several projects I worked on with them. The ILC project aims to address this disparity through our collaborative efforts with both staff and students to enhance the sense of belonging among our BAME students at the University and to transform the way they are included in our teaching practices.</p>",
+            description : "<p>The selection of student narrative videos on this page comes from a series of focus groups designed to explore students' experiences at Manchester Metropolitan University. Verbatim quotes are narrated by an actor to protect student anonymity. These students emphasise the importance of creating environments that foster authentic vulnerability and trust.</p><p>This work was commissioned and funded by Inclusive Learning Communities (ILC). It is one of several projects I collaborated on with them, with the aim of addressing the awarding gap and identifying ways to reduce it.</p>",
             thumbnail : `${import.meta.env.VITE_BASE}/images/ilc-1.png`,
             tags : [ "video", "premiere pro", "case study", "actor" ],
             techUsed : [

@@ -35,8 +35,8 @@
         theme="light"
         v-model="drawer"
       >
-        <v-list nav color="transparent">
-          <v-list-item  v-for="(d, i) in drawerTitles" @click="router.push({ name: 'Project', params: { id: d.slug }})" :key="i" :title="d.title"  :class="{ 'activeMenuItem': currentRouteName === d.slug, '': currentRouteName !== d.slug }"> 
+        <v-list nav >
+          <v-list-item active-color="transparent"  v-for="(d, i) in drawerTitles" @click="router.push({ name: 'Project', params: { id: d.slug }})" :key="i" :title="d.title"  :class="{ 'activeMenuItem': currentRouteName === d.slug, '': currentRouteName !== d.slug }"> 
             <v-tooltip
         activator="parent"
         location="end"

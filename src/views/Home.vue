@@ -70,6 +70,7 @@ const description = computed(() => {
 
 const worksOrdered = computed(() => {
     return works.value.sort((a, b) => {
+      
         const titleA = a.title.toLowerCase()
         const titleB = b.title.toLowerCase()
 

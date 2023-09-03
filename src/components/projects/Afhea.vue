@@ -5,59 +5,20 @@
     :key="i"
     >
         <v-img
+        alt=""
         max-height="400"
         aspect-ratio="16/9"
         cover
         src="@/assets/images/afhea-self-study/header_img_1.jpg"
         ></v-img>
         <v-container class="mt-12">
-            <h2>{{ d.title }}</h2>
-            <h3><span v-if="d.start">{{ d.start }} - </span>{{ d.end }}, {{ d.location }}</h3>
-            <v-container class="mt-6">
-                <v-row>
-                    <v-col class="pa-0" cols="12" md="6">
-                        <h3>Description</h3>
-                        <div v-html="d.description"></div>
-                    </v-col>
-                    <v-row>
-                        <v-col class="d-flex justify-end" cols="12" md="6" >
-                            <div>
-                                <h3>Technology</h3>
-                                <v-list
-                                density="compact"
-                                lines="0">
-                                    <v-list-item
-                                    v-for="(d,i) in d.techUsed"
-                                    :key="i"
-                                    :prepend-icon="d.icon"
-                                    :title="d.tech"
-                                    ></v-list-item>
-                                </v-list>
-                            </div>
-                        </v-col>
-                        <v-col class="d-flex justify-start" cols="12" md="6">
-                            <div>
-                                <h3>Skills</h3>
-                                <v-list
-                                density="compact"
-                                lines="0">
-                                    <v-list-item
-                                    v-for="(d,i) in d.skills"
-                                    :key="i"
-                                    :prepend-icon="d.icon"
-                                    :title="d.skill"
-                                    ></v-list-item>
-                                </v-list>
-                            </div>
-                        </v-col>
-                    </v-row>
-                </v-row>
-            </v-container>  
+            <Description :d="d" :project="project"/>
             <v-row>
                 <v-col cols="12">
                     <v-img
                     cover
                     aspect-ratio="16/9"
+                    alt="Knowledge check quiz"
                     src="@/assets/images/afhea-self-study/af1.jpg"
                     ></v-img>
                 </v-col>
@@ -65,12 +26,14 @@
             <v-row>
                 <v-col cols="12" sm="4" md="6">
                     <v-img
+                    alt="Tip card showing how to use the resource"
                     aspect-ratio="16/9"
                     src="@/assets/images/afhea-self-study/af2.jpg"
                     ></v-img>
                 </v-col>
                 <v-col cols="12" sm="4" md="6">
                     <v-img
+                    alt="Home page of resource showing staff members alongside titles and section numbers"
                     aspect-ratio="16/9"
                     src="@/assets/images/afhea-self-study/af3.jpg"
                     ></v-img>
@@ -79,6 +42,7 @@
             <v-row>
                 <v-col cols="12">
                     <v-img
+                    alt="Activity page provides information about activities that need to be completed and then reflected upon in the participants' learning journal."
                     cover
                     aspect-ratio="16/9"
                     src="@/assets/images/afhea-self-study/af5.jpg"
@@ -88,12 +52,14 @@
             <v-row>
                 <v-col cols="12" sm="4" md="6">
                     <v-img
+                    alt="Hero page for each section of the independent study, featuring a staff member and AFHEA descriptor."
                     aspect-ratio="16/9"
                     src="@/assets/images/afhea-self-study/af7.jpg"
                     ></v-img>
                 </v-col>
                 <v-col cols="12" sm="4" md="6">
                     <v-img
+                    alt="Interactive page with hotspot pointers that users can hover over to reveal information about inclusive teaching."
                     aspect-ratio="16/9"
                     src="@/assets/images/afhea-self-study/af8.jpg"
                     ></v-img>
@@ -106,7 +72,8 @@
 
 <script setup>
     import { computed } from "vue"
-    
+    import Description from "../Description.vue";
+
     const props = defineProps(['project'])
 
 

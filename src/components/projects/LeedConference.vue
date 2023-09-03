@@ -4,58 +4,16 @@
     :key="i"
     >
         <v-img
+        alt=""
         max-height="400"
         aspect-ratio="16/9"
         cover
         src="../../assets/images/conference/leed-conf-12.jpg"
         ></v-img>
         <v-container class="mt-12">
-            <h2>{{ d.title }}</h2>
-            <h3><span v-if="d.start">{{ d.start }} - </span>{{ d.end }}, {{ d.location }}</h3>
-
+            <Description :d="d" :project="project"/>
             <v-row>
-                <v-col cols="12" sm="4" md="6">
-                    <h3 class="mt-6">Description</h3>
-                    <div v-html="d.description"></div>
-                </v-col>
-
-                <v-col class="d-flex justify-end" cols="12" md="6">
-                    <v-row>
-                        <v-col>
-                            <div class="mt-6">
-                                <h3>Technology</h3>
-                                <v-list
-                                density="compact"
-                                lines="0">
-                                    <v-list-item
-                                    v-for="(d,i) in d.techUsed"
-                                    :key="i"
-                                    :prepend-icon="d.icon"
-                                    :title="d.tech"
-                                    ></v-list-item>
-                                </v-list>
-                            </div>
-                        </v-col>
-                        <v-col>
-                            <div class="mt-6">
-                                <h3>Skills</h3>
-                                <v-list
-                                density="compact"
-                                lines="0">
-                                    <v-list-item
-                                    v-for="(d,i) in d.skills"
-                                    :key="i"
-                                    :prepend-icon="d.icon"
-                                    :title="d.skill"
-                                    ></v-list-item>
-                                </v-list>
-                            </div>
-                        </v-col>
-                    </v-row>
-                </v-col>
-            </v-row>
-            <v-row>
-                <v-col cols="12" sm="12" class="mt-12">
+                <v-col cols="12" sm="12">
                     <v-btn href="https://www.utaresources.mmu.ac.uk/leed-conference-23/" block color="secondary" size="large" prepend-icon="mdi-link">Explore the conference website</v-btn>
                 </v-col>
             </v-row>
@@ -68,21 +26,24 @@
             <v-row>
                 <v-col>
                     <v-img
+                    alt="LEED conference workshop"
                     cover
                     src="../../assets/images/conference/leed-conf-2.jpg"
                     ></v-img>
                 </v-col>
             </v-row>
-
+            
             <v-row>
                 <v-col>
                     <v-img
+                    alt="LEED conference introduction by Dr Fiona Saunders, talking through the events of the day."
                     cover
                     src="../../assets/images/conference/leed-conf-3.jpg"
                     ></v-img>
                 </v-col>
                 <v-col>
                     <v-img
+                    alt="Introduction to the LEED conference by Professor Andy Dainty, discussing how the conference aligns with the Manchester Met Education Strategy."
                     cover
                     src="../../assets/images/conference/leed-conf-4.jpg"
                     ></v-img>
@@ -92,6 +53,7 @@
             <v-row>
                 <v-col>
                     <v-img
+                    alt="Participant looking at posters of workshop times and rooms."
                     cover
                     src="../../assets/images/conference/leed-conf-5.jpg"
                     ></v-img>
@@ -101,6 +63,7 @@
             <v-row>
                 <v-col cols="12" sm="6">
                     <v-img
+                    alt="Participant focusing on origami given out when people signed in to the conference."
                     height="100%"
                     cover
                     src="../../assets/images/conference/leed-conf-7.jpg"
@@ -110,6 +73,7 @@
                     <v-row >
                         <v-col cols="12">
                             <v-img
+                            alt="Participant playing with giant Jenga game."
                             cover
                             src="../../assets/images/conference/leed-conf-12.jpg"
                             ></v-img>
@@ -119,6 +83,7 @@
                     <v-row >
                         <v-col cols="12">
                             <v-img
+                            alt="Workshop"
                             cover
                             src="../../assets/images/conference/leed-conf-8.jpg"
                             ></v-img>
@@ -130,6 +95,7 @@
             <v-row>
                 <v-col>
                     <v-img
+                    alt="workshop"
                     cover
                     src="../../assets/images/conference/leed-conf-10.jpg"
                     ></v-img>
@@ -142,7 +108,6 @@
 </template>
 
 <script setup>
-
+    import Description from '../Description.vue';
     const props = defineProps(['project'])
-
 </script>
