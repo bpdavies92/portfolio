@@ -17,6 +17,8 @@
     import CriticalPedagogy from "@/components/projects/CriticalPedagogy.vue"
     import ILC from "@/components/projects/ILC.vue"
     import UTAWebsite from "@/components/projects/UTAWebsite.vue"
+    import AssessmentDesign from "@/components/projects/AssessmentDesign.vue"
+
 
     const { works } = projects()  
     const router = useRouter()
@@ -47,6 +49,8 @@
             return ILC
             case "uta-web-development":
             return UTAWebsite
+            case "assessment-design":
+            return AssessmentDesign
             default:
             return null
         }

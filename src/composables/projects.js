@@ -469,6 +469,46 @@ const projects = () => {
                 }
             ]
         },
+        { 
+            id: 12,
+            slug: "assessment-design",
+            title: "Assessment Design",
+            location : "Manchester",
+            start : "",
+            end : "December 2020",   
+            subtitle : "The aim of the Critical Pedagogy podcast series is to illustrate the range of experimental, innovative, and inclusive pedagogical theories/strategies/activities used across all Faculties at Manchester Met. The series is external-facing and will serve as a digital repository of pedagogical knowledge that benefits staff and students alike.",
+            description : "<p>The aim of the Critical Pedagogy podcast series is to illustrate the range of experimental, innovative, and inclusive pedagogical theories/strategies/activities used across all Faculties at Manchester Met. The series is external-facing and will serve as a digital repository of pedagogical knowledge that benefits staff and students alike.</p>",
+            thumbnail : `${import.meta.env.VITE_BASE}/images/crit-ped-1.png`,
+            tags : [ "audio", "podcast", "adobe audition" ],
+            techUsed : [
+                {
+                    tech : "Articulate Rise",
+                    icon : "mdi-movie-star"
+                },
+                {
+                    tech : "Video",
+                    icon : "mdi-film"
+                },
+                {
+                    tech : "Audio",
+                    icon : "mdi-microphone"
+                }
+            ],
+            skills : [
+                {
+                    skill : "e-learning",
+                    icon : "mdi-waveform"
+                },
+                {
+                    skill : "Video editing",
+                    icon : "mdi-web"
+                },
+                {
+                    skill : "Audio editing",
+                    icon : "mdi-box-cutter"
+                }
+            ]
+        },
         
     ])
 
