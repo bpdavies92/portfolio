@@ -228,7 +228,7 @@ const projects = () => {
             subtitle : "A collaboration with the Assessment team at Manchester Met, this undergraduate degree classification calculator was designed to help students calculate the grades they will need to achieve their desired degree classification. This resource was custom-made using the Vue.js JavaScript framework.",
             description : "<p>This project was a collaboration with the Assessment team at Manchester Met to create an undergraduate degree classification calculator. This project was in response to the many queries the Assessment team receives from students asking what grades are needed to achieve specific results.</p><p>The calculator I developed allows students to input their current grades and credits, and then experiment with what combination of credits and grades they will need to achieve their desired result. The end result achieved the desired goal, and since the creation of the calculator, it has been made available to students.</p><p>Since July 2020, the calculator has been used by more than 38,000 students to calculate grades. Additionally, it was nominated for three Manchester Met Staff Awards in 2023.</p>",
             thumbnail : "https://images.unsplash.com/photo-1564939558297-fc396f18e5c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80",
-            tags : [ "web development", "javascript", "php", "css", "mostion graphics", "video" ],
+            tags : [ "web development", "javascript", "php", "css", "motion graphics", "video" ],
             techUsed : [
                 {
                     tech : "After Effects",
@@ -472,14 +472,14 @@ const projects = () => {
         { 
             id: 12,
             slug: "assessment-design",
-            title: "Assessment Design",
+            title: "Assessment Design Toolkit",
             location : "Manchester",
             start : "",
             end : "December 2020",   
-            subtitle : "The aim of the Critical Pedagogy podcast series is to illustrate the range of experimental, innovative, and inclusive pedagogical theories/strategies/activities used across all Faculties at Manchester Met. The series is external-facing and will serve as a digital repository of pedagogical knowledge that benefits staff and students alike.",
-            description : "<p>The aim of the Critical Pedagogy podcast series is to illustrate the range of experimental, innovative, and inclusive pedagogical theories/strategies/activities used across all Faculties at Manchester Met. The series is external-facing and will serve as a digital repository of pedagogical knowledge that benefits staff and students alike.</p>",
+            subtitle : "The Assessment Design Toolkit is an interactive, independent study resource. It is an externally available tool designed to assist staff in creating assessment tasks for units, reviewing assignment briefs produced by other colleagues, and providing a basic introduction to assessment at Manchester Met. I created this resource using Articulate Rise.",
+            description : "<p>The Assessment Design Toolkit is an interactive, independent study resource. It is an externally available tool designed to assist staff in creating assessment tasks for units, reviewing assignment briefs produced by other colleagues, and providing a basic introduction to assessment at Manchester Met. I created this resource using Articulate Rise.</p>",
             thumbnail : `${import.meta.env.VITE_BASE}/images/crit-ped-1.png`,
-            tags : [ "audio", "podcast", "adobe audition" ],
+            tags : [ "audio", "motion graphics", "video", "independent study" ],
             techUsed : [
                 {
                     tech : "Articulate Rise",
