@@ -34,7 +34,7 @@
           </v-col>
 
           <v-col>
-            <h2>Awards</h2>
+            <h2>Awards/nominations</h2>
             <v-list>
               <v-list-item>Manchester Met Staff Awards nomination for Service Excellence Award, 2023</v-list-item>
               <v-list-item>Manchester Met Staff Awards nomination for University Citizenship Award, 2023</v-list-item>
@@ -49,9 +49,9 @@
           <v-col>
               <h2>Press</h2>
               <v-list>
-                <v-list-item>Artist-led Hot 100 (A Small View), Published by a-n, words by Kevin Hunt, 2017 - <a href="https://www.a- n.co.uk/news/new-artist-led-hot-100-launched-assembly-liverpool/">https://www.a- n.co.uk/news/new-artist-led-hot-100-launched-assembly-liverpool/</a></v-list-item>
+                <v-list-item>Artist-led Hot 100 (A Small View), Published by a-n, words by Kevin Hunt, 2017 - <a href="https://www.a-n.co.uk/news/new-artist-led-hot-100-launched-assembly-liverpool/">https://www.a- n.co.uk/news/new-artist-led-hot-100-launched-assembly-liverpool/</a></v-list-item>
                 <v-list-item>Half-Real (review), published by The Skinny, words by Santini Basra, 2016 - <a href="http://www.theskinny.co.uk/art/reviews/half-real-hanover-project-preston">www.theskinny.co.uk/art/reviews/half-real-hanover-project-preston</a></v-list-item>
-                <v-list-item>The Holodeck (review), published by Art in Liverpool, Word by Kyle Nathan Brown, 2015 – <a href="http:// www.artinliverpool.com/?p=57712">http:// www.artinliverpool.com/?p=57712</a></v-list-item>
+                <v-list-item>The Holodeck (review), published by Art in Liverpool, Word by Kyle Nathan Brown, 2015 – <a href="http://www.artinliverpool.com/?p=57712">http:// www.artinliverpool.com/?p=57712</a></v-list-item>
               </v-list>
           </v-col>
       </v-row>

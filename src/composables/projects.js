@@ -478,7 +478,7 @@ const projects = () => {
             end : "December 2020",   
             subtitle : "The Assessment Design Toolkit is an interactive, independent study resource. It is an externally available tool designed to assist staff in creating assessment tasks for units, reviewing assignment briefs produced by other colleagues, and providing a basic introduction to assessment at Manchester Met. I created this resource using Articulate Rise.",
             description : "<p>The Assessment Design Toolkit is an interactive, independent study resource. It is an externally available tool designed to assist staff in creating assessment tasks for units, reviewing assignment briefs produced by other colleagues, and providing a basic introduction to assessment at Manchester Met. I created this resource using Articulate Rise.</p>",
-            thumbnail : `${import.meta.env.VITE_BASE}/images/crit-ped-1.png`,
+            thumbnail : `${import.meta.env.VITE_BASE}/images/design-1.png`,
             tags : [ "audio", "motion graphics", "video", "independent study" ],
             techUsed : [
                 {
