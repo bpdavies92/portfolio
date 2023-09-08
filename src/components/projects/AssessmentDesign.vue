@@ -26,20 +26,23 @@
             <v-row>
                 <v-col>
                     <v-img
+                    cover
                     alt="Navigation page with hero"
                     src="../../assets/images/assessment-design/design-1.png"
                     ></v-img>
                 </v-col>
             </v-row>
             <v-row>
-                <v-col>
+                <v-col cols="12" sm="12" md="6">
                     <v-img
+                    cover
                     alt="Design considerations with flip card interaction"
                     src="../../assets/images/assessment-design/design-2.png"
                     ></v-img>
                 </v-col>
-                <v-col>
+                <v-col cols="12" sm="12" md="6">
                     <v-img
+                    cover
                     alt="Marking criteria section with learning outcome interaction, displaying different learning outcomes depending on the level."
                     src="../../assets/images/assessment-design/design-3.png"
                     ></v-img>

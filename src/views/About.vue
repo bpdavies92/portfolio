@@ -18,7 +18,7 @@
       </v-row>
       <hr class="mt-12 mb-12">
       <v-row class="achievements">
-          <v-col>
+          <v-col cols="12" sm="12" md="4">
             <h2>Layout design</h2>
             <v-list>
                 <v-list-item>
@@ -33,7 +33,7 @@
 
           </v-col>
 
-          <v-col>
+          <v-col cols="12" sm="12" md="4">
             <h2>Awards/nominations</h2>
             <v-list>
               <v-list-item>Manchester Met Staff Awards nomination for Service Excellence Award, 2023</v-list-item>
@@ -46,7 +46,7 @@
             </v-list>
           </v-col>
 
-          <v-col>
+          <v-col cols="12" sm="12" md="4"> 
               <h2>Press</h2>
               <v-list>
                 <v-list-item>Artist-led Hot 100 (A Small View), Published by a-n, words by Kevin Hunt, 2017 - <a href="https://www.a-n.co.uk/news/new-artist-led-hot-100-launched-assembly-liverpool/">https://www.a- n.co.uk/news/new-artist-led-hot-100-launched-assembly-liverpool/</a></v-list-item>
