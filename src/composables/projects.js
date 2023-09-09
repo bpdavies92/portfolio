@@ -528,8 +528,8 @@ const projects = () => {
             date : "01/02/2016",
             start : "",
             end : "February 2016",   
-            subtitle : "Half Real",
-            description : "<p>half real</p>",
+            subtitle : "Half‐Real was an international exhibition that investigates the meeting of visual art and gaming technology.",
+            description : "<p>Half‐Real was an international exhibition that investigates the meeting of visual art and gaming technology. Half‐Real is a title taken from Jesper Juul’s book of the same name, referring to the videogame as a medium that consists of real rules built within the confines of fictional worlds. Half‐Real is an exhibition that explores these qualities within a fine art context and examines how artists are utilising the medium of videogames specifically, but also computational media more generally. In her seminal book ‘Hamlet on the Holodeck’, digital media theorist Janet Murray describes the participatory, procedural, spatial and encyclopaedic properties of computational media. Properties that lend videogames an expressive and persuasive power that is unique to the computer, a power that artists are utilising more as videogames mature as a cultural form.</p>",
             thumbnail : `${import.meta.env.VITE_BASE}/images/half-real-8.jpg`,
             tags : [ "event planning", "art", "design", "audio-visual" ],
             techUsed : [
