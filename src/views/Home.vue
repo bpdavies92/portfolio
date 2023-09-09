@@ -68,16 +68,31 @@ const description = computed(() => {
     });
 });
 
+// const worksOrdered = computed(() => {
+//     return works.value.sort((a, b) => {
+      
+//         const titleA = a.title.toLowerCase()
+//         const titleB = b.title.toLowerCase()
+
+//         if(titleA > titleB) {
+//           return 1
+//         } 
+//         if(titleA < titleB) {
+//           return -1
+//         }
+//         return 0
+//     })
+// })
 const worksOrdered = computed(() => {
     return works.value.sort((a, b) => {
       
-        const titleA = a.title.toLowerCase()
-        const titleB = b.title.toLowerCase()
+        const titleA = new Date(a.date)
+        const titleB = new Date(b.date)
 
-        if(titleA > titleB) {
+        if(titleA < titleB) {
           return 1
         } 
-        if(titleA < titleB) {
+        if(titleA > titleB) {
           return -1
         }
         return 0
