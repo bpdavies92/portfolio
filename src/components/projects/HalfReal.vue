@@ -4,66 +4,62 @@
     :key="i"
     >
         <v-img
+        gradient="rgba(30, 43,80, .8), rgba(30, 43,80, .8)"
         alt=""
         max-height="400"
         aspect-ratio="16/9"
         cover
-        src="@/assets/images/a-small-view/a_small_view_1.jpg"
+        src="@/assets/images/half-real/half-real-6.jpg"
         ></v-img>
         <v-container class="mt-12">
             <Description :d="d" :project="project"/>
             <v-row>
-                <v-col>
+                <v-col cols="12" sm="12" md="4">
                     <v-img
-                    alt="A hole, a mountain exhibition"
+                    alt=""
                     cover
-                    src="@/assets/images/a-small-view/a_small_view_1.jpg"
+                    src="@/assets/images/half-real/half-real-1.jpg"
+                    ></v-img>
+                </v-col>
+                <v-col cols="12"  sm="12" md="4">
+                    <v-img
+                    alt=""
+                    height="100%"
+                    cover
+                    src="@/assets/images/half-real/half-real-3.jpg"
+                    ></v-img>
+                </v-col>
+                <v-col cols="12"  sm="12" md="4">
+                    <v-img
+                    alt=""
+                    height="100%"
+                    cover
+                    src="@/assets/images/half-real/half-real-4.jpg"
                     ></v-img>
                 </v-col>
             </v-row>
             <v-row>
-                <v-col>
+                <v-col cols="12" sm="12" md="6">
                     <v-img
-                    alt="The white pube exhibition during Liverpool Bienial 2016"
+                    alt="half real exhibition opening talk by "
                     cover
-                    src="@/assets/images/a-small-view/a_small_view_2.jpg"
+                    src="@/assets/images/half-real/half-real-5.jpg"
                     ></v-img>
                 </v-col>
-                <v-col>
+                <v-col cols="12" sm="12" md="6">
                     <v-img
-                    alt="A small view"
-                    max-height="400"
+                    alt="half real exhibition space"
                     cover
-                    src="@/assets/images/a-small-view/a_small_view_3.png"
-                    ></v-img>
-                </v-col>
-            </v-row>
-            <v-row>
-                <v-col>
-                    <v-img
-                    alt="The white pube reading / performance"
-                    cover
-                    src="@/assets/images/a-small-view/a_small_view_4.jpg"
+                    src="@/assets/images/half-real/half-real-6.jpg"
                     ></v-img>
                 </v-col>
             </v-row>
             <v-row>
-                <v-col>
-                    <v-img
-                    alt="Symbiosis exhibition"
-                    cover
-                    src="@/assets/images/a-small-view/a_small_view_5.jpg"
-                    ></v-img>
-                </v-col>
-            </v-row>
-            <v-row>
-                <v-col>
-                    <v-img
-                    alt="Got worms exhibition"
-                    cover
-                    src="@/assets/images/a-small-view/a_small_view_6.jpg"
-                    ></v-img>
-                </v-col>
+                <v-img
+                alt="Half real poster"
+                cover
+                src="@/assets/images/half-real/half-real-10.jpg"
+                ></v-img>
             </v-row>
         </v-container>
     </section>

@@ -525,17 +525,17 @@ const projects = () => {
             slug: "half-real",
             title: "Half Real",
             location : "Manchester",
-            date : "01/07/2015",
+            date : "01/02/2016",
             start : "",
-            end : "July 2015",   
+            end : "February 2016",   
             subtitle : "Half Real",
-            description : "<p>Half real</p>",
-            thumbnail : `${import.meta.env.VITE_BASE}/images/design-1.png`,
-            tags : [ "audio", "motion graphics", "video", "independent study" ],
+            description : "<p>half real</p>",
+            thumbnail : `${import.meta.env.VITE_BASE}/images/half-real-8.jpg`,
+            tags : [ "event planning", "art", "design", "audio-visual" ],
             techUsed : [
                 {
                     tech : "Audio-visual",
-                    icon : "mdi-speaker"
+                    icon : "mdi-speaker"    
                 },
                 {
                     tech : "Photography",
