@@ -197,7 +197,7 @@ const projects = () => {
             subtitle : "I co-coordinated a small gallery in Liverpool city center, where I organised art, photography, and other cultural exhibitions. I was responsible for creating posters and social media content, curating exhibitions, liaising with artists, installing audio visual equipment, and applying for funding. Moreover, I was responsible for completing risk assessments for each of the events.",
             description : "<p>I co-coordinated a small gallery in Liverpool city center, where I organised art, photography, and other cultural exhibitions. I was responsible for creating posters and social media content, curating exhibitions, liaising with artists, installing audio visual equipment, and applying for funding. Moreover, I was responsible for completing risk assessments for each of the events.</p>",
             thumbnail : `${import.meta.env.VITE_BASE}/images/a_small_view_1.jpg`,
-            tags : [ "event planning", "art", "design", "audio-visual" ],
+            tags : [ "event", "art", "design", "audio-visual" ],
             techUsed : [
                 {
                     tech : "Audio-visual",
@@ -528,10 +528,10 @@ const projects = () => {
             date : "01/02/2016",
             start : "",
             end : "February 2016",   
-            subtitle : "Half‐Real was an international exhibition that investigates the meeting of visual art and gaming technology.",
+            subtitle : "Half‐Real was an international exhibition that investigated the meeting of visual art and gaming technology.",
             description : "<p>'Half-Real' was an international exhibition that investigated the intersection of visual art and gaming technology. The title 'Half-Real' was derived from Jesper Juul's book of the same name, which referred to the video game as a medium consisting of real rules embedded within fictional worlds. The exhibition 'Half-Real' delved into these qualities within a fine art context, examining how artists are utilising the medium of video games, specifically, and computational media more broadly.</p>",
             thumbnail : `${import.meta.env.VITE_BASE}/images/half-real-8.jpg`,
-            tags : [ "event planning", "art", "design", "audio-visual" ],
+            tags : [ "event", "art", "design", "audio-visual" ],
             techUsed : [
                 {
                     tech : "Audio-visual",

@@ -13,7 +13,14 @@
         cover 
       >
         <div class="title-banner">
-          <v-card-title>{{ project.title }}</v-card-title>
+            <v-card-title>
+                <v-tooltip 
+                    activator="parent"
+                    location="top">
+                    {{ project.title }}
+                </v-tooltip>  
+                {{ project.title }}
+            </v-card-title>
         </div>
       </v-img>
       <v-card-subtitle class="pt-4">

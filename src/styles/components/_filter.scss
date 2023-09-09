@@ -1,5 +1,9 @@
-// .filter {
-//     & .justify-center {
-//         justify-content: flex-start;
-//     }
-// }
+@use "../abstracts/breakpoints";
+
+.filter {
+    &-container .justify-center {
+        @include breakpoints.respond('phone') {
+            justify-content: flex-start !important;
+        }
+    }
+}

@@ -21,7 +21,7 @@ export default createVuetify({
           secondary: '#F28080',
           blueShade: '#1E0B99',
           yellowShade: '#D6B447',
-          yellow: '#F2E7C4'
+          yellow: '#F2E7C4',
         },  
       },
     },

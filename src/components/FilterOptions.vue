@@ -1,12 +1,14 @@
 <template>
-      <v-list class="d-flex justify-center filter mb-12">
-        <v-list-item>
-            <v-btn :class="{backgroundColour : currentRoute === undefined}" @click="router.push({ name: 'Home' })" variant="flat">All</v-btn>
-        </v-list-item>
-        <v-list-item v-for="(d, i) in filters.sort()" :key="i">
-            <v-btn :class="{backgroundColour : currentRoute === d.toLowerCase()}" variant="flat" @click="router.push({name: 'Filter', query: {filter: d.toLowerCase()}})">{{ d }}</v-btn>
-        </v-list-item>
-    </v-list>
+      <section class="filter-container">
+          <v-list class="d-flex justify-center filter mb-12">
+            <v-list-item>
+                <v-btn :class="{backgroundColour : currentRoute === undefined}" @click="router.push({ name: 'Home' })" variant="flat">All</v-btn>
+            </v-list-item>
+            <v-list-item v-for="(d, i) in filters.sort()" :key="i">
+                <v-btn :class="{backgroundColour : currentRoute === d.toLowerCase()}" variant="flat" @click="router.push({name: 'Filter', query: {filter: d.toLowerCase()}})">{{ d }}</v-btn>
+            </v-list-item>
+              </v-list>
+      </section>
 </template>
 
 <script setup>
@@ -28,7 +30,8 @@
     const filters = ref([
             "Video",
             "Web Development",
-            "Independent study"
+            "Independent study",
+            "Event"
     ])
 
 </script>
