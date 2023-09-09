@@ -18,6 +18,7 @@
     import ILC from "@/components/projects/ILC.vue"
     import UTAWebsite from "@/components/projects/UTAWebsite.vue"
     import AssessmentDesign from "@/components/projects/AssessmentDesign.vue"
+import HalfReal from "@/components/projects/HalfReal.vue"
 
 
     const { works } = projects()  
@@ -51,6 +52,8 @@
             return UTAWebsite
             case "assessment-design":
             return AssessmentDesign
+            case "half-real":
+            return HalfReal
             default:
             return null
         }

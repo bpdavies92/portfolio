@@ -520,6 +520,43 @@ const projects = () => {
                 }
             ]
         },
+        { 
+            id: 12,
+            slug: "half-real",
+            title: "Half Real",
+            location : "Manchester",
+            date : "01/07/2015",
+            start : "",
+            end : "July 2015",   
+            subtitle : "Half Real",
+            description : "<p>Half real</p>",
+            thumbnail : `${import.meta.env.VITE_BASE}/images/design-1.png`,
+            tags : [ "audio", "motion graphics", "video", "independent study" ],
+            techUsed : [
+                {
+                    tech : "Audio-visual",
+                    icon : "mdi-speaker"
+                },
+                {
+                    tech : "Photography",
+                    icon : "mdi-camera"
+                }   
+            ],
+            skills : [
+                {
+                    skill : "Event planning",
+                    icon : "mdi-calendar-star"
+                },
+                {
+                    skill : "Curatorial skills",
+                    icon : "mdi-floor-plan"
+                },
+                {
+                    skill : "Project Management",
+                    icon : "mdi-notebook"
+                },
+            ]
+        },
         
     ])
 
