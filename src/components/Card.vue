@@ -45,16 +45,17 @@
     const router = useRouter()
 
     const description = computed(() => {
-    return works.map((i, d) => {
-        if (i.subtitle.length < 200) return i.subtitle;
-        const truncatedSubtitle = i.subtitle.slice(0, 200);
-        const lastSpaceIndex = truncatedSubtitle.lastIndexOf(' ');
-        if (lastSpaceIndex !== -1) {
-            return truncatedSubtitle.slice(0, lastSpaceIndex) + '...';
-        } else {
-            return truncatedSubtitle + '...';
-        }
+        return works.map((i, d) => {
+            if (i.subtitle.length < 200) return i.subtitle;
+                const truncatedSubtitle = i.subtitle.slice(0, 200);
+                const lastSpaceIndex = truncatedSubtitle.lastIndexOf(' ');
+            if (lastSpaceIndex !== -1) {
+                return truncatedSubtitle.slice(0, lastSpaceIndex) + '...';
+            } else {
+                return truncatedSubtitle + '...';
+            }
+        });
     });
-});
+
 
 </script>
