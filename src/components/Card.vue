@@ -31,7 +31,7 @@
         {{ description[index] }}
 
         <v-chip-group class="mt-6">
-            <v-chip v-for="(tag, i) in project.tags.sort()" :key="i">{{ tag }}</v-chip>
+            <v-chip v-for="(tag, i) in project.tags.sort()" :key="i" @click="router.push({name: 'Filter', query:{filter: tag.toLowerCase()}})">{{ tag }}</v-chip>
         </v-chip-group>
       </v-card-text>
 
