@@ -19,6 +19,7 @@
     import UTAWebsite from "@/components/projects/UTAWebsite.vue"
     import AssessmentDesign from "@/components/projects/AssessmentDesign.vue"
 import HalfReal from "@/components/projects/HalfReal.vue"
+import AsIAm from "@/components/projects/AsIAm.vue"
 
 
     const { works } = projects()  
@@ -54,6 +55,8 @@ import HalfReal from "@/components/projects/HalfReal.vue"
             return AssessmentDesign
             case "half-real":
             return HalfReal
+            case "as-i-am":
+            return AsIAm
             default:
             return null
         }

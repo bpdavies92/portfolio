@@ -234,7 +234,7 @@ const projects = () => {
             subtitle : "A collaboration with the Assessment team at Manchester Met, this undergraduate degree classification calculator was designed to help students calculate the grades they will need to achieve their desired degree classification. This resource was custom-made using the Vue.js JavaScript framework.",
             description : "<p>This project was a collaboration with the Assessment team at Manchester Met to create an undergraduate degree classification calculator. This project was in response to the many queries the Assessment team receives from students asking what grades are needed to achieve specific results.</p><p>The calculator I developed allows students to input their current grades and credits, and then experiment with what combination of credits and grades they will need to achieve their desired result. The end result achieved the desired goal, and since the creation of the calculator, it has been made available to students.</p><p>Since July 2020, the calculator has been used by more than 38,000 students to calculate grades. Additionally, it was nominated for three Manchester Met Staff Awards in 2023.</p>",
             thumbnail : "https://images.unsplash.com/photo-1564939558297-fc396f18e5c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80",
-            tags : [ "web development", "javascript", "php", "css", "motion graphics", "video" ],
+            tags : [ "web development", "javascript", "css", "motion graphics", "video" ],
             techUsed : [
                 {
                     tech : "After Effects",
@@ -243,10 +243,6 @@ const projects = () => {
                 {
                     tech : "Vue.js",
                     icon : "mdi-vuejs"
-                },
-                {
-                    tech : "Laravel",
-                    icon : "mdi-laravel"
                 },
                 {
                     tech : "Video",
@@ -265,10 +261,6 @@ const projects = () => {
                 {
                     skill : "Design",
                     icon : "mdi-pencil-ruler"
-                },
-                {
-                    skill : "Team skills",
-                    icon : "mdi-cast-education"
                 }
             ]
         },  
@@ -521,10 +513,10 @@ const projects = () => {
             ]
         },
         { 
-            id: 12,
+            id: 13,
             slug: "half-real",
             title: "Half Real",
-            location : "Manchester",
+            location : "Preston",
             date : "01/02/2016",
             start : "",
             end : "February 2016",   
@@ -555,6 +547,35 @@ const projects = () => {
                     skill : "Project Management",
                     icon : "mdi-notebook"
                 },
+            ]
+        },
+        { 
+            id: 14,
+            slug: "as-i-am",
+            title: "As I Am",
+            location : "Manchester",
+            date : "01/09/2022",
+            start : "",
+            end : "September 2022",   
+            subtitle : "The As I am campaign celebrated diversity and inclusion by shedding light on our Black, Asian and Minority Ethnic staff and students’ stories of belonging here at Manchester Met.",
+            description : "<p>The 'As I am' campaign celebrates diversity and inclusion by shining a light on the stories of belonging from our Black, Asian, and Minority Ethnic staff and students here at Manchester Met. I contributed to the development of a website that featured many of the academics and students showcased during the exhibition.</p>",
+            thumbnail : `${import.meta.env.VITE_BASE}/images/as-i-am-1.jpg`,
+            tags : [ "web development", "javascript", "css", "video" ],
+            techUsed : [
+                {
+                    tech : "Vue.js",
+                    icon : "mdi-vuejs"
+                }
+            ],
+            skills : [
+                {
+                    skill : "Code",
+                    icon : "mdi-code-braces"
+                },
+                {
+                    skill : "Design",
+                    icon : "mdi-pencil-ruler"
+                }
             ]
         },
         
