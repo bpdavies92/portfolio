@@ -1,3 +1,15 @@
-// .skills:first-child {
-//     margin-right: 3rem;
-// }
+@use '../abstracts/breakpoints';
+
+.skills {
+    
+    & .ml-auto {
+        @include breakpoints.respond(tab-port) {
+            margin-left: 0 !important ;
+        }
+    }
+    & .description .mr-12 {
+        @include breakpoints.respond(tab-port) {
+            margin-right: 0 !important ;
+        }
+    }
+}
