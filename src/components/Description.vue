@@ -1,7 +1,7 @@
 <template>
     <div class="mb-12">
       <h2>{{ d.title }}</h2>
-      <h3 v-if="d.start"><span>{{ d.start }} - </span>{{ d.end }}, {{ d.location }}</h3>
+      <h3><span v-if="d.start">{{ d.start }} - </span>{{ d.end }}, {{ d.location }}</h3>
       <v-row class="skills">
         <v-col class="description" cols="12" md="6">
           <div class="mt-6">

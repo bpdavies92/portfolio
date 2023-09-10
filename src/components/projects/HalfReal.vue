@@ -3,7 +3,7 @@
     v-for="(d,i) in project"
     :key="i"
     >
-        <v-img
+        <v-img  
         alt=""
         max-height="400"
         aspect-ratio="16/9"
