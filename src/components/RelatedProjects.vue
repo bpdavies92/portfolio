@@ -1,13 +1,12 @@
 <template>
-    <div class="pt-6 mt-6 pb-12 mb-12 related-projects redBackground">
-        <v-container>
-            <h2>Related projects</h2>
-        </v-container>
+    <div class="pt-8 mt-12 pb-12 mb-12 related-projects redBackground">
+      
+            <h2 class="mb-2" :class="{'ml-12 mr-12' : tablet === false, 'ml-3 mr-3' : tablet === true}">Related projects</h2>
         <v-window
         continuous
         :class="{'ml-12 mr-12' : tablet === false, 'ml-3 mr-3' : tablet === true}"
         v-model="window"
-        show-arrows="hover"
+        :show-arrows="arrows"
         >
             <v-window-item class="pa-1" v-for="(chunk, chunkIndex) in projectChunks" :key="chunkIndex" >
                 <v-row>
@@ -25,36 +24,32 @@
     import { breakpointsTailwind, useBreakpoints, useElementSize } from '@vueuse/core'
     import { ref, computed } from "vue";
     import Card from "./Card.vue";
-
+    
     const { works, project } = defineProps(['works', 'project'])
 
-        const breakpoints = useBreakpoints({
-                tablet: 960,
-                laptop: 1023,
-                desktop: 1280,
-        })
-
-        const tablet = breakpoints.smaller('tablet')
-
-        console.log(project[0].title, )
-    
-    const window = ref(0)
-
-    const test = ['video']
-    
-    const projectChunks = computed(() => {
-
-        const filteredTags = works.filter((data, index) => {
+    const filteredTags = works.filter((data, index) => {
             return project[0].tags.some((tag) => data.tags.includes(tag));
         })
         .filter(d => d.title != project[0].title)
-        .sort((a, b) => {
-
+    
+    const breakpoints = useBreakpoints({
+        tablet: 960,
+        laptop: 1023,
+        desktop: 1280,
+    })
+    
+    const tablet = breakpoints.smaller('tablet')
+    
+    const window = ref(0)
+    let arrowLength = ref(0)
+        
+    console.log(arrowLength.value)
+    
+    const projectChunks = computed(() => {
+        filteredTags
+        .sort((a, b) => { 
             const orderA = new Date(a.date)
             const orderB = new Date(b.date)
-
-            // const orderA = a.title.toLowerCase()
-            // const orderB = b.title.toLowerCase()
 
             if(orderA > orderB) {
                 return -1
@@ -63,7 +58,6 @@
                 return  1
             } 
         })
-
 
         const chunks = [];
 
@@ -77,9 +71,15 @@
             }
         }   
 
- 
-
         return chunks;
     });
+
+    const arrows = computed(() => {
+        if(filteredTags.length <= 3) {
+            return false
+        } else {
+            return 'hover'
+        }
+    })
 
 </script>
