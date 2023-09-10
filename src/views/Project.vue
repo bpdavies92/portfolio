@@ -1,5 +1,6 @@
 <template> 
     <component :is="selectedComponent" :project="project"></component> 
+    <RelatedProjects :works="works" :project="project"/>
 </template>
 
 <script setup>
@@ -18,13 +19,16 @@
     import ILC from "@/components/projects/ILC.vue"
     import UTAWebsite from "@/components/projects/UTAWebsite.vue"
     import AssessmentDesign from "@/components/projects/AssessmentDesign.vue"
-import HalfReal from "@/components/projects/HalfReal.vue"
-import AsIAm from "@/components/projects/AsIAm.vue"
+    import HalfReal from "@/components/projects/HalfReal.vue"
+    import AsIAm from "@/components/projects/AsIAm.vue"
+    import RelatedProjects from "@/components/RelatedProjects.vue"
 
 
     const { works } = projects()  
     const router = useRouter()
     const route = useRoute()
+
+
 
     const selectedComponent = computed(() => {
 
