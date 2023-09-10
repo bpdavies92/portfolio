@@ -1,12 +1,12 @@
 <template> 
     <component :is="selectedComponent" :project="project"></component> 
-    <RelatedProjects :works="works" :project="project"/>
+    <RelatedProjects :works="works" :project="project" :key="route.params.id"/>
 </template>
 
 <script setup>
 
     import { computed, ref } from "vue"
-    import { useRouter, useRoute } from "vue-router"
+    import { useRouter, useRoute } from "vue-router" 
     import projects from '@/composables/projects'
     import Edi from '@/components/projects/Edi'
     import Afhea from '@/components/projects/Afhea'

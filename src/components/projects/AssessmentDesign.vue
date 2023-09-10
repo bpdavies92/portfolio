@@ -4,7 +4,6 @@
     :key="i"
     >
         <v-img
-        gradient="to top right, rgba(30, 43,80, .8), rgba(30, 43,80, .8)"
         alt=""
         max-height="400"
         aspect-ratio="16/9"

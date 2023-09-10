@@ -26,7 +26,7 @@
       <v-card-subtitle class="pt-4">
         <span v-if="project.start">{{ project.start }} - </span>{{ project.end }}, {{ project.location }}
       </v-card-subtitle>
-      <v-card-text>
+      <v-card-text :class="{'card-description' : relatedProject}">
 
         {{ description[index] }}
 
@@ -35,7 +35,7 @@
         </v-chip-group>
       </v-card-text>
 
-      <v-card-actions>
+      <v-card-actions class="actions">
         <v-btn @click="router.push({ name: 'Project', params: { id: project.slug } })" variant="elevated" prepend-icon="mdi-book" block color="secondary">
           See more
         </v-btn>
@@ -47,7 +47,7 @@
     import { computed, ref } from 'vue';
     import { useRouter } from 'vue-router';
 
-    const {project, works, index} = defineProps(['project', 'works', 'index'])
+    const {project, works, index, relatedProject} = defineProps(['project', 'works', 'index', 'relatedProject'])
     
     const router = useRouter()
 

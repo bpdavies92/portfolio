@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-12">
+    <div class="pt-6 mt-6 pb-12 mb-12 related-projects redBackground">
         <v-container>
             <h2>Related projects</h2>
         </v-container>
@@ -12,7 +12,7 @@
             <v-window-item class="pa-1" v-for="(chunk, chunkIndex) in projectChunks" :key="chunkIndex" >
                 <v-row>
                     <v-col v-for="(project, projectIndex) in chunk" :key="projectIndex" cols="12" sm="12" md="4">
-                        <Card :works="works" :project="project" :index="projectIndex"/>
+                        <Card :relatedProject="true" :works="works" :project="project" :index="projectIndex"/>
                     </v-col>
                 </v-row>
             </v-window-item>

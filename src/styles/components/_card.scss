@@ -3,4 +3,8 @@
         font-size: inherit !important;
         line-height: inherit !important;
     }
+
+    & .card-description {
+        min-height: 15rem;
+    }
 }
