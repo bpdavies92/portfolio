@@ -1,11 +1,11 @@
 <template>
   <v-app>
-    <v-app-bar density="compact" image="https://images.unsplash.com/photo-1604079628040-94301bb21b91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" :elevation="2">
+    <v-app-bar aria-label="Navigation Bar" role="banner" density="compact" image="https://images.unsplash.com/photo-1604079628040-94301bb21b91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" :elevation="2">
 
 
       <v-list>
         <v-list-item class="pa-0">
-          <v-btn variant="text" @click="drawer = !drawer" stacked prepend-icon="mdi-menu">Menu</v-btn>
+          <v-btn aria-label="Menu" variant="text" @click="drawer = !drawer" stacked prepend-icon="mdi-menu" role="button">Menu</v-btn>
         </v-list-item>
       </v-list>
 
@@ -13,36 +13,43 @@
 
       <template v-slot:image>
           <v-img
+            alt=""
             gradient="to top right, rgba(242, 230, 196, .8), rgba(242, 230, 196, .8)"
           ></v-img>
         </template>
 
       <v-spacer></v-spacer>
 
-      <v-btn @click="router.push({ name: 'Home' })">
-          Projects
-      </v-btn>
+      <v-btn @click="router.push({ name: 'Home' })" aria-label="Go to Projects" role="link">Projects</v-btn>
+      <v-btn @click="router.push({ name: 'About' })" aria-label="Go to About" role="link">About</v-btn>
 
-      <v-btn @click="router.push({ name: 'About' })">
-          About
-      </v-btn>   
       
     </v-app-bar>
 
     <default-view />  
-    <v-navigation-drawer
-        color="#f6f6f6"
-        theme="light"
-        v-model="drawer"
-      >
+    <v-navigation-drawer color="#f6f6f6" theme="light" v-model="drawer" aria-label="Navigation Drawer" role="navigation">
+
         <v-list nav >
-          <v-list-item color="transparent"  v-for="(d, i) in drawerTitles" @click="router.push({ name: 'Project', params: { id: d.slug }})" :key="i" :title="d.title"  :class="{ 'activeMenuItem': currentRouteName === d.slug, '': currentRouteName !== d.slug }"> 
-            <v-tooltip
+          
+          <v-list-item
+            color="transparent"
+            v-for="(d, i) in drawerTitles"
+            @click="router.push({ name: 'Project', params: { id: d.slug }})"
+            :key="i"
+            :title="d.title"
+            :class="{ 'activeMenuItem': currentRouteName === d.slug, '': currentRouteName !== d.slug }"
+            aria-label="Go to Project: {{ d.title }}"
+            role="link"
+            :aria-current="currentRouteName === d.slug ? 'page' : null"
+          >
+            <v-tooltip  
         activator="parent"
         location="end"
       >{{ d.title }}</v-tooltip>
           </v-list-item>
+
         </v-list>
+
       </v-navigation-drawer>
     </v-app>
 </template>

@@ -7,7 +7,7 @@
             alt=""
             cover
             height="500"
-            src="https://images.unsplash.com/photo-1546497974-b213c9efb599?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3388&q=80"
+            :src="`${base}/images/profile-image.jpg`"
             >
             </v-img>
           </v-col>
@@ -58,10 +58,10 @@
   </v-container>
 </template>
 
-<script>
-export default {
+<script setup>
+import { ref } from "vue";
 
-}
+  const base = ref(import.meta.env.VITE_BASE)
 </script>
 
 <style>

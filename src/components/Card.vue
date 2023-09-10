@@ -7,6 +7,7 @@
       elevation="3"
     >
       <v-img
+        alt=""
         class="align-end text-white"
         height="250"
         :src="project.thumbnail"
@@ -15,6 +16,7 @@
         <div class="title-banner">
             <v-card-title>
                 <v-tooltip 
+                    aria-label="tooltip"
                     activator="parent"
                     location="top">
                     {{ project.title }}

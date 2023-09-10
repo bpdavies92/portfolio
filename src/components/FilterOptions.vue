@@ -5,7 +5,7 @@
                 <v-btn :class="{backgroundColour : currentRoute === undefined}" @click="router.push({ name: 'Home' })" variant="flat">All</v-btn>
             </v-list-item>
             <v-list-item v-for="(d, i) in filters.sort()" :key="i">
-                <v-btn :class="{backgroundColour : currentRoute === d.toLowerCase()}" variant="flat" @click="router.push({name: 'Filter', query: {filter: d.toLowerCase()}})">{{ d }}</v-btn>
+                <v-btn :aria-label="d" :class="{backgroundColour : currentRoute === d.toLowerCase()}" variant="flat" @click="router.push({name: 'Filter', query: {filter: d.toLowerCase()}})">{{ d }}</v-btn>
             </v-list-item>
               </v-list>
       </section>

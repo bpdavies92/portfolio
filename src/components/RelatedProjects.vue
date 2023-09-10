@@ -7,7 +7,7 @@
         continuous
         :class="{'ml-12 mr-12' : tablet === false, 'ml-3 mr-3' : tablet === true}"
         v-model="window"
-        show-arrows
+        show-arrows="hover"
         >
             <v-window-item class="pa-1" v-for="(chunk, chunkIndex) in projectChunks" :key="chunkIndex" >
                 <v-row>
@@ -43,11 +43,26 @@
     const test = ['video']
     
     const projectChunks = computed(() => {
-        const tagFilter = project[0].tags.forEach(d => d)
+
         const filteredTags = works.filter((data, index) => {
             return project[0].tags.some((tag) => data.tags.includes(tag));
-        }).filter(d => d.title != project[0].title)
+        })
+        .filter(d => d.title != project[0].title)
+        .sort((a, b) => {
 
+            const orderA = new Date(a.date)
+            const orderB = new Date(b.date)
+
+            // const orderA = a.title.toLowerCase()
+            // const orderB = b.title.toLowerCase()
+
+            if(orderA > orderB) {
+                return -1
+            } 
+            if(orderA < orderB) {
+                return  1
+            } 
+        })
 
 
         const chunks = [];
