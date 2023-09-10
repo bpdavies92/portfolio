@@ -7,9 +7,4 @@
             margin-left: 0 !important ;
         }
     }
-    & .description .mr-12 {
-        @include breakpoints.respond(tab-port) {
-            margin-right: 0 !important ;
-        }
-    }
 }

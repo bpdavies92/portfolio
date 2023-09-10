@@ -4,7 +4,7 @@
       <h3 v-if="d.start"><span>{{ d.start }} - </span>{{ d.end }}, {{ d.location }}</h3>
       <v-row class="skills">
         <v-col class="description" cols="12" md="6">
-          <div class="mr-12 mt-6">
+          <div class="mt-6">
             <h3>Description</h3>
             <div v-html="d.description"></div>
           </div>
