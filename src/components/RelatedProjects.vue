@@ -36,7 +36,7 @@
 
         const tablet = breakpoints.smaller('tablet')
 
-        console.log(tablet.value)
+        console.log(project[0].title, )
     
     const window = ref(0)
 
@@ -46,7 +46,9 @@
         const tagFilter = project[0].tags.forEach(d => d)
         const filteredTags = works.filter((data, index) => {
             return project[0].tags.some((tag) => data.tags.includes(tag));
-        })
+        }).filter(d => d.title != project[0].title)
+
+
 
         const chunks = [];
 
