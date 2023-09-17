@@ -22,6 +22,14 @@
                     ></v-img>
                 </v-col>
             </v-row>
+            <Quote>
+                <template v-slot:quote>
+                    <p>Well put together with clear objectives and learning outcomes.</p>
+                </template>
+                <template v-slot:person>
+                    Anonymous feedback via Microsoft Forms
+                </template>
+            </Quote>
             <v-row>
                 <v-col>
                     <v-img
@@ -30,6 +38,7 @@
                     src="@/assets/images/edi-module/E&D-2.jpg"
                     ></v-img>
                 </v-col>
+                
                 <v-col>
                     <v-img
                     alt="Home page displaying all sections of the module"
@@ -40,12 +49,13 @@
             </v-row>
             <Quote>
                 <template v-slot:quote>
-                    <p>Very informative and well presented course.</p>
+                    <p>I thought this was a well constructed course - a significant improvement over the previous version.</p>
                 </template>
                 <template v-slot:person>
                     Anonymous feedback via Microsoft Forms
                 </template>
             </Quote>
+
             <v-row>
                 <v-col cols="12">
                     <v-img
@@ -56,6 +66,14 @@
                     ></v-img>
                 </v-col>
             </v-row>
+            <Quote :marginBottom="true">
+                <template v-slot:quote>
+                    <p>Liked the variety of training resources which helped to cement the learning.</p>
+                </template>
+                <template v-slot:person>
+                    Anonymous feedback via Microsoft Forms
+                </template>
+            </Quote>
         </v-container>
     </section>
  

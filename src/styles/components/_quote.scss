@@ -1,8 +1,15 @@
+@use "../abstracts/breakpoints";
+
 .quote {
     width: 100%;
     display: flex;   
     font-size: 2rem;
     color: var(--white);
+    border-radius: 0.3rem;
+
+    @include breakpoints.respond('phone') {
+        flex-direction: column;
+    }
 
     & footer {
         font-size: 1.24rem;
