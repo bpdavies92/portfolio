@@ -25,6 +25,21 @@
             </v-row>
             <v-row>
                 <v-col>
+                    <Quote>
+                        <template v-slot:quote>
+                            It was my first time working with [Ben] and he was an absolute joy. [Ben] produced something that was far better than I ever pictured: it looks incredibly professional and he’s given loads of consideration to how to make it was user-friendly as possible for students. He also produced the guidance video — the production values blew me away! The degree classification calculator has had almost 11,000 unique hits so far, which is truly impressive.
+                        </template>
+                        <template v-slot:person>
+                            Victoria Thompson, Head of Assessment Governance, 
+                        </template>
+                        <template v-slot:cite>
+                            Manchester Staff Awards statement
+                        </template>
+                    </Quote>
+                </v-col>
+            </v-row>
+            <v-row>
+                <v-col>
                     <v-img
                     alt="Classification calculator"
                     cover
@@ -40,5 +55,7 @@
 
 <script setup>
     import Description from '../Description.vue';
+    import Quote from '../Quote.vue';
+
     const props = defineProps(['project'])
 </script>

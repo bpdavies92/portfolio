@@ -4,7 +4,7 @@
             <v-icon icon="mdi-format-quote-open mr-3" size="x-large"></v-icon>
             <blockquote cite="https://www.huxley.net/bnw/four.html">
                     <slot name="quote"></slot>
-                <footer>
+                <footer class="mt-3">
                     — <slot name="person"></slot><cite><slot name="cite"></slot></cite>
                 </footer> 
             </blockquote>
