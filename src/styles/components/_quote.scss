@@ -1,0 +1,10 @@
+.quote {
+    width: 100%;
+    display: flex;   
+    font-size: 2rem;
+    color: var(--white);
+
+    & footer {
+        font-size: 1.24rem;
+    }
+}

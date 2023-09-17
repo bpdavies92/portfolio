@@ -32,6 +32,19 @@
                 </v-col>
             </v-row>
             <v-row>
+                <v-col >
+                    <Quote>
+                        <template v-slot:quote>
+                            <p>Very informative and well presented course.</p>
+                        </template>
+                        <template v-slot:person>
+                            Anonymous feedback via Microsoft Forms
+                        </template>
+    
+                    </Quote>
+                </v-col>
+            </v-row>
+            <v-row>
                 <v-col cols="12" sm="12" md="6">
                     <v-img
                     cover
@@ -54,6 +67,7 @@
 
 <script setup>
     import Description from '../Description.vue';
+    import Quote from '../Quote.vue'
 
     const props = defineProps(['project'])
 
