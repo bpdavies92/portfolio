@@ -510,10 +510,10 @@ const projects = () => {
             ]
         },
         { 
-            id: 9,
+            id: 13,
             slug: "decolonising-the-curriculum-toolkit",
             title: "Decolonising the Curriculum Toolkit",
-            end : "Month 2022",
+            end : "March 2022",
             location : "Manchester",
             subtitle : "Decolonising the Curriculum (DtC) is about identifying, acknowledging and challenging the ways in which colonialism has impacted upon perceived knowledge and learning. The material for this resource was pulled together by Dr Theresa Nicholson at Manchester Met University, which I developed into an externally facing resource on the main University website.",
             description : "<p>Decolonising the Curriculum (DtC) is about identifying, acknowledging and challenging the ways in which colonialism has impacted upon perceived knowledge and learning. The material for this resource was pulled together by Dr Theresa Nicholson at Manchester Met University, which I developed into an externally facing resource on the main University website.</p>",
