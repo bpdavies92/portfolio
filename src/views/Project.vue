@@ -22,6 +22,7 @@
     import HalfReal from "@/components/projects/HalfReal.vue"
     import AsIAm from "@/components/projects/AsIAm.vue"
     import RelatedProjects from "@/components/RelatedProjects.vue"
+    import DecolCurToolkit from "@/components/projects/DecolCurToolkit.vue"
 
 
     const { works } = projects()  
@@ -61,6 +62,8 @@
             return HalfReal
             case "as-i-am":
             return AsIAm
+            case "decolonising-the-curriculum-toolkit":
+            return DecolCurToolkit
             default:
             return null
         }
