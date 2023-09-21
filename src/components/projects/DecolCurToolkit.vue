@@ -40,6 +40,7 @@
             <v-row>
                 <v-col>
                     <v-img
+                    alt="Decolonising the curriculum toolkit webpage"
                     src="../../assets/images/decol-curr/decol-1.jpg"
                     />
                 </v-col>

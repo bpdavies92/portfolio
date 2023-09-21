@@ -28,7 +28,7 @@
       <v-card-subtitle class="pt-4">
         <span v-if="project.start">{{ project.start }} - </span>{{ project.end }}, {{ project.location }}
       </v-card-subtitle>
-      <v-card-text :class="{'card-description' : relatedProject}">
+      <v-card-text class="text-body-1" :class="{'card-description' : relatedProject}">
 
         {{ description[index] }}
 
