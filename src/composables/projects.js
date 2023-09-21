@@ -6,8 +6,9 @@ const projects = () => {
             id: 1,
             slug: "edi",
             location : "Manchester",
+            date : "01/02/2023",
             start : "March 2022",
-            end : "November 2023",
+            end : "February 2023",
             title: "Equality Diversity & Inclusion",
             subtitle : "An Equality, Diversity, and Inclusion training module that all staff at Manchester Met must complete every two years. This module was created using Articulate Rise and includes a variety of media types to accommodate different learning preferences.",
             description : "<p>At Manchester Metropolitan University, it is mandatory for all staff to complete an Equality, Diversity, and Inclusion (EDI) training module once every two years. With funding from the Inclusive Learning Communities initiative, I was tasked with creating a second version of the EDI training I had developed a year prior. The aim was to make it more interactive and address the feedback provided by staff who had participated in the previous training.</p><p>This updated version incorporates more quiz-based summative assessments and includes a longer and more challenging summative quiz at the end. Overall, it offers a more interactive learning experience. I developed this module using Articulate Storyline, which provided me with additional tools to create custom interactions and will make it easier for other staff to update in the future.</p>",
@@ -57,6 +58,7 @@ const projects = () => {
         { 
             id: 2,
             slug: "afhea-independent-study",
+            date : "01/02/2022",
             start : "",
             end : "February 2022",
             location : "Manchester",
@@ -107,6 +109,7 @@ const projects = () => {
             id : 3,
             slug : "five-year-plan",
             title : "Five Year Plan",
+            date : "01/05/2021",
             end : "May 2021",
             location : "Manchester",
             subtitle : "My Five Year Plan is a Manchester Met initiative that focuses on program-based activities, providing students with a personal and professional development framework. In support of this key Manchester Met initiative, I created a video and diagram to help staff understand the project.",
@@ -153,6 +156,7 @@ const projects = () => {
         { 
             id: 4,
             slug: "uta-web-development",
+            date : "01/12/2021",
             start : "December 2021",
             end: "on-going",
             location: "Manchester",
@@ -186,13 +190,14 @@ const projects = () => {
             id: 5,
             slug: "a-small-view",
             title: "A Small View",
+            date : "01/06/2017",
             start : "March 2015",
             end : "June 2017",
             location : "Liverpool",
             subtitle : "I co-coordinated a small gallery in Liverpool city center, where I organised art, photography, and other cultural exhibitions. I was responsible for creating posters and social media content, curating exhibitions, liaising with artists, installing audio visual equipment, and applying for funding. Moreover, I was responsible for completing risk assessments for each of the events.",
             description : "<p>I co-coordinated a small gallery in Liverpool city center, where I organised art, photography, and other cultural exhibitions. I was responsible for creating posters and social media content, curating exhibitions, liaising with artists, installing audio visual equipment, and applying for funding. Moreover, I was responsible for completing risk assessments for each of the events.</p>",
             thumbnail : `${import.meta.env.VITE_BASE}/images/a_small_view_1.jpg`,
-            tags : [ "event planning", "art", "design", "audio-visual" ],
+            tags : [ "event", "art", "design", "audio-visual" ],
             techUsed : [
                 {
                     tech : "Audio-visual",
@@ -223,12 +228,13 @@ const projects = () => {
             slug: "degree-classification-calculator",
             title: "Undergraduate Degree Classification Calculator",
             organisation : "Manchester Metropolitan University",
+            date : "01/07/2022",
             end : "July 2022",
             location : "Manchester",
             subtitle : "A collaboration with the Assessment team at Manchester Met, this undergraduate degree classification calculator was designed to help students calculate the grades they will need to achieve their desired degree classification. This resource was custom-made using the Vue.js JavaScript framework.",
             description : "<p>This project was a collaboration with the Assessment team at Manchester Met to create an undergraduate degree classification calculator. This project was in response to the many queries the Assessment team receives from students asking what grades are needed to achieve specific results.</p><p>The calculator I developed allows students to input their current grades and credits, and then experiment with what combination of credits and grades they will need to achieve their desired result. The end result achieved the desired goal, and since the creation of the calculator, it has been made available to students.</p><p>Since July 2020, the calculator has been used by more than 38,000 students to calculate grades. Additionally, it was nominated for three Manchester Met Staff Awards in 2023.</p>",
             thumbnail : "https://images.unsplash.com/photo-1564939558297-fc396f18e5c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80",
-            tags : [ "web development", "javascript", "php", "css", "motion graphics", "video" ],
+            tags : [ "web development", "javascript", "css", "motion graphics", "video" ],
             techUsed : [
                 {
                     tech : "After Effects",
@@ -237,10 +243,6 @@ const projects = () => {
                 {
                     tech : "Vue.js",
                     icon : "mdi-vuejs"
-                },
-                {
-                    tech : "Laravel",
-                    icon : "mdi-laravel"
                 },
                 {
                     tech : "Video",
@@ -259,10 +261,6 @@ const projects = () => {
                 {
                     skill : "Design",
                     icon : "mdi-pencil-ruler"
-                },
-                {
-                    skill : "Team skills",
-                    icon : "mdi-cast-education"
                 }
             ]
         },  
@@ -271,6 +269,7 @@ const projects = () => {
             slug: "leed-learning-teaching-conference",
             title: "LEED Manchester Met Learning & Teaching Conference",
             organisation : "Manchester Metropolitan University",
+            date : "01/07/2023",
             end : "July 2023",
             location : "Manchester",
             subtitle : "The LEED 2023 conference focused on Learning and Teaching at Manchester Met. The aim of the conference was to give staff a chance to share good practice and network with other colleagues from across the university. Conference themes revolved around the recently published education strategy and university aims outlined within that document.",
@@ -346,6 +345,7 @@ const projects = () => {
             id: 9,
             slug: "working-with-international-students",
             title: "Working with International Students",
+            date : "01/09/2022",
             end : "September 2022",
             location : "Manchester",
             subtitle : "This resource was designed to communicate approaches for welcoming international students to higher education learning. Accompanying this resource is a video featuring Dr. Jon Wright, discussing some of the factors that can interfere with effective communication when teaching an audience of international students.",
@@ -390,6 +390,7 @@ const projects = () => {
             slug: "inclusive-learning-communities",
             title: "Inclusive Learning Communities: Case Studies",
             start : "July",
+            date : "01/08/2022",
             end : "August 2022",
             location : "Manchester",
             subtitle : "These student narratives come from a series of focus groups that aimed to explore students' experiences at the university. Verbatim quotes are narrated by an actor to preserve student anonymity. In this selection of videos, these students share the importance of creating environments that encourage authentic vulnerability and trust.",
@@ -434,6 +435,7 @@ const projects = () => {
             slug: "critical-pedagogy-podcast",
             title: "Critical Pedagogy Podcast",
             location : "Manchester",
+            date : "01/12/2021",
             start : "December 2021",
             end : "on-going",   
             subtitle : "The aim of the Critical Pedagogy podcast series is to illustrate the range of experimental, innovative, and inclusive pedagogical theories/strategies/activities used across all Faculties at Manchester Met. The series is external-facing and will serve as a digital repository of pedagogical knowledge that benefits staff and students alike.",
@@ -474,11 +476,12 @@ const projects = () => {
             slug: "assessment-design",
             title: "Assessment Design Toolkit",
             location : "Manchester",
+            date : "01/11/2021",
             start : "",
-            end : "December 2020",   
+            end : "November 2021",   
             subtitle : "The Assessment Design Toolkit is an interactive, independent study resource. It is an externally available tool designed to assist staff in creating assessment tasks for units, reviewing assignment briefs produced by other colleagues, and providing a basic introduction to assessment at Manchester Met. I created this resource using Articulate Rise.",
             description : "<p>The Assessment Design Toolkit is an interactive, independent study resource. It is an externally available tool designed to assist staff in creating assessment tasks for units, reviewing assignment briefs produced by other colleagues, and providing a basic introduction to assessment at Manchester Met. I created this resource using Articulate Rise.</p>",
-            thumbnail : `${import.meta.env.VITE_BASE}/images/crit-ped-1.png`,
+            thumbnail : `${import.meta.env.VITE_BASE}/images/design-1.png`,
             tags : [ "audio", "motion graphics", "video", "independent study" ],
             techUsed : [
                 {
@@ -501,7 +504,7 @@ const projects = () => {
                 },
                 {
                     skill : "Video editing",
-                    icon : "mdi-web"
+                    icon : "mdi-box-cutter"
                 },
                 {
                     skill : "Audio editing",
@@ -511,13 +514,81 @@ const projects = () => {
         },
         { 
             id: 13,
+            slug: "half-real",
+            title: "Half Real",
+            location : "Preston",
+            date : "01/02/2016",
+            start : "",
+            end : "February 2016",   
+            subtitle : "Half‐Real was an international exhibition that investigated the meeting of visual art and gaming technology.",
+            description : "<p>'Half-Real' was an international exhibition that investigated the intersection of visual art and gaming technology. The title 'Half-Real' was derived from Jesper Juul's book of the same name, which referred to the video game as a medium consisting of real rules embedded within fictional worlds. The exhibition 'Half-Real' delved into these qualities within a fine art context, examining how artists are utilising the medium of video games, specifically, and computational media more broadly.</p>",
+            thumbnail : `${import.meta.env.VITE_BASE}/images/half-real-8.jpg`,
+            tags : [ "event", "art", "design", "audio-visual" ],
+            techUsed : [
+                {
+                    tech : "Audio-visual",
+                    icon : "mdi-speaker"    
+                },
+                {
+                    tech : "Photography",
+                    icon : "mdi-camera"
+                }   
+            ],
+            skills : [
+                {
+                    skill : "Event planning",
+                    icon : "mdi-calendar-star"
+                },
+                {
+                    skill : "Curatorial skills",
+                    icon : "mdi-floor-plan"
+                },
+                {
+                    skill : "Project Management",
+                    icon : "mdi-notebook"
+                },
+            ]
+        },
+        { 
+            id: 14,
+            slug: "as-i-am",
+            title: "As I Am",
+            location : "Manchester",
+            date : "01/09/2022",
+            start : "",
+            end : "September 2022",   
+            subtitle : "The As I am campaign celebrated diversity and inclusion by shedding light on our Black, Asian and Minority Ethnic staff and students’ stories of belonging here at Manchester Met.",
+            description : "<p>The 'As I am' campaign celebrates diversity and inclusion by shining a light on the stories of belonging from our Black, Asian, and Minority Ethnic staff and students here at Manchester Met. I contributed to the development of a website that featured many of the academics and students showcased during the exhibition.</p>",
+            thumbnail : `${import.meta.env.VITE_BASE}/images/as-i-am-1.jpg`,
+            tags : [ "web development", "javascript", "css", "video" ],
+            techUsed : [
+                {
+                    tech : "Vue.js",
+                    icon : "mdi-vuejs"
+                }
+            ],
+            skills : [
+                {
+                    skill : "Code",
+                    icon : "mdi-code-braces"
+                },
+                {
+                    skill : "Design",
+                    icon : "mdi-pencil-ruler"
+                }
+            ]
+        },
+        {
+
+            id: 15,
             slug: "decolonising-the-curriculum-toolkit",
             title: "Decolonising the Curriculum Toolkit",
             end : "March 2022",
+            date: "01/03/2022",
             location : "Manchester",
             subtitle : "Decolonising the Curriculum (DtC) is about identifying, acknowledging and challenging the ways in which colonialism has impacted upon perceived knowledge and learning. The material for this resource was pulled together by Dr Theresa Nicholson at Manchester Met University, which I developed into an externally facing resource on the main University website.",
             description : "<p>Decolonising the Curriculum (DtC) is about identifying, acknowledging and challenging the ways in which colonialism has impacted upon perceived knowledge and learning. The material for this resource was pulled together by Dr Theresa Nicholson at Manchester Met University, which I developed into an externally facing resource on the main University website.</p>",
-            thumbnail : `https://images.unsplash.com/photo-1511174511562-5f7f18b874f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80`,
+            thumbnail : `${import.meta.env.VITE_BASE}/images/decol-2.jpg`,
             tags : ["video", "web development", "independent study" ],
             techUsed : [
                 {
@@ -533,7 +604,7 @@ const projects = () => {
                 {
                     skill : "Video editing",
                     icon : "mdi-film"
-                }, 
+                },
                 {
                     skill : "Design",
                     icon : "mdi-pencil-ruler"
