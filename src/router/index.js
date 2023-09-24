@@ -22,9 +22,16 @@ const routes = [
         component: () => import('@/views/Filter.vue')
       },
       {
-        path: '/project/:id',
+        path: '/:id',
         name: 'Project',
-        component: () => import('@/views/Project.vue')
+        component: () => import('@/views/Project.vue'),
+        children: [
+          {
+            path: '/project/:id',
+            component: () => import('@/views/Project.vue')
+            
+          }
+        ]
       },
     ],
   },

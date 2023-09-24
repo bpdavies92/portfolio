@@ -586,8 +586,8 @@ const projects = () => {
             end : "March 2022",
             date: "01/03/2022",
             location : "Manchester",
-            subtitle : "Decolonising the Curriculum (DtC) is a project about identifying, acknowledging and challenging the ways in which colonialism has impacted upon perceived knowledge and learning. The material for this resource was pulled together by Dr Theresa Nicholson at Manchester Met University, which I developed into an externally facing resource on the main University website.",
-            description : "<p class='text-body-1'>Decolonising the Curriculum (DtC) is a project about identifying, acknowledging and challenging the ways in which colonialism has impacted upon perceived knowledge and learning. The material for this resource was pulled together by Dr Theresa Nicholson at Manchester Met University, which I developed into an externally facing resource on the main University website.</p>",
+            subtitle : "Decolonising the Curriculum (DtC) is a project aimed at identifying, acknowledging, and challenging the ways in which colonialism has influenced perceived knowledge and learning. The material for this resource was compiled by Dr. Theresa Nicholson at Manchester Metropolitan University, and I developed it into an externally facing resource on the main university website.",
+            description : "<p class='text-body-1'>Decolonising the Curriculum (DtC) is a project aimed at identifying, acknowledging, and challenging the ways in which colonialism has influenced perceived knowledge and learning. The material for this resource was compiled by Dr. Theresa Nicholson at Manchester Metropolitan University, and I developed it into an externally facing resource on the main university website.</p>",
             thumbnail : `${import.meta.env.VITE_BASE}/images/decol-2.jpg`,
             tags : ["video", "web development", "independent study" ],
             techUsed : [
@@ -618,11 +618,12 @@ const projects = () => {
                     icon : "mdi-camera"
                 }
             ]
-        },
+        }
+        
         
     ])
 
     return { works }
 }
-
+ 
 export default projects

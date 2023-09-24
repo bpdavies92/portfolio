@@ -5,9 +5,11 @@
 
       <v-list>
         <v-list-item class="pa-0">
-          <v-btn aria-label="Menu" variant="text" @click="drawer = !drawer" stacked prepend-icon="mdi-menu" role="button">Menu</v-btn>
+          <v-btn aria-label="Menu" :variant="active" @click="drawer = !drawer" stacked prepend-icon="mdi-menu" role="button">Menu</v-btn>
         </v-list-item>
       </v-list>
+
+   
 
       <v-app-bar-title class="ml-12">Benjamin Davies</v-app-bar-title>
 
@@ -20,8 +22,11 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn @click="router.push({ name: 'Home' })" aria-label="Go to Projects" role="link">Projects</v-btn>
-      <v-btn @click="router.push({ name: 'About' })" aria-label="Go to About" role="link">About</v-btn>
+    
+
+      <v-btn class="mr-3" :variant="route.name === 'Home' ? 'outlined' : 'text'" @click="router.push({ name: 'Home' })" aria-label="Go to Projects" role="link">Projects</v-btn>
+
+      <v-btn :variant="route.name === 'About' ? 'outlined' : 'text'" @click="router.push({ name: 'About' })" aria-label="Go to About" role="link">About</v-btn>
 
       
     </v-app-bar>
@@ -52,6 +57,7 @@
 
       </v-navigation-drawer>
     </v-app>
+
 </template>
 
 <script setup>
@@ -67,6 +73,8 @@ import { ref, computed, watchEffect } from 'vue';
   const router = useRouter()
   const route = useRoute()
 
+  console.log('nav name', route.name)
+
   const currentRouteName = ref('')
 
   console.log(route.params.id)
@@ -74,6 +82,8 @@ import { ref, computed, watchEffect } from 'vue';
   watchEffect(() => {
     currentRouteName.value = route.params.id
   })
+
+  // const active = computed(() => route.name === 'Home' ? 'outlined' : 'text')
 
   
   const highlightText = () => {
@@ -100,4 +110,6 @@ import { ref, computed, watchEffect } from 'vue';
   const drawer = ref(false)
 
 </script>
+
+
 
