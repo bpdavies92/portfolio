@@ -30,7 +30,7 @@
                 </v-col>
             </v-row>
             <v-row>
-                <v-col>
+                <v-col cols="12"  sm="12" md="6">
                     <v-img
                     alt="Prosumer chronicles"
                     max-height="400"
@@ -38,7 +38,7 @@
                     src="@/assets/images/prosumer-chronicles/pro-7.jpg"
                     ></v-img>
                 </v-col>
-                <v-col>
+                <v-col cols="12"  sm="12" md="6">
                     <v-img
                     alt="Prosumer chronicles"
                     max-height="400"
@@ -57,14 +57,14 @@
                 </v-col>
             </v-row>
             <v-row>
-                <v-col>
+                <v-col cols="12" sm="12"  md="6">
                     <v-img
                     alt="Prosumer chronicles"
                     cover
                     src="@/assets/images/prosumer-chronicles/pro-4.jpg"
                     ></v-img>
                 </v-col>
-                <v-col>
+                <v-col cols="12" sm="12"  md="6">
                     <v-img
                     alt="Prosumer chronicles"
                     cover

@@ -9,7 +9,7 @@ const projects = () => {
             date : "01/02/2023",
             start : "March 2022",
             end : "February 2023",
-            title: "Equality Diversity & Inclusion",
+            title: "Equality, Diversity & Inclusion",
             subtitle : "An Equality, Diversity, and Inclusion training module that all staff at Manchester Met must complete every two years. This module was created using Articulate Rise and includes a variety of media types to accommodate different learning preferences.",
             description : "<p class='text-body-1'>At Manchester Metropolitan University, it is mandatory for all staff to complete an Equality, Diversity, and Inclusion (EDI) training module once every two years. With funding from the Inclusive Learning Communities initiative, I was tasked with creating a second version of the EDI training I had developed a year prior. The aim was to make it more interactive and address the feedback provided by staff who had participated in the previous training.</p><p class='text-body-1'>This updated version incorporates more quiz-based summative assessments and includes a longer and more challenging summative quiz at the end. Overall, it offers a more interactive learning experience. I developed this module using Articulate Storyline, which provided me with additional tools to create custom interactions and will make it easier for other staff to update in the future.</p>",
             thumbnail : `${import.meta.env.VITE_BASE}/images/E&D-3.jpg`,
