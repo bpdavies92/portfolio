@@ -544,7 +544,7 @@ const projects = () => {
                     icon : "mdi-floor-plan"
                 },
                 {
-                    skill : "Project Management",
+                    skill : "Project management",
                     icon : "mdi-notebook"
                 },
             ]
@@ -618,9 +618,79 @@ const projects = () => {
                     icon : "mdi-camera"
                 }
             ]
+        },
+        {
+            id: 16,
+            slug: "prosumer-chronicles",
+            title: "Prosumer Chronicles",
+            end : "January 2018",
+            date: "02/02/2018",
+            location : "Manchester",
+            subtitle : "The Prosumer Chronicles‘ brings together prints, digital and sculptural work by White Wizard founder Dave Evans and London based artist Robin Tarbet. Both artists deal with the residue of technological progress, things such as polystyrene packaging and errant radio waves, using these by-products to explore the implications of perpetual growth.",
+            description : "<p class='text-body-1'>The Prosumer Chronicles‘ brings together prints, digital and sculptural work by White Wizard founder Dave Evans and London based artist Robin Tarbet. Both artists deal with the residue of technological progress, things such as polystyrene packaging and errant radio waves, using these by-products to explore the implications of perpetual growth.</p>",
+            thumbnail : `${import.meta.env.VITE_BASE}/images/pro-3.jpg`,
+            tags : [ "event", "art", "design", "audio-visual" ],
+            techUsed : [
+                {
+                    tech : "Audio-visual",
+                    icon : "mdi-speaker"    
+                },
+                {
+                    tech : "Photography",
+                    icon : "mdi-camera"
+                }   
+            ],
+            skills : [
+                {
+                    skill : "Event planning",
+                    icon : "mdi-calendar-star"
+                },
+                {
+                    skill : "Curatorial skills",
+                    icon : "mdi-floor-plan"
+                },
+                {
+                    skill : "Project management",
+                    icon : "mdi-notebook"
+                },
+            ]
+        },
+        {
+            id: 17,
+            slug: "the-morning-has-gold-in-its-mouth",
+            title: "The Morning Has Gold in Its Mouth",
+            end : "January 2018",
+            date: "01/01/2018",
+            location : "Manchester",
+            subtitle : "In (proud) collaboration with SEIZE projects, Leeds UK.A satellite event based on the deformation of the exhibition space, COLLAR uses the vacant unit outside of their own artist-led gallery to subvert the nature of what we better recognise as the event. Using alcohol as social lubricant – and taste as tool of critique – COLLAR practices the guise of curation in order to better facilitate conversation, to experiment a little.",
+            description : "<p class='text-body-1'>In (proud) collaboration with SEIZE projects, Leeds UK.</p><p class='text-body-1'>A satellite event based on the deformation of the exhibition space, COLLAR uses the vacant unit outside of their own artist-led gallery to subvert the nature of what we better recognise as the event. Using alcohol as social lubricant – and taste as tool of critique – COLLAR practices the guise of curation in order to better facilitate conversation, to experiment a little.</p>",
+            thumbnail : `${import.meta.env.VITE_BASE}/images/gold-7.jpg`,
+            tags : [ "event", "art", "design", "audio-visual" ],
+            techUsed : [
+                {
+                    tech : "Audio-visual",
+                    icon : "mdi-speaker"    
+                },
+                {
+                    tech : "Photography",
+                    icon : "mdi-camera"
+                }   
+            ],
+            skills : [
+                {
+                    skill : "Event planning",
+                    icon : "mdi-calendar-star"
+                },
+                {
+                    skill : "Curatorial skills",
+                    icon : "mdi-floor-plan"
+                },
+                {
+                    skill : "Project management",
+                    icon : "mdi-notebook"
+                },
+            ]
         }
-        
-        
     ])
 
     return { works }

@@ -23,6 +23,8 @@
     import AsIAm from "@/components/projects/AsIAm.vue"
     import RelatedProjects from "@/components/RelatedProjects.vue"
     import DecolCurToolkit from "@/components/projects/DecolCurToolkit.vue"
+    import ProsumerChronicles from "@/components/projects/ProsumerChronicles.vue"
+    import GoldInTheMouth from "@/components/projects/GoldInTheMouth.vue"
 
 
     const { works } = projects()  
@@ -64,6 +66,10 @@
             return AsIAm
             case "decolonising-the-curriculum-toolkit":
             return DecolCurToolkit
+            case "prosumer-chronicles":
+            return ProsumerChronicles
+            case "the-morning-has-gold-in-its-mouth":
+            return GoldInTheMouth
             default:
             return null
         }
