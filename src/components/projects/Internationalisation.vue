@@ -18,14 +18,14 @@
                 </v-col>
             </v-row>
             <v-row>
-                <v-col>
+                <v-col cols="12" sm="12" md="6">
                     <v-img
                     alt="Internationalisation quiz options"
                     cover
                     src="../../assets/images/internationalisation/international-2.jpg"
                     ></v-img>
                 </v-col>
-                <v-col>
+                <v-col cols="12" sm="12" md="6">
                     <v-img
                     alt="Internationalisation success page"
                     cover

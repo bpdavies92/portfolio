@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-12" :class="{'mb-12' : marginBottom === false}">
+    <div class="mt-3" :class="{'mb-3' : marginBottom === false}">
         <div class="pa-12 purpleBackground quote">
             <v-icon icon="mdi-format-quote-open mr-3" size="x-large"></v-icon>
             <blockquote cite="https://www.huxley.net/bnw/four.html">

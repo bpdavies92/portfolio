@@ -34,14 +34,14 @@
             </v-row>
             
             <v-row>
-                <v-col>
+                <v-col cols="12" sm="12" md="6">
                     <v-img
                     alt="LEED conference introduction by Dr Fiona Saunders, talking through the events of the day."
                     cover
                     src="../../assets/images/conference/leed-conf-3.jpg"
                     ></v-img>
                 </v-col>
-                <v-col>
+                <v-col cols="12" sm="12" md="6">
                     <v-img
                     alt="Introduction to the LEED conference by Professor Andy Dainty, discussing how the conference aligns with the Manchester Met Education Strategy."
                     cover
