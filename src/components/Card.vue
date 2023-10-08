@@ -46,11 +46,12 @@
 </template>
 
 <script setup>
+
     import { computed, ref } from 'vue';
     import { useRouter } from 'vue-router';
 
     const {project, works, index, relatedProject} = defineProps(['project', 'works', 'index', 'relatedProject'])
-    
+
     const router = useRouter()
 
     const description = computed(() => {
@@ -65,6 +66,5 @@
             }
         });
     });
-
 
 </script>

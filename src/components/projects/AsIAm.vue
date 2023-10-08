@@ -22,14 +22,14 @@
                 </v-col>
             </v-row>
             <v-row>
-                <v-col>
+                <v-col cols="12" sm="12" md="6">
                     <v-img
                     alt="As I am menu displaying all people"
                     cover
                     src="@/assets/images/as-i-am/as-i-am-2.jpg"
                     ></v-img>
                 </v-col>
-                <v-col>
+                <v-col cols="12" sm="12" md="6">
                     <v-img
                     alt="As I am infinity menu in hero"
                     max-height="400"

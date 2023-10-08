@@ -2,8 +2,8 @@
   <v-container class="mt-12" >
     <FilterOptions/>
     <v-row>
-      <v-col v-for="(project, index) in worksOrdered" :key="index" cols="12" sm="12" md="6" lg="4">
-        <Card :project="project" :index="index" :works="works"/>
+      <v-col v-for="(project, index) in worksOrdered" :key="index" cols="12" xs="12" sm="6" md="6" lg="4" >
+        <Card :project="project" :index="index" :works="works" />
       </v-col>
     </v-row>
   </v-container>

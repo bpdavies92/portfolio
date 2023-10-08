@@ -31,8 +31,6 @@
     const router = useRouter()
     const route = useRoute()
 
-
-
     const selectedComponent = computed(() => {
 
         const componentId = route.params.id

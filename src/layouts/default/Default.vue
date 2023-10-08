@@ -5,7 +5,7 @@
 
       <v-list>
         <v-list-item class="pa-0">
-          <v-btn aria-label="Menu" :variant="active" @click="drawer = !drawer" stacked prepend-icon="mdi-menu" role="button">Menu</v-btn>
+          <v-btn aria-label="Menu" @click="drawer = !drawer" stacked prepend-icon="mdi-menu" role="button">Menu</v-btn>
         </v-list-item>
       </v-list>
 
@@ -82,17 +82,6 @@ import { ref, computed, watchEffect } from 'vue';
   watchEffect(() => {
     currentRouteName.value = route.params.id
   })
-
-  // const active = computed(() => route.name === 'Home' ? 'outlined' : 'text')
-
-  
-  const highlightText = () => {
-    works.value.forEach((d, i) => {
-      console.log(d)
-    }) 
-  }
-
-  highlightText()
 
   const drawerTitles = computed(() => {
     return works.value.sort((a, b) => {
