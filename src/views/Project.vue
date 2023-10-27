@@ -25,6 +25,7 @@
     import DecolCurToolkit from "@/components/projects/DecolCurToolkit.vue"
     import ProsumerChronicles from "@/components/projects/ProsumerChronicles.vue"
     import GoldInTheMouth from "@/components/projects/GoldInTheMouth.vue"
+    import LearningCommunities from "@/components/projects/LearningCommunities.vue"
 
 
     const { works } = projects()  
@@ -68,6 +69,8 @@
             return ProsumerChronicles
             case "the-morning-has-gold-in-its-mouth":
             return GoldInTheMouth
+            case "building-inclusive-learning-communities":
+            return LearningCommunities
             default:
             return null
         }

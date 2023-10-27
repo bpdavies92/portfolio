@@ -695,12 +695,64 @@ const projects = () => {
             id: 18,
             slug: "understanding-the-awarding-gap",
             title: "Understanding the Awarding Gap",
-            end : "March 2023",
-            date: "01/03/2023",
+            end : "May 2023",
+            date: "01/05/2023",
             location : "Manchester",
             subtitle : "This resource is designed to help you navigate the Degree and Awards good hours Power BI dashboard. Being able to use this dashboard will provide a more detailed view of what student groups need more support.",
             description : "<p class='text-body-1'>This resource is designed to help you navigate the Degree and Awards good hours Power BI dashboard. Being able to use this dashboard will provide a more detailed view of what student groups need more support.</p>",
             thumbnail : `${import.meta.env.VITE_BASE}/images/understanding-1.jpg`,
+            tags : [ "articulate", "independent study", "quiz", "instructional design" ],
+            techUsed : [
+                {
+                    tech : "Articulate Storyline",
+                    icon : "mdi-school"
+                },
+                {
+                    tech : "After Effects",
+                    icon : "mdi-movie-star"
+                },
+                {
+                    tech : "Moodle VLE",
+                    icon : "mdi-school"
+                },
+                {
+                    tech : "Camera",
+                    icon : "mdi-film"
+                },
+                {
+                    tech : "Podcast",
+                    icon : "mdi-microphone"
+                },
+            ],
+            skills : [
+                {
+                    skill : "Video editing",
+                    icon : "mdi-movie-open-edit"
+                },
+                {
+                    skill : "Code",
+                    icon : "mdi-code-braces"
+                },
+                {
+                    skill : "Design",
+                    icon : "mdi-pencil-ruler"
+                },
+                {
+                    skill : "e-learning",
+                    icon : "mdi-cast-education"
+                }
+            ]
+        },
+        {
+            id: 19  ,
+            slug: "building-inclusive-learning-communities",
+            title: "Building Inclusive Learning Communities",
+            end : "January 2023",
+            date: "01/01/2023",
+            location : "Manchester",
+            subtitle : "The 'Building Inclusive Learning Communities' resource is designed with staff at Manchester Metropolitan University in mind and is intended to offer guidance on discussing inclusion and a sense of belonging with other staff. The resource also includes student case studies, narrated by actors, which shed light on the students' own experiences.",
+            description : "<p class='text-body-1'>The 'Building Inclusive Learning Communities' resource is designed with staff at Manchester Metropolitan University in mind and is intended to offer guidance on discussing inclusion and a sense of belonging with other staff. The resource also includes student case studies, narrated by actors, which shed light on the students' own experiences.</p>",
+            thumbnail : `${import.meta.env.VITE_BASE}/images/learning-communities.jpg`,
             tags : [ "articulate", "independent study", "quiz", "instructional design" ],
             techUsed : [
                 {
