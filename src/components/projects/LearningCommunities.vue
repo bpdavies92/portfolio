@@ -26,14 +26,14 @@
             <v-row>
                 <v-col cols="12" sm="12" md="6">
                     <v-img
-                    alt="Building inclusive learning communities home page"
+                    alt="Introduction with learning outcomes"
                     cover
                     src="../../assets/images/learning-communities/learning-communities-5.jpg"
                     ></v-img>
                 </v-col>
                 <v-col cols="12" sm="12" md="6">
                     <v-img
-                    alt="Building inclusive learning communities home page"
+                    alt="Introduction with welcome video by Shuab Gamote"
                     cover
                     src="../../assets/images/learning-communities/learning-communities-11.jpg"
                     ></v-img>
@@ -43,7 +43,7 @@
             <v-row>
                 <v-col cols="12">
                     <v-img
-                    alt="Building inclusive learning communities home page"
+                    alt="A still of the welcome video featuring Shuab Gamote"
                     cover
                     src="../../assets/images/learning-communities/learning-communities-13.jpg"
                     ></v-img>
@@ -53,21 +53,21 @@
             <v-row>
                 <v-col cols="12" sm="12" md="4">
                     <v-img
-                    alt="Building inclusive learning communities home page"
+                    alt="framing our responses slide"
                     cover
                     src="../../assets/images/learning-communities/learning-communities-17.jpg"
                     ></v-img>
                 </v-col>
                 <v-col cols="12" sm="12" md="4">
                     <v-img
-                    alt="Building inclusive learning communities home page"
+                    alt="Still of Framing our responses video"
                     cover
                     src="../../assets/images/learning-communities/learning-communities-16.jpg"
                     ></v-img>
                 </v-col>
                 <v-col cols="12" sm="12" md="4">
                     <v-img
-                    alt="Building inclusive learning communities home page"
+                    alt="Still of Framing our responses video"
                     cover
                     src="../../assets/images/learning-communities/learning-communities-15.jpg"
                     ></v-img>
@@ -77,21 +77,17 @@
             <v-row>
                 <v-col cols="12">
                     <v-img
-                    alt="Building inclusive learning communities home page"
+                    alt="Micro-aggressions slide home  page"
                     cover
                     src="../../assets/images/learning-communities/learning-communities-1.jpg"
                     ></v-img>
                 </v-col>
-                <v-col cols="12" sm="12" md="6">
+            </v-row>
+
+            <v-row>
+                <v-col cols="12">
                     <v-img
-                    alt="Building inclusive learning communities home page"
-                    cover
-                    src="../../assets/images/learning-communities/learning-communities-4.jpg"
-                    ></v-img>
-                </v-col>
-                <v-col cols="12" md="6">
-                    <v-img
-                    alt="Building inclusive learning communities home page"
+                    alt="Still of Micro-aggressions video"
                     cover
                     src="../../assets/images/learning-communities/learning-communities-8.jpg"
                     ></v-img>
@@ -101,7 +97,7 @@
             <v-row>
                 <v-col cols="12">
                     <v-img
-                    alt="Building inclusive learning communities home page"
+                    alt="Further micro-aggressions resources, including student actor  video narrating student experience"
                     cover
                     src="../../assets/images/learning-communities/learning-communities-7.jpg"
                     ></v-img>
@@ -111,7 +107,7 @@
             <v-row>
                 <v-col cols="12" sm="12" md="6">
                     <v-img
-                    alt="Building inclusive learning communities home page"
+                    alt="Microaggressions slide home"
                     cover
                     src="../../assets/images/learning-communities/learning-communities-10.jpg"
                     ></v-img>
@@ -128,7 +124,7 @@
             <v-row>
                 <v-col cols="12">
                     <v-img
-                    alt="Building inclusive learning communities home page"
+                    alt="Microaggressions slide home"
                     cover
                     src="../../assets/images/learning-communities/learning-communities-6.jpg"
                     ></v-img>
@@ -138,14 +134,14 @@
             <v-row>
                 <v-col cols="12" sm="12" md="6">
                     <v-img
-                    alt="Building inclusive learning communities home page"
+                    alt="Starting to take action slide"
                     cover
                     src="../../assets/images/learning-communities/learning-communities-2.jpg"
                     ></v-img>
                 </v-col>
                 <v-col cols="12" sm="12" md="6">
                     <v-img
-                    alt="Building inclusive learning communities home page"
+                    alt="starting to take action slide"
                     cover
                     src="../../assets/images/learning-communities/learning-communities-3.jpg"
                     ></v-img>
