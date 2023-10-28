@@ -794,6 +794,46 @@ const projects = () => {
                     icon : "mdi-cast-education"
                 }
             ]
+        },
+        {
+            id: 20,
+            slug: "fellowship-mentorship",
+            title: "Advance HE Fellowship: Mentorship",
+            end : "February 2023",
+            date: "01/02/2023",
+            location : "Manchester",
+            subtitle : "This resource is designed to support current and future mentors for the Manchester Met PSF scheme (Professional Standards Framework, accredited by Advance HE). After an introductory activity and a brief refresher on the PSF Framework and reflective writing in two further sections, the learner is able to select the descriptor level(s) relevant to their mentorship for more self-directed activities and information.",
+            description : "<p class='text-body-1'>his resource is designed to support current and future mentors for the Manchester Met PSF scheme (Professional Standards Framework, accredited by Advance HE). After an introductory activity and a brief refresher on the PSF Framework and reflective writing in two further sections, the learner is able to select the descriptor level(s) relevant to their mentorship for more self-directed activities and information.</p>",
+            thumbnail : `${import.meta.env.VITE_BASE}/images/mentorship-1.jpg`,
+            tags : [ "articulate", "independent study", "instructional design", "video" ],
+            techUsed : [
+                {
+                    tech : "Articulate Rise",
+                    icon : "mdi-school"
+                },
+                {
+                    tech : "After Effects",
+                    icon : "mdi-movie-star"
+                },
+                {
+                    tech : "Camera",
+                    icon : "mdi-film"
+                }
+            ],
+            skills : [
+                {
+                    skill : "Video editing",
+                    icon : "mdi-movie-open-edit"
+                },
+                {
+                    skill : "Design",
+                    icon : "mdi-pencil-ruler"
+                },
+                {
+                    skill : "e-learning",
+                    icon : "mdi-cast-education"
+                }
+            ]
         }
     ])
 

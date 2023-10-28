@@ -22,7 +22,7 @@
                 </v-col>
             </v-row>
             <v-row>
-                <v-col>
+                <v-col cols="12" sm="12" md="6">
                     <v-img
                     ref="target"
                     :class="{'float-up' : target === true}"
@@ -31,8 +31,7 @@
                     src="@/assets/images/a-small-view/a_small_view_2.jpg"
                     ></v-img>
                 </v-col>
-                {{ targetIsVisible }}
-                <v-col>
+                <v-col cols="12" sm="12" md="6">
                     <v-img
                     alt="A small view"
                     max-height="400"

@@ -27,6 +27,7 @@
     import GoldInTheMouth from "@/components/projects/GoldInTheMouth.vue"
     import LearningCommunities from "@/components/projects/LearningCommunities.vue"
     import UnderstandingAwardingGap from "@/components/projects/UnderstandingAwardingGap.vue"
+    import Mentorship from "@/components/projects/Mentorship.vue"
 
 
     const { works } = projects()  
@@ -74,6 +75,8 @@
             return LearningCommunities
             case "understanding-the-awarding-gap":
             return UnderstandingAwardingGap
+            case "fellowship-mentorship":
+            return Mentorship
             default:
             return null
         }
