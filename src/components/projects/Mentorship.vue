@@ -19,6 +19,18 @@
             </v-row>
             <v-row>
                 <v-col>
+                    <Quote>
+                        <template v-slot:quote>
+                            This is a great resource. It's engaging, informative and inspiring. Thanks!
+                        </template>
+                        <template v-slot:person>
+                            Anonymous feedback via Microsoft Forms
+                        </template>
+                    </Quote> 
+                </v-col>
+            </v-row>
+            <v-row>
+                <v-col>
                     <v-img
                     src="../../assets/images/mentorship/mentorship-6.jpg"
                     ></v-img>
@@ -45,6 +57,8 @@
 
 <script setup>
     import Description from '../Description.vue';
+    import Quote from '../Quote.vue';
+
 
     const props = defineProps(['project'])
 
