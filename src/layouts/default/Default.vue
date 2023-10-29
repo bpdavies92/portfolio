@@ -3,9 +3,9 @@
     <v-app-bar aria-label="Navigation Bar" role="banner" density="compact" image="https://images.unsplash.com/photo-1604079628040-94301bb21b91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" :elevation="2">
 
 
-      <v-list>
-        <v-list-item class="pa-0">
-          <v-btn aria-label="Menu" @click="drawer = !drawer" stacked prepend-icon="mdi-menu" role="button">Menu</v-btn>
+      <v-list bg-color="#B1A7F2">
+        <v-list-item  class="pa-0">
+          <v-btn color="#303030"  aria-label="Menu" @click="drawer = !drawer" stacked role="button">Menu</v-btn>
         </v-list-item>
       </v-list>
 
