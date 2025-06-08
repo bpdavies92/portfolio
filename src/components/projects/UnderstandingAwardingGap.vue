@@ -8,7 +8,7 @@
         max-height="400"
         aspect-ratio="16/9"
         cover
-        src="@/assets/images/understanding-awarding-gap/understanding-hero.jpg"
+        src="@/assets/images/understanding-awarding-gap/understanding-1.jpg"
         ></v-img>
         <v-container class="mt-12">
             <Description :d="d" :project="project"/>
