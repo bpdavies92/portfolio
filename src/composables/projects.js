@@ -700,7 +700,7 @@ const projects = () => {
             location : "Manchester",
             subtitle : "This resource is designed to help staff at Manchester Met navigate the Degree and Awards good hours Power BI dashboard. Being able to use this dashboard will provide a more detailed view of what student groups need more support.",
             description : "<p class='text-body-1'>This resource is designed to help staff at Manchester Met navigate the Degree and Awards good hours Power BI dashboard. Being able to use this dashboard will provide a more detailed view of what student groups need more support.</p>",
-            thumbnail : `${import.meta.env.VITE_BASE}/images/understanding-1.jpg`,
+            thumbnail : `${import.meta.env.VITE_BASE}/images/understanding-1.jpg`,  
             tags : [ "articulate", "independent study", "instructional design" ],
             techUsed : [
                 {
