@@ -1,23 +1,20 @@
 <template>
   <v-app>
-    <v-app-bar aria-label="Navigation Bar" role="banner" density="compact" image="https://images.unsplash.com/photo-1604079628040-94301bb21b91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" :elevation="2">
+    <v-app-bar aria-label="Navigation Bar" role="banner" density="compact" image="https://images.unsplash.com/photo-1604079628040-94301bb21b91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" :elevation="0">
 
 
-      <v-list bg-color="transparent">
+<!--      <v-list bg-color="transparent" >
         <v-list-item  class="pa-0">
           <v-btn color="#303030" prepend-icon='mdi-menu'  aria-label="Menu" @click="drawer = !drawer" stacked role="button"></v-btn>
         </v-list-item>
-      </v-list>
+      </v-list> -->
 
    
 
       <v-app-bar-title class="ml-12">Benjamin Davies</v-app-bar-title>
 
       <template v-slot:image>
-          <v-img
-            alt=""
-            gradient="to top right, rgba(242, 230, 196, .8), rgba(242, 230, 196, .8)"
-          ></v-img>
+
         </template>
 
       <v-spacer></v-spacer>
