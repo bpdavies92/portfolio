@@ -1,5 +1,5 @@
 <template>
-  <v-container class="mt-12 text-body-1">
+  <section class="mt-12 text-body-1 content-container">
       
       <v-row>
           <v-col cols="12" sm="6" md="6">
@@ -7,7 +7,7 @@
             alt=""
             cover
             height="500"
-            :src="`${base}/images/profile-image.jpg`"
+            src="@/assets/images/me.jpg"
             >
             </v-img>
           </v-col>
@@ -68,7 +68,7 @@
           </v-list>
         </v-col>
       </v-row>
-  </v-container>
+  </section>
 </template>
 
 <script setup>

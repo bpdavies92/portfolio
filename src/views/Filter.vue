@@ -1,12 +1,12 @@
 <template>
-  <v-container class="mt-12" >
+  <section class="content-container ml-auto mr-auto" >
     <FilterOptions/>
     <v-row>
       <v-col v-for="(project, index) in filteredProjects" :key="index" cols="12" xs="12" sm="6" md="6" lg="4">
           <Card :project="project" :index="index" :works="works"/>
       </v-col>
     </v-row>
-  </v-container>
+  </section>
 </template>
 
 <script setup>
