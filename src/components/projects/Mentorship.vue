@@ -13,14 +13,14 @@
         <v-container class="mt-12">
 
 
-        <v-row class="">
-            <v-col height="100%" class="position-relative">
-                <div class="position-sticky top-0 left-0 ">
-                    <Description  :d="d" :project="project"/>
-                </div>
+        <v-row >
+            <v-col class="position-relative position-overflow-y" cols="12" sm="12" md="5">
+                    <v-sheet class="position-relative" height="100%">
+                        <Description class="test"  :d="d" :project="project"/>
+                    </v-sheet>
 
             </v-col>
-            <v-col>
+            <v-col cols="12" sm="12" md="7">
                 
             <v-row>
                 <v-col>

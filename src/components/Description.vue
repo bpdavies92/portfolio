@@ -1,5 +1,5 @@
 <template>
-    <div class="mb-12 position-sticky top-0">
+    <v-sheet class="mb-12">
       <h2>{{ d.title }}</h2>
       <h3><span v-if="d.start">{{ d.start }} - </span>{{ d.end }}, {{ d.location }}</h3>
       <v-row class="skills">
@@ -9,9 +9,10 @@
             <div v-html="d.description"></div>
           </div>
         </v-col>
-            <v-col :cols="12" sm="12" md="12">
+
+            <v-col :cols="12" sm="12" md="12" height="100%">
               <div class="d-flex">
-                <div class="mt-6 ml-auto mr-12"  v-for="(list, title) in { 'Technology': d.techUsed }" :key="title" >
+                <div class="mt-6 mr-12"  v-for="(list, title) in { 'Technology': d.techUsed }" :key="title" >
                   <h3>{{ title }}</h3>
                   <v-list density="compact" lines="0">
                     <v-list-item
@@ -39,7 +40,7 @@
             </v-col>
           </v-row>
    
-    </div>
+        </v-sheet>
   </template>
   
   <script setup>

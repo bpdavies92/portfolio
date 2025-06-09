@@ -43,3 +43,8 @@ p {
     margin-left: auto;
     margin-right: auto;
 }
+
+.test {
+    position: sticky;
+    top: calc(0rem + 6.4rem);
+}

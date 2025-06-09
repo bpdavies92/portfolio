@@ -13,8 +13,8 @@
         :src="project.thumbnail"
         cover 
       >
-        <div class="title-banner">
-            <v-card-title>
+      </v-img>
+                  <v-card-title>
                 <v-tooltip 
                     aria-label="tooltip"
                     activator="parent"
@@ -23,9 +23,7 @@
                 </v-tooltip>  
                 {{ project.title }}
             </v-card-title>
-        </div>
-      </v-img>
-      <v-card-subtitle class="pt-4">
+      <v-card-subtitle class="pt-0">
         <span v-if="project.start">{{ project.start }} - </span>{{ project.end }}, {{ project.location }}
       </v-card-subtitle>
       <v-card-text class="text-body-1" :class="{'card-description' : relatedProject}">

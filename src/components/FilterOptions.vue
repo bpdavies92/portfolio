@@ -5,7 +5,7 @@
                 <v-btn :class="{backgroundColour : currentRoute === undefined}" @click="router.push({ name: 'Home' })" variant="flat">All</v-btn>
             </v-list-item>
             <v-list-item v-for="(d, i) in filters.sort()" :key="i">
-                <v-btn :aria-label="d" :class="{backgroundColour : currentRoute === d.toLowerCase()}" variant="flat" @click="router.push({name: 'Filter', query: {filter: d.toLowerCase()}})">{{ d }}</v-btn>
+                <v-btn :prepend-icon='d[1]' :aria-label="d[0]" :class="{backgroundColour : currentRoute === d[0].toLowerCase()}" variant="flat" @click="router.push({name: 'Filter', query: {filter: d[0].toLowerCase()}})">{{ d[0] }}</v-btn>
             </v-list-item>
               </v-list>
       </section>
@@ -28,10 +28,10 @@
     })
 
     const filters = ref([
-            "Video",
-            "Web Development",
-            "Independent study",
-            "Event"
+            ["Video", "mdi-video-vintage"],
+            ["Web Development", "mdi-web"],
+           [ "Independent study", "mdi-book-open"],
+            ["Event", "mdi-calendar"]
     ])
 
 </script>
