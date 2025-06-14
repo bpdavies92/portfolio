@@ -15,8 +15,8 @@
 
             <v-row>
                 <v-col class=" position-relative" cols="12" sm="12" md="5">
-                    <div class="sticky " height="min-content">
-                        <div class="overflow-x-scroll">
+                    <div class="sticky"  >
+                        <div>
                             <Description  :d="d" :project="project"/>
                             <v-btn href="https://www.utaresources.mmu.ac.uk/leed-conference-23/" block color="secondary" size="large" prepend-icon="mdi-link">Explore the conference website</v-btn>
                         </div>
