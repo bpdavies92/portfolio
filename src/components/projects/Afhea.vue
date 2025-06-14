@@ -12,6 +12,10 @@
         src="@/assets/images/afhea-self-study/header_img_1.jpg"
         ></v-img>
         <v-container class="mt-12">
+            
+            
+
+
             <Description :d="d" :project="project"/>
             <v-row>
                 <v-col cols="12">

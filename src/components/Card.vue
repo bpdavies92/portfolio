@@ -21,7 +21,7 @@
                     location="top">
                     {{ project.title }}
                 </v-tooltip>  
-                {{ project.title }}
+                {{ project.shortTitle ? project.shortTitle : project.title }}
             </v-card-title>
       <v-card-subtitle class="pt-0">
         <span v-if="project.start">{{ project.start }} - </span>{{ project.end }}, {{ project.location }}

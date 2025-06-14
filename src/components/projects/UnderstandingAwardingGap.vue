@@ -11,10 +11,16 @@
         src="@/assets/images/understanding-awarding-gap/understanding-1.jpg"
         ></v-img>
         <v-container class="mt-12">
-            <Description :d="d" :project="project"/>
-
-            <v-row>
-                <v-col cols="12" sm="12">
+    
+            <v-row >
+                <v-col class=" position-relative" cols="12" sm="12" md="5">
+                    <div class="sticky">
+                        <Description :d="d" :project="project"/>
+                    </div>
+                </v-col>
+                <v-col>
+                    <v-row>
+                <v-col cols="12" sm="12" md="7">
                         <v-img
                         alt="Home page"
                         cover
@@ -92,7 +98,11 @@
                         src="@/assets/images/understanding-awarding-gap/understanding-the-awarding-gap-9.jpg"
                         ></v-img>
                 </v-col>
-            </row>      
+            </row> 
+                </v-col>
+            </v-row>
+
+                 
         </v-container>
     </section>
  

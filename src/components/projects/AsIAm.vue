@@ -11,8 +11,15 @@
         src="@/assets/images/as-i-am/as-i-am-1.jpg"
         ></v-img>
         <v-container class="mt-12">
-            <Description :d="d" :project="project"/>
-            <v-row>
+
+                      <v-row >
+                <v-col class=" position-relative" cols="12" sm="12" md="5">
+                    <div class="sticky">
+                         <Description :d="d" :project="project"/>
+                    </div>
+                </v-col>
+                <v-col cols="12" sm="12" md="7">
+                         <v-row>
                 <v-col>
                     <v-img
                     alt="Exhibition hero"
@@ -56,6 +63,12 @@
                     ></v-img>
                 </v-col>
             </v-row>
+                </v-col>
+            </v-row>
+
+            
+            
+           
         </v-container>
     </section>
  

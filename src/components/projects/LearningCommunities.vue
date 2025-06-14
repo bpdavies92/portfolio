@@ -10,11 +10,16 @@
         cover
         src="@/assets/images/learning-communities/learning-communities-hero.jpg"
         ></v-img>
-        <v-container class="mt-12">
-
-            <Description :d="d" :project="project"/>
+        <div class="mt-12 content-container">
 
             <v-row>
+                <v-col class=" position-relative" cols="12" sm="12" md="5">
+                    <div class="sticky">
+                        <Description :d="d" :project="project"/>
+                    </div>
+                </v-col>
+                <v-col>
+                    <v-row>
                 <v-col cols="12">
                     <v-img
                     alt="Building inclusive learning communities home page"
@@ -140,14 +145,21 @@
                     ></v-img>
                 </v-col>
             </v-row>
-            
-        </v-container>
+                </v-col>
+            </v-row>
+            <v-btn>
+
+            </v-btn>
+        </div>
     </section>
  
 </template>
 
 <script setup>
+    
+
     import Description from '../Description.vue';
     const props = defineProps(['project'])
+
 
 </script>

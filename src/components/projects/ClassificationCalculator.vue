@@ -11,8 +11,15 @@
         src="https://images.unsplash.com/photo-1564939558297-fc396f18e5c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
         ></v-img>
         <v-container class="mt-12">
-            <Description :d="d" :project="project"/>
-            <v-row>
+
+            <v-row >
+                <v-col class=" position-relative" cols="12" sm="12" md="5">
+                    <div class="sticky">
+                         <Description :d="d" :project="project"/>
+                    </div>
+                </v-col>
+                <v-col cols="12" sm="12" md="7">
+                    <v-row>
                 <v-col cols="12" sm="12">
                     <v-btn href="https://utaresources.mmu.ac.uk/classification-calculator/" block color="secondary" size="large" prepend-icon="mdi-link">Play with the calculator</v-btn>
                 </v-col>
@@ -47,7 +54,8 @@
                     ></v-img>
                 </v-col>
             </v-row>
-
+                </v-col>
+            </v-row>
         </v-container>
     </section>
  

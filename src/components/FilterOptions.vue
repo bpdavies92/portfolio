@@ -1,10 +1,10 @@
 <template>
       <section class="filter-container">
-          <v-list class="d-flex justify-center filter mb-12">
-            <v-list-item>
-                <v-btn :class="{backgroundColour : currentRoute === undefined}" @click="router.push({ name: 'Home' })" variant="flat">All</v-btn>
+          <v-list role="list" class="d-flex justify-center filter mb-12">
+            <v-list-item >
+                <v-btn role="list item" :class="{backgroundColour : currentRoute === undefined}" @click="router.push({ name: 'Home' })" variant="flat" size="large">All</v-btn>
             </v-list-item>
-            <v-list-item v-for="(d, i) in filters.sort()" :key="i">
+            <v-list-item v-for="(d, i) in filters.sort()" :key="i" role="list item" size="large">
                 <v-btn :prepend-icon='d[1]' :aria-label="d[0]" :class="{backgroundColour : currentRoute === d[0].toLowerCase()}" variant="flat" @click="router.push({name: 'Filter', query: {filter: d[0].toLowerCase()}})">{{ d[0] }}</v-btn>
             </v-list-item>
               </v-list>

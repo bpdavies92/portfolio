@@ -48,7 +48,7 @@ p {
     position: sticky;
     top: calc(0rem + 6.4rem);
     height: calc(100vh - 6.4rem);
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
     padding-bottom: 3rem;
     padding-right: 1rem;

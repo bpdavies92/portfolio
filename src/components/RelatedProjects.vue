@@ -1,5 +1,5 @@
 <template>
-    <div class="pt-8 mt-12 pb-12 mb-12 related-projects redBackground">
+    <div class="pt-8 mt-12 pb-12 mb-n12 related-projects redBackground">
       
             <h2 class="mb-2" :class="{'ml-12 mr-12' : tablet === false, 'ml-3 mr-3' : tablet === true}">Related projects</h2>
         <v-window
