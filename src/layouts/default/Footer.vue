@@ -12,7 +12,7 @@
           {{ link }}
         </v-btn>
         <v-col class="text-center mt-4" cols="12">
-          <v-sheet  color="transparent">{{ new Date().getFullYear() }} — <strong>Benjamin Davies</strong></v-sheet>
+          <v-sheet color="transparent" class="text-white" >{{ new Date().getFullYear() }} — <strong>Benjamin Davies</strong></v-sheet>
         </v-col>
       </v-row>
     </v-footer>
@@ -22,8 +22,5 @@
 
     import { ref } from "vue";
 
-    const links = ref([
-
-    ])
 
 </script>

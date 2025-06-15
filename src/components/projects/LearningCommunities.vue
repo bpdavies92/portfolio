@@ -29,14 +29,14 @@
                 </v-col>
             </v-row>
             <v-row>
-                <v-col cols="12" sm="12" md="6">
+                <v-col cols="12" sm="12" md="12">
                     <v-img
                     alt="Introduction with learning outcomes"
                     cover
                     src="@/assets/images/learning-communities/learning-communities-5.jpg"
                     ></v-img>
                 </v-col>
-                <v-col cols="12" sm="12" md="6">
+                <v-col cols="12" sm="12" md="12">
                     <v-img
                     alt="Introduction with welcome video by Shuab Gamote"
                     cover
@@ -56,21 +56,21 @@
             </v-row>
 
             <v-row>
-                <v-col cols="12" sm="12" md="4">
+                <v-col cols="12" sm="12" md="12">
                     <v-img
                     alt="framing our responses slide"
                     cover
                     src="@/assets/images/learning-communities/learning-communities-17.jpg"
                     ></v-img>
                 </v-col>
-                <v-col cols="12" sm="12" md="4">
+                <v-col cols="12" sm="12" md="12">
                     <v-img
                     alt="Still of Framing our responses video"
                     cover
                     src="@/assets/images/learning-communities/learning-communities-16.jpg"
                     ></v-img>
                 </v-col>
-                <v-col cols="12" sm="12" md="4">
+                <v-col cols="12" sm="12" md="12">
                     <v-img
                     alt="Still of Framing our responses video"
                     cover
@@ -110,14 +110,14 @@
             </v-row>
 
             <v-row>
-                <v-col cols="12" sm="12" md="6">
+                <v-col cols="12" sm="12" md="12">
                     <v-img
                     alt="Microaggressions slide home"
                     cover
                     src="@/assets/images/learning-communities/learning-communities-10.jpg"
                     ></v-img>
                 </v-col>
-                <v-col cols="12" sm="12" md="6">
+                <v-col cols="12" sm="12" md="12">
                     <v-img
                     alt="Building inclusive learning communities home page"
                     cover
@@ -137,7 +137,7 @@
             </v-row>
 
             <v-row>
-                <v-col cols="12" sm="12" md="6">
+                <v-col cols="12" sm="12" md="12">
                     <v-img
                     alt="starting to take action slide"
                     cover

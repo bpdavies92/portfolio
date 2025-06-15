@@ -18,18 +18,7 @@
                 <p>I’m a developer and designer based in Manchester, UK, with nearly five years of experience at Manchester Metropolitan University. My work primarily involves developing resources focused on learning, teaching, and assessment. I hold a Master's degree from the University of Central Lancashire, which I earned in 2016. Over the years, I've had the opportunity to work across various media. Previously, I dabbled in building video game worlds and creating books. Currently, my efforts are centered around video production, web development, and e-learning. I have a strong passion for topics such as art, film, curation, and creativity.</p>
               </v-col>
             </row>
-            <v-row>
-              <v-col cols="12" sm="12" md="6">
-                 <div class="vuechart-example">
-                    <apexchart  type="radar" :options="options" :series="series"></apexchart>
-                  </div>
-              </v-col>
-              <v-col cols="12" sm="12" md="6">
-                    <div class="vuechart-example">
-                    <apexchart  type="radar" :options="options" :series="series"></apexchart>
-                  </div>
-              </v-col>
-            </v-row>
+
           </v-col>
       </v-row>
       <hr class="mt-12 mb-12">
@@ -83,6 +72,13 @@
             <v-list-item><b>Foundation Degree</b>, City of Liverpool College, 2010 – 2011, Distinction</v-list-item>
           </v-list>
         </v-col>
+        <v-col class="" cols="12" sm="12" md="8">
+
+                 <!-- <div class="vuechart-example">
+                    <apexchart type="radar" :options="options" :series="series"></apexchart>
+                  </div> -->
+
+        </v-col>
       </v-row>
   </section>
   <div>
@@ -97,26 +93,49 @@ import { ref } from "vue";
 const base = ref(import.meta.env.VITE_BASE)
 
   const options = ref({
-
+  
   chart: {
     id: 'vuechart-example',
-    type: 'radar',  
+    type: 'radar', 
+      sparkline: {
+    // enabled: true
+    },
+    offsetX: 0,
+    offsetY: -50,
+     height: 500,  // or 100%, or smaller
+  width: 500,
     toolbar: {
     show: false,
   },
   },
+        polygons: {
+        strokeColors:  ['#303030', '#ff2780', '#303030', '#ff2780', '#303030'],
+        strokeWidth: 1,
+        connectorColors: ['#303030', '#ff2780', '#303030', '#ff2780', '#303030'],
+        fill: {
+          colors: undefined
+        }
+      },
   xaxis: {
     categories: ['Photoshop', 'Illustrator', 'Premiere Pro', 'After Effects', 'InDesign']
   },
   yaxis: {
     stepSize: 20
+  },
+  stroke: {
+    colors: ['#303030', '#ff2780', '#303030', '#ff2780', '#303030'],
+  },
+    fill: {
+    colors: ['#303030', '#ff2780', '#303030', '#ff2780', '#303030'],
   }
+  
 })
 
 const series = ref([
   {
     name: 'series-1',
-    data: [30, 40, 45, 50, 49]
+    data: [30, 40, 45, 50, 49],
+    colors: ['#2E93fA', '#66DA26', '#546E7A', '#E91E63', '#FF9800'],
   }
 ])
 
