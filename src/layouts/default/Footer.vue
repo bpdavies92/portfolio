@@ -1,6 +1,6 @@
 <template>
-    <v-footer class="yellowBackground mt-12 pt-12 pb-12" >
-      <v-row justify="center" no-gutters>
+    <v-footer color="#303030" class="mt-12 pt-12 pb-12" >
+      <v-row justify="center" no-gutters >
         <v-btn
           v-for="link in links"
           :key="link"
@@ -12,7 +12,7 @@
           {{ link }}
         </v-btn>
         <v-col class="text-center mt-4" cols="12">
-          {{ new Date().getFullYear() }} — <strong>Benjamin Davies</strong>
+          <v-sheet  color="transparent">{{ new Date().getFullYear() }} — <strong>Benjamin Davies</strong></v-sheet>
         </v-col>
       </v-row>
     </v-footer>

@@ -12,10 +12,13 @@ import { createApp } from 'vue'
 
 // Plugins
 import { registerPlugins } from '@/plugins'
+import VueApexCharts from "vue3-apexcharts";
 
 import '@/styles/main.scss'
 
 const app = createApp(App)
+
+app.use(VueApexCharts);
 
 registerPlugins(app)
 

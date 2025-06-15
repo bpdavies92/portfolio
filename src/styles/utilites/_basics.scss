@@ -1,3 +1,5 @@
+@use "../abstracts/breakpoints";
+
 p {
     &:not(:last-child) {
         margin-bottom: 1rem;
@@ -42,6 +44,11 @@ p {
     max-width: 1350px;
     margin-left: auto;
     margin-right: auto;
+    padding: 1rem;
+
+    @include breakpoints.respond('phone') {
+        padding: 1rem;
+    }    
 }
 
 .sticky {
@@ -52,4 +59,15 @@ p {
     overflow-x: hidden;
     padding-bottom: 3rem;
     padding-right: 1rem;
+
+    @include breakpoints.respond('tab-port') {
+        height: min-content;
+        padding-bottom: 0;
+        padding-right: 0;
+        position: relative;
+        margin-bottom: 0rem;
+        top: 0;
+    }
 }
+
+

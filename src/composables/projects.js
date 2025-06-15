@@ -3,7 +3,7 @@ import { ref } from "vue";
 const projects = () => {
     const works = ref([
         { 
-            id: 1,
+            id: 0,
             slug: "edi",
             location : "Manchester",
             date : "01/02/2023",
@@ -57,7 +57,7 @@ const projects = () => {
             ]
         },
         { 
-            id: 2,
+            id: 1,
             slug: "afhea-independent-study",
             date : "01/02/2022",
             start : "",
@@ -108,7 +108,7 @@ const projects = () => {
             ]
         },
         { 
-            id : 3,
+            id : 2,
             slug : "five-year-plan",
             title : "Five Year Plan",
             shortTitle : "Five Year Plan",
@@ -157,7 +157,7 @@ const projects = () => {
             ]
         },
         { 
-            id: 4,
+            id: 3,
             slug: "uta-web-development",
             date : "01/12/2021",
             start : "December 2021",
@@ -191,7 +191,7 @@ const projects = () => {
             ]
         },
         { 
-            id: 5,
+            id: 4,
             slug: "a-small-view",
             title: "A Small View",
             shortTitle : "A Small View",
@@ -229,7 +229,7 @@ const projects = () => {
             ]
         },
         { 
-            id: 6,
+            id: 5,
             slug: "degree-classification-calculator",
             title: "Undergraduate Degree Classification Calculator",
             shortTitle: "Degree Calculator",
@@ -271,7 +271,7 @@ const projects = () => {
             ]
         },  
         { 
-            id: 8,
+            id: 6,
             slug: "leed-learning-teaching-conference",
             title: "LEED Manchester Met Learning & Teaching Conference",
             shortTitle : "Teaching conference",
@@ -349,7 +349,7 @@ const projects = () => {
             ]
         },
         { 
-            id: 9,
+            id: 7,
             slug: "working-with-international-students",
             title: "Working with International Students",
             shortTitle: "International students",
@@ -394,7 +394,7 @@ const projects = () => {
             ]
         },
         { 
-            id: 10,
+            id: 8,
             slug: "inclusive-learning-communities",
             title: "Inclusive Learning Communities: Case Studies",
             shortTitle: "ILC case studies",
@@ -440,7 +440,7 @@ const projects = () => {
             ]
         },
         { 
-            id: 11,
+            id: 9,
             slug: "critical-pedagogy-podcast",
             title: "Critical Pedagogy Podcast",
             shortTitle: "Critical Pedagogy Podcast",
@@ -482,7 +482,7 @@ const projects = () => {
             ]
         },
         { 
-            id: 12,
+            id: 10,
             slug: "assessment-design",
             title: "Assessment Design Toolkit",
             shortTitle: "Assessment toolkit",
@@ -524,7 +524,7 @@ const projects = () => {
             ]
         },
         { 
-            id: 13,
+            id: 11,
             slug: "half-real",
             title: "Half Real",
             shortTitle: "Half real",
@@ -562,7 +562,7 @@ const projects = () => {
             ]
         },
         { 
-            id: 14,
+            id: 12,
             slug: "as-i-am",
             title: "As I am",
             shortTitle: "As I am",
@@ -593,7 +593,7 @@ const projects = () => {
         },
         {
 
-            id: 15,
+            id: 13,
             slug: "decolonising-the-curriculum-toolkit",
             title: "Decolonising the Curriculum Toolkit",
             shortTitle: "Decolonising toolkit",
@@ -634,9 +634,10 @@ const projects = () => {
             ]
         },
         {
-            id: 16,
+            id: 14,
             slug: "prosumer-chronicles",
             title: "Prosumer Chronicles",
+            shortTitle: '',
             end : "January 2018",
             date: "02/02/2018",
             location : "Manchester",
@@ -670,9 +671,10 @@ const projects = () => {
             ]
         },
         {
-            id: 17,
+            id: 15,
             slug: "the-morning-has-gold-in-its-mouth",
             title: "The Morning Has Gold in Its Mouth",
+            shortTitle: '',
             end : "January 2018",
             date: "01/01/2018",
             location : "Manchester",
@@ -706,9 +708,10 @@ const projects = () => {
             ]
         },
         {
-            id: 18,
+            id: 16,
             slug: "understanding-the-awarding-gap",
             title: "Understanding the Awarding Gap",
+            shortTitle: '',
             end : "May 2023",
             date: "01/05/2023",
             location : "Manchester",
@@ -758,9 +761,10 @@ const projects = () => {
             ]
         },
         {
-            id: 19  ,
+            id: 17,
             slug: "building-inclusive-learning-communities",
             title: "Building Inclusive Learning Communities",
+            shortTitle: '',
             end : "January 2023",
             date: "01/01/2023",
             location : "Manchester",
@@ -810,9 +814,10 @@ const projects = () => {
             ]
         },
         {
-            id: 20,
+            id: 18,
             slug: "fellowship-mentorship",
             title: "Advance HE Fellowship: Mentorship",
+            shortTitle: '',
             end : "February 2023",
             date: "01/02/2023",
             location : "Manchester",

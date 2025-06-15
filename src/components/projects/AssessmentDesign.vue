@@ -11,8 +11,15 @@
         src="https://images.unsplash.com/photo-1581091877018-dac6a371d50f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
         ></v-img>
         <v-container class="mt-12">
-            <Description :d="d" :project="project"/>
+
             <v-row>
+                <v-col class="position-relative" cols="12" sm="12" md="7">
+                    <div class="sticky">
+                        <Description :d="d" :project="project"/>
+                    </div>
+                </v-col>
+                <v-col>
+                      <v-row>
                 <v-col cols="12" sm="12">
                     <v-btn href="https://www.utaresources.mmu.ac.uk/assessment_design_toolkit/#/" block color="secondary" size="large" prepend-icon="mdi-link">Assessment design independent study</v-btn>
                 </v-col>
@@ -60,15 +67,26 @@
                     ></v-img>
                 </v-col>
             </v-row>
+                </v-col>
+            </v-row>
+            <v-sheet class="d-flex mt-12">
+                <v-btn size="large" variant="text" class="mr-auto" prepend-icon="mdi-arrow-left" @click="previous(project[0])">Previous</v-btn>
+                <v-btn size="large" variant="text" class="ml-auto" append-icon="mdi-arrow-right" @click="next(project[0])">Next</v-btn>
+            </v-sheet>
+            
+          
         </v-container>
     </section>
  
 </template>
 
 <script setup>
-    import Description from '../Description.vue';
-    import Quote from '../Quote.vue'
+    import Description from '../Description.vue'
+    import { useRouter, useRoute } from 'vue-router';
+    import nextProject from '@/composables/nextProject'
 
     const props = defineProps(['project'])
-
+    const {next, previous} = nextProject()
+    const router = useRoute()
+    const route = useRouter()
 </script>

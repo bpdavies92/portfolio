@@ -12,8 +12,24 @@
             </v-img>
           </v-col>
           <v-col>
-            <h2 class="mb-3">About me</h2>
-            <p>I’m a developer and designer based in Manchester, UK, with nearly five years of experience at Manchester Metropolitan University. My work primarily involves developing resources focused on learning, teaching, and assessment. I hold a Master's degree from the University of Central Lancashire, which I earned in 2016. Over the years, I've had the opportunity to work across various media. Previously, I dabbled in building video game worlds and creating books. Currently, my efforts are centered around video production, web development, and e-learning. I have a strong passion for topics such as art, film, curation, and creativity.</p>
+            <row>
+              <v-col>
+                <h2 class="mb-3">About me</h2>
+                <p>I’m a developer and designer based in Manchester, UK, with nearly five years of experience at Manchester Metropolitan University. My work primarily involves developing resources focused on learning, teaching, and assessment. I hold a Master's degree from the University of Central Lancashire, which I earned in 2016. Over the years, I've had the opportunity to work across various media. Previously, I dabbled in building video game worlds and creating books. Currently, my efforts are centered around video production, web development, and e-learning. I have a strong passion for topics such as art, film, curation, and creativity.</p>
+              </v-col>
+            </row>
+            <v-row>
+              <v-col cols="12" sm="12" md="6">
+                 <div class="vuechart-example">
+                    <apexchart  type="radar" :options="options" :series="series"></apexchart>
+                  </div>
+              </v-col>
+              <v-col cols="12" sm="12" md="6">
+                    <div class="vuechart-example">
+                    <apexchart  type="radar" :options="options" :series="series"></apexchart>
+                  </div>
+              </v-col>
+            </v-row>
           </v-col>
       </v-row>
       <hr class="mt-12 mb-12">
@@ -69,12 +85,42 @@
         </v-col>
       </v-row>
   </section>
+  <div>
+ 
+</div>
 </template>
 
 <script setup>
 import { ref } from "vue";
+// import VueApexCharts from 'vue-apexcharts'
 
-  const base = ref(import.meta.env.VITE_BASE)
+const base = ref(import.meta.env.VITE_BASE)
+
+  const options = ref({
+
+  chart: {
+    id: 'vuechart-example',
+    type: 'radar',  
+    toolbar: {
+    show: false,
+  },
+  },
+  xaxis: {
+    categories: ['Photoshop', 'Illustrator', 'Premiere Pro', 'After Effects', 'InDesign']
+  },
+  yaxis: {
+    stepSize: 20
+  }
+})
+
+const series = ref([
+  {
+    name: 'series-1',
+    data: [30, 40, 45, 50, 49]
+  }
+])
+
+
 </script>
 
 <style>

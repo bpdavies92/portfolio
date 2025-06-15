@@ -10,7 +10,7 @@
         cover
         src="@/assets/images/learning-communities/learning-communities-hero.jpg"
         ></v-img>
-        <div class="mt-12 content-container">
+        <v-container class="mt-12">
 
             <v-row>
                 <v-col class=" position-relative" cols="12" sm="12" md="5">
@@ -18,7 +18,7 @@
                         <Description :d="d" :project="project"/>
                     </div>
                 </v-col>
-                <v-col>
+                <v-col cols="12" sm="12" md="7">
                     <v-row>
                 <v-col cols="12">
                     <v-img
@@ -147,19 +147,26 @@
             </v-row>
                 </v-col>
             </v-row>
-            <v-btn>
-
-            </v-btn>
-        </div>
+           
+            <v-sheet class="d-flex mt-12">
+                <v-btn size="large" variant="text" class="mr-auto" prepend-icon="mdi-arrow-left" @click="previous(project[0])">Previous</v-btn>
+                <v-btn size="large" variant="text" class="ml-auto" append-icon="mdi-arrow-right" @click="next(project[0])">Next</v-btn>
+            </v-sheet>
+            
+          
+        </v-container>
     </section>
  
 </template>
 
 <script setup>
-    
+    import Description from '../Description.vue'
+    import { useRouter, useRoute } from 'vue-router';
+    import nextProject from '@/composables/nextProject'
 
-    import Description from '../Description.vue';
     const props = defineProps(['project'])
-
-
+    const {next, previous} = nextProject()
+    const router = useRoute()
+    const route = useRouter()
 </script>
+
