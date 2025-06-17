@@ -51,6 +51,10 @@ p {
     }    
 }
 
+.placeholder {
+    min-height: 100vh;
+}
+
 .sticky {
     position: sticky;
     top: calc(0rem + 6.4rem);

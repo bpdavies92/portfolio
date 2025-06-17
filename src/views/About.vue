@@ -72,14 +72,23 @@
             <v-list-item><b>Foundation Degree</b>, City of Liverpool College, 2010 – 2011, Distinction</v-list-item>
           </v-list>
         </v-col>
-        <v-col class="" cols="12" sm="12" md="8">
-
-                 <!-- <div class="vuechart-example">
-                    <apexchart type="radar" :options="options" :series="series"></apexchart>
-                  </div> -->
-
+      </v-row>
+      <hr class="mt-12 mb-12">
+      <v-row>
+        <v-col cols="12" sm="12" md="6" >
+            <h2>Software</h2>
+              <div class="software-skills">
+                <apexchart type="radar" :options="skillsOptions" :series="skillsSeries"></apexchart>
+              </div>
+        </v-col>
+        <v-col cols="12" sm="12" md="6" >
+            <h2>Design</h2>
+              <div class="software-skills">
+                <apexchart type="radar" :options="skillsOptions" :series="skillsSeries"></apexchart>
+              </div>
         </v-col>
       </v-row>
+      
   </section>
   <div>
  
@@ -92,10 +101,10 @@ import { ref } from "vue";
 
 const base = ref(import.meta.env.VITE_BASE)
 
-  const options = ref({
+  const skillsOptions = ref({
   
   chart: {
-    id: 'vuechart-example',
+    id: 'software-skills',
     type: 'radar', 
       sparkline: {
     // enabled: true
@@ -108,16 +117,8 @@ const base = ref(import.meta.env.VITE_BASE)
     show: false,
   },
   },
-        polygons: {
-        strokeColors:  ['#303030', '#ff2780', '#303030', '#ff2780', '#303030'],
-        strokeWidth: 1,
-        connectorColors: ['#303030', '#ff2780', '#303030', '#ff2780', '#303030'],
-        fill: {
-          colors: undefined
-        }
-      },
   xaxis: {
-    categories: ['Photoshop', 'Illustrator', 'Premiere Pro', 'After Effects', 'InDesign']
+    categories: ['After Effects', 'Illustrator','InDesign', 'Photoshop', 'Premiere Pro', 'Vue.js']
   },
   yaxis: {
     stepSize: 20
@@ -131,10 +132,10 @@ const base = ref(import.meta.env.VITE_BASE)
   
 })
 
-const series = ref([
+const skillsSeries = ref([
   {
-    name: 'series-1',
-    data: [30, 40, 45, 50, 49],
+    name: '',
+    data: [85, 70, 50, 70, 90, 70],
     colors: ['#2E93fA', '#66DA26', '#546E7A', '#E91E63', '#FF9800'],
   }
 ])

@@ -1,6 +1,5 @@
 <template>
-
-      <section class="content-container ml-auto mr-auto">
+      <section class="content-container ml-auto mr-auto placeholder">
         <FilterOptions/>
         <v-row no-gutters>
           <v-col  v-for="(project, index) in worksOrdered" :key="index" cols="12" xs="12" sm="6" md="6" lg="4">
@@ -14,12 +13,13 @@
             </v-lazy>
           </v-col>
         </v-row>
-        <v-sheet color="transparent" width="100%" class="d-flex align-center">
-          <v-btn block class="mr-auto ml-auto mt-12 yellowBackground" @click="showMoreBtn += 6" v-show="showMoreBtn <= worksOrdered.length" prepend-icon="mdi-eye-circle-outline">See more</v-btn>
-        </v-sheet>
         <!-- {{ worksOrdered.length }} -->
       </section>
- 
+      
+      <v-sheet color="transparent" width="100%" class="d-flex align-center content-container">
+        <v-btn block class="mr-auto ml-auto mt-12 yellowBackground" @click="showMoreBtn += 6" v-show="showMoreBtn <= worksOrdered.length" prepend-icon="mdi-eye-circle-outline">See more</v-btn>
+      </v-sheet>
+      
 </template>
 
 <script setup>
@@ -30,10 +30,14 @@ import FilterOptions from '@/components/FilterOptions.vue';
 import Card from '@/components/Card.vue'
 
 const { works } = projects()  
+const dataLoaded = ref(false)
 
 const showMoreBtn = ref(6)
 
 const worksOrdered = computed(() => {
+
+    dataLoaded.value = true
+
     return works.value.sort((a, b) => {
       
         const titleA = new Date(a.date)
@@ -44,8 +48,10 @@ const worksOrdered = computed(() => {
         } 
         if(titleA > titleB) {
           return -1
-        }
+        } 
+        dataLoaded.value = false
         return 0
     })
+    
 })
 </script>
