@@ -1,7 +1,7 @@
 <template>
     <v-sheet class="mb-12">
       <h2>{{ d.title }}</h2>
-      <h3><span v-if="d.start">{{ d.start }} - </span>{{ d.end }}, {{ d.location }}</h3>
+      <h3 class="mt-3"><span v-if="d.start">{{ d.start }} - </span>{{ d.end }}, {{ d.location }}</h3>
       <v-row class="skills">
         <v-col class="description" cols="12" md="12">
           <div class="mt-6">

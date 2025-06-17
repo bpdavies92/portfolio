@@ -18,9 +18,9 @@
                         <Description :d="d" :project="project"/>
                     </div>
                 </v-col>
-                <v-col>
-                    <v-row>
                 <v-col cols="12" sm="12" md="7">
+                    <v-row>
+                <v-col cols="12" sm="12">
                         <v-img
                         alt="Home page"
                         cover
@@ -30,14 +30,14 @@
             </v-row>
 
             <v-row>
-                <v-col cols="12" sm="12" md="6">
+                <v-col cols="12" sm="12">
                         <v-img
                         alt="Introduction slide with introduction video by Rosie Bryce"
                         cover
                         src="@/assets/images/understanding-awarding-gap/understanding-the-awarding-gap-2.jpg"
                         ></v-img>
                 </v-col>
-                <v-col cols="12" sm="12" md="6">
+                <v-col cols="12" sm="12">
                         <v-img
                         alt="learning outcomes slide"
                         cover
@@ -47,16 +47,16 @@
             </v-row>
 
             <v-row>
-                <v-col>
+                <v-col cols="12" sm="12">
                     <v-img
                     alt="Navigation slide with 3 section cards to click"
                     cover
-                    src="@/assets/images/understanding-awarding-gap/understanding-1.jpg"
+                    src="@/assets/images/understanding-awarding-gap/understanding-1 copy.jpg"
                     ></v-img>
                 </v-col>
             </v-row>            
             <v-row>
-                <v-col cols="12" sm="12" md="6">
+                <v-col cols="12" sm="12">
                     <v-img
                     alt="creating change from data with interactive grphic that lets a user pick between different sections."
                     cover
@@ -64,7 +64,7 @@
                     ></v-img>
                 </v-col>
  
-                <v-col cols="12" sm="12" md="6">
+                <v-col cols="12" sm="12" >
                     <v-img
                     alt="A slide of a selected section of  the creating change from data slide"
                     cover
@@ -108,7 +108,6 @@
                 <v-btn size="large" variant="text" class="ml-auto" append-icon="mdi-arrow-right" @click="next(project[0])">Next</v-btn>
             </v-sheet>
             
-          
         </v-container>
     </section>
  

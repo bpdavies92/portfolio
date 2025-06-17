@@ -63,7 +63,7 @@ const projects = () => {
             start : "",
             end : "February 2022",
             location : "Manchester",
-            title: "Associate Fellowship Independent Study",
+            title: "Associate Fellowship independent study",
             shortTitle: "AFHEA self-study",
             subtitle : "The AF independent study is an Advance HE approved independent study for individuals at Manchester Met who wish to achieve AF Fellowship. This resource was designed for people who need more flexibility and incorporates an innovative learning journal idea that participants use to reflect on a series of activities outlined in an Articulate Storyline resource.",
             description : "<p class='text-body-1'>The AF independent study is an Advance HE approved independent study for individuals at Manchester Met who wish to achieve AF Fellowship. This resource was designed for people who need more flexibility and incorporates an innovative learning journal idea that participants use to reflect on a series of activities outlined in an Articulate Storyline resource.</p>",
@@ -163,7 +163,7 @@ const projects = () => {
             start : "December 2021",
             end: "on-going",
             location: "Manchester",
-            title: "University Teaching Academy Website",
+            title: "University Teaching Academy website",
             shortTitle: "UTA website",
             subtitle : "The UTA website was a significant development task. I collaborated with academic developers in the University Teaching Academy to create a reference section on the main Manchester Met website. The objective of this project was to establish a reference site for teaching and professional services staff, providing them with independent study support for common learning and teaching issues.",
             description : "<p class='text-body-1'>The UTA website was a significant development task. I collaborated with academic developers from the University Teaching Academy to create a microsite for UTA on the main Manchester Met website. The objective of this project was to establish a reference site for teaching and professional services staff, providing them with independent study support for common learning and teaching issues.</p><p class='text-body-1'>Visited by more than 50,000 people per year, the UTA website serves as an outward-looking reservoir of knowledge for professional service and academic staff from anywhere in the world who want to develop themselves.</p>",
@@ -231,7 +231,7 @@ const projects = () => {
         { 
             id: 5,
             slug: "degree-classification-calculator",
-            title: "Undergraduate Degree Classification Calculator",
+            title: "Undergraduate degree classification calculator",
             shortTitle: "Degree Calculator",
             organisation : "Manchester Metropolitan University",
             date : "01/07/2022",
@@ -273,7 +273,7 @@ const projects = () => {
         { 
             id: 6,
             slug: "leed-learning-teaching-conference",
-            title: "LEED Manchester Met Learning & Teaching Conference",
+            title: "Manchester Met learning & teaching conference",
             shortTitle : "Teaching conference",
             organisation : "Manchester Metropolitan University",
             date : "01/07/2023",
@@ -351,7 +351,7 @@ const projects = () => {
         { 
             id: 7,
             slug: "working-with-international-students",
-            title: "Working with International Students",
+            title: "Working with international students",
             shortTitle: "International students",
             date : "01/09/2022",
             end : "September 2022",
@@ -396,7 +396,7 @@ const projects = () => {
         { 
             id: 8,
             slug: "inclusive-learning-communities",
-            title: "Inclusive Learning Communities: Case Studies",
+            title: "Inclusive Learning Communities: Student case studies",
             shortTitle: "ILC case studies",
             start : "July",
             date : "01/08/2022",
@@ -443,7 +443,7 @@ const projects = () => {
             id: 9,
             slug: "critical-pedagogy-podcast",
             title: "Critical Pedagogy Podcast",
-            shortTitle: "Critical Pedagogy Podcast",
+            shortTitle: "Critical pedagogy podcast",
             location : "Manchester",
             date : "01/12/2021",
             start : "December 2021",
@@ -484,7 +484,7 @@ const projects = () => {
         { 
             id: 10,
             slug: "assessment-design",
-            title: "Assessment Design Toolkit",
+            title: "Assessment design toolkit",
             shortTitle: "Assessment toolkit",
             location : "Manchester",
             date : "01/11/2021",
@@ -595,7 +595,7 @@ const projects = () => {
 
             id: 13,
             slug: "decolonising-the-curriculum-toolkit",
-            title: "Decolonising the Curriculum Toolkit",
+            title: "Decolonising the curriculum toolkit",
             shortTitle: "Decolonising toolkit",
             end : "March 2022",
             date: "01/03/2022",
@@ -636,7 +636,7 @@ const projects = () => {
         {
             id: 14,
             slug: "prosumer-chronicles",
-            title: "Prosumer Chronicles",
+            title: "Prosumer chronicles",
             shortTitle: '',
             end : "January 2018",
             date: "02/02/2018",
@@ -673,7 +673,7 @@ const projects = () => {
         {
             id: 15,
             slug: "the-morning-has-gold-in-its-mouth",
-            title: "The Morning Has Gold in Its Mouth",
+            title: "The morning Has gold in its mouth",
             shortTitle: '',
             end : "January 2018",
             date: "01/01/2018",
@@ -710,7 +710,7 @@ const projects = () => {
         {
             id: 16,
             slug: "understanding-the-awarding-gap",
-            title: "Understanding the Awarding Gap",
+            title: "Understanding the awarding gap",
             shortTitle: '',
             end : "May 2023",
             date: "01/05/2023",
@@ -763,7 +763,7 @@ const projects = () => {
         {
             id: 17,
             slug: "building-inclusive-learning-communities",
-            title: "Building Inclusive Learning Communities",
+            title: "Building inclusive learning communities",
             shortTitle: '',
             end : "January 2023",
             date: "01/01/2023",
