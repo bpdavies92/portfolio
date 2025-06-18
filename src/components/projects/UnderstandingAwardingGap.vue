@@ -51,7 +51,7 @@
                     <v-img
                     alt="Navigation slide with 3 section cards to click"
                     cover
-                    src="@/assets/images/understanding-awarding-gap/understanding-1 copy.jpg"
+                    src="@/assets/images/understanding-awarding-gap/understanding-1.jpg"
                     ></v-img>
                 </v-col>
             </v-row>            
