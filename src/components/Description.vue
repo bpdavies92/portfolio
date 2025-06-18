@@ -4,7 +4,7 @@
       <h3 class="mt-3"><span v-if="d.start">{{ d.start }} - </span>{{ d.end }}, {{ d.location }}</h3>
       <v-row class="skills">
         <v-col class="description" cols="12" md="12">
-          <div class="mt-6">
+          <div class="mt-3">
             <h3>Description</h3>
             <div v-html="d.description"></div>
           </div>
@@ -12,7 +12,7 @@
 
             <v-col :cols="12" sm="12" md="12" height="100%">
               <div class="d-flex">
-                <div class="mt-6 mr-12"  v-for="(list, title) in { 'Technology': d.techUsed }" :key="title" >
+                <div class=" mr-12"  v-for="(list, title) in { 'Technology': d.techUsed }" :key="title" >
                   <h3>{{ title }}</h3>
                   <v-list density="compact" lines="0">
                     <v-list-item
@@ -24,7 +24,7 @@
                     ></v-list-item>
                   </v-list>
                 </div>
-                <div class="mt-6" v-for="(list, title) in { 'Skills': d.skills }" :key="title" >
+                <div class="" v-for="(list, title) in { 'Skills': d.skills }" :key="title" >
                   <h3>{{ title }}</h3>
                   <v-list density="compact" lines="0">
                     <v-list-item

@@ -75,18 +75,18 @@
       </v-row>
       <hr class="mt-12 mb-12">
       <v-row>
-        <v-col cols="12" sm="12" md="6" >
-            <h2>Software</h2>
-              <div class="software-skills">
-                <apexchart type="radar" :options="skillsOptions" :series="skillsSeries"></apexchart>
+        <v-col cols="12" sm="12" md="12" >
+            <h2>Software skills</h2>
+              <div class="software-skills text-center">
+                <apexchart height="500" type="radar" :options="skillsOptions" :series="skillsSeries"></apexchart>
               </div>
         </v-col>
-        <v-col cols="12" sm="12" md="6" >
+        <!-- <v-col cols="12" sm="12" md="6" >
             <h2>Design</h2>
               <div class="software-skills">
                 <apexchart type="radar" :options="skillsOptions" :series="skillsSeries"></apexchart>
               </div>
-        </v-col>
+        </v-col> -->
       </v-row>
       
   </section>
@@ -124,10 +124,10 @@ const base = ref(import.meta.env.VITE_BASE)
     stepSize: 20
   },
   stroke: {
-    colors: ['#303030', '#ff2780', '#303030', '#ff2780', '#303030'],
+    colors: ['#F28080',],
   },
     fill: {
-    colors: ['#303030', '#ff2780', '#303030', '#ff2780', '#303030'],
+     colors: ['#F28080',],
   }
   
 })

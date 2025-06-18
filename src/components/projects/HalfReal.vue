@@ -8,7 +8,7 @@
         max-height="400"
         aspect-ratio="16/9"
         cover
-        src="@/assets/images/half-real/half-real-6.jpg"
+        src="@/assets/images/half-real/half-real-banner.jpg"
         ></v-img>
         <v-container class="mt-12">
 

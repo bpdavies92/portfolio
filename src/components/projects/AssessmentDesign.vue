@@ -13,12 +13,12 @@
         <v-container class="mt-12">
 
             <v-row>
-                <v-col class="position-relative" cols="12" sm="12" md="7">
+                <v-col class="position-relative" cols="12" sm="12" md="5">
                     <div class="sticky">
                         <Description :d="d" :project="project"/>
                     </div>
                 </v-col>
-                <v-col>
+                <v-col cols="12" sm="12" md="7">
                       <v-row>
                 <v-col cols="12" sm="12">
                     <v-btn href="https://www.utaresources.mmu.ac.uk/assessment_design_toolkit/#/" block color="secondary" size="large" prepend-icon="mdi-link">Assessment design independent study</v-btn>
@@ -30,7 +30,7 @@
                 </v-col>
             </v-row>
             <v-row>
-                <v-col>
+                <v-col cols="12" sm="12">
                     <v-img
                     cover
                     alt="Navigation page with hero"
@@ -52,14 +52,14 @@
                 </v-col>
             </v-row>
             <v-row>
-                <v-col cols="12" sm="12" md="6">
+                <v-col cols="12" sm="12" md="12">
                     <v-img
                     cover
                     alt="Design considerations with flip card interaction"
                     src="../../assets/images/assessment-design/design-2.png"
                     ></v-img>
                 </v-col>
-                <v-col cols="12" sm="12" md="6">
+                <v-col cols="12" sm="12" md="12">
                     <v-img
                     cover
                     alt="Marking criteria section with learning outcome interaction, displaying different learning outcomes depending on the level."

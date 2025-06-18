@@ -17,7 +17,7 @@
       </section>
       
       <v-sheet color="transparent" width="100%" class="d-flex align-center content-container">
-        <v-btn block class="mr-auto ml-auto mt-12 yellowBackground" @click="showMoreBtn += 6" v-show="showMoreBtn <= worksOrdered.length" prepend-icon="mdi-eye-circle-outline">See more</v-btn>
+        <v-btn  class="mr-auto ml-auto mt-12 yellowBackground" @click="showMoreBtn += 6" v-show="showMoreBtn <= worksOrdered.length" prepend-icon="mdi-eye-circle-outline">See more</v-btn>
       </v-sheet>
       
 </template>

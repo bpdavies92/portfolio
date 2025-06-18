@@ -8,7 +8,7 @@
         max-height="400"
         aspect-ratio="16/9"
         cover
-        src="../../assets/images/five-year-plan/header_img_5.jpg"
+        src="../../assets/images/five-year-plan/five-year-plan-banner.jpg"
         ></v-img>
         <v-container class="mt-12">
 

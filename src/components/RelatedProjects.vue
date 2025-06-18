@@ -1,12 +1,12 @@
 <template>
     <div class="pt-8 mt-12 pb-12 mb-n12 related-projects redBackground">
       
-            <h2 class="mb-2" :class="{'ml-12 mr-12' : tablet === false, 'ml-3 mr-3' : tablet === true}">Related projects</h2>
+            <h2 class="mb-md-3 mb-sm-12" :class="{'ml-12 mr-12' : tablet === false, 'ml-3 mr-3' : tablet === true}">Related projects</h2>
         <v-window
         continuous
         :class="{'ml-12 mr-12' : tablet === false, 'ml-3 mr-3' : tablet === true}"
         v-model="window"
-        :show-arrows="arrows"
+        :show-arrows="!tablet"
         >
             <v-window-item class="pa-1" v-for="(chunk, chunkIndex) in projectChunks" :key="chunkIndex" >
                 <v-row>

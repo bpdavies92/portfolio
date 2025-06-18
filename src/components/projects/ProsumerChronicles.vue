@@ -8,7 +8,7 @@
         max-height="400"
         aspect-ratio="16/9"
         cover
-        src="@/assets/images/prosumer-chronicles/pro-3.jpg"
+        src="@/assets/images/prosumer-chronicles/pro-chron-banner.jpg"
         ></v-img>
         <v-container class="mt-12">
 

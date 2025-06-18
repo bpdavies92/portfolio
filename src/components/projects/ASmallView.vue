@@ -8,7 +8,7 @@
         max-height="400"
         aspect-ratio="16/9"
         cover
-        src="@/assets/images/a-small-view/a_small_view_1.jpg"
+        src="@/assets/images/a-small-view/a-small-view-banner.jpg"
         ></v-img>
         <v-container class="mt-12">
 

@@ -9,7 +9,7 @@
         </v-list-item>
       </v-list> -->
 
-      <v-app-bar-title class="ml-3">Benjamin Davies</v-app-bar-title>
+      <v-app-bar-title class="ml-6">Benjamin Davies</v-app-bar-title>
 
       <template v-slot:image>
 
