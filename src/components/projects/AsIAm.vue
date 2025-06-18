@@ -8,7 +8,7 @@
         max-height="400"
         aspect-ratio="16/9"
         cover
-        src="@/assets/images/as-i-am/as-i-am-1.jpg"
+        src="@/assets/images/as-i-am/as-i-am-banner.jpg"
         ></v-img>
         <v-container class="mt-12">
 
@@ -29,14 +29,14 @@
                 </v-col>
             </v-row>
             <v-row>
-                <v-col cols="12" sm="12" md="6">
+                <v-col cols="12" sm="12" md="12">
                     <v-img
                     alt="As I am menu displaying all people"
                     cover
                     src="@/assets/images/as-i-am/as-i-am-2.jpg"
                     ></v-img>
                 </v-col>
-                <v-col cols="12" sm="12" md="6">
+                <v-col cols="12" sm="12" md="12">
                     <v-img
                     alt="As I am infinity menu in hero"
                     max-height="400"
@@ -46,7 +46,7 @@
                 </v-col>
             </v-row>
             <v-row>
-                <v-col>
+                <v-col  cols="12" sm="12" md="12">
                     <v-img
                     alt="Example of staff member statement"
                     cover
@@ -55,7 +55,7 @@
                 </v-col>
             </v-row>
             <v-row>
-                <v-col>
+                <v-col  cols="12" sm="12" md="12">
                     <v-img
                     alt="Example of a quote section on the As I am website."
                     cover

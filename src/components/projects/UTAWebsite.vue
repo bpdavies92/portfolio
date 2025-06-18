@@ -8,7 +8,7 @@
         max-height="400"
         aspect-ratio="16/9"
         cover
-        src="https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1778&q=80"
+         src="@/assets/images/uta-website/uta-website-banner.jpg"
         ></v-img>
         <v-container class="mt-12">
 
@@ -19,23 +19,21 @@
                     </div>
                 </v-col>
                 <v-col cols="12" sm="12" md="7">
-    <v-row>
-                    <v-col cols="12" sm="12">
-                        <v-btn href="https://www.mmu.ac.uk/about-us/professional-services/uta" block color="secondary" size="large" prepend-icon="mdi-link">Dive into the UTA webite</v-btn>
-                    </v-col>
+                <v-row>
+                    <v-col cols="12" sm="12" md="12">
+                            <v-btn href="https://www.mmu.ac.uk/about-us/professional-services/uta" block color="secondary" size="large" prepend-icon="mdi-link">Dive into the UTA webite</v-btn>
+                        </v-col>
                 </v-row>
-
-                <v-row >
-                    <v-col>
+    <v-row>
+                    
+                     <v-col cols="12" sm="12" md="6">
                         <v-img
                         alt="Assessment lifecycle webpage"
                         cover
                         src="@/assets/images/uta-website/website-1.png"
                         ></v-img>
-                    </v-col>
-                </v-row>
-                <v-row class="mt-12">
-                    <v-col>
+                    </v-col>   
+                    <v-col  cols="12" sm="12" md="6">
                         <v-img
                         alt="Active learning webpage"
                         cover
@@ -43,8 +41,13 @@
                         ></v-img>
                     </v-col>
                 </v-row>
+
+
                 <v-row class="mt-12">
-                    <v-col>
+                <v-col cols="12" sm="12" md="6">
+  
+                    </v-col>
+                  <v-col cols="12" sm="12" md="6">
                         <v-img
                         alt="Peer observation webpage"
                         cover
@@ -52,6 +55,7 @@
                         ></v-img>
                     </v-col>
                 </v-row>
+               
                 </v-col>
             </v-row>
 

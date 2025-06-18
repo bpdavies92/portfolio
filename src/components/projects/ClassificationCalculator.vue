@@ -8,7 +8,7 @@
         max-height="400"
         aspect-ratio="16/9"
         cover
-        src="https://images.unsplash.com/photo-1564939558297-fc396f18e5c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
+        src="@/assets/images/calculator/degree-calc-banner.jpg"
         ></v-img>
         <v-container class="mt-12">
 

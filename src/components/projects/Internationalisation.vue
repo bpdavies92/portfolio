@@ -8,7 +8,7 @@
         max-height="400"
         aspect-ratio="16/9"
         cover
-        src="@/assets/images/internationalisation/internationalisation-1.png"
+        src="@/assets/images/internationalisation/Internationalisation-banner.jpg"
         ></v-img>
         <v-container class="mt-12">
 
