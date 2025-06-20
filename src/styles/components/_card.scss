@@ -1,3 +1,5 @@
+@use "../abstracts/breakpoints";
+
 .v-card {
     &-text {
         font-size: inherit !important;
@@ -18,5 +20,15 @@
      margin: 2.4rem;
      padding: 2.4rem;
 
+    //  @include breakpoints.respond('phone') {
+    //     padding: 1.2rem;
+    //  }
+}
 
+.card-grid-spacing {
+    padding: 1rem 1rem 1rem 1rem;
+
+    @include breakpoints.respond('phone') {
+        padding: 1rem 0rem 1rem 0rem;
+    }
 }

@@ -11,7 +11,7 @@
         src="../../assets/images/conference/leed-conf-12.jpg"
         ></v-img>
         
-        <v-container class="mt-12">
+        <v-container class="mt-12 projects">
 
             <v-row>
                 <v-col class=" position-relative" cols="12" sm="12" md="5">

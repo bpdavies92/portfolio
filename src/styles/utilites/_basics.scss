@@ -6,6 +6,10 @@ p {
     }
 }
 
+// .v-container {
+//     // max-width: 100rem !important;
+// } 
+
 .title-banner {
     // background-color: #f28080f4;    
     background-color: #303030f4;    
@@ -41,13 +45,14 @@ p {
 }
 
 .content-container {
+    // max-width: 100rem;
     max-width: 1350px;
     margin-left: auto;
     margin-right: auto;
     padding: 1rem;
 
     @include breakpoints.respond('phone') {
-        padding: 1rem;
+        padding: 0rem;
     }    
 }
 
@@ -73,5 +78,7 @@ p {
         top: 0;
     }
 }
+
+
 
 

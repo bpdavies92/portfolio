@@ -1,12 +1,5 @@
 @use "../abstracts/breakpoints";
 
-.filter {
-    &-container .justify-center {
-        @include breakpoints.respond('phone') {
-            justify-content: flex-start !important;
-        }
-    }
-}
 
 .related-projects {
     min-height: 30rem;

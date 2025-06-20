@@ -17,8 +17,16 @@
 
       <v-spacer></v-spacer>
 
+          <v-responsive>
+        <v-text-field v-model="input" prepend-inner-icon="mdi-magnify" single-line class="mr-3" max-height="34" label="Search" variant="underlined"></v-text-field>
+      </v-responsive>
+     
     
 
+      <v-spacer></v-spacer>
+
+    
+  
       <v-btn class="mr-3" :variant="route.name === 'Home' ? 'outlined' : 'text'" @click="router.push({ name: 'Home' })" aria-label="Go to Projects" role="link">Projects</v-btn>
 
       <v-btn :variant="route.name === 'About' ? 'outlined' : 'text'" @click="router.push({ name: 'About' })" aria-label="Go to About" role="link">About</v-btn>
@@ -51,7 +59,10 @@
         </v-list>
 
       </v-navigation-drawer> -->
+      
+    {{ theOne }}
     </v-app>
+
 
 </template>
 
@@ -61,9 +72,28 @@ import DefaultView from './View.vue'
 import Footer from './Footer.vue'
 import projects from '@/composables/projects';
 import { useRouter, useRoute } from 'vue-router'
-import { ref, computed, watchEffect } from 'vue';
+import { ref, computed, watchEffect, watch } from 'vue';
+import { useFuse } from '@vueuse/integrations/useFuse'
+import { shallowRef } from 'vue'
 
   const { works } = projects()
+
+  let theOne = ref(null)
+
+  const title = () => {
+     const theTwo = works.value.map(i => i.title)
+
+     theOne.value = Object.values(theTwo)
+
+     return theOne.value
+  
+  }
+
+  title()
+
+       console.log(theOne.value)
+
+  
 
   const router = useRouter()
   const route = useRoute()
@@ -92,6 +122,42 @@ import { ref, computed, watchEffect } from 'vue';
   })
 
   const drawer = ref(false)
+
+//   const options = {
+//   //  keys: [
+//   //   'title',
+//   //   'shortTitle',
+//   //   'subtitle',
+//   //   'location',
+//   //   'tags',
+//   //   'techUsed.tech',
+//   //   'skills.skill',
+//   // ],
+//   threshold: 0.4  // Adjust for fuzziness (0 = exact, 1 = very fuzzy)
+// };
+
+
+
+
+
+const input = shallowRef('')
+
+const { results } = useFuse(input, theOne)
+
+watch(results, (val) => {
+  console.log(results.value, 'results')
+})
+
+
+
+/*
+ * Results:
+ *
+ * { "item": "John Doe", "index": 1 }
+ * { "item": "John Smith", "index": 0 }
+ * { "item": "Jane Doe", "index": 2 }
+ *
+ */
 
 </script>
 
