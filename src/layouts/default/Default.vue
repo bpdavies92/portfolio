@@ -20,7 +20,7 @@
           <v-responsive>
         <v-text-field v-model="input" prepend-inner-icon="mdi-magnify" single-line class="mr-3" max-height="34" label="Search" variant="underlined"></v-text-field>
       </v-responsive>
-     
+     <!-- {{ results }} -->
     
 
       <v-spacer></v-spacer>
@@ -60,7 +60,7 @@
 
       </v-navigation-drawer> -->
       
-    {{ theOne }}
+    {{ results }}
     </v-app>
 
 
@@ -75,23 +75,28 @@ import { useRouter, useRoute } from 'vue-router'
 import { ref, computed, watchEffect, watch } from 'vue';
 import { useFuse } from '@vueuse/integrations/useFuse'
 import { shallowRef } from 'vue'
+import Fuse from 'fuse.js';
+
+
 
   const { works } = projects()
 
-  let theOne = ref(null)
+  // let theOne = ref(null)
 
-  const title = () => {
-     const theTwo = works.value.map(i => i.title)
+  const searchStuff = Object.values(works.value)
 
-     theOne.value = Object.values(theTwo)
+  // const title = () => {
+  //    const theTwo = works.value.map(i => i.title && i.location)
 
-     return theOne.value
+  //    theOne.value = Object.values(theTwo)
+
+  //    return theOne.value
   
-  }
+  // }
 
-  title()
+  // title()
 
-       console.log(theOne.value)
+  //      console.log(theOne.value)
 
   
 
@@ -123,41 +128,53 @@ import { shallowRef } from 'vue'
 
   const drawer = ref(false)
 
-//   const options = {
-//   //  keys: [
-//   //   'title',
-//   //   'shortTitle',
-//   //   'subtitle',
-//   //   'location',
-//   //   'tags',
-//   //   'techUsed.tech',
-//   //   'skills.skill',
-//   // ],
-//   threshold: 0.4  // Adjust for fuzziness (0 = exact, 1 = very fuzzy)
-// };
+
+// 2. Reactive search query
+const input = ref('');
+
+// 3. Create Fuse instance
+let fuse = new Fuse(works.value, {
+  keys: ['title'], // fields to search
+  threshold: 0.3, // lower = stricter match
+});
+
+// 4. Watch data updates to re-initialize Fuse
+watch(input.value, (newData) => {
+  console.log('Data updated, re-initializing Fuse...');
+  fuse = new Fuse(newData, {
+    keys: ['name'],
+    threshold: 0.3,
+  });
+});
+
+// 5. Watch the query to debug input
+watch(input.value, (query) => {
+  console.log('Search query changed:', query);
+});
+
+// 6. Compute search results and log them
+const results = computed(() => {
+  if (!input.value) {
+    console.log('No search query. Returning full dataset.');
+    return works.value;
+  }
+
+  const rawResults = fuse.search(input.value);
+  console.log('Raw Fuse results:', rawResults);
+
+  const mappedResults = rawResults.map(result => result.item);
+  console.log('Mapped results:', mappedResults);
+
+  return mappedResults;
+});
 
 
 
 
 
-const input = shallowRef('')
-
-const { results } = useFuse(input, theOne)
-
-watch(results, (val) => {
-  console.log(results.value, 'results')
-})
 
 
 
-/*
- * Results:
- *
- * { "item": "John Doe", "index": 1 }
- * { "item": "John Smith", "index": 0 }
- * { "item": "Jane Doe", "index": 2 }
- *
- */
 
 </script>
 
