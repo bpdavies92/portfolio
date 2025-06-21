@@ -17,10 +17,18 @@
 
       <v-spacer></v-spacer>
 
-          <v-responsive>
-        <v-text-field v-model="input" prepend-inner-icon="mdi-magnify" single-line class="mr-3" max-height="34" label="Search" variant="underlined"></v-text-field>
+          <v-responsive >
+        <v-text-field  v-model="input" prepend-inner-icon="mdi-magnify" single-line class="mr-3 position-relative" max-height="34" label="Search" variant="underlined">
+      </v-text-field>
+
+
+        
       </v-responsive>
-     <!-- {{ results }} -->
+ 
+      <v-sheet class="elevation-1">
+        
+      </v-sheet>
+    
     
 
       <v-spacer></v-spacer>
@@ -33,6 +41,15 @@
 
       
     </v-app-bar>
+
+          <v-sheet class="overflow-auto search-sheet elevation-3" max-width="700" max-height="600" >
+            <v-list v-for="(project, index) in results" :key="index">
+              <v-list-item @click="router.push({ name: 'Project', params: { id: project.slug } })">
+                {{ project.title }}
+              </v-list-item>
+            </v-list>
+            <!-- {{ result }} -->
+          </v-sheet>
 
     <default-view />  
     <!-- <v-navigation-drawer color="#f6f6f6" theme="light" v-model="drawer" aria-label="Navigation Drawer" role="navigation">
@@ -60,8 +77,10 @@
 
       </v-navigation-drawer> -->
       
-    {{ results }}
+   
     </v-app>
+
+     
 
 
 </template>
@@ -77,6 +96,7 @@ import { useFuse } from '@vueuse/integrations/useFuse'
 import { shallowRef } from 'vue'
 import Fuse from 'fuse.js';
 
+const overlay = ref(true)
 
 
   const { works } = projects()
@@ -180,3 +200,24 @@ const results = computed(() => {
 
 
 
+<style>
+
+.top {
+  z-index: 99999 !important;
+  overflow: visible;
+  display: block;
+}
+
+.search-sheet {
+  position: fixed;
+  z-index: 9999; /* higher than v-app-bar */
+  background: white;
+  width: 100%;
+  top: 23%;
+  left: 50%;
+  right: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+}
+
+</style>
