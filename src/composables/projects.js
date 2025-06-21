@@ -13,7 +13,7 @@ const projects = () => {
             shortTitle: "EDI self-study",
             subtitle : "An Equality, Diversity, and Inclusion training module that all staff at Manchester Met must complete every two years. This module was created using Articulate Rise and includes a variety of media types to accommodate different learning preferences.",
             description : "<p class='text-body-1'>At Manchester Metropolitan University, it is mandatory for all staff to complete an Equality, Diversity, and Inclusion (EDI) training module once every two years. With funding from the Inclusive Learning Communities initiative, I was tasked with creating a second version of the EDI training I had developed a year prior. The aim was to make it more interactive and address the feedback provided by staff who had participated in the previous training.</p><p class='text-body-1'>This updated version incorporates more quiz-based summative assessments and includes a longer and more challenging summative quiz at the end. Overall, it offers a more interactive learning experience. I developed this module using Articulate Storyline, which provided me with additional tools to create custom interactions and will make it easier for other staff to update in the future.</p>",
-            thumbnail : `${import.meta.env.VITE_BASE}/images/E&D-3.jpg`,
+            thumbnail : `${import.meta.env.VITE_BASE}/images/edi-card-img.jpg`,
             tags : [ "articulate", "independent study", "quiz", "instructional design" ],
             techUsed : [
                 {
@@ -239,7 +239,7 @@ const projects = () => {
             location : "Manchester",
             subtitle : "A collaboration with the Assessment team at Manchester Met, this undergraduate degree classification calculator was designed to help students calculate the grades they will need to achieve their desired degree classification. This resource was custom-made using the Vue.js JavaScript framework.",
             description : "<p class='text-body-1'>This project was a collaboration with the Assessment team at Manchester Met to create an undergraduate degree classification calculator. This project was in response to the many queries the Assessment team receives from students asking what grades are needed to achieve specific results.</p><p class='text-body-1'>The calculator I developed allows students to input their current grades and credits, and then experiment with what combination of credits and grades they will need to achieve their desired result. The end result achieved the desired goal, and since the creation of the calculator, it has been made available to students.</p><p class='text-body-1'>Since July 2020, the calculator has been used by more than 38,000 students to calculate grades. Additionally, it was nominated for three Manchester Met Staff Awards in 2023.</p>",
-            thumbnail : "https://images.unsplash.com/photo-1564939558297-fc396f18e5c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80",
+            thumbnail : `${import.meta.env.VITE_BASE}/images/degree-calc-card-img.jpg`,
             tags : [ "web development", "javascript", "css", "motion graphics", "video" ],
             techUsed : [
                 {
@@ -281,7 +281,7 @@ const projects = () => {
             location : "Manchester",
             subtitle : "The LEED 2023 conference focused on Learning and Teaching at Manchester Met. The aim of the conference was to give staff a chance to share good practice and network with other colleagues from across the university. Conference themes revolved around the recently published education strategy and university aims outlined within that document.",
             description : "<p class='text-body-1'>The LEED 2023 conference focused on the theme of Building a Transformational Active Learning Community. The theme draws inspiration from Manchester Met’s new Education Strategy, echoing the strategy’s commitment to delivering a broad-based educational experience linked to graduate, employer, and societal needs. Ultimately, the conference provided a platform for both professional service and academic staff to share best teaching practices and connect with each other.</p><p class='text-body-1'>While I had input at all levels of the conference, my primary contribution was the development of the website and the creation/sourcing of graphics. I also collaborated with the academic team at the University Teaching Academy to develop the conference program. Additionally, I created a video to explain the key details of the conference and how people could get involved, which received over 300 views.</p><p class='text-body-1'>In addition to my main role in supporting the conference, I made a significant contribution by helping staff navigate various pieces of technology. This included applications such as Microsoft Forms, Excel, PDF editing, and the installation of audio-visual equipment on the day of the conference.</p>",
-            thumbnail : `${import.meta.env.VITE_BASE}/images/leed-conf-1.png`,
+            thumbnail : `${import.meta.env.VITE_BASE}/images/leed-conf-card-img-2.jpg`,
             tags : [ "web design", "conference", "event", "pedagogy", "video" ],
             techUsed : [
                 {
@@ -823,7 +823,7 @@ const projects = () => {
             location : "Manchester",
             subtitle : "This resource is designed to support current and future mentors for the Manchester Met PSF scheme (Professional Standards Framework, accredited by Advance HE). After an introductory activity and a brief refresher on the PSF Framework and reflective writing in two further sections, the learner is able to select the descriptor level(s) relevant to their mentorship for more self-directed activities and information.",
             description : "<p class='text-body-1'>his resource is designed to support current and future mentors for the Manchester Met PSF scheme (Professional Standards Framework, accredited by Advance HE). After an introductory activity and a brief refresher on the PSF Framework and reflective writing in two further sections, the learner is able to select the descriptor level(s) relevant to their mentorship for more self-directed activities and information.</p>",
-            thumbnail : `${import.meta.env.VITE_BASE}/images/mentorship-1.jpg`,
+            thumbnail : `${import.meta.env.VITE_BASE}/images/mentorship-card-img.jpg`,
             tags : [ "articulate", "independent study", "instructional design", "video" ],
             techUsed : [
                 {
