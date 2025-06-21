@@ -5,11 +5,18 @@
       role="banner"
       :elevation="0"
     >
-      <v-app-bar-title class="ml-6">Benjamin Davies</v-app-bar-title>
+      <template v-slot:prepend v-if="width <= 960">
+        <v-app-bar-nav-icon @click="menuOptions = true" class="menu-hamburger"></v-app-bar-nav-icon>
+        
+      </template>
+
+
+
+      <v-app-bar-title class="ml-6 flex-sm-fill flex-1-1" :class="flex-grow">Benjamin Davies</v-app-bar-title>
 
       <v-spacer />
 
-      <v-responsive>
+      <v-responsive v-if="width >= 960">
         <v-text-field
           ref="target"
           v-model="input"
@@ -28,6 +35,7 @@
       <v-spacer />
 
       <v-btn
+        v-if="width >= 960"
         class="mr-3"
         :variant="route.name === 'Home' ? 'outlined' : 'text'"
         @click="router.push({ name: 'Home' })"
@@ -38,6 +46,7 @@
       </v-btn>
 
       <v-btn
+        v-if="width >= 960"
         :variant="route.name === 'About' ? 'outlined' : 'text'"
         @click="router.push({ name: 'About' })"
         aria-label="Go to About"
@@ -47,8 +56,9 @@
       </v-btn>
     </v-app-bar>
 
-    <transition name="grow">
+    <transition name="grow"   v-if="width >= 960">
       <v-sheet
+
         v-show="showResults && input.length > 0"
         class="overflow-auto search-sheet elevation-3"
         max-width="700"
@@ -65,6 +75,91 @@
 
     <default-view />
   </v-app>
+
+
+      <v-overlay v-model="menuOptions" width="100%">
+
+          <v-sheet color="white" height="100vh" width="100vw" class="d-flex align-center justify-center">
+
+            <v-list color="transparent">
+              <v-list-item density="comfortable" class="pa-6 overflow-visable"><h1 class="text-h3 text-center">Benjamin Davies</h1></v-list-item>
+              <v-list-item class="mb-n6">
+<v-responsive v-if="width <= 960">
+        <v-text-field
+          ref="target"
+          v-model="input"
+          @focus="handleFocus"
+          @blur="handleBlur"
+          prepend-inner-icon="mdi-magnify"
+          single-line
+          class="mr-3 position-relative"
+          max-height="34"
+          label="Search"
+          variant="underlined"
+          updadeFocused="showResults"
+        />
+      </v-responsive>
+              </v-list-item>
+              <v-list-item class=''>
+                    <transition name="grow"  v-if="width <= 960">
+      <v-sheet
+
+        v-show="showResults && input.length > 0"
+        class="overflow-auto search-sheet elevation-3"
+        max-width="700"
+        max-height="600"
+        height="min-content"
+      >
+        <v-list lines='3' >
+          <v-list-item  v-for="(project, index) in results" :key="index" link height="min-contentt" density="comfortable" @mousedown.prevent="handleResultClick(project) ; menuOptions = false" class="pt-3 pb-3">
+            {{ project.title }}
+          </v-list-item>
+        </v-list>
+      </v-sheet>
+    </transition>
+              </v-list-item>
+              <v-list-item>
+                      <v-btn
+         
+        block
+        class="mr-3"
+        :variant="route.name === 'Home' ? 'outlined' : 'text'"
+        @click="router.push({ name: 'Home' }) ; menuOptions = false "
+        aria-label="Go to Projects"
+        role="link"
+      >
+        Projects
+      </v-btn>
+              </v-list-item>
+              <v-list-item>
+                      <v-btn
+                      
+                      block
+        :variant="route.name === 'About' ? 'outlined' : 'text'"
+        @click="router.push({ name: 'About' }) ; menuOptions = false"
+        aria-label="Go to About"
+        role="link"
+      >
+        About
+      </v-btn>
+              </v-list-item>              <v-list-item>
+                      <v-btn
+                      
+                      block
+        variant="text"
+        @click="menuOptions = false"
+        aria-label="close menu"
+        role="link"
+      >
+        Close menu
+      </v-btn>
+              </v-list-item>
+
+            </v-list>
+          </v-sheet>
+
+
+       </v-overlay>
 </template>
 
 
@@ -76,12 +171,19 @@ import { useRouter, useRoute } from 'vue-router'
 import { ref, computed, watchEffect, shallowRef } from 'vue'
 import Fuse from 'fuse.js'
 import projects from '@/composables/projects'
+import { useWindowSize } from '@vueuse/core'
+
+const { width, height } = useWindowSize()
+
+
 
 const input = ref('')
 const showResults = ref(false)
 let blurTimeout
 
 const target = shallowRef()
+
+const menuOptions = ref(true)
 
 const router = useRouter()
 const route = useRoute()
@@ -134,25 +236,17 @@ function handleResultClick(project) {
 
 <style>
 
+.menu-hamburger {
+  z-index: 999999 !important;
+}
+
 .top {
   z-index: 99999 !important;
   overflow: visible;
   display: block;
 }
 
-.search-sheet {
-  position: fixed;
-  top: 80px; /* Adjust based on navbar height */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  max-width: 700px;
-  background: white;
-  z-index: 9999;
-  overflow-y: auto;
-  max-height: 400px;
-  border: 1px solid #e0e0e0;
-}
+
 
 
 /* Grow animation */
