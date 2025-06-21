@@ -44,11 +44,23 @@ p {
     }
 }
 
+// .v-container {
+//     @include breakpoints.respond('tab-port') {
+//         width: 100vw !important;
+//         max-width: 100vw !important;
+//     }
+// }
+
 .content-container {
     // max-width: 100rem;
     max-width: 1350px;
     margin-left: auto;
     margin-right: auto;
+
+    @include breakpoints.respond('tab-land') {
+        max-width: 100%;
+        width: 100%;
+    }
 
     @include breakpoints.respond('phone') {
         padding: 0rem;

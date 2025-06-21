@@ -1,5 +1,5 @@
 <template>
-      <v-container>
+      <v-container fluid>
         <section class="content-container ml-auto mr-auto placeholder">
           <FilterOptions/>
           <v-row no-gutters>

@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container fluid>
     <section class="mt-12 text-body-1 content-container">
     
         <v-row  class="achievements">
