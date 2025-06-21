@@ -1,202 +1,134 @@
 <template>
   <v-app>
-    <v-app-bar aria-label="Navigation Bar" role="banner"  image="https://images.unsplash.com/photo-1604079628040-94301bb21b91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" :elevation="0">
-
-
-<!--      <v-list bg-color="transparent" >
-        <v-list-item  class="pa-0">
-          <v-btn color="#303030" prepend-icon='mdi-menu'  aria-label="Menu" @click="drawer = !drawer" stacked role="button"></v-btn>
-        </v-list-item>
-      </v-list> -->
-
+    <v-app-bar
+      aria-label="Navigation Bar"
+      role="banner"
+      :elevation="0"
+    >
       <v-app-bar-title class="ml-6">Benjamin Davies</v-app-bar-title>
 
-      <template v-slot:image>
+      <v-spacer />
 
-        </template>
-
-      <v-spacer></v-spacer>
-
-          <v-responsive >
-        <v-text-field  v-model="input" prepend-inner-icon="mdi-magnify" single-line class="mr-3 position-relative" max-height="34" label="Search" variant="underlined">
-      </v-text-field>
-
-
-        
+      <v-responsive>
+        <v-text-field
+          ref="target"
+          v-model="input"
+          @focus="handleFocus"
+          @blur="handleBlur"
+          prepend-inner-icon="mdi-magnify"
+          single-line
+          class="mr-3 position-relative"
+          max-height="34"
+          label="Search"
+          variant="underlined"
+          updadeFocused="showResults"
+        />
       </v-responsive>
- 
-      <v-sheet class="elevation-1">
-        
-      </v-sheet>
-    
-    
 
-      <v-spacer></v-spacer>
+      <v-spacer />
 
-    
-  
-      <v-btn class="mr-3" :variant="route.name === 'Home' ? 'outlined' : 'text'" @click="router.push({ name: 'Home' })" aria-label="Go to Projects" role="link">Projects</v-btn>
+      <v-btn
+        class="mr-3"
+        :variant="route.name === 'Home' ? 'outlined' : 'text'"
+        @click="router.push({ name: 'Home' })"
+        aria-label="Go to Projects"
+        role="link"
+      >
+        Projects
+      </v-btn>
 
-      <v-btn :variant="route.name === 'About' ? 'outlined' : 'text'" @click="router.push({ name: 'About' })" aria-label="Go to About" role="link">About</v-btn>
-
-      
+      <v-btn
+        :variant="route.name === 'About' ? 'outlined' : 'text'"
+        @click="router.push({ name: 'About' })"
+        aria-label="Go to About"
+        role="link"
+      >
+        About
+      </v-btn>
     </v-app-bar>
 
-          <v-sheet class="overflow-auto search-sheet elevation-3" max-width="700" max-height="600" >
-            <v-list v-for="(project, index) in results" :key="index">
-              <v-list-item @click="router.push({ name: 'Project', params: { id: project.slug } })">
-                {{ project.title }}
-              </v-list-item>
-            </v-list>
-            <!-- {{ result }} -->
-          </v-sheet>
-
-    <default-view />  
-    <!-- <v-navigation-drawer color="#f6f6f6" theme="light" v-model="drawer" aria-label="Navigation Drawer" role="navigation">
-
-        <v-list nav >
-          
-          <v-list-item
-            color="transparent"
-            v-for="(d, i) in drawerTitles"
-            @click="router.push({ name: 'Project', params: { id: d.slug }})"
-            :key="i"
-            :title="d.title"
-            :class="{ 'activeMenuItem': currentRouteName === d.slug, '': currentRouteName !== d.slug }"
-            aria-label="Go to Project: {{ d.title }}"
-            role="link"
-            :aria-current="currentRouteName === d.slug ? 'page' : null"
-          >
-            <v-tooltip  
-        activator="parent"
-        location="end"
-      >{{ d.title }}</v-tooltip>
+    <transition name="grow">
+      <v-sheet
+        v-show="showResults && input.length > 0"
+        class="overflow-auto search-sheet elevation-3"
+        max-width="700"
+        max-height="600"
+        height="min-content"
+      >
+        <v-list lines='3' >
+          <v-list-item  v-for="(project, index) in results" :key="index" link height="min-contentt" density="comfortable" @mousedown.prevent="handleResultClick(project)" class="pt-3 pb-3">
+            {{ project.title }}
           </v-list-item>
-
         </v-list>
+      </v-sheet>
+    </transition>
 
-      </v-navigation-drawer> -->
-      
-   
-    </v-app>
-
-     
-
-
+    <default-view />
+  </v-app>
 </template>
 
+
+
+
 <script setup>
-
 import DefaultView from './View.vue'
-import Footer from './Footer.vue'
-import projects from '@/composables/projects';
 import { useRouter, useRoute } from 'vue-router'
-import { ref, computed, watchEffect, watch } from 'vue';
-import { useFuse } from '@vueuse/integrations/useFuse'
-import { shallowRef } from 'vue'
-import Fuse from 'fuse.js';
+import { ref, computed, watchEffect, shallowRef } from 'vue'
+import Fuse from 'fuse.js'
+import projects from '@/composables/projects'
 
-const overlay = ref(true)
+const input = ref('')
+const showResults = ref(false)
+let blurTimeout
 
+const target = shallowRef()
 
-  const { works } = projects()
+const router = useRouter()
+const route = useRoute()
 
-  // let theOne = ref(null)
+const { works } = projects()
 
-  const searchStuff = Object.values(works.value)
-
-  // const title = () => {
-  //    const theTwo = works.value.map(i => i.title && i.location)
-
-  //    theOne.value = Object.values(theTwo)
-
-  //    return theOne.value
-  
-  // }
-
-  // title()
-
-  //      console.log(theOne.value)
-
-  
-
-  const router = useRouter()
-  const route = useRoute()
-
-  console.log('nav name', route.name)
-
-  const currentRouteName = ref('')
-
-  console.log(route.params.id)
-
-  watchEffect(() => {
-    currentRouteName.value = route.params.id
-  })
-
-  const drawerTitles = computed(() => {
-    return works.value.sort((a, b) => {
-
-        const letterA = a.title
-        const letterB = b.title
-
-        if(letterA > letterB) return 1
-        if(letterA < letterB) return -1
-        return 0
-      
-    })
-  })
-
-  const drawer = ref(false)
-
-
-// 2. Reactive search query
-const input = ref('');
-
-// 3. Create Fuse instance
+// Fuse.js search
 let fuse = new Fuse(works.value, {
-  keys: ['title'], // fields to search
-  threshold: 0.3, // lower = stricter match
-});
+  keys: ['title'],
+  threshold: 0.3,
+})
 
-// 4. Watch data updates to re-initialize Fuse
-watch(input.value, (newData) => {
-  console.log('Data updated, re-initializing Fuse...');
-  fuse = new Fuse(newData, {
-    keys: ['name'],
+// Update Fuse if data changes
+watchEffect(() => {
+  fuse = new Fuse(works.value, {
+    keys: ['title', 'shortTitle'],
     threshold: 0.3,
-  });
-});
+  })
+})
 
-// 5. Watch the query to debug input
-watch(input.value, (query) => {
-  console.log('Search query changed:', query);
-});
-
-// 6. Compute search results and log them
+// Search results
 const results = computed(() => {
-  if (!input.value) {
-    console.log('No search query. Returning full dataset.');
-    return works.value;
-  }
+  if (!input.value) return ''
+  return fuse.search(input.value).map(result => result.item)
+})
 
-  const rawResults = fuse.search(input.value);
-  console.log('Raw Fuse results:', rawResults);
+// Focus / Blur behavior
+function handleFocus() {
+  showResults.value = true
+  clearTimeout(blurTimeout)
+}
 
-  const mappedResults = rawResults.map(result => result.item);
-  console.log('Mapped results:', mappedResults);
+function handleBlur() {
+  blurTimeout = setTimeout(() => {
+    showResults.value = false
+    input.value = ''
+  }, 150)
+}
 
-  return mappedResults;
-});
-
-
-
-
-
-
-
-
-
+function handleResultClick(project) {
+  showResults.value = false
+  input.value = ''
+  target.value?.blur() // <- this removes focus
+  router.push({ name: 'Project', params: { id: project.slug } })
+}
 </script>
+
 
 
 
@@ -210,14 +142,38 @@ const results = computed(() => {
 
 .search-sheet {
   position: fixed;
-  z-index: 9999; /* higher than v-app-bar */
-  background: white;
-  width: 100%;
-  top: 23%;
+  top: 80px; /* Adjust based on navbar height */
   left: 50%;
-  right: 50%;
-  bottom: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 700px;
+  background: white;
+  z-index: 9999;
+  overflow-y: auto;
+  max-height: 400px;
+  border: 1px solid #e0e0e0;
 }
 
+
+/* Grow animation */
+.grow-enter-active, .grow-leave-active {
+  /* transition: transform 0.2s ease, opacity 0.2s ease; */
+  transform-origin: top;
+}
+.grow-enter-from {
+  opacity: 0;
+  transform: scaleY(0.8);
+}
+.grow-enter-to {
+  opacity: 1;
+  transform: scaleY(1);
+}
+.grow-leave-from {
+  opacity: 1;
+  transform: scaleY(1);
+}
+.grow-leave-to {
+  opacity: 0;
+  transform: scaleY(0.8);
+}
 </style>

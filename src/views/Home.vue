@@ -8,18 +8,18 @@
               :options="{'threshold':0.5}"
               transition="fade-transition"
               >
-                <v-sheet class="card  -grid-spacing" v-show="index < showMoreBtn">    
+                <v-sheet class="card-grid-spacing" v-show="index < showMoreBtn">    
                   <Card  :project="project" :index="index" :works="works" />
                 </v-sheet>
               </v-lazy>
-            </v-col>
+            </v-col>      
           </v-row>
           <!-- {{ worksOrdered.length }} -->
         </section>
       </v-container>
       
       <v-sheet color="transparent" width="100%" class="d-flex align-center content-container">
-        <v-btn  class="mr-auto ml-auto mt-12 yellowBackground" @click="showMoreBtn += 6" v-show="showMoreBtn <= worksOrdered.length" prepend-icon="mdi-eye-circle-outline">See more</v-btn>
+        <v-btn  class="mr-auto ml-auto mt-6 mb-6 yellowBackground" @click="showMoreBtn += 6" v-show="showMoreBtn <= worksOrdered.length" prepend-icon="mdi-eye-circle-outline">See more</v-btn>
       </v-sheet>
       
 </template>

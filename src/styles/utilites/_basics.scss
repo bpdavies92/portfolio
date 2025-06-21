@@ -49,7 +49,6 @@ p {
     max-width: 1350px;
     margin-left: auto;
     margin-right: auto;
-    padding: 1rem;
 
     @include breakpoints.respond('phone') {
         padding: 0rem;
