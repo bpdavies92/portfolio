@@ -1,21 +1,22 @@
 <template>
   <v-app>
-    <v-app-bar
-      aria-label="Navigation Bar"
-      role="banner"
-      :elevation="0"
-    >
+    <!-- Top App Bar -->
+    <v-app-bar aria-label="Navigation Bar" role="banner" :elevation="0">
+      <!-- Mobile Hamburger Icon -->
       <template v-slot:prepend v-if="width <= 960">
-        <v-app-bar-nav-icon @click="menuOptions = true" class="menu-hamburger"></v-app-bar-nav-icon>
-        
+        <v-app-bar-nav-icon @click="menuOptions = true" class="menu-hamburger" />
       </template>
 
-
-
-      <v-app-bar-title class="ml-6 flex-sm-fill flex-1-1" :class="flex-grow">Benjamin Davies</v-app-bar-title>
+      <v-app-bar-title
+        class="ml-6 flex-sm-fill flex-1-1"
+        :class="flex-grow"
+      >
+        Benjamin Davies
+      </v-app-bar-title>
 
       <v-spacer />
 
+      <!-- Desktop Search -->
       <v-responsive v-if="width >= 960">
         <v-text-field
           ref="target"
@@ -34,6 +35,7 @@
 
       <v-spacer />
 
+      <!-- Navigation Buttons -->
       <v-btn
         v-if="width >= 960"
         class="mr-3"
@@ -56,17 +58,25 @@
       </v-btn>
     </v-app-bar>
 
-    <transition name="grow"   v-if="width >= 960">
+    <!-- Desktop Search Results -->
+    <transition name="grow" v-if="width >= 960">
       <v-sheet
-
         v-show="showResults && input.length > 0"
         class="overflow-auto search-sheet elevation-3"
         max-width="700"
         max-height="600"
         height="min-content"
       >
-        <v-list lines='3' >
-          <v-list-item  v-for="(project, index) in results" :key="index" link height="min-contentt" density="comfortable" @mousedown.prevent="handleResultClick(project)" class="pt-3 pb-3">
+        <v-list lines="3">
+          <v-list-item
+            v-for="(project, index) in results"
+            :key="index"
+            link
+            height="min-content"
+            density="comfortable"
+            @mousedown.prevent="handleResultClick(project)"
+            class="pt-3 pb-3"
+          >
             {{ project.title }}
           </v-list-item>
         </v-list>
@@ -74,93 +84,106 @@
     </transition>
 
     <default-view />
-  </v-app>
 
-
-      <v-overlay v-model="menuOptions" width="100%">
-
-          <v-sheet color="white" height="100vh" width="100vw" class="d-flex align-center justify-center">
-
-            <v-list color="transparent">
-              <v-list-item density="comfortable" class="pa-6 overflow-visable"><h1 class="text-h3 text-center">Benjamin Davies</h1></v-list-item>
-              <v-list-item class="mb-n6">
-<v-responsive v-if="width <= 960">
-        <v-text-field
-          ref="target"
-          v-model="input"
-          @focus="handleFocus"
-          @blur="handleBlur"
-          prepend-inner-icon="mdi-magnify"
-          single-line
-          class="mr-3 position-relative"
-          max-height="34"
-          label="Search"
-          variant="underlined"
-          updadeFocused="showResults"
-        />
-      </v-responsive>
-              </v-list-item>
-              <v-list-item class=''>
-                    <transition name="grow"  v-if="width <= 960">
+    <!-- Mobile Menu Overlay -->
+    <v-overlay v-model="menuOptions" width="100%">
       <v-sheet
-
-        v-show="showResults && input.length > 0"
-        class="overflow-auto search-sheet elevation-3"
-        max-width="700"
-        max-height="600"
-        height="min-content"
+        color="white"
+        height="100vh"
+        width="100%"
+        class="d-flex align-start justify-center"
       >
-        <v-list lines='3' >
-          <v-list-item  v-for="(project, index) in results" :key="index" link height="min-contentt" density="comfortable" @mousedown.prevent="handleResultClick(project) ; menuOptions = false" class="pt-3 pb-3">
-            {{ project.title }}
+        <v-list color="transparent">
+          <v-list-item density="comfortable" class="pa-6 overflow-visible">
+            <h1 class="text-h3 text-center">Benjamin Davies</h1>
+          </v-list-item>
+
+          <!-- Mobile Search -->
+          <v-list-item class="mb-n6">
+            <v-responsive v-if="width <= 960">
+              <v-text-field
+                ref="target"
+                v-model="input"
+                @focus="handleFocus"
+                @blur="handleBlur"
+                prepend-inner-icon="mdi-magnify"
+                single-line
+                class="mr-3 position-relative"
+                max-height="34"
+                label="Search"
+                variant="underlined"
+                updadeFocused="showResults"
+              />
+            </v-responsive>
+          </v-list-item>
+
+          <!-- Mobile Search Results -->
+          <v-list-item lines="3">
+            <transition name="grow" v-if="width <= 960">
+              <v-sheet
+                v-show="showResults && input.length > 0"
+                class="overflow-auto search-sheet elevation-3"
+                height="100vh"
+              >
+                <v-list lines="3">
+                  <v-list-item
+                    v-for="(project, index) in results"
+                    :key="index"
+                    link
+                    density="comfortable"
+                    @mousedown.prevent="handleResultClick(project); menuOptions = false"
+                    class="pt-3 pb-3"
+                  >
+                    {{ project.title }}
+                  </v-list-item>
+                </v-list>
+              </v-sheet>
+            </transition>
+          </v-list-item>
+
+          <!-- Mobile Navigation Buttons -->
+          <v-list-item>
+            <v-btn
+              block
+              class="mr-3"
+              :variant="route.name === 'Home' ? 'outlined' : 'text'"
+              @click="router.push({ name: 'Home' }); menuOptions = false"
+              aria-label="Go to Projects"
+              role="link"
+            >
+              Projects
+            </v-btn>
+          </v-list-item>
+
+          <v-list-item>
+            <v-btn
+              block
+              :variant="route.name === 'About' ? 'outlined' : 'text'"
+              @click="router.push({ name: 'About' }); menuOptions = false"
+              aria-label="Go to About"
+              role="link"
+            >
+              About
+            </v-btn>
+          </v-list-item>
+
+          <v-list-item>
+            <v-btn
+              block
+              variant="text"
+              @click="menuOptions = false"
+              aria-label="Close menu"
+              role="link"
+            >
+              Close menu
+            </v-btn>
           </v-list-item>
         </v-list>
       </v-sheet>
-    </transition>
-              </v-list-item>
-              <v-list-item>
-                      <v-btn
-         
-        block
-        class="mr-3"
-        :variant="route.name === 'Home' ? 'outlined' : 'text'"
-        @click="router.push({ name: 'Home' }) ; menuOptions = false "
-        aria-label="Go to Projects"
-        role="link"
-      >
-        Projects
-      </v-btn>
-              </v-list-item>
-              <v-list-item>
-                      <v-btn
-                      
-                      block
-        :variant="route.name === 'About' ? 'outlined' : 'text'"
-        @click="router.push({ name: 'About' }) ; menuOptions = false"
-        aria-label="Go to About"
-        role="link"
-      >
-        About
-      </v-btn>
-              </v-list-item>              <v-list-item>
-                      <v-btn
-                      
-                      block
-        variant="text"
-        @click="menuOptions = false"
-        aria-label="close menu"
-        role="link"
-      >
-        Close menu
-      </v-btn>
-              </v-list-item>
-
-            </v-list>
-          </v-sheet>
-
-
-       </v-overlay>
+    </v-overlay>
+  </v-app>
 </template>
+
 
 
 
