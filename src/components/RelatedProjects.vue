@@ -7,7 +7,7 @@
         continuous
         :class="{'ml-12 mr-12' : tablet === false, 'ml-3 mr-3' : tablet === true}"
         v-model="window"
-        :show-arrows="!tablet"
+        :show-arrows="tablet ? false : 'hover' "
         >
             <v-window-item class="pa-1" v-for="(chunk, chunkIndex) in projectChunks" :key="chunkIndex" >
                 <v-row>

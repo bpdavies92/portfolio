@@ -120,13 +120,13 @@
     import {computed, ref} from 'vue'
     import { useWindowSize } from '@vueuse/core'
 
+    const { width, height } = useWindowSize()
     const target = ref(null)
     const targetIsVisible = ref(true)
     const props = defineProps(['project'])
     const {next, previous} = nextProject()
     const router = useRoute()
     const route = useRouter()    
-    const { width, height } = useWindowSize()
 
     const { stop } = useIntersectionObserver(
       target,

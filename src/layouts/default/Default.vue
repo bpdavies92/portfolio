@@ -279,18 +279,18 @@ function handleResultClick(project) {
 }
 .grow-enter-from {
   opacity: 0;
-  transform: scaleY(0.8);
+  /* transform: scaleY(0.8); */
 }
 .grow-enter-to {
   opacity: 1;
-  transform: scaleY(1);
+  /* transform: scaleY(1); */
 }
 .grow-leave-from {
   opacity: 1;
-  transform: scaleY(1);
+  /* transform: scaleY(1); */
 }
 .grow-leave-to {
   opacity: 0;
-  transform: scaleY(0.8);
+  /* transform: scaleY(0.8); */
 }
 </style>

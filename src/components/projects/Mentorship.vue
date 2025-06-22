@@ -2,7 +2,7 @@
   <section v-for="(d, i) in project" :key="i">
     <v-img
       alt=""
-      max-height="400"
+      :height="width >= 960 ? 'auto' : 300"
       aspect-ratio="16/9"
       cover
       src="@/assets/images/mentorship/mentorship-hero.jpg"
@@ -73,6 +73,9 @@ import Description from '../Description.vue'
 import Quote from '../Quote.vue'
 import { useRouter, useRoute } from 'vue-router'
 import nextProject from '@/composables/nextProject'
+import { useWindowSize } from '@vueuse/core'
+
+const { width, height } = useWindowSize()
 
 const props = defineProps(['project'])
 const { next, previous } = nextProject()
