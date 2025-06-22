@@ -206,7 +206,7 @@ let blurTimeout
 
 const target = shallowRef()
 
-const menuOptions = ref(true)
+const menuOptions = ref(false)
 
 const router = useRouter()
 const route = useRoute()

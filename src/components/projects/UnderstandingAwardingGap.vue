@@ -5,12 +5,14 @@
     >
         <v-img
         alt=""
-        max-height="400"
+        :height="width >= 960 ? 'auto' : 300"
         aspect-ratio="16/9"
         cover
         src="@/assets/images/understanding-awarding-gap/understanding-1.jpg"
         ></v-img>
         <v-container fluid class="mt-12">
+
+            {{  height }} {{ width }} {{ bannerHeight }}
     
             <div class="content-container">
                 <v-row >
@@ -115,14 +117,16 @@
     import { useRouter, useRoute } from 'vue-router';
     import nextProject from '@/composables/nextProject'
     import { useIntersectionObserver } from '@vueuse/core'
-    import {ref} from 'vue'
+    import {computed, ref} from 'vue'
+    import { useWindowSize } from '@vueuse/core'
 
     const target = ref(null)
     const targetIsVisible = ref(true)
     const props = defineProps(['project'])
     const {next, previous} = nextProject()
     const router = useRoute()
-    const route = useRouter()
+    const route = useRouter()    
+    const { width, height } = useWindowSize()
 
     const { stop } = useIntersectionObserver(
       target,
@@ -130,6 +134,9 @@
         targetIsVisible.value = isIntersecting
       },
     )
+
+ 
+
 </script>
 
 

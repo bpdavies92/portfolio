@@ -32,14 +32,18 @@
                         ></v-img>
                     </v-col>
                 </v-row>
-                <Quote>
-                    <template v-slot:quote>
-                        <p>Well put together with clear objectives and learning outcomes.</p>
-                    </template>
-                    <template v-slot:person>
-                        Anonymous feedback via Microsoft Forms
-                    </template>
-                </Quote>
+                <v-row>
+                    <v-col>
+                        <Quote>
+                            <template v-slot:quote>
+                                <p>Well put together with clear objectives and learning outcomes.</p>
+                            </template>
+                            <template v-slot:person>
+                                Anonymous feedback via Microsoft Forms
+                            </template>
+                        </Quote>
+                    </v-col>
+                </v-row>
                 <v-row>
                     <v-col cols="12" sm="12" md="6">
                         <v-img
@@ -56,14 +60,18 @@
                         ></v-img>
                     </v-col>
                 </v-row>
-                <Quote>
-                    <template v-slot:quote>
-                        <p>I thought this was a well constructed course - a significant improvement over the previous version.</p>
-                    </template>
-                    <template v-slot:person>
-                        Anonymous feedback via Microsoft Forms
-                    </template>
-                </Quote>
+                <v-row>
+                    <v-col>
+                        <Quote>
+                            <template v-slot:quote>
+                                <p>I thought this was a well constructed course - a significant improvement over the previous version.</p>
+                            </template>
+                            <template v-slot:person>
+                                Anonymous feedback via Microsoft Forms
+                            </template>
+                        </Quote>
+                    </v-col>
+                </v-row>
                 <v-row>
                     <v-col cols="12">
                         <v-img
@@ -74,14 +82,19 @@
                         ></v-img>
                     </v-col>
                 </v-row>
-                <Quote :marginBottom="true">
-                    <template v-slot:quote>
-                        <p>Liked the variety of training resources which helped to cement the learning.</p>
-                    </template>
-                    <template v-slot:person>
-                        Anonymous feedback via Microsoft Forms
-                    </template>
-                </Quote></v-col>
+                <v-row>
+                    <v-col>
+                        <Quote>
+                            <template v-slot:quote>
+                                <p>Liked the variety of training resources which helped to cement the learning.</p>
+                            </template>
+                            <template v-slot:person>
+                                Anonymous feedback via Microsoft Forms
+                            </template>
+                        </Quote>
+                    </v-col>
+                </v-row>
+            </v-col>
                 </v-row>
                 <v-sheet class="d-flex mt-12">
                     <v-btn size="large" variant="text" class="mr-auto" prepend-icon="mdi-arrow-left" @click="previous(project[0])">Previous</v-btn>

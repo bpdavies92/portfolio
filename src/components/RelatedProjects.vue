@@ -2,6 +2,7 @@
     <div class="pt-8 mt-12 pb-12 mb-n12 related-projects redBackground">
       
             <h2 class="mb-md-3 mb-sm-12" :class="{'ml-12 mr-12' : tablet === false, 'ml-3 mr-3' : tablet === true}">Related projects</h2>
+            <p :class="{'ml-12 mr-12' : tablet === false, 'ml-3 mr-3' : tablet === true}" class="text-body-1 d-sm-none d-md-none mb-md-3 mb-sm-12 text-white">Swipe right to see more</p>
         <v-window
         continuous
         :class="{'ml-12 mr-12' : tablet === false, 'ml-3 mr-3' : tablet === true}"

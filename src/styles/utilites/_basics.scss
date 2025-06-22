@@ -105,7 +105,7 @@ p {
 
   @include breakpoints.respond('tab-land') {
     position: relative;
-    top: 100%;
+    top: 0%;
     max-height: 200rem;
   }
 }
