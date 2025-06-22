@@ -12,7 +12,7 @@
       </section>
 
 
-        <v-sheet color="transparent" class="d-md-none d-flex justify-center mt-12 mb-12">
+        <v-sheet color="transparent" class="d-md-none d-flex justify-center mt-6 mb-6">
             <v-menu location="bottom center"  transition="slide-y-transition">
               <template v-slot:activator="{ props }">
                 <v-btn
