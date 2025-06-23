@@ -33,6 +33,13 @@ import Card from '@/components/Card.vue'
 
 const { works } = projects()  
 const dataLoaded = ref(false)
+const isIntersecting = ref(false)
+
+
+ const onIntersect = (isIntersecting, entries, observer) =>  {
+
+        isIntersecting.value = isIntersecting.value
+ }
 
 const showMoreBtn = ref(6)
 

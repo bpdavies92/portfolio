@@ -11,7 +11,7 @@
         </v-col>
 
             <v-col :cols="12" sm="12" md="12" height="100%">
-              <div class="d-flex">
+              <div class="d-sm-flex">
                 <div class=" mr-12"  v-for="(list, title) in { 'Technology': d.techUsed }" :key="title" >
                   <h3>{{ title }}</h3>
                   <v-list density="compact" lines="0">
@@ -24,7 +24,7 @@
                     ></v-list-item>
                   </v-list>
                 </div>
-                <div class="" v-for="(list, title) in { 'Skills': d.skills }" :key="title" >
+                <div class="mt-3 mt-sm-0" v-for="(list, title) in { 'Skills': d.skills }" :key="title" >
                   <h3>{{ title }}</h3>
                   <v-list density="compact" lines="0">
                     <v-list-item

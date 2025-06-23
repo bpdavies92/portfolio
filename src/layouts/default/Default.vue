@@ -14,7 +14,7 @@
         Benjamin Davies
       </v-app-bar-title>
 
-      <v-spacer />
+
 
       <!-- Desktop Search -->
       <v-responsive v-if="width >= 960">
@@ -25,8 +25,7 @@
           @blur="handleBlur"
           prepend-inner-icon="mdi-magnify"
           single-line
-          class="mr-3 position-relative"
-          max-height="34"
+          class="position-relative"
           label="Search"
           variant="underlined"
           updadeFocused="showResults"
@@ -53,6 +52,7 @@
         @click="router.push({ name: 'About' })"
         aria-label="Go to About"
         role="link"
+        class="mr-6"
       >
         About
       </v-btn>
@@ -67,7 +67,7 @@
         max-height="600"
         height="min-content"
       >
-        <v-list lines="3">
+        <v-list lines="two">
           <v-list-item
             v-for="(project, index) in results"
             :key="index"
@@ -77,9 +77,20 @@
             @mousedown.prevent="handleResultClick(project)"
             class="pt-3 pb-3"
           >
-            {{ project.title }}
+            <div class="mb-1 font-weight-bold">{{ project.title }}</div>
+            <div class="">
+
+
+            <v-chip-group class="">
+                <v-chip variant="outlined"  v-for="(tag, i) in project.tags.sort()" :key="i" @click="router.push({name: 'Filter', query:{filter: tag.toLowerCase()}})">{{ tag }}</v-chip>
+            </v-chip-group>
+            </div>
           </v-list-item>
+
+
         </v-list>
+        
+
       </v-sheet>
     </transition>
 
