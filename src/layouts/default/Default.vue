@@ -1,7 +1,7 @@
 <template>
-  <v-app>
+  <v-app clas>
     <!-- Top App Bar -->
-    <v-app-bar aria-label="Navigation Bar" role="banner" :elevation="0">
+    <v-app-bar aria-label="Navigation Bar" role="banner" :elevation="0" class="overflow-visible">
       <!-- Mobile Hamburger Icon -->
       <template v-slot:prepend v-if="width <= 960">
         <v-app-bar-nav-icon @click="menuOptions = true" class="menu-hamburger" />
@@ -14,22 +14,62 @@
         Benjamin Davies
       </v-app-bar-title>
 
-
-
       <!-- Desktop Search -->
-      <v-responsive v-if="width >= 960">
+      <v-responsive v-if="width >= 960" >
         <v-text-field
           ref="target"
+          v-click-outside="{
+            handler: onClickOutside,
+            include
+          }"
+          @keydown="focused = true"
           v-model="input"
           @focus="handleFocus"
-          @blur="handleBlur"
           prepend-inner-icon="mdi-magnify"
           single-line
           class="position-relative"
           label="Search"
           variant="underlined"
-          updadeFocused="showResults"
         />
+
+
+        <!-- Desktop Search Results -->
+    <transition name="grow" v-if="width >= 960">
+      <v-sheet
+        
+        v-show="showResults && input.length > 0"
+        class="overflow-auto search-sheet elevation-3 include"
+        max-width="700"
+        max-height="600"
+        height="min-content"
+      >
+        <v-list lines="two">
+          <v-list-item
+            v-for="(project, index) in results"
+            :key="index"
+            ref="highlightRef"
+            link
+            height="min-content"
+            tabindex="0"
+            density="comfortable"
+            @mousedown.prevent="handleResultClick(project)"
+            @keyup.enter="handleResultClick(project)"
+            class="pt-3 pb-3"
+          >
+            <v-list-item-title class="mb-1 font-weight-bold">{{ project.title }}</v-list-item-title>
+            <div class="">
+            <v-chip-group class="">
+                <v-chip tabindex="-1" variant="outlined"  v-for="(tag, i) in project.tags.sort()" :key="i" @click="router.push({name: 'Filter', query:{filter: tag.toLowerCase()}})">{{ tag }}</v-chip>
+            </v-chip-group>
+            </div>
+          </v-list-item>
+
+
+        </v-list>
+        
+
+      </v-sheet>
+    </transition>
       </v-responsive>
 
       <v-spacer />
@@ -58,41 +98,7 @@
       </v-btn>
     </v-app-bar>
 
-    <!-- Desktop Search Results -->
-    <transition name="grow" v-if="width >= 960">
-      <v-sheet
-        v-show="showResults && input.length > 0"
-        class="overflow-auto search-sheet elevation-3"
-        max-width="700"
-        max-height="600"
-        height="min-content"
-      >
-        <v-list lines="two">
-          <v-list-item
-            v-for="(project, index) in results"
-            :key="index"
-            link
-            height="min-content"
-            density="comfortable"
-            @mousedown.prevent="handleResultClick(project)"
-            class="pt-3 pb-3"
-          >
-            <div class="mb-1 font-weight-bold">{{ project.title }}</div>
-            <div class="">
-
-
-            <v-chip-group class="">
-                <v-chip variant="outlined"  v-for="(tag, i) in project.tags.sort()" :key="i" @click="router.push({name: 'Filter', query:{filter: tag.toLowerCase()}})">{{ tag }}</v-chip>
-            </v-chip-group>
-            </div>
-          </v-list-item>
-
-
-        </v-list>
-        
-
-      </v-sheet>
-    </transition>
+    
 
     <default-view />
 
@@ -145,7 +151,12 @@
                     @mousedown.prevent="handleResultClick(project); menuOptions = false"
                     class="pt-3 pb-3"
                   >
-                    {{ project.title }}
+                      <v-list-item-title class="mb-1 font-weight-bold">{{ project.title }}</v-list-item-title>
+            <div class="">
+            <v-chip-group class="">
+                <v-chip tabindex="-1" variant="outlined"  v-for="(tag, i) in project.tags.sort()" :key="i" @click="router.push({name: 'Filter', query:{filter: tag.toLowerCase()}})">{{ tag }}</v-chip>
+            </v-chip-group>
+            </div>
                   </v-list-item>
                 </v-list>
               </v-sheet>
@@ -206,16 +217,16 @@ import { ref, computed, watchEffect, shallowRef } from 'vue'
 import Fuse from 'fuse.js'
 import projects from '@/composables/projects'
 import { useWindowSize } from '@vueuse/core'
+import { useFocus } from '@vueuse/core'
+
 
 const { width, height } = useWindowSize()
 
-
+const highlightRef = shallowRef()
 
 const input = ref('')
 const showResults = ref(false)
 let blurTimeout
-
-const target = shallowRef()
 
 const menuOptions = ref(false)
 
@@ -223,6 +234,15 @@ const router = useRouter()
 const route = useRoute()
 
 const { works } = projects()
+
+const target = shallowRef()
+
+const { focused } = useFocus(target, { initialValue: true })
+
+
+function highlightFirstOption (index) {
+  index === 1 ? highlightRef.value?.focus() : null
+}
 
 // Fuse.js search
 let fuse = new Fuse(works.value, {
@@ -263,6 +283,18 @@ function handleResultClick(project) {
   target.value?.blur() // <- this removes focus
   router.push({ name: 'Project', params: { id: project.slug } })
 }
+
+
+
+ function onClickOutside () {
+        showResults.value = false
+      }
+
+  function include () {
+        return [document.querySelector('.included')]
+  }
+
+
 </script>
 
 

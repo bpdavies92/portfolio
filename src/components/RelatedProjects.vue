@@ -1,23 +1,28 @@
 <template>
-    <div class="pt-8 mt-12 pb-12 mb-n12 related-projects redBackground">
-      
-            <h2 class="mb-md-3 mb-sm-12" :class="{'ml-12 mr-12' : tablet === false, 'ml-3 mr-3' : tablet === true}">Related projects</h2>
-            <p :class="{'ml-12 mr-12' : tablet === false, 'ml-3 mr-3' : tablet === true}" class="text-body-1 d-sm-none d-md-none mb-md-3 mb-sm-12 text-white">Swipe right to see more</p>
-        <v-window
-        continuous
-        :class="{'ml-12 mr-12' : tablet === false, 'ml-3 mr-3' : tablet === true}"
-        v-model="window"
-        :show-arrows="tablet ? false : 'hover' "
-        >
-            <v-window-item class="pa-1" v-for="(chunk, chunkIndex) in projectChunks" :key="chunkIndex" >
-                <v-row>
-                    <v-col v-for="(project, projectIndex) in chunk" :key="projectIndex" cols="12" sm="12" md="4">
-                        <Card :relatedProject="true" :works="works" :project="project" :index="projectIndex"/>
-                    </v-col>
-                </v-row>
-            </v-window-item>
-        </v-window>
-    </div>
+
+            <div class="pt-8 mt-12 pb-12 mb-n12 related-projects redBackground ">
+              <v-container fluid>
+                    <div class="content-container">
+                        <h2 class="mb-md-3 mb-sm-12" >Related projects</h2>
+                        <p  class="text-body-1 d-sm-none d-md-none mb-md-3 mb-sm-12 text-white">Swipe right to see more</p>
+                                        <v-window
+                                        continuous
+                                        v-model="window"
+                                        :show-arrows="tablet ? false : 'hover' "
+                                        >
+                        <v-window-item  v-for="(chunk, chunkIndex) in projectChunks" :key="chunkIndex" >
+                            <v-row>
+                                <v-col v-for="(project, projectIndex) in chunk" :key="projectIndex" cols="12" sm="12" md="4">
+                                    <Card :relatedProject="true" :works="works" :project="project" :index="projectIndex"/>
+                                </v-col>
+                            </v-row>
+                        </v-window-item>
+                                        </v-window>
+                    </div>
+                    </v-container>
+            </div>
+
+
 </template>
 
 <script setup>
