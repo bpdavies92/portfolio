@@ -11,8 +11,6 @@
         src="@/assets/images/understanding-awarding-gap/understanding-1.jpg"
         ></v-img>
         <v-container fluid class="mt-12">
-
-            {{  height }} {{ width }} {{ bannerHeight }}
     
             <div class="content-container">
                 <v-row >
@@ -48,13 +46,7 @@
                     </v-col>
                 </v-row>
                 <v-row>
-                    <v-col cols="12" sm="12">
-                        <v-img
-                        alt="Navigation slide with 3 section cards to click"
-                        cover
-                        src="@/assets/images/understanding-awarding-gap/understanding-1.jpg"
-                        ></v-img>
-                    </v-col>
+
                 </v-row>
                 <v-row>
                     <v-col cols="12" sm="12">

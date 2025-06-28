@@ -116,7 +116,7 @@
           </v-list-item>
 
           <!-- Mobile Search -->
-          <v-list-item class="mb-n6">
+          <v-list-item class="mb-n6 mr-auto ml-auto">
             <v-responsive v-if="width <= 960">
               <v-text-field
                 ref="target"

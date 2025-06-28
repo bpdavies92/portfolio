@@ -29,6 +29,7 @@
                 
                          <v-col cols="12" sm="12" md="6">
                             <v-img
+                            aspect-ratio="16/9"
                             alt="Assessment lifecycle webpage"
                             cover
                             src="@/assets/images/uta-website/website-1.png"
@@ -36,6 +37,7 @@
                         </v-col>
                         <v-col  cols="12" sm="12" md="6">
                             <v-img
+                             aspect-ratio="16/9"
                             alt="Active learning webpage"
                             cover
                             src="@/assets/images/uta-website/website-2.png"
@@ -47,6 +49,7 @@
                         </v-col>
                       <v-col cols="12" sm="12" md="6">
                             <v-img
+                             aspect-ratio="16/9"
                             alt="Peer observation webpage"
                             cover
                             src="@/assets/images/uta-website/website-3.png"
