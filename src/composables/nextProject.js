@@ -19,12 +19,7 @@ const nextProject = () => {
         return 0
     }))
 
-    console.log(sortedWorks.value, 'sorted ordered')
-
     const route = useRouter()
-
-    console.log('did it')
-
 
     const next = (currentProject) => {
 
@@ -41,13 +36,13 @@ const nextProject = () => {
         const previous = (currentProject) => {
 
         const currentIndex = sortedWorks.value.filter((i) => i.id === currentProject.id)
-        console.log(sortedWorks.value.length, 'slug')
+        // console.log(sortedWorks.value.length, 'slug')
 
          const previousProjectIndex = sortedWorks.value.indexOf(currentIndex[0]) - 1
 
         // if(previousProjectIndex >= sortedWorks.value.length) return
 
-       previousProjectIndex <= 0 ? route.push({path: sortedWorks.value[sortedWorks.value.length - 1].slug}) : route.push({path: sortedWorks.value[previousProjectIndex].slug})
+       previousProjectIndex < 0 ? route.push({path: sortedWorks.value[sortedWorks.value.length - 1].slug}) : route.push({path: sortedWorks.value[previousProjectIndex].slug})
     }
 
     return {next, previous}

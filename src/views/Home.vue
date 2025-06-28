@@ -36,6 +36,11 @@ import { useRouter } from 'vue-router';
 import FilterOptions from '@/components/FilterOptions.vue';
 import Card from '@/components/Card.vue'
 
+
+
+
+
+
 const { works } = projects()  
 const dataLoaded = ref(false)
 const isIntersecting = ref(false)
@@ -68,4 +73,5 @@ const worksOrdered = computed(() => {
     })
     
 })
+
 </script>

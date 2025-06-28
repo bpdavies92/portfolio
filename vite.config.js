@@ -1,6 +1,8 @@
 // Plugins
 import vue from '@vitejs/plugin-vue'
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
 
 // Utilities
 import { defineConfig } from 'vite'
@@ -17,7 +19,12 @@ export default defineConfig({
       autoImport: true,
     }),
   ],
-  define: { 'process.env': {} },
+  define: { 
+    'process.env': {},
+    __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: false, // or true if you need debug info
+    __VUE_OPTIONS_API__: true,
+    __VUE_PROD_DEVTOOLS__: false  
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

@@ -105,13 +105,13 @@ import { useWindowSize } from '@vueuse/core'
 const { width } = useWindowSize()
 
 // Import images for bundling
-import banner from '@/assets/images/a-small-view/a-small-view-banner.jpg'
-import img1 from '@/assets/images/a-small-view/a_small_view_1.jpg'
-import img2 from '@/assets/images/a-small-view/a_small_view_2.jpg'
-import img3 from '@/assets/images/a-small-view/a_small_view_3.png'
-import img4 from '@/assets/images/a-small-view/a_small_view_4.jpg'
-import img5 from '@/assets/images/a-small-view/a_small_view_5.jpg'
-import img6 from '@/assets/images/a-small-view/a_small_view_6.jpg'
+import banner from '@/assets/images/a-small-view/a-small-view-banner.webp'
+import img1 from '@/assets/images/a-small-view/a_small_view_1.webp'
+import img2 from '@/assets/images/a-small-view/a_small_view_2.webp'
+import img3 from '@/assets/images/a-small-view/a_small_view_3.webp'
+import img4 from '@/assets/images/a-small-view/a_small_view_4.webp'
+import img5 from '@/assets/images/a-small-view/a_small_view_5.webp'
+import img6 from '@/assets/images/a-small-view/a_small_view_6.webp'
 
 const props = defineProps(['project'])
 const { next, previous } = nextProject()

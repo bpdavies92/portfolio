@@ -104,24 +104,8 @@
         </v-row>
 
         <v-sheet class="d-flex mt-12">
-          <v-btn
-            size="large"
-            variant="text"
-            class="mr-auto"
-            prepend-icon="mdi-arrow-left"
-            @click="previous(project[0])"
-          >
-            Previous
-          </v-btn>
-          <v-btn
-            size="large"
-            variant="text"
-            class="ml-auto"
-            append-icon="mdi-arrow-right"
-            @click="next(project[0])"
-          >
-            Next
-          </v-btn>
+          <v-btn size="large" variant="text" class="mr-auto" prepend-icon="mdi-arrow-left" @click="previous(project[0])">Previous</v-btn>
+          <v-btn size="large" variant="text" class="ml-auto" append-icon="mdi-arrow-right" @click="next(project[0])">Next</v-btn>
         </v-sheet>
       </div>
     </v-container>
@@ -132,27 +116,7 @@
 import Description from '../Description.vue'
 import { useRouter, useRoute } from 'vue-router'
 import nextProject from '@/composables/nextProject'
-import { ref } from 'vue'
-import { useWindowSize, useIntersectionObserver } from '@vueuse/core'
-
-// Responsive layout
-const { width } = useWindowSize()
-
-// Navigation helpers
-const props = defineProps(['project'])
-const { next, previous } = nextProject()
-const router = useRoute()
-const route = useRouter()
-
-// Intersection observer for visibility
-const target = ref(null)
-const targetIsVisible = ref(true)
-const { stop } = useIntersectionObserver(
-  target,
-  ([{ isIntersecting }]) => {
-    targetIsVisible.value = isIntersecting
-  },
-)
+import { useWindowSize } from '@vueuse/core'
 
 // Image imports
 import bannerImg from '@/assets/images/understanding-awarding-gap/understanding-1.jpg'
@@ -164,4 +128,12 @@ import img5 from '@/assets/images/understanding-awarding-gap/understanding-the-a
 import img6 from '@/assets/images/understanding-awarding-gap/understanding-the-awarding-gap-7.jpg'
 import img7 from '@/assets/images/understanding-awarding-gap/understanding-the-awarding-gap-5.jpg'
 import img8 from '@/assets/images/understanding-awarding-gap/understanding-the-awarding-gap-9.jpg'
+
+const { width } = useWindowSize()
+const props = defineProps(['project'])
+const { next, previous } = nextProject()
+const router = useRoute()
+const route = useRouter()
+
+
 </script>

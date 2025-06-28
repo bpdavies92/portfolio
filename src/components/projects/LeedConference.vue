@@ -29,7 +29,7 @@
           </v-col>
 
           <v-col cols="12" md="7">
-            <v-row>
+            <!-- <v-row>
               <v-col>
                 <div style="position: relative; width: 100%; padding-top: 66.125%;">
                   <iframe
@@ -43,7 +43,7 @@
                 </div>
                 <p class="text-caption mt-3">Video introduction by Professor Fiona Saunders</p>
               </v-col>
-            </v-row>
+            </v-row> -->
 
             <!-- Reusable v-img wrapper for layout consistency -->
             <v-row>
