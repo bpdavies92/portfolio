@@ -3,16 +3,21 @@
         <section class="content-container ml-auto mr-auto placeholder">
           <FilterOptions/>
           <v-row no-gutters>
-            <v-col   v-for="(project, index) in worksOrdered" :key="index" cols="12" xs="12" sm="6" md="6" lg="4" >
-              <v-lazy
-              :options="{'threshold':0.5}"
-              transition="fade-transition"
-              >
-                <v-sheet class="card-grid-spacing" v-show="index < showMoreBtn">    
-                  <Card  :project="project" :index="index" :works="works" />
-                </v-sheet>
-              </v-lazy>
-            </v-col>      
+          <v-col v-for="(project, index) in worksOrdered" :key="index" cols="12" sm="6" md="6" lg="4">
+  <template v-if="index < 3">
+    <v-sheet class="card-grid-spacing">
+      <Card :project="project" :index="index" :works="works" />
+    </v-sheet>
+  </template>
+  <template v-else>
+    <v-lazy :options="{ threshold: 0.5 }" transition="fade-transition">
+      <v-sheet class="card-grid-spacing" v-show="index < showMoreBtn">
+        <Card :project="project" :index="index" :works="works" />
+      </v-sheet>
+    </v-lazy>
+  </template>
+</v-col>
+
           </v-row>
           <!-- {{ worksOrdered.length }} -->
         </section>

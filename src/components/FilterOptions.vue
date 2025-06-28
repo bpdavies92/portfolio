@@ -48,7 +48,6 @@
 
     const currentRoute = ref('')
 
-    console.log(route.query.filter)
 
     watchEffect(() => {
         currentRoute.value = route.query.filter

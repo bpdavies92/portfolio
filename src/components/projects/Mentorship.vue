@@ -5,7 +5,8 @@
       :height="width >= 960 ? 'auto' : 300"
       aspect-ratio="16/9"
       cover
-      src="@/assets/images/mentorship/mentorship-hero.jpg"
+      :src="heroImg"
+      eager
     ></v-img>
 
     <v-container fluid class="mt-12">
@@ -33,10 +34,18 @@
                 </v-row>
                 <v-row>
                   <v-col cols="12" sm="12" md="6">
-                    <v-img src="../../assets/images/mentorship/mentorship-4.jpg"></v-img>
+                    <v-img
+                      cover
+                      aspect-ratio="16/9"
+                      :src="img4"
+                    ></v-img>
                   </v-col>
                   <v-col cols="12" sm="12" md="6">
-                    <v-img src="../../assets/images/mentorship/mentorship-3.jpg"></v-img>
+                    <v-img
+                      cover
+                      aspect-ratio="16/9"
+                      :src="img3"
+                    ></v-img>
                   </v-col>
                 </v-row>
               </v-col>
@@ -75,10 +84,16 @@ import { useRouter, useRoute } from 'vue-router'
 import nextProject from '@/composables/nextProject'
 import { useWindowSize } from '@vueuse/core'
 
-const { width, height } = useWindowSize()
+// Responsive width
+const { width } = useWindowSize()
 
 const props = defineProps(['project'])
 const { next, previous } = nextProject()
 const route = useRoute()
 const router = useRouter()
+
+// Import images properly
+import heroImg from '@/assets/images/mentorship/mentorship-hero.jpg'
+import img3 from '@/assets/images/mentorship/mentorship-3.jpg'
+import img4 from '@/assets/images/mentorship/mentorship-4.jpg'
 </script>

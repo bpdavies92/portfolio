@@ -9,7 +9,7 @@
 
       <v-app-bar-title
         class="ml-6 flex-sm-fill flex-1-1"
-        :class="flex-grow"
+
       >
         Benjamin Davies
       </v-app-bar-title>

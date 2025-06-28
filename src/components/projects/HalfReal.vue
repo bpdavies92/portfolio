@@ -1,97 +1,112 @@
 <template>
-    <section  
+  <section  
     v-for="(d,i) in project"
     :key="i"
-    >
-        <v-img  
-        alt=""
-        :height="width >= 960 ? 'auto' : 300"
-        aspect-ratio="16/9"
-        cover
-        src="@/assets/images/half-real/half-real-banner.jpg"
-        ></v-img>
-        <v-container fluid class="mt-12">
+  >
+    <v-img  
+      alt=""
+      :height="width >= 960 ? 'auto' : 300"
+      aspect-ratio="16/9"
+      cover
+      :src="banner"
+      eager
+    ></v-img>
+    <v-container fluid class="mt-12">
 
-            <div class="content-container">
-                <v-row>
-                    <v-col class="position-relative" cols="12" sm="12" md="5">
-                        <div class="sticky">
-                             <Description :d="d" :project="project"/>
-                        </div>
-                    </v-col>
-                    <v-col cols="12" sm="12" md="7">
-                <v-row>
-                    <v-col cols="12" sm="12">
-                        <v-img
-                        alt=""
-                        cover
-                        src="@/assets/images/half-real/half-real-1.jpg"
-                        ></v-img>
-                    </v-col>
-                    <v-col cols="12"  sm="12">
-                        <v-img
-                        alt=""
-                        height="100%"
-                        cover
-                        src="@/assets/images/half-real/half-real-3.jpg"
-                        ></v-img>
-                    </v-col>
-                    <v-col cols="12"  sm="12">
-                        <v-img
-                        alt=""
-                        height="100%"
-                        cover
-                        src="@/assets/images/half-real/half-real-4.jpg"
-                        ></v-img>
-                    </v-col>
-                </v-row>
-                <v-row>
-                    <v-col cols="12" sm="12">
-                        <v-img
-                        alt="half real exhibition opening talk by "
-                        cover
-                        src="@/assets/images/half-real/half-real-5.jpg"
-                        ></v-img>
-                    </v-col>
-                    <v-col cols="12" sm="12">
-                        <v-img
-                        alt="half real exhibition space"
-                        cover
-                        src="@/assets/images/half-real/half-real-6.jpg"
-                        ></v-img>
-                    </v-col>
-                </v-row>
-                <v-row>
-                    <v-img
-                    alt="Half real poster"
-                    cover
-                    src="@/assets/images/half-real/half-real-10.jpg"
-                    ></v-img>
-                </v-row>
-                    </v-col>
-                </v-row>
-                <v-sheet class="d-flex mt-12">
-                    <v-btn size="large" variant="text" class="mr-auto" prepend-icon="mdi-arrow-left" @click="previous(project[0])">Previous</v-btn>
-                    <v-btn size="large" variant="text" class="ml-auto" append-icon="mdi-arrow-right" @click="next(project[0])">Next</v-btn>
-                </v-sheet>
+      <div class="content-container">
+        <v-row>
+          <v-col class="position-relative" cols="12" sm="12" md="5">
+            <div class="sticky">
+              <Description :d="d" :project="project"/>
             </div>
-            
-          
-        </v-container>
-    </section>
- 
+          </v-col>
+          <v-col cols="12" sm="12" md="7">
+            <v-row>
+              <v-col cols="12" sm="12">
+                <v-img
+                  alt=""
+                  cover
+                  :src="img1"
+                  aspect-ratio="16/9"
+                ></v-img>
+              </v-col>
+              <v-col cols="12" sm="12">
+                <v-img
+                  alt=""
+                  height="100%"
+                  cover
+                  :src="img3"
+                  aspect-ratio="16/9"
+                ></v-img>
+              </v-col>
+              <v-col cols="12" sm="12">
+                <v-img
+                  alt=""
+                  height="100%"
+                  cover
+                  :src="img4"
+                  aspect-ratio="16/9"
+                ></v-img>
+              </v-col>
+            </v-row>
+            <v-row>
+              <v-col cols="12" sm="12">
+                <v-img
+                  alt="half real exhibition opening talk"
+                  cover
+                  :src="img5"
+                  aspect-ratio="16/9"
+                ></v-img>
+              </v-col>
+              <v-col cols="12" sm="12">
+                <v-img
+                  alt="half real exhibition space"
+                  cover
+                  :src="img6"
+                  aspect-ratio="16/9"
+                ></v-img>
+              </v-col>
+            </v-row>
+            <v-row>
+              <v-img
+                alt="Half real poster"
+                aspect-ratio="16/9"
+                cover
+                :src="img10"
+              ></v-img>
+            </v-row>
+          </v-col>
+        </v-row>
+
+        <v-sheet class="d-flex mt-12">
+          <v-btn size="large" variant="text" class="mr-auto" prepend-icon="mdi-arrow-left" @click="previous(project[0])">Previous</v-btn>
+          <v-btn size="large" variant="text" class="ml-auto" append-icon="mdi-arrow-right" @click="next(project[0])">Next</v-btn>
+        </v-sheet>
+      </div>
+
+    </v-container>
+  </section>
 </template>
 
 <script setup>
-    import Description from '../Description.vue'
-    import { useRouter, useRoute } from 'vue-router';
-    import nextProject from '@/composables/nextProject'
-        import { useWindowSize } from '@vueuse/core'
+import Description from '../Description.vue'
+import { useRouter, useRoute } from 'vue-router'
+import nextProject from '@/composables/nextProject'
+import { useWindowSize } from '@vueuse/core'
 
-    const { width, height } = useWindowSize()
+const { width } = useWindowSize()
 
-    const props = defineProps(['project'])
-    const {next, previous} = nextProject()
-    const router = useRoute()
-    const route = useRouter()
+// Import all images
+import banner from '@/assets/images/half-real/half-real-banner.jpg'
+import img1 from '@/assets/images/half-real/half-real-1.jpg'
+import img3 from '@/assets/images/half-real/half-real-3.jpg'
+import img4 from '@/assets/images/half-real/half-real-4.jpg'
+import img5 from '@/assets/images/half-real/half-real-5.jpg'
+import img6 from '@/assets/images/half-real/half-real-6.jpg'
+import img10 from '@/assets/images/half-real/half-real-10.jpg'
+
+const props = defineProps(['project'])
+const { next, previous } = nextProject()
+const router = useRoute()
+const route = useRouter()
 </script>
