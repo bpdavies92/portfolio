@@ -5,6 +5,7 @@
       height="300"
       aspect-ratio="16/9"
       cover
+      lazy-src="@/assets/images/default.webp"
       :src="heroImg"
       eager
     ></v-img>

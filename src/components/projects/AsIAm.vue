@@ -6,6 +6,7 @@
       aspect-ratio="16/9"
       cover
       :src="bannerImg"
+      :lazy-src="bannerImgLazy"
     eager
     ></v-img>
     <v-container fluid class="mt-12">
@@ -26,8 +27,6 @@
                   :src="img1"
                 ></v-img>
               </v-col>
-            </v-row>
-            <v-row>
               <v-col cols="12" sm="12" md="12">
                 <v-img
                   alt="As I am menu displaying all people"
@@ -41,13 +40,10 @@
                   alt="As I am infinity menu in hero"
                   cover
                   aspect-ratio="16/9"
-                  class="max-height-400"
                   :src="img3"
                 ></v-img>
               </v-col>
-            </v-row>
-            <v-row>
-              <v-col cols="12" sm="12" md="12">
+                <v-col cols="12" sm="12" md="12">
                 <v-img
                   alt="Example of staff member statement"
                   cover
@@ -55,8 +51,6 @@
                   :src="img4"
                 ></v-img>
               </v-col>
-            </v-row>
-            <v-row>
               <v-col cols="12" sm="12" md="12">
                 <v-img
                   alt="Example of a quote section on the As I am website."
@@ -108,6 +102,7 @@ const route = useRouter()
 
 // Import images
 import bannerImg from '@/assets/images/as-i-am/as-i-am-banner.webp'
+import bannerImgLazy from '@/assets/images/as-i-am/as-i-am-banner-lazy.webp'
 import img1 from '@/assets/images/as-i-am/as-i-am-1.webp'
 import img2 from '@/assets/images/as-i-am/as-i-am-2.webp'
 import img3 from '@/assets/images/as-i-am/as-i-am-3.webp'

@@ -1,26 +1,32 @@
 <template>
 
-            <div class="pt-8 mt-12 pb-12 mb-n12 related-projects redBackground ">
-              <v-container fluid>
-                    <div class="content-container">
-                        <h2 class="mb-md-3 mb-sm-12" >Related projects</h2>
-                        <p  class="text-body-1 d-sm-none d-md-none mb-md-3 mb-sm-12 text-white">Swipe right to see more</p>
-                                        <v-window
-                                        continuous
-                                        v-model="window"
-                                        :show-arrows="tablet ? false : 'hover' "
-                                        >
-                        <v-window-item  v-for="(chunk, chunkIndex) in projectChunks" :key="chunkIndex" >
-                            <v-row>
-                                <v-col v-for="(project, projectIndex) in chunk" :key="projectIndex" cols="12" sm="12" md="4">
-                                    <Card :relatedProject="true" :works="works" :project="project" :index="projectIndex"/>
-                                </v-col>
-                            </v-row>
-                        </v-window-item>
-                                        </v-window>
-                    </div>
-                    </v-container>
-            </div>
+            <v-lazy
+              :min-height="200"
+                :options="{'threshold':0.5}"
+                transition="scroll-y-reverse-transition"
+            >
+                <div class="pt-8 mt-12 pb-12 mb-n12 related-projects redBackground ">
+                  <v-container fluid>
+                        <div class="content-container">
+                            <h2 class="mb-md-3 mb-sm-12" >Related projects</h2>
+                            <p  class="text-body-1 d-sm-none d-md-none mb-md-3 mb-sm-12 text-white">Swipe right to see more</p>
+                                            <v-window
+                                            continuous
+                                            v-model="window"
+                                            :show-arrows="tablet ? false : 'hover' "
+                                            >
+                            <v-window-item  v-for="(chunk, chunkIndex) in projectChunks" :key="chunkIndex" >
+                                <v-row>
+                                    <v-col v-for="(project, projectIndex) in chunk" :key="projectIndex" cols="12" sm="12" md="4">
+                                        <Card :relatedProject="true" :works="works" :project="project" :index="projectIndex"/>
+                                    </v-col>
+                                </v-row>
+                            </v-window-item>
+                                            </v-window>
+                        </div>
+                        </v-container>
+                </div>
+            </v-lazy>
 
 
 </template>

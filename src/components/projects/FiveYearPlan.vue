@@ -7,6 +7,7 @@
     eager
       alt=""
       height="300"
+      lazy-src="@/assets/images/default.webp"
       aspect-ratio="16/9"
       cover
       :src="banner"

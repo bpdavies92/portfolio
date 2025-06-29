@@ -9,6 +9,7 @@
       aspect-ratio="16/9"
       cover
       :src="bannerImg"
+      :lazy-src="bannerImgLazy"
       eager
     ></v-img>
 
@@ -31,9 +32,6 @@
                   :src="af1"
                 />
               </v-col>
-            </v-row>
-
-            <v-row>
               <v-col cols="12" sm="12" md="12">
                 <v-img
                   cover
@@ -42,30 +40,27 @@
                   :src="af2"
                 />
               </v-col>
-
+              
               <v-col cols="12" sm="12" md="12">
                 <v-img
                   alt="As I am infinity menu in hero"
                   max-height="400"
                   cover
+                  aspect-ratio="16/9"
                   :src="af3"
                 />
               </v-col>
-            </v-row>
-
-            <v-row>
               <v-col cols="12" sm="12" md="12">
                 <v-img
+                  aspect-ratio="16/9"
                   alt="Example of staff member statement"
                   cover
                   :src="af4"
                 />
               </v-col>
-            </v-row>
-
-            <v-row>
               <v-col cols="12" sm="12" md="12">
                 <v-img
+                  aspect-ratio="16/9"
                   alt="Example of a quote section on the As I am website."
                   cover
                   :src="af5"
@@ -109,6 +104,7 @@ import { useWindowSize } from '@vueuse/core'
 
 // Import all images
 import bannerImg from '@/assets/images/afhea-self-study/afhe-banner.webp'
+import bannerImgLazy from '@/assets/images/afhea-self-study/afhe-banner-lazy.webp'
 import af1 from '@/assets/images/afhea-self-study/af1.webp'
 import af2 from '@/assets/images/afhea-self-study/af2.webp'
 import af3 from '@/assets/images/afhea-self-study/af3.webp'

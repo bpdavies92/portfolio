@@ -7,6 +7,7 @@
       alt=""
       height="300"
       aspect-ratio="16/9"
+      lazy-src="@/assets/images/default.webp"
       cover
       :src="gold7"
       eager
@@ -26,47 +27,43 @@
                 <v-img
                   alt="My five year plan cycle diagram"
                   cover
-                  aspect-ratio="1/1"
+                  aspect-ratio="16/9"
                   :src="gold1"
                 ></v-img>
               </v-col>
-            </v-row>
-            <v-row>
-              <v-col cols="12" sm="12" md="6">
-                <v-img :src="gold5"></v-img>
+            <v-col cols="12" sm="12" md="12">
+                <v-img aspect-ratio="16/9" :src="gold5"></v-img>
               </v-col>
-              <v-col cols="12" sm="12" md="6">
-                <v-img :src="gold6"></v-img>
+              <v-col cols="12" sm="12" md="12">
+                <v-img aspect-ratio="16/9" :src="gold6"></v-img>
               </v-col>
-            </v-row>
-            <v-row>
               <v-col cols="12" class="justify-center">
                 <v-img
                   alt="My five year plan cycle diagram"
                   cover
-                  aspect-ratio="1/1"
+                  aspect-ratio="16/9"
                   :src="gold2"
                 ></v-img>
               </v-col>
-            </v-row>
-            <v-row>
-              <v-col cols="12" sm="12" md="6" class="justify-center">
+                            <v-col cols="12" sm="12" md="12" class="justify-center">
                 <v-img
                   alt="My five year plan cycle diagram"
                   cover
-                  aspect-ratio="1/1"
+                  aspect-ratio="16/9"
                   :src="gold3"
                 ></v-img>
               </v-col>
-              <v-col cols="12" sm="12" md="6" class="justify-center">
+              <v-col cols="12" sm="12" md="12" class="justify-center">
                 <v-img
                   alt="My five year plan cycle diagram"
                   cover
-                  aspect-ratio="1/1"
+                  aspect-ratio="16/9"
                   :src="gold4"
                 ></v-img>
               </v-col>
             </v-row>
+  
+
           </v-col>
         </v-row>
         <v-sheet class="d-flex mt-12">
@@ -89,13 +86,13 @@ import { useRouter, useRoute } from 'vue-router'
 import nextProject from '@/composables/nextProject'
 
 // Import images for proper bundling
-import gold1 from '@/assets/images/gold-in-the-mouth/gold-1.jpg'
-import gold2 from '@/assets/images/gold-in-the-mouth/gold-2.jpg'
-import gold3 from '@/assets/images/gold-in-the-mouth/gold-3.jpg'
-import gold4 from '@/assets/images/gold-in-the-mouth/gold-4.jpg'
-import gold5 from '@/assets/images/gold-in-the-mouth/gold-5.jpg'
-import gold6 from '@/assets/images/gold-in-the-mouth/gold-6.jpg'
-import gold7 from '@/assets/images/gold-in-the-mouth/gold-7.jpg'
+import gold1 from '@/assets/images/gold-in-the-mouth/gold-1.webp'
+import gold2 from '@/assets/images/gold-in-the-mouth/gold-2.webp'
+import gold3 from '@/assets/images/gold-in-the-mouth/gold-3.webp'
+import gold4 from '@/assets/images/gold-in-the-mouth/gold-4.webp'
+import gold5 from '@/assets/images/gold-in-the-mouth/gold-5.webp'
+import gold6 from '@/assets/images/gold-in-the-mouth/gold-6.webp'
+import gold7 from '@/assets/images/gold-in-the-mouth/gold-7.webp'
 
 const props = defineProps(['project'])
 const { next, previous } = nextProject()

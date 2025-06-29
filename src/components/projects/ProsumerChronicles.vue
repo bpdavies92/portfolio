@@ -6,6 +6,7 @@
     <v-img
       alt="Prosumer chronicles"
      height="300"
+     lazy-src="@/assets/images/default.webp"
       aspect-ratio="16/9"
       cover
       :src="banner"
@@ -21,46 +22,35 @@
           </v-col>
           <v-col cols="12" sm="12" md="7">
             <v-row>
-              <v-col>
+              <v-col cols="12" sm="12">
                 <v-img alt="Prosumer chronicles" cover :src="img17"></v-img>
               </v-col>
-            </v-row>
-            <v-row>
-              <v-col>
+              <v-col cols="12" sm="12" md="12">
                 <v-img aspect-ratio="16/9" alt="Prosumer chronicles" :src="img1"></v-img>
               </v-col>
-            </v-row>
-            <v-row>
-              <v-col cols="12" sm="12" md="6">
+              <v-col cols="12" sm="12" md="12">
                 <v-img aspect-ratio="16/9" alt="Prosumer chronicles" max-height="400" cover :src="img7"></v-img>
               </v-col>
-              <v-col cols="12" sm="12" md="6">
+              <v-col cols="12" sm="12" md="12">
                 <v-img aspect-ratio="16/9" alt="Prosumer chronicles" max-height="400" cover :src="img3"></v-img>
               </v-col>
-            </v-row>
-            <v-row>
-              <v-col>
+              <v-col cols="12" sm="12" md="12">
                 <v-img aspect-ratio="16/9" alt="Prosumer chronicles" cover :src="img14"></v-img>
               </v-col>
-            </v-row>
-            <v-row>
-              <v-col cols="12" sm="12" md="6">
+              <v-col cols="12" sm="12" md="12">
                 <v-img aspect-ratio="16/9" alt="Prosumer chronicles" cover :src="img4"></v-img>
               </v-col>
-              <v-col cols="12" sm="12" md="6">
+              <v-col cols="12" sm="12" md="12">
                 <v-img aspect-ratio="16/9" alt="Prosumer chronicles" cover :src="img12"></v-img>
               </v-col>
-            </v-row>
-            <v-row>
-              <v-col>
+              <v-col cols="12" sm="12" md="12">
                 <v-img aspect-ratio="16/9" alt="Prosumer chronicles" :src="img18"></v-img>
               </v-col>
-            </v-row>
-            <v-row>
-              <v-col>
+              <v-col cols="12" sm="12" md="12">
                 <v-img aspect-ratio="16/9" alt="Prosumer chronicles" cover :src="img15"></v-img>
               </v-col>
             </v-row>
+
           </v-col>
         </v-row>
         <v-sheet class="d-flex mt-12">
@@ -83,16 +73,16 @@ import nextProject from '@/composables/nextProject'
 import { useWindowSize } from '@vueuse/core'
 
 // Import images so bundler includes them and paths resolve
-import banner from '@/assets/images/prosumer-chronicles/pro-chron-banner.jpg'
-import img1 from '@/assets/images/prosumer-chronicles/pro-1.jpg'
-import img3 from '@/assets/images/prosumer-chronicles/pro-3.jpg'
-import img4 from '@/assets/images/prosumer-chronicles/pro-4.jpg'
-import img7 from '@/assets/images/prosumer-chronicles/pro-7.jpg'
-import img12 from '@/assets/images/prosumer-chronicles/pro-12.jpg'
-import img14 from '@/assets/images/prosumer-chronicles/pro-14.jpg'
-import img15 from '@/assets/images/prosumer-chronicles/pro-15.jpg'
-import img17 from '@/assets/images/prosumer-chronicles/pro-17.jpg'
-import img18 from '@/assets/images/prosumer-chronicles/pro-18.jpg'
+import banner from '@/assets/images/prosumer-chronicles/pro-chron-banner.webp'
+import img1 from '@/assets/images/prosumer-chronicles/pro-1.webp'
+import img3 from '@/assets/images/prosumer-chronicles/pro-3.webp'
+import img4 from '@/assets/images/prosumer-chronicles/pro-4.webp'
+import img7 from '@/assets/images/prosumer-chronicles/pro-7.webp'
+import img12 from '@/assets/images/prosumer-chronicles/pro-12.webp'
+import img14 from '@/assets/images/prosumer-chronicles/pro-14.webp'
+import img15 from '@/assets/images/prosumer-chronicles/pro-15.webp'
+import img17 from '@/assets/images/prosumer-chronicles/pro-17.webp'
+import img18 from '@/assets/images/prosumer-chronicles/pro-18.webp'
 
 const { width } = useWindowSize()
 

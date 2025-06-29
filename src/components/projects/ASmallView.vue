@@ -6,6 +6,7 @@
     <v-img
       alt=""
       height="300"
+      :lazy-src="bannerLazy"
       aspect-ratio="16/9"
       cover
       :src="banner"
@@ -96,6 +97,7 @@ const { width } = useWindowSize()
 
 // Import images for bundling
 import banner from '@/assets/images/a-small-view/a-small-view-banner.webp'
+import bannerLazy from '@/assets/images/a-small-view/a-small-view-banner-lazy.webp'
 import img1 from '@/assets/images/a-small-view/a_small_view_1.webp'
 import img2 from '@/assets/images/a-small-view/a_small_view_2.webp'
 import img3 from '@/assets/images/a-small-view/a_small_view_3.webp'

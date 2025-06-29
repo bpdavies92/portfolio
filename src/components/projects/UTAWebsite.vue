@@ -9,6 +9,7 @@
       aspect-ratio="16/9"
       cover
       :src="banner"
+      :lazy-src="bannerLazy"
       eager
     ></v-img>
     <v-container fluid class="mt-12">
@@ -26,9 +27,7 @@
                   Dive into the UTA website
                 </v-btn>
               </v-col>
-            </v-row>
-            <v-row>
-              <v-col cols="12" sm="12" md="6">
+              <v-col cols="12" sm="12" md="12">
                 <v-img
                   aspect-ratio="16/9"
                   alt="Assessment lifecycle webpage"
@@ -36,7 +35,8 @@
                   :src="website1"
                 />
               </v-col>
-              <v-col cols="12" sm="12" md="6">
+              
+              <v-col cols="12" sm="12" md="12">
                 <v-img
                   aspect-ratio="16/9"
                   alt="Active learning webpage"
@@ -44,12 +44,7 @@
                   :src="website2"
                 />
               </v-col>
-            </v-row>
-            <v-row class="mt-12">
-              <v-col cols="12" sm="12" md="6">
-                <!-- empty column, keep as is -->
-              </v-col>
-              <v-col cols="12" sm="12" md="6">
+              <v-col cols="12" sm="12" md="12">
                 <v-img
                   aspect-ratio="16/9"
                   alt="Peer observation webpage"
@@ -77,6 +72,7 @@ import { useWindowSize } from '@vueuse/core'
 
 // Import images
 import banner from '@/assets/images/uta-website/uta-website-banner.jpg'
+import bannerLazy from '@/assets/images/uta-website/uta-website-banner-lazy.webp'
 import website1 from '@/assets/images/uta-website/website-1.png'
 import website2 from '@/assets/images/uta-website/website-2.png'
 import website3 from '@/assets/images/uta-website/website-3.png'

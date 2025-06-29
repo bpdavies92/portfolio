@@ -7,6 +7,9 @@
       cover
       eager
       :src="img12"
+      :lazy-src="img12Lazy"
+      loading="eager"
+      preload
       class="mb-4"
     />
 
@@ -116,6 +119,7 @@ import img7 from '@/assets/images/conference/leed-conf-7.webp'
 import img8 from '@/assets/images/conference/leed-conf-8.webp'
 import img10 from '@/assets/images/conference/leed-conf-10.webp'
 import img12 from '@/assets/images/conference/leed-conf-12.webp'
+import img12Lazy from '@/assets/images/conference/leed-conf-12-lazy.webp'
 
 const props = defineProps(['project'])
 const { next, previous } = nextProject()

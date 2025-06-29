@@ -10,7 +10,7 @@
     </v-sheet>
   </template>
   <template v-else>
-    <v-lazy :options="{ threshold: 0.5 }" transition="fade-transition">
+    <v-lazy :options="{ threshold: 0.5 }" transition="scroll-y-reverse-transition">
       <v-sheet class="card-grid-spacing" v-show="index < showMoreBtn">
         <Card :project="project" :index="index" :works="works" />
       </v-sheet>

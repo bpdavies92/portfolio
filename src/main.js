@@ -13,6 +13,8 @@ import { createApp } from 'vue'
 // Plugins
 import { registerPlugins } from '@/plugins'
 import VueApexCharts from "vue3-apexcharts";
+import 'vuetify/styles'
+import { createVuetify } from 'vuetify'
 
 import '@/styles/main.scss'
 

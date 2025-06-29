@@ -4,6 +4,7 @@
       alt="Understanding the awarding gap banner"
       :height="width >= 960 ? 'auto' : 300"
       height="300"
+      lazy-src="@/assets/images/default.webp"
       cover
       :src="bannerImg"
       eager

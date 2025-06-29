@@ -5,6 +5,7 @@
       alt=""
       height="300"
       aspect-ratio="16/9"
+      lazy-src="@/assets/images/default.webp"
       cover
       :src="headerImg"
     ></v-img>
