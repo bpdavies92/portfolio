@@ -6,7 +6,7 @@
     <v-img
       alt="Prosumer chronicles"
      height="300"
-     lazy-src="@/assets/images/default.webp"
+     :lazy-src="bannerLazy"
       aspect-ratio="16/9"
       cover
       :src="banner"
@@ -26,28 +26,53 @@
                 <v-img alt="Prosumer chronicles" cover :src="img17"></v-img>
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-img aspect-ratio="16/9" alt="Prosumer chronicles" :src="img1"></v-img>
+                <lazy                   
+                  :options="{'threshold':0.5}"
+                  transition="scroll-y-reverse-transition">
+                  <v-img aspect-ratio="16/9" alt="Prosumer chronicles" :src="img1"></v-img>
+                </lazy>
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-img aspect-ratio="16/9" alt="Prosumer chronicles" max-height="400" cover :src="img7"></v-img>
+                <lazy :options="{'threshold':0.5}"
+                  transition="scroll-y-reverse-transition">
+                  <v-img aspect-ratio="16/9" alt="Prosumer chronicles" max-height="400" cover :src="img7"></v-img>
+                </lazy>
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-img aspect-ratio="16/9" alt="Prosumer chronicles" max-height="400" cover :src="img3"></v-img>
+                <lazy :options="{'threshold':0.5}"
+                  transition="scroll-y-reverse-transition">
+                  <v-img aspect-ratio="16/9" alt="Prosumer chronicles" max-height="400" cover :src="img3"></v-img>
+                </lazy>
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-img aspect-ratio="16/9" alt="Prosumer chronicles" cover :src="img14"></v-img>
+                <lazy :options="{'threshold':0.5}"
+                  transition="scroll-y-reverse-transition">
+                  <v-img aspect-ratio="9/16" alt="Prosumer chronicles" cover :src="img14"></v-img>
+                </lazy>
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-img aspect-ratio="16/9" alt="Prosumer chronicles" cover :src="img4"></v-img>
+                <lazy :options="{'threshold':0.5}"
+                  transition="scroll-y-reverse-transition">
+                  <v-img aspect-ratio="16/9" alt="Prosumer chronicles" cover :src="img4"></v-img>
+                </lazy>
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-img aspect-ratio="16/9" alt="Prosumer chronicles" cover :src="img12"></v-img>
+                <lazy :options="{'threshold':0.5}"
+                  transition="scroll-y-reverse-transition">
+                  <v-img aspect-ratio="16/9" alt="Prosumer chronicles" cover :src="img12"></v-img>
+                </lazy>
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-img aspect-ratio="16/9" alt="Prosumer chronicles" :src="img18"></v-img>
+                <lazy :options="{'threshold':0.5}"
+                  transition="scroll-y-reverse-transition">
+                  <v-img aspect-ratio="16/9" alt="Prosumer chronicles" :src="img18"></v-img>
+                </lazy>
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-img aspect-ratio="16/9" alt="Prosumer chronicles" cover :src="img15"></v-img>
+                <lazy :options="{'threshold':0.5}"
+                  transition="scroll-y-reverse-transition">
+                  <v-img aspect-ratio="9/16" alt="Prosumer chronicles" cover :src="img15"></v-img>
+                </lazy>
               </v-col>
             </v-row>
 
@@ -74,6 +99,7 @@ import { useWindowSize } from '@vueuse/core'
 
 // Import images so bundler includes them and paths resolve
 import banner from '@/assets/images/prosumer-chronicles/pro-chron-banner.webp'
+import bannerLazy from '@/assets/images/default.webp'
 import img1 from '@/assets/images/prosumer-chronicles/pro-1.webp'
 import img3 from '@/assets/images/prosumer-chronicles/pro-3.webp'
 import img4 from '@/assets/images/prosumer-chronicles/pro-4.webp'

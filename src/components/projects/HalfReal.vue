@@ -7,7 +7,7 @@
       alt=""
       height="300"
       aspect-ratio="16/9"
-      lazy-src="@/assets/images/default.webp"
+      :lazy-src="bannerLazy"
       cover
       :src="banner"
       eager
@@ -32,49 +32,64 @@
                 ></v-img>
               </v-col>
               <v-col cols="12" sm="12">
-                <v-img
-                  alt=""
-                  height="100%"
-                  cover
-                  :src="img3"
-                  aspect-ratio="16/9"
-                ></v-img>
+                <v-lazy :options="{'threshold':0.5}"
+                  transition="scroll-y-reverse-transition">
+                  <v-img
+                    alt=""
+                    height="100%"
+                    cover
+                    :src="img3"
+                    aspect-ratio="16/9"
+                  ></v-img>
+                </v-lazy>
               </v-col>
               <v-col cols="12" sm="12">
-                <v-img
-                  alt=""
-                  height="100%"
-                  cover
-                  :src="img4"
-                  aspect-ratio="16/9"
-                ></v-img>
+                <v-lazy :options="{'threshold':0.5}"
+                  transition="scroll-y-reverse-transition">
+                  <v-img
+                    alt=""
+                    height="100%"
+                    cover
+                    :src="img4"
+                    aspect-ratio="16/9"
+                  ></v-img>
+                </v-lazy>
               </v-col>
             </v-row>
             <v-row>
               <v-col cols="12" sm="12">
-                <v-img
-                  alt="half real exhibition opening talk"
-                  cover
-                  :src="img5"
-                  aspect-ratio="16/9"
-                ></v-img>
+                <v-lazy :options="{'threshold':0.5}"
+                  transition="scroll-y-reverse-transition">
+                  <v-img
+                    alt="half real exhibition opening talk"
+                    cover
+                    :src="img5"
+                    aspect-ratio="16/9"
+                  ></v-img>
+                </v-lazy>
               </v-col>
               <v-col cols="12" sm="12">
-                <v-img
-                  alt="half real exhibition space"
-                  cover
-                  :src="img6"
-                  aspect-ratio="16/9"
-                ></v-img>
+                <v-lazy :options="{'threshold':0.5}"
+                  transition="scroll-y-reverse-transition">
+                  <v-img
+                    alt="half real exhibition space"
+                    cover
+                    :src="img6"
+                    aspect-ratio="16/9"
+                  ></v-img>
+                </v-lazy>
               </v-col>
             </v-row>
             <v-row>
-              <v-img
-                alt="Half real poster"
-                aspect-ratio="16/9"
-                cover
-                :src="img10"
-              ></v-img>
+              <v-lazy :options="{'threshold':0.5}"
+                transition="scroll-y-reverse-transition">
+                <v-img
+                  alt="Half real poster"
+                  aspect-ratio="16/9"
+                  cover
+                  :src="img10"
+                ></v-img>
+              </v-lazy>
             </v-row>
           </v-col>
         </v-row>
@@ -99,6 +114,7 @@ const { width } = useWindowSize()
 
 // Import all images
 import banner from '@/assets/images/half-real/half-real-banner.webp'
+import bannerLazy from '@/assets/images/half-real/half-real-banner-lazy.webp'
 import img1 from '@/assets/images/half-real/half-real-1.webp'
 import img3 from '@/assets/images/half-real/half-real-3.webp'
 import img4 from '@/assets/images/half-real/half-real-4.webp'

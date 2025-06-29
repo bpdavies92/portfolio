@@ -24,52 +24,81 @@
           <v-col cols="12" sm="12" md="7">
             <v-row>
               <v-col cols="12" sm="12">
-                <v-img
-                  alt="A hole, a mountain exhibition"
-                  cover
-                  aspect-ratio="16/9"
-                  :src="img1"
-                ></v-img>
+                <v-lazy   
+                :options="{'threshold':0.5}"
+                  transition="scroll-y-reverse-transition">
+                  <v-img
+                    alt="A hole, a mountain exhibition"
+                    cover
+                    aspect-ratio="16/9"
+                    :src="img1"
+                  ></v-img>
+                </v-lazy>
               </v-col>
               <v-col cols="12" sm="12">
-                <v-img
-                  alt="The white pube exhibition during Liverpool Bienial 2016"
-                  cover
-                  aspect-ratio="9/16"
-                  :src="img2"
-                ></v-img>
+                <v-lazy
+                :options="{'threshold':0.5}"
+                  transition="scroll-y-reverse-transition"
+                >
+                  <v-img
+                    alt="The white pube exhibition during Liverpool Bienial 2016"
+                    cover
+                    aspect-ratio="16/9"
+                    :src="img2"
+                  ></v-img>
+                </v-lazy>
               </v-col>
               <v-col cols="12" sm="12">
-                <v-img
-                  alt="A small view"
-                  cover
-                  aspect-ratio="16/9"
-                  :src="img3"
-                ></v-img>
+                <v-lazy
+                :options="{'threshold':0.5}"
+                  transition="scroll-y-reverse-transition"
+                >
+                  <v-img
+                    alt="A small view"
+                    cover
+                    aspect-ratio="16/9"
+                    :src="img3"
+                  ></v-img>
+                </v-lazy>
               </v-col>
                 <v-col cols="12" sm="12">
-                <v-img
-                  alt="The white pube reading / performance"
-                  cover
-                  aspect-ratio="16/9"
-                  :src="img4"
-                ></v-img>
+                <v-lazy
+                :options="{'threshold':0.5}"
+                  transition="scroll-y-reverse-transition"
+                >
+                  <v-img
+                    alt="The white pube reading / performance"
+                    cover
+                    aspect-ratio="9/16"
+                    :src="img4"
+                  ></v-img>
+                </v-lazy>
               </v-col>
               <v-col cols="12" sm="12">
-                <v-img
-                  alt="Symbiosis exhibition"
-                  cover
-                  :src="img5"
-                  aspect-ratio="16/9"
-                ></v-img>
+                <v-lazy
+                :options="{'threshold':0.5}"
+                  transition="scroll-y-reverse-transition"
+                >
+                  <v-img
+                    alt="Symbiosis exhibition"
+                    cover
+                    :src="img5"
+                    aspect-ratio="16/9"
+                  ></v-img>
+                </v-lazy>
               </v-col>
-                            <v-col cols="12" sm="12">
-                <v-img
-                  alt="Got worms exhibition"
-                  cover
-                  :src="img6"
-                  aspect-ratio="16/9"
-                ></v-img>
+              <v-col cols="12" sm="12">
+                <v-lazy
+                :options="{'threshold':0.5}"
+                  transition="scroll-y-reverse-transition"
+                >
+                  <v-img
+                    alt="Got worms exhibition"
+                    cover
+                    :src="img6"
+                    aspect-ratio="16/9"
+                  ></v-img>
+                </v-lazy>
               </v-col>
             </v-row>
 
