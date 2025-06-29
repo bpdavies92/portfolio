@@ -5,7 +5,7 @@
   >
     <v-img
       alt=""
-      :height="width >= 960 ? 'auto' : 300"
+      height="300"
       aspect-ratio="16/9"
       cover
       :src="banner"
@@ -22,7 +22,7 @@
           </v-col>
           <v-col cols="12" sm="12" md="7">
             <v-row>
-              <v-col>
+              <v-col cols="12" sm="12">
                 <v-img
                   alt="A hole, a mountain exhibition"
                   cover
@@ -30,30 +30,23 @@
                   :src="img1"
                 ></v-img>
               </v-col>
-            </v-row>
-            <v-row>
-              <v-col cols="12" sm="12" md="6">
+              <v-col cols="12" sm="12">
                 <v-img
-                  ref="target"
-                  :class="{'float-up' : target === true}"
                   alt="The white pube exhibition during Liverpool Bienial 2016"
                   cover
-                  aspect-ratio="16/9"
+                  aspect-ratio="9/16"
                   :src="img2"
                 ></v-img>
               </v-col>
-              <v-col cols="12" sm="12" md="6">
+              <v-col cols="12" sm="12">
                 <v-img
                   alt="A small view"
-                  max-height="400"
                   cover
                   aspect-ratio="16/9"
                   :src="img3"
                 ></v-img>
               </v-col>
-            </v-row>
-            <v-row>
-              <v-col>
+                <v-col cols="12" sm="12">
                 <v-img
                   alt="The white pube reading / performance"
                   cover
@@ -61,9 +54,7 @@
                   :src="img4"
                 ></v-img>
               </v-col>
-            </v-row>
-            <v-row>
-              <v-col>
+              <v-col cols="12" sm="12">
                 <v-img
                   alt="Symbiosis exhibition"
                   cover
@@ -71,9 +62,7 @@
                   aspect-ratio="16/9"
                 ></v-img>
               </v-col>
-            </v-row>
-            <v-row>
-              <v-col>
+                            <v-col cols="12" sm="12">
                 <v-img
                   alt="Got worms exhibition"
                   cover
@@ -82,6 +71,7 @@
                 ></v-img>
               </v-col>
             </v-row>
+
           </v-col>
         </v-row>
 

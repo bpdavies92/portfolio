@@ -3,7 +3,7 @@
     <v-img
       eager
       alt=""
-      :height="width >= 960 ? 'auto' : 300"
+      height="300"
       aspect-ratio="16/9"
       cover
       :src="headerImg"

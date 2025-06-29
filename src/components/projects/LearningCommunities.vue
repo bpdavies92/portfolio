@@ -2,7 +2,7 @@
   <section v-for="(d,i) in project" :key="i">
     <v-img
       alt=""
-      :height="width >= 960 ? 'auto' : 300"
+      height="300"
       aspect-ratio="16/9"
       cover
       eager
@@ -17,8 +17,9 @@
             </div>
           </v-col>
           <v-col cols="12" sm="12" md="7">
+
             <v-row>
-              <v-col cols="12">
+                            <v-col cols="12">
                 <v-img
                   alt="Building inclusive learning communities home page"
                   cover
@@ -26,8 +27,6 @@
                   :src="img4"
                 ></v-img>
               </v-col>
-            </v-row>
-            <v-row>
               <v-col cols="12" sm="12" md="12">
                 <v-img
                   alt="Introduction with learning outcomes"
@@ -44,8 +43,6 @@
                   :src="img11"
                 ></v-img>
               </v-col>
-            </v-row>
-            <v-row>
               <v-col cols="12">
                 <v-img
                   alt="A still of the welcome video featuring Shuab Gamote"
@@ -54,9 +51,7 @@
                   :src="img13"
                 ></v-img>
               </v-col>
-            </v-row>
-            <v-row>
-              <v-col cols="12" sm="12" md="12">
+                <v-col cols="12" sm="12" md="12">
                 <v-img
                   alt="framing our responses slide"
                   cover
@@ -64,7 +59,7 @@
                   :src="img17"
                 ></v-img>
               </v-col>
-              <v-col cols="12" sm="12" md="12">
+                  <v-col cols="12" sm="12" md="12">
                 <v-img
                   alt="Still of Framing our responses video"
                   cover
@@ -72,7 +67,7 @@
                   :src="img16"
                 ></v-img>
               </v-col>
-              <v-col cols="12" sm="12" md="12">
+                 <v-col cols="12" sm="12" md="12">
                 <v-img
                   alt="Still of Framing our responses video"
                   cover
@@ -80,9 +75,7 @@
                   :src="img15"
                 ></v-img>
               </v-col>
-            </v-row>
-            <v-row>
-              <v-col cols="12">
+                            <v-col cols="12">
                 <v-img
                   alt="Micro-aggressions slide home page"
                   cover
@@ -90,9 +83,7 @@
                   :src="img1"
                 ></v-img>
               </v-col>
-            </v-row>
-            <v-row>
-              <v-col cols="12">
+                            <v-col cols="12">
                 <v-img
                   alt="Still of Micro-aggressions video"
                   cover
@@ -100,9 +91,7 @@
                   :src="img8"
                 ></v-img>
               </v-col>
-            </v-row>
-            <v-row>
-              <v-col cols="12">
+               <v-col cols="12">
                 <v-img
                   alt="Further micro-aggressions resources, including student actor video narrating student experience"
                   cover
@@ -110,9 +99,7 @@
                   :src="img7"
                 ></v-img>
               </v-col>
-            </v-row>
-            <v-row>
-              <v-col cols="12" sm="12" md="12">
+               <v-col cols="12" sm="12" md="12">
                 <v-img
                   alt="Microaggressions slide home"
                   cover
@@ -128,9 +115,21 @@
                   :src="img9"
                 ></v-img>
               </v-col>
-            </v-row>
-            <v-row>
-              <v-col cols="12">
+               <v-col cols="12">
+                <v-img
+                  alt="Microaggressions slide home"
+                  cover
+                  aspect-ratio="16/9"
+                  :src="img6"
+                ></v-img>
+              </v-col>
+<v-col cols="12" sm="12" md="12">
+                <v-img
+                  alt="starting to take action slide"
+                  cover
+                  aspect-ratio="16/9"
+                  :src="img3"
+                ></v-img>
                 <v-img
                   alt="Microaggressions slide home"
                   cover
@@ -139,15 +138,11 @@
                 ></v-img>
               </v-col>
             </v-row>
+
+      
+    
             <v-row>
-              <v-col cols="12" sm="12" md="12">
-                <v-img
-                  alt="starting to take action slide"
-                  cover
-                  aspect-ratio="16/9"
-                  :src="img3"
-                ></v-img>
-              </v-col>
+              
             </v-row>
           </v-col>
         </v-row>
@@ -189,19 +184,19 @@ const router = useRoute()
 const route = useRouter()
 
 // Import all images
-import heroImg from '@/assets/images/learning-communities/learning-communities-hero.jpg'
-import img1 from '@/assets/images/learning-communities/learning-communities-1.jpg'
-import img3 from '@/assets/images/learning-communities/learning-communities-3.jpg'
-import img4 from '@/assets/images/learning-communities/learning-communities-4.jpg'
-import img5 from '@/assets/images/learning-communities/learning-communities-5.jpg'
-import img6 from '@/assets/images/learning-communities/learning-communities-6.jpg'
-import img7 from '@/assets/images/learning-communities/learning-communities-7.jpg'
-import img8 from '@/assets/images/learning-communities/learning-communities-8.jpg'
-import img9 from '@/assets/images/learning-communities/learning-communities-9.jpg'
-import img10 from '@/assets/images/learning-communities/learning-communities-10.jpg'
-import img11 from '@/assets/images/learning-communities/learning-communities-11.jpg'
-import img13 from '@/assets/images/learning-communities/learning-communities-13.jpg'
-import img15 from '@/assets/images/learning-communities/learning-communities-15.jpg'
-import img16 from '@/assets/images/learning-communities/learning-communities-16.jpg'
-import img17 from '@/assets/images/learning-communities/learning-communities-17.jpg'
+import heroImg from '@/assets/images/learning-communities/learning-communities-hero.webp'
+import img1 from '@/assets/images/learning-communities/learning-communities-1.webp'
+import img3 from '@/assets/images/learning-communities/learning-communities-3.webp'
+import img4 from '@/assets/images/learning-communities/learning-communities-4.webp'
+import img5 from '@/assets/images/learning-communities/learning-communities-5.webp'
+import img6 from '@/assets/images/learning-communities/learning-communities-6.webp'
+import img7 from '@/assets/images/learning-communities/learning-communities-7.webp'
+import img8 from '@/assets/images/learning-communities/learning-communities-8.webp'
+import img9 from '@/assets/images/learning-communities/learning-communities-9.webp'
+import img10 from '@/assets/images/learning-communities/learning-communities-10.webp'
+import img11 from '@/assets/images/learning-communities/learning-communities-11.webp'
+import img13 from '@/assets/images/learning-communities/learning-communities-13.webp'
+import img15 from '@/assets/images/learning-communities/learning-communities-15.webp'
+import img16 from '@/assets/images/learning-communities/learning-communities-16.webp'
+import img17 from '@/assets/images/learning-communities/learning-communities-17.webp'
 </script>

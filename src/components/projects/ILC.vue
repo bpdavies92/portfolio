@@ -2,7 +2,7 @@
   <section v-for="(d, i) in project" :key="i">
     <v-img
       alt=""
-      :height="width >= 960 ? 'auto' : 300"
+      height="300"
       aspect-ratio="16/9"
       cover
       :src="banner"
@@ -33,10 +33,7 @@
                   ></iframe>
                 </div>
               </v-col>
-            </v-row>
-
-            <v-row>
-              <v-col cols="12" sm="12">
+                 <v-col cols="12" sm="12">
                 <div class="iframe-wrapper">
                   <iframe
                     :id="`kaltura_player_${i}_2`"
@@ -49,10 +46,7 @@
                   ></iframe>
                 </div>
               </v-col>
-            </v-row>
-
-            <v-row>
-              <v-col cols="12" sm="12">
+               <v-col cols="12" sm="12">
                 <div class="iframe-wrapper">
                   <iframe
                     :id="`kaltura_player_${i}_3`"
@@ -65,10 +59,7 @@
                   ></iframe>
                 </div>
               </v-col>
-            </v-row>
-
-            <v-row>
-              <v-col>
+                <v-col>
                 <div class="iframe-wrapper">
                   <iframe
                     :id="`kaltura_player_${i}_4`"
@@ -81,6 +72,12 @@
                   ></iframe>
                 </div>
               </v-col>
+            </v-row>
+
+     
+
+            <v-row>
+            
             </v-row>
           </v-col>
         </v-row>

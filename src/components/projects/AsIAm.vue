@@ -2,7 +2,7 @@
   <section v-for="(d, i) in project" :key="i">
     <v-img
       alt=""
-      :height="width >= 960 ? 'auto' : 300"
+     height="300"
       aspect-ratio="16/9"
       cover
       :src="bannerImg"
@@ -107,12 +107,12 @@ const router = useRoute()
 const route = useRouter()
 
 // Import images
-import bannerImg from '@/assets/images/as-i-am/as-i-am-banner.jpg'
-import img1 from '@/assets/images/as-i-am/as-i-am-1.jpg'
-import img2 from '@/assets/images/as-i-am/as-i-am-2.jpg'
-import img3 from '@/assets/images/as-i-am/as-i-am-3.jpg'
-import img4 from '@/assets/images/as-i-am/as-i-am-4.jpg'
-import img5 from '@/assets/images/as-i-am/as-i-am-5.jpg'
+import bannerImg from '@/assets/images/as-i-am/as-i-am-banner.webp'
+import img1 from '@/assets/images/as-i-am/as-i-am-1.webp'
+import img2 from '@/assets/images/as-i-am/as-i-am-2.webp'
+import img3 from '@/assets/images/as-i-am/as-i-am-3.webp'
+import img4 from '@/assets/images/as-i-am/as-i-am-4.webp'
+import img5 from '@/assets/images/as-i-am/as-i-am-5.webp'
 </script>
 
 <style scoped>

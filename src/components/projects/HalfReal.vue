@@ -5,7 +5,7 @@
   >
     <v-img  
       alt=""
-      :height="width >= 960 ? 'auto' : 300"
+      height="300"
       aspect-ratio="16/9"
       cover
       :src="banner"
@@ -97,13 +97,13 @@ import { useWindowSize } from '@vueuse/core'
 const { width } = useWindowSize()
 
 // Import all images
-import banner from '@/assets/images/half-real/half-real-banner.jpg'
-import img1 from '@/assets/images/half-real/half-real-1.jpg'
-import img3 from '@/assets/images/half-real/half-real-3.jpg'
-import img4 from '@/assets/images/half-real/half-real-4.jpg'
-import img5 from '@/assets/images/half-real/half-real-5.jpg'
-import img6 from '@/assets/images/half-real/half-real-6.jpg'
-import img10 from '@/assets/images/half-real/half-real-10.jpg'
+import banner from '@/assets/images/half-real/half-real-banner.webp'
+import img1 from '@/assets/images/half-real/half-real-1.webp'
+import img3 from '@/assets/images/half-real/half-real-3.webp'
+import img4 from '@/assets/images/half-real/half-real-4.webp'
+import img5 from '@/assets/images/half-real/half-real-5.webp'
+import img6 from '@/assets/images/half-real/half-real-6.webp'
+import img10 from '@/assets/images/half-real/half-real-10.webp'
 
 const props = defineProps(['project'])
 const { next, previous } = nextProject()

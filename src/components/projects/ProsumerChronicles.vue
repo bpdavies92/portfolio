@@ -5,7 +5,7 @@
   >
     <v-img
       alt="Prosumer chronicles"
-      :height="width >= 960 ? 'auto' : 300"
+     height="300"
       aspect-ratio="16/9"
       cover
       :src="banner"

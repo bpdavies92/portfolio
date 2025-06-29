@@ -3,7 +3,7 @@
     <v-img
       alt="Understanding the awarding gap banner"
       :height="width >= 960 ? 'auto' : 300"
-      aspect-ratio="16/9"
+      height="300"
       cover
       :src="bannerImg"
       eager

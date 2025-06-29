@@ -2,7 +2,7 @@
   <section v-for="(d, i) in project" :key="i">
     <v-img
       alt=""
-      :height="width >= 960 ? 'auto' : 300"
+      height="300"
       aspect-ratio="16/9"
       cover
       :src="heroImg"

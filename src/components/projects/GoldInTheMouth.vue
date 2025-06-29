@@ -5,7 +5,7 @@
   >
     <v-img
       alt=""
-      max-height="400"
+      height="300"
       aspect-ratio="16/9"
       cover
       :src="gold7"

@@ -1,5 +1,6 @@
 // Plugins
 import vue from '@vitejs/plugin-vue'
+import viteImagemin from 'vite-plugin-imagemin';
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 
 
@@ -9,6 +10,11 @@ import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  build: {
+    minify: 'esbuild', // default is fine
+    sourcemap: false,  // important
+    target: 'es2017',
+  },
   plugins: [
     vue({ 
       template: { transformAssetUrls }
@@ -17,6 +23,12 @@ export default defineConfig({
     vuetify({
       autoImport: true,
     }),
+    [viteImagemin({
+      gifsicle: { optimizationLevel: 7 },
+      optipng: { optimizationLevel: 7 },
+      mozjpeg: { quality: 70 },
+      webp: { quality: 70 },
+    })]
   ],
   define: { 
     'process.env': {},

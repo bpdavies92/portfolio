@@ -5,7 +5,7 @@
   >
     <v-img
       alt=""
-      :height="width >= 960 ? 'auto' : 300"
+      height="300"
       aspect-ratio="16/9"
       cover
       :src="bannerImg"
@@ -108,12 +108,12 @@ import nextProject from '@/composables/nextProject'
 import { useWindowSize } from '@vueuse/core'
 
 // Import all images
-import bannerImg from '@/assets/images/afhea-self-study/afhe-banner.jpg'
-import af1 from '@/assets/images/afhea-self-study/af1.jpg'
-import af2 from '@/assets/images/afhea-self-study/af2.jpg'
-import af3 from '@/assets/images/afhea-self-study/af3.jpg'
-import af4 from '@/assets/images/afhea-self-study/af4.jpg'
-import af5 from '@/assets/images/afhea-self-study/af5.jpg'
+import bannerImg from '@/assets/images/afhea-self-study/afhe-banner.webp'
+import af1 from '@/assets/images/afhea-self-study/af1.webp'
+import af2 from '@/assets/images/afhea-self-study/af2.webp'
+import af3 from '@/assets/images/afhea-self-study/af3.webp'
+import af4 from '@/assets/images/afhea-self-study/af4.webp'
+import af5 from '@/assets/images/afhea-self-study/af5.webp'
 
 const { width } = useWindowSize()
 const props = defineProps(['project'])
