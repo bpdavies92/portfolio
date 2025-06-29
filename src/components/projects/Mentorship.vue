@@ -5,7 +5,7 @@
       height="300"
       aspect-ratio="16/9"
       cover
-      lazy-src="@/assets/images/default.webp"
+      :lazy-src="heroLazyImg"
       :src="heroImg"
       eager
     ></v-img>
@@ -94,7 +94,8 @@ const route = useRoute()
 const router = useRouter()
 
 // Import images properly
-import heroImg from '@/assets/images/mentorship/mentorship-hero.jpg'
-import img3 from '@/assets/images/mentorship/mentorship-3.jpg'
-import img4 from '@/assets/images/mentorship/mentorship-4.jpg'
+import heroImg from '@/assets/images/mentorship/mentorship-hero.webp'
+import heroLazyImg from '@/assets/images/mentorship/mentorship-hero-lazy.webp'
+import img3 from '@/assets/images/mentorship/mentorship-3.webp'
+import img4 from '@/assets/images/mentorship/mentorship-4.webp'
 </script>

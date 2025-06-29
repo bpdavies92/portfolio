@@ -5,7 +5,7 @@
       height="300"
       aspect-ratio="16/9"
       cover
-      lazy-src="@/assets/images/default.webp"
+      :lazy-src="heroLazyImg"
       eager
       :src="heroImg"
     ></v-img>
@@ -28,14 +28,7 @@
                   :src="img4"
                 ></v-img>
               </v-col>
-              <v-col cols="12" sm="12" md="12">
-                <v-img
-                  alt="Introduction with learning outcomes"
-                  cover
-                  aspect-ratio="16/9"
-                  :src="img5"
-                ></v-img>
-              </v-col>
+
               <v-col cols="12" sm="12" md="12">
                 <v-img
                   alt="Introduction with welcome video by Shuab Gamote"
@@ -186,6 +179,7 @@ const route = useRouter()
 
 // Import all images
 import heroImg from '@/assets/images/learning-communities/learning-communities-hero.webp'
+import heroLazyImg from '@/assets/images/learning-communities/learning-communities-hero-lazy.webp'
 import img1 from '@/assets/images/learning-communities/learning-communities-1.webp'
 import img3 from '@/assets/images/learning-communities/learning-communities-3.webp'
 import img4 from '@/assets/images/learning-communities/learning-communities-4.webp'

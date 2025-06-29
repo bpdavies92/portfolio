@@ -4,7 +4,7 @@
       alt="Understanding the awarding gap banner"
       :height="width >= 960 ? 'auto' : 300"
       height="300"
-      lazy-src="@/assets/images/default.webp"
+      :lazy-src="lazyBannerImg"
       cover
       :src="bannerImg"
       eager
@@ -29,10 +29,7 @@
                   :src="img1"
                 />
               </v-col>
-            </v-row>
-
-            <v-row>
-              <v-col cols="12">
+                         <v-col cols="12">
                 <v-img
                   alt="Introduction slide with introduction video by Rosie Bryce"
                   cover
@@ -40,7 +37,7 @@
                   :src="img2"
                 />
               </v-col>
-              <v-col cols="12">
+               <v-col cols="12">
                 <v-img
                   alt="Learning outcomes slide"
                   cover
@@ -48,10 +45,7 @@
                   :src="img3"
                 />
               </v-col>
-            </v-row>
-
-            <v-row>
-              <v-col cols="12">
+                            <v-col cols="12">
                 <v-img
                   alt="Creating change from data"
                   cover
@@ -59,7 +53,7 @@
                   :src="img4"
                 />
               </v-col>
-              <v-col cols="12">
+                            <v-col cols="12">
                 <v-img
                   alt="A slide of a selected section of the data slide"
                   cover
@@ -67,10 +61,7 @@
                   :src="img5"
                 />
               </v-col>
-            </v-row>
-
-            <v-row>
-              <v-col cols="12">
+                            <v-col cols="12">
                 <v-img
                   alt="Better quality still from collecting data section"
                   cover
@@ -78,10 +69,7 @@
                   :src="img6"
                 />
               </v-col>
-            </v-row>
-
-            <v-row>
-              <v-col cols="12">
+                           <v-col cols="12">
                 <v-img
                   alt="Exploring the dashboard section"
                   cover
@@ -89,18 +77,18 @@
                   :src="img7"
                 />
               </v-col>
-            </v-row>
-
-            <v-row>
-              <v-col cols="12">
+                          <v-col cols="12">
                 <v-img
                   alt="Case study page"
                   cover
-                  aspect-ratio="16/9"
+                  aspect-ratio="9/16"
                   :src="img8"
                 />
               </v-col>
             </v-row>
+
+
+        
           </v-col>
         </v-row>
 
@@ -120,15 +108,16 @@ import nextProject from '@/composables/nextProject'
 import { useWindowSize } from '@vueuse/core'
 
 // Image imports
-import bannerImg from '@/assets/images/understanding-awarding-gap/understanding-1.jpg'
-import img1 from '@/assets/images/understanding-awarding-gap/understanding-the-awarding-gap-1.jpg'
-import img2 from '@/assets/images/understanding-awarding-gap/understanding-the-awarding-gap-2.jpg'
-import img3 from '@/assets/images/understanding-awarding-gap/understanding-the-awarding-gap-3.jpg'
+import bannerImg from '@/assets/images/understanding-awarding-gap/understanding-1.webp'
+import lazyBannerImg from '@/assets/images/understanding-awarding-gap/understanding-banner-lazy.webp'
+import img1 from '@/assets/images/understanding-awarding-gap/understanding-the-awarding-gap-1.webp'
+import img2 from '@/assets/images/understanding-awarding-gap/understanding-the-awarding-gap-2.webp'
+import img3 from '@/assets/images/understanding-awarding-gap/understanding-the-awarding-gap-3.webp'
 import img4 from '@/assets/images/understanding-awarding-gap/understanding-2.gif'
-import img5 from '@/assets/images/understanding-awarding-gap/understanding-the-awarding-gap-8.jpg'
-import img6 from '@/assets/images/understanding-awarding-gap/understanding-the-awarding-gap-7.jpg'
-import img7 from '@/assets/images/understanding-awarding-gap/understanding-the-awarding-gap-5.jpg'
-import img8 from '@/assets/images/understanding-awarding-gap/understanding-the-awarding-gap-9.jpg'
+import img5 from '@/assets/images/understanding-awarding-gap/understanding-the-awarding-gap-8.webp'
+import img6 from '@/assets/images/understanding-awarding-gap/understanding-the-awarding-gap-7.webp'
+import img7 from '@/assets/images/understanding-awarding-gap/understanding-the-awarding-gap-5.webp'
+import img8 from '@/assets/images/understanding-awarding-gap/understanding-the-awarding-gap-9.webp'
 
 const { width } = useWindowSize()
 const props = defineProps(['project'])
