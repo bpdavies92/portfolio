@@ -24,16 +24,14 @@
           <v-col cols="12" sm="12" md="7">
             <v-row>
               <v-col cols="12" sm="12">
-                <v-lazy   
-                :options="{'threshold':0.5}"
-                  transition="scroll-y-reverse-transition">
+               
                   <v-img
                     alt="A hole, a mountain exhibition"
                     cover
                     aspect-ratio="16/9"
                     :src="img1"
                   ></v-img>
-                </v-lazy>
+      
               </v-col>
               <v-col cols="12" sm="12">
                 <v-lazy

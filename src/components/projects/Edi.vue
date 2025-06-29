@@ -19,7 +19,7 @@
           </v-col>
           <v-col cols="12" sm="12" md="7">
             <v-row>
-              <v-col cols="12">
+              <v-col cols="12" sm="12">
                 <v-img
                   alt="EDI training introduction page"
                   cover
@@ -27,68 +27,71 @@
                   :src="img1"
                 ></v-img>
               </v-col>
-            </v-row>
-            <v-row>
-              <v-col>
-                <Quote>
-                  <template v-slot:quote>
-                    <p>Well put together with clear objectives and learning outcomes.</p>
-                  </template>
-                  <template v-slot:person>
-                    Anonymous feedback via Microsoft Forms
-                  </template>
-                </Quote>
+                <v-col cols="12" sm="12" md="12">
+                <v-lazy :options="{'threshold':0.5}"
+                  transition="scroll-y-reverse-transition">
+                  <Quote>
+                    <template v-slot:quote>
+                      <p>Well put together with clear objectives and learning outcomes.</p>
+                    </template>
+                    <template v-slot:person>
+                      Anonymous feedback via Microsoft Forms
+                    </template>
+                  </Quote>
+                </v-lazy>
+              </v-col>
+              <v-col cols="12" sm="12" md="12">
+                <v-lazy :options="{'threshold':0.5}"
+                  transition="scroll-y-reverse-transition">
+                  <v-img
+                    alt="Dignity at work page"
+                    aspect-ratio="16/9"
+                    :src="img2"
+                  ></v-img>
+                </v-lazy>
+              </v-col>
+              <v-col cols="12" sm="12" md="12">
+                <v-lazy :options="{'threshold':0.5}"
+                  transition="scroll-y-reverse-transition">
+                  <v-img
+                    alt="Home page displaying all sections of the module"
+                    aspect-ratio="16/9"
+                    :src="img3"
+                  ></v-img>
+                </v-lazy>
+              </v-col>
+              <v-col cols="12" sm="12" md="12">
+                <v-lazy :options="{'threshold':0.5}"
+                  transition="scroll-y-reverse-transition">
+                  <Quote>
+                    <template v-slot:quote>
+                      <p>I thought this was a well constructed course - a significant improvement over the previous version.</p>
+                    </template>
+                    <template v-slot:person>
+                      Anonymous feedback via Microsoft Forms
+                    </template>
+               
+                </Quote> 
+              </v-lazy>
+              </v-col>
+              <v-col cols="12" sm="12" md="12">
+                <v-lazy :options="{'threshold':0.5}"
+                  transition="scroll-y-reverse-transition">
+                  <v-img
+                    alt="Talking head video in the course."
+                    cover
+                    aspect-ratio="16/9"
+                    :src="img4"
+                  ></v-img>
+                </v-lazy>
               </v-col>
             </v-row>
+  
+
+
+        
             <v-row>
-              <v-col cols="12" sm="12" md="6">
-                <v-img
-                  alt="Dignity at work page"
-                  aspect-ratio="16/9"
-                  :src="img2"
-                ></v-img>
-              </v-col>
-              <v-col cols="12" sm="12" md="6">
-                <v-img
-                  alt="Home page displaying all sections of the module"
-                  aspect-ratio="16/9"
-                  :src="img3"
-                ></v-img>
-              </v-col>
-            </v-row>
-            <v-row>
-              <v-col>
-                <Quote>
-                  <template v-slot:quote>
-                    <p>I thought this was a well constructed course - a significant improvement over the previous version.</p>
-                  </template>
-                  <template v-slot:person>
-                    Anonymous feedback via Microsoft Forms
-                  </template>
-                </Quote>
-              </v-col>
-            </v-row>
-            <v-row>
-              <v-col cols="12">
-                <v-img
-                  alt="Talking head video in the course."
-                  cover
-                  aspect-ratio="16/9"
-                  :src="img4"
-                ></v-img>
-              </v-col>
-            </v-row>
-            <v-row>
-              <v-col>
-                <Quote>
-                  <template v-slot:quote>
-                    <p>Liked the variety of training resources which helped to cement the learning.</p>
-                  </template>
-                  <template v-slot:person>
-                    Anonymous feedback via Microsoft Forms
-                  </template>
-                </Quote>
-              </v-col>
+
             </v-row>
           </v-col>
         </v-row>
