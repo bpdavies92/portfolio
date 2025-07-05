@@ -8,7 +8,7 @@
       alt=""
       height="300"
       aspect-ratio="16/9"
-      lazy-src="@/assets/images/default.webp"
+      :lazy-src="bannerLazy"
       cover
       :src="banner"
     ></v-img>
@@ -167,7 +167,8 @@ import nextProject from '@/composables/nextProject'
 import { useWindowSize } from '@vueuse/core'
 
 // Import the banner image properly
-import banner from '@/assets/images/critical-pedagogy/crit-ped-banner.jpg'
+import banner from '@/assets/images/critical-pedagogy/crit-ped-banner.webp'
+import bannerLazy from '@/assets/images/critical-pedagogy/crit-ped-banner-lazy.webp'
 
 const { width } = useWindowSize()
 const props = defineProps(['project'])

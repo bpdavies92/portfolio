@@ -7,7 +7,7 @@
     eager
       alt=""
       height="300"
-      lazy-src="@/assets/images/default.webp"
+      :lazy-src="bannerLazy"
       aspect-ratio="16/9"
       cover
       :src="banner"
@@ -78,8 +78,9 @@ import nextProject from '@/composables/nextProject'
 import { useWindowSize } from '@vueuse/core'
 
 // Import your images for proper bundling
-import banner from '@/assets/images/five-year-plan/five-year-plan-banner.jpg'
-import diagram from '@/assets/images/five-year-plan/my_5yp_diagram.png'
+import banner from '@/assets/images/five-year-plan/five-year-plan-banner.webp'
+import bannerLazy from '@/assets/images/five-year-plan/five-year-plan-banner-lazy.webp'
+import diagram from '@/assets/images/five-year-plan/my_5yp_diagram.webp'
 
 const { width } = useWindowSize()
 

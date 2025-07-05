@@ -2,7 +2,6 @@
   <section v-for="(d, i) in project" :key="i">
     <v-img
       alt="Understanding the awarding gap banner"
-      :height="width >= 960 ? 'auto' : 300"
       height="300"
       :lazy-src="lazyBannerImg"
       cover

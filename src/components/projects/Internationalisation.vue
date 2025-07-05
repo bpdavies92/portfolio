@@ -4,7 +4,7 @@
       alt=""
       height="300"
       aspect-ratio="16/9"
-      lazy-src="@/assets/images/default.webp"
+      :lazy-src="bannerImgLazy"
       cover
       :src="bannerImg"
       eager
@@ -117,6 +117,7 @@ const route = useRouter()
 
 // Import images
 import bannerImg from '@/assets/images/internationalisation/Internationalisation-banner.webp'
+import bannerImgLazy from '@/assets/images/internationalisation/Internationalisation-banner-lazy.webp'
 import img1 from '@/assets/images/internationalisation/internationalisation-1.png'
 import img2 from '@/assets/images/internationalisation/international-2.webp'
 import img3 from '@/assets/images/internationalisation/international-3.webp'

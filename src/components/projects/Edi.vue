@@ -5,7 +5,7 @@
       alt=""
       height="300"
       aspect-ratio="16/9"
-      lazy-src="@/assets/images/default.webp"
+      :lazy-src="headerImgLazy"
       cover
       :src="headerImg"
     ></v-img>
@@ -137,9 +137,10 @@ const router = useRoute()
 const route = useRouter()
 
 // Import images for use in :src
-import headerImg from '@/assets/images/edi-module/header_img_2.jpg'
-import img1 from '@/assets/images/edi-module/E&D-1.jpg'
-import img2 from '@/assets/images/edi-module/E&D-2.jpg'
-import img3 from '@/assets/images/edi-module/E&D-3.jpg'
-import img4 from '@/assets/images/edi-module/E&D-5.jpg'
+import headerImg from '@/assets/images/edi-module/header_img_2.webp'
+import headerImgLazy from '@/assets/images/edi-module/header_img_2_lazy.webp'
+import img1 from '@/assets/images/edi-module/E&D-1.webp'
+import img2 from '@/assets/images/edi-module/E&D-2.webp'
+import img3 from '@/assets/images/edi-module/E&D-3.webp'
+import img4 from '@/assets/images/edi-module/E&D-5.webp'
 </script>

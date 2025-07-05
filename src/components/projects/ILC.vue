@@ -3,7 +3,7 @@
     <v-img
       alt=""
       height="300"
-      lazy-src="@/assets/images/default.webp"
+      :lazy-src="bannerLazy"
       aspect-ratio="16/9"
       cover
       :src="banner"
@@ -124,7 +124,8 @@ import Description from '../Description.vue'
 import { useRouter, useRoute } from 'vue-router'
 import nextProject from '@/composables/nextProject'
 import { useWindowSize } from '@vueuse/core'
-import banner from '@/assets/images/ilc/ilc-banner.jpg'
+import banner from '@/assets/images/ilc/ilc-banner.webp'
+import bannerLazy from '@/assets/images/ilc/ilc-banner-lazy.webp'  
 
 const { width } = useWindowSize()
 const props = defineProps(['project'])
