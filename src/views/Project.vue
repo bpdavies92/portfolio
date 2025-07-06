@@ -9,6 +9,7 @@
     import { useRouter, useRoute } from "vue-router" 
     import projects from '@/composables/projects'
     import Edi from '@/components/projects/Edi'
+    import CoursePrinciples from "@/components/projects/CoursePrinciples.vue"
     import Afhea from '@/components/projects/Afhea'
     import FiveYearPlan from '@/components/projects/FiveYearPlan'
     import ASmallView from "@/components/projects/ASmallView.vue"
@@ -77,6 +78,18 @@
             return UnderstandingAwardingGap
             case "fellowship-mentorship":
             return Mentorship
+            case "course-principles":
+            return CoursePrinciples
+            // Add more cases as needed for other components
+            // Ensure the component names match the ones you have imported
+            // If you have a default component, you can return it here
+            // or handle it as a fallback
+            // For example, you can return a default component like this:
+            // return DefaultComponent
+            // or return null if no match is found
+            // return DefaultComponent
+            // or return null if no match is found
+            // return null
             default:
             return null
         }

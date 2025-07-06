@@ -47,28 +47,28 @@
                 <p class="text-caption mt-3">Video introduction by Professor Fiona Saunders</p>
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-img height="500" alt="LEED conference workshop" cover aspect-ratio="16/9" lazy-src="@/assets/images/placeholder.webp" :src="img2" />
+                <v-img height="500" alt="LEED conference workshop" cover aspect-ratio="16/9" :lazy-src="img2Lazy" :src="img2" />
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-img height="500" alt="Dr Fiona Saunders introducing the LEED conference" cover aspect-ratio="16/9" lazy-src="@/assets/images/placeholder.webp" :src="img3" />
+                <v-img height="500" alt="Dr Fiona Saunders introducing the LEED conference" cover aspect-ratio="16/9" :lazy-src="img3Lazy" :src="img3" />
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-img height="500" alt="Professor Andy Dainty speaking at the LEED conference" cover aspect-ratio="16/9" lazy-src="@/assets/images/placeholder.webp" :src="img4" />
+                <v-img height="500" alt="Professor Andy Dainty speaking at the LEED conference" cover aspect-ratio="16/9" :lazy-src="img4Lazy" :src="img4" />
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-img height="500" alt="Participant looking at posters" cover aspect-ratio="16/9" :lazy-src="img5" :src="img5" />
+                <v-img height="500" alt="Participant looking at posters" cover aspect-ratio="16/9" :lazy-src="img5Lazy" :src="img5" />
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-img height="500" alt="Origami at conference check-in" cover aspect-ratio="16/9" lazy-src="@/assets/images/placeholder.webp" :src="img7" />
+                <v-img height="500" alt="Origami at conference check-in" cover aspect-ratio="16/9" :lazy-src="img7Lazy" :src="img7" />
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                  <v-img height="500" alt="Participant playing Jenga" cover aspect-ratio="16/9" lazy-src="@/assets/images/placeholder.webp" :src="img12" />
+                  <v-img height="500" alt="Participant playing Jenga" cover aspect-ratio="16/9" :lazy-src="img12Lazy" :src="img12" />
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                  <v-img height="500" alt="Workshop session" cover aspect-ratio="16/9" lazy-src="@/assets/images/placeholder.webp" :src="img8" />
+                  <v-img height="500" alt="Workshop session" cover aspect-ratio="16/9" :lazy-src="img8Lazy" :src="img8" />
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-img height="500" alt="Another workshop" cover aspect-ratio="16/9" lazy-src="@/assets/images/placeholder.webp" :src="img10" />
+                <v-img height="500" alt="Another workshop" cover aspect-ratio="16/9" :lazy-src="img10Lazy" :src="img10" />
               </v-col>
             </v-row>
 
@@ -119,6 +119,13 @@ import img7 from '@/assets/images/conference/leed-conf-7.webp'
 import img8 from '@/assets/images/conference/leed-conf-8.webp'
 import img10 from '@/assets/images/conference/leed-conf-10.webp'
 import img12 from '@/assets/images/conference/leed-conf-12.webp'
+import img2Lazy from '@/assets/images/conference/leed-conf-2-lazy.webp'
+import img3Lazy from '@/assets/images/conference/leed-conf-3-lazy.webp'
+import img4Lazy from '@/assets/images/conference/leed-conf-4-lazy.webp'
+import img5Lazy from '@/assets/images/conference/leed-conf-5-lazy.webp'
+import img7Lazy from '@/assets/images/conference/leed-conf-7-lazy.webp'
+import img8Lazy from '@/assets/images/conference/leed-conf-8-lazy.webp'
+import img10Lazy from '@/assets/images/conference/leed-conf-10-lazy.webp'
 import img12Lazy from '@/assets/images/conference/leed-conf-12-lazy.webp'
 
 const props = defineProps(['project'])

@@ -161,7 +161,7 @@ const projects = () => {
             slug: "uta-web-development",
             date : "01/12/2021",
             start : "December 2021",
-            end: "on-going",
+            end: "October 2023",
             location: "Manchester",
             title: "University Teaching Academy website",
             shortTitle: "UTA website",
@@ -280,7 +280,7 @@ const projects = () => {
             end : "July 2023",
             location : "Manchester",
             subtitle : "The LEED 2023 conference focused on Learning and Teaching at Manchester Met. The aim of the conference was to give staff a chance to share good practice and network with other colleagues from across the university. Conference themes revolved around the recently published education strategy and university aims outlined within that document.",
-            description : "<p class='text-body-1'>The LEED 2023 conference focused on the theme of Building a Transformational Active Learning Community. The theme draws inspiration from Manchester Met’s new Education Strategy, echoing the strategy’s commitment to delivering a broad-based educational experience linked to graduate, employer, and societal needs. Ultimately, the conference provided a platform for both professional service and academic staff to share best teaching practices and connect with each other.</p><p class='text-body-1'>While I had input at all levels of the conference, my primary contribution was the development of the website and the creation/sourcing of graphics. I also collaborated with the academic team at the University Teaching Academy to develop the conference program. Additionally, I created a video to explain the key details of the conference and how people could get involved, which received over 300 views.</p><p class='text-body-1'>In addition to my main role in supporting the conference, I made a significant contribution by helping staff navigate various pieces of technology. This included applications such as Microsoft Forms, Excel, PDF editing, and the installation of audio-visual equipment on the day of the conference.</p>",
+            description : "<p class='text-body-1'>I played a key role in supporting the LEED 2023 conference, primarily by designing and developing the event website and creating/sourcing graphics. I collaborated with the University Teaching Academy to shape the conference programme and produced a promotional explainer video, which received over 300 views. On the day of the event, I also supported staff with tech troubleshooting—including Microsoft Forms, Excel, PDF editing, and AV setup.</p>",
             thumbnail : `${import.meta.env.VITE_BASE}/images/leed-conf-card-img-2.webp`,
             tags : [ "web design", "conference", "event", "pedagogy", "video" ],
             techUsed : [
@@ -447,7 +447,7 @@ const projects = () => {
             location : "Manchester",
             date : "01/12/2021",
             start : "December 2021",
-            end : "on-going",   
+            end: "October 2023", 
             subtitle : "The aim of the Critical Pedagogy podcast series is to illustrate the range of experimental, innovative, and inclusive pedagogical theories/strategies/activities used across all Faculties at Manchester Met. The series is external-facing and will serve as a digital repository of pedagogical knowledge that benefits staff and students alike.",
             description : "<p class='text-body-1'>The aim of the Critical Pedagogy podcast series is to illustrate the range of experimental, innovative, and inclusive pedagogical theories/strategies/activities used across all Faculties at Manchester Met. The series is external-facing and will serve as a digital repository of pedagogical knowledge that benefits staff and students alike.</p>",
             thumbnail : `${import.meta.env.VITE_BASE}/images/crit-ped-1.webp`,
@@ -851,6 +851,39 @@ const projects = () => {
                 {
                     skill : "e-learning",
                     icon : "mdi-cast-education"
+                }
+            ]
+        },
+          {
+            id: 19,
+            slug: "course-principles",
+            title: "Course Principles introductory videos",
+            shortTitle: 'Course Principles',
+            end : "January 2025",
+            date : "01/01/2025",
+            location : "Leeds",
+            subtitle : "These videos provide a brief introduction to Leeds Beckett University’s Course Principles - a set of guidelines and reflective questions designed to support academic staff in implementing effective pedagogical practices during course development. The videos offer a quick overview of key principles to help enhance teaching and learning.",
+            description : "<p class='text-body-1'>These videos provide a brief introduction to Leeds Beckett University’s Course Principles - a set of guidelines and reflective questions designed to support academic staff in implementing effective pedagogical practices during course development. The videos offer a quick overview of key principles to help enhance teaching and learning.</p>",
+            thumbnail : `${import.meta.env.VITE_BASE}/images/course-principles-img.webp`,
+            tags : ["video", "motion graphics", "video editing", "filming" ],
+            techUsed : [
+                {
+                    tech : "After Effects",
+                    icon : "mdi-movie-star"
+                },
+                {
+                    tech : "Camera",
+                    icon : "mdi-film"
+                }
+            ],
+            skills : [
+                {
+                    skill : "Video editing",
+                    icon : "mdi-movie-open-edit"
+                },
+                {
+                    skill : "Design",
+                    icon : "mdi-pencil-ruler"
                 }
             ]
         }

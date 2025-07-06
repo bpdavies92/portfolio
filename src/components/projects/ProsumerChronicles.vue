@@ -23,55 +23,55 @@
           <v-col cols="12" sm="12" md="7">
             <v-row>
               <v-col cols="12" sm="12">
-                <v-img alt="Prosumer chronicles" cover :src="img17" lazy-src="img17Lazy"></v-img>
+                <v-img alt="Prosumer chronicles" cover :src="img17" :lazy-src="img17Lazy"></v-img>
               </v-col>
               <v-col cols="12" sm="12" md="12">
                 <lazy                   
                   :options="{'threshold':0.5}"
                   transition="scroll-y-reverse-transition">
-                  <v-img aspect-ratio="16/9" alt="Prosumer chronicles" :src="img1" lazy-src="img1Lazy"></v-img>
+                  <v-img aspect-ratio="16/9" alt="Prosumer chronicles" :src="img1" :lazy-src="img1Lazy"></v-img>
                 </lazy>
               </v-col>
               <v-col cols="12" sm="12" md="12">
                 <lazy :options="{'threshold':0.5}"
                   transition="scroll-y-reverse-transition">
-                  <v-img aspect-ratio="16/9" alt="Prosumer chronicles" lazy-src="img7Lazy" max-height="400" cover :src="img7"></v-img>
+                  <v-img aspect-ratio="16/9" alt="Prosumer chronicles" :lazy-src="img7Lazy" max-height="400" cover :src="img7"></v-img>
                 </lazy>
               </v-col>
               <v-col cols="12" sm="12" md="12">
                 <lazy :options="{'threshold':0.5}"
                   transition="scroll-y-reverse-transition">
-                  <v-img lazy-src="img3Lazy" aspect-ratio="16/9" alt="Prosumer chronicles" max-height="400" cover :src="img3"></v-img>
+                  <v-img :lazy-src="img3Lazy" aspect-ratio="16/9" alt="Prosumer chronicles" max-height="400" cover :src="img3"></v-img>
                 </lazy>
               </v-col>
               <v-col cols="12" sm="12" md="12">
                 <lazy :options="{'threshold':0.5}"
                   transition="scroll-y-reverse-transition">
-                  <v-img lazy-src="img14Lazy" aspect-ratio="9/16" alt="Prosumer chronicles" cover :src="img14"></v-img>
+                  <v-img :lazy-src="img14Lazy" aspect-ratio="9/16" alt="Prosumer chronicles" cover :src="img14"></v-img>
                 </lazy>
               </v-col>
               <v-col cols="12" sm="12" md="12">
                 <lazy :options="{'threshold':0.5}"
                   transition="scroll-y-reverse-transition">
-                  <v-img lazy-src="img4Lazy" aspect-ratio="16/9" alt="Prosumer chronicles" cover :src="img4"></v-img>
+                  <v-img :lazy-src="img4Lazy" aspect-ratio="16/9" alt="Prosumer chronicles" cover :src="img4"></v-img>
                 </lazy>
               </v-col>
               <v-col cols="12" sm="12" md="12">
                 <lazy :options="{'threshold':0.5}"
                   transition="scroll-y-reverse-transition">
-                  <v-img lazy-src="img12Lazy" aspect-ratio="16/9" alt="Prosumer chronicles" cover :src="img12"></v-img>
+                  <v-img :lazy-src="img12Lazy" aspect-ratio="16/9" alt="Prosumer chronicles" cover :src="img12"></v-img>
                 </lazy>
               </v-col>
               <v-col cols="12" sm="12" md="12">
                 <lazy :options="{'threshold':0.5}"
                   transition="scroll-y-reverse-transition">
-                  <v-img lazy-src="img18Lazy" aspect-ratio="16/9" alt="Prosumer chronicles" :src="img18"></v-img>
+                  <v-img :lazy-src="img18Lazy" aspect-ratio="16/9" alt="Prosumer chronicles" :src="img18"></v-img>
                 </lazy>
               </v-col>
               <v-col cols="12" sm="12" md="12">
                 <lazy :options="{'threshold':0.5}"
                   transition="scroll-y-reverse-transition">
-                  <v-img lazy-src="img15Lazy" aspect-ratio="9/16" alt="Prosumer chronicles" cover :src="img15"></v-img>
+                  <v-img :lazy-src="img15Lazy" aspect-ratio="9/16" alt="Prosumer chronicles" cover :src="img15"></v-img>
                 </lazy>
               </v-col>
             </v-row>
