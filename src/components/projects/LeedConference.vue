@@ -80,7 +80,7 @@
           </v-col>
         </v-row>
 
-        <v-sheet class="d-flex mt-12">
+        <v-sheet class="d-flex mt-12 align-center">
           <v-btn
             size="large"
             variant="text"
@@ -90,6 +90,7 @@
           >
             Previous
           </v-btn>
+          <v-sheet class="font-weight-bold">{{ IDNumber }} / {{ works.length }}</v-sheet>
           <v-btn
             size="large"
             variant="text"
@@ -109,6 +110,7 @@
 import Description from '../Description.vue'
 import { useRouter, useRoute } from 'vue-router'
 import nextProject from '@/composables/nextProject'
+import projects from '@/composables/projects'
 
 // Image imports
 import img2 from '@/assets/images/conference/leed-conf-2.webp'
@@ -128,7 +130,8 @@ import img8Lazy from '@/assets/images/conference/leed-conf-8-lazy.webp'
 import img10Lazy from '@/assets/images/conference/leed-conf-10-lazy.webp'
 import img12Lazy from '@/assets/images/conference/leed-conf-12-lazy.webp'
 
-const props = defineProps(['project'])
+const props = defineProps(['project', 'IDNumber'])
+const { works } = projects()
 const { next, previous } = nextProject()
 const router = useRoute()
 const route = useRouter()

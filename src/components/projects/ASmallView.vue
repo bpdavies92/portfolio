@@ -109,8 +109,9 @@
           </v-col>
         </v-row>
 
-        <v-sheet class="d-flex mt-12">
+        <v-sheet class="d-flex mt-12 align-center">
           <v-btn size="large" variant="text" class="mr-auto" prepend-icon="mdi-arrow-left" @click="previous(project[0])">Previous</v-btn>
+           <v-sheet class="font-weight-bold">{{ IDNumber }} / {{ works.length }}</v-sheet>
           <v-btn size="large" variant="text" class="ml-auto" append-icon="mdi-arrow-right" @click="next(project[0])">Next</v-btn>
         </v-sheet>
 
@@ -125,6 +126,7 @@ import Description from '../Description.vue'
 import { useRouter, useRoute } from 'vue-router'
 import nextProject from '@/composables/nextProject'
 import { useWindowSize } from '@vueuse/core'
+import projects from '@/composables/projects'
 
 const { width } = useWindowSize()
 
@@ -139,10 +141,11 @@ import img4Lazy from '@/assets/images/a-small-view/a_small_view_4_lazy.webp'
 import img5 from '@/assets/images/a-small-view/a_small_view_5.webp'
 import img6 from '@/assets/images/a-small-view/a_small_view_6.webp'
 
-const props = defineProps(['project'])
+const props = defineProps(['project', 'IDNumber'])
 const { next, previous } = nextProject()
 const router = useRoute()
 const route = useRouter()
+const { works } = projects()
 
 // Example reactive for target (if you want to handle that state)
 import { ref } from 'vue'

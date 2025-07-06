@@ -149,10 +149,11 @@
             </v-row>
           </v-col>
         </v-row>
-        <v-sheet class="d-flex mt-12">
+        <v-sheet class="d-flex mt-12 align-center">
           <v-btn size="large" variant="text" class="mr-auto" prepend-icon="mdi-arrow-left" @click="previous(project[0])">
             Previous
           </v-btn>
+          <v-sheet class="font-weight-bold">{{ IDNumber }} / {{ works.length }}</v-sheet>
           <v-btn size="large" variant="text" class="ml-auto" append-icon="mdi-arrow-right" @click="next(project[0])">
             Next
           </v-btn>
@@ -167,13 +168,15 @@ import Description from '../Description.vue'
 import { useRouter, useRoute } from 'vue-router'
 import nextProject from '@/composables/nextProject'
 import { useWindowSize } from '@vueuse/core'
+import projects from '@/composables/projects'
 
 // Import the banner image properly
 import banner from '@/assets/images/critical-pedagogy/crit-ped-banner.webp'
 import bannerLazy from '@/assets/images/critical-pedagogy/crit-ped-banner-lazy.webp'
 
 const { width } = useWindowSize()
-const props = defineProps(['project'])
+const { works } = projects()
+const props = defineProps(['project', 'IDNumber'])
 const { next, previous } = nextProject()
 const router = useRoute()
 const route = useRouter()

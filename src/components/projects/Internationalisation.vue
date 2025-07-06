@@ -82,7 +82,7 @@
             </v-row>
           </v-col>
         </v-row>
-        <v-sheet class="d-flex mt-12">
+        <v-sheet class="d-flex mt-12 align-center">
           <v-btn
             size="large"
             variant="text"
@@ -92,6 +92,7 @@
           >
             Previous
           </v-btn>
+          <v-sheet class="font-weight-bold">{{ IDNumber }} / {{ works.length }}</v-sheet>
           <v-btn
             size="large"
             variant="text"
@@ -111,10 +112,12 @@
 import Description from '../Description.vue'
 import { useRouter, useRoute } from 'vue-router'
 import nextProject from '@/composables/nextProject'
+import projects from '@/composables/projects'
 import { useWindowSize } from '@vueuse/core'
 
+const { works } = projects()
 const { width } = useWindowSize()
-const props = defineProps(['project'])
+const props = defineProps(['project', 'IDNumber'])
 const { next, previous } = nextProject()
 const router = useRoute()
 const route = useRouter()

@@ -102,8 +102,9 @@
             </v-row>
           </v-col>
         </v-row>
-        <v-sheet class="d-flex mt-12">
+        <v-sheet class="d-flex mt-12 align-center">
           <v-btn size="large" variant="text" class="mr-auto" prepend-icon="mdi-arrow-left" @click="previous(project[0])">Previous</v-btn>
+          <v-sheet class="font-weight-bold">{{ IDNumber }} / {{ works.length }}</v-sheet>
           <v-btn size="large" variant="text" class="ml-auto" append-icon="mdi-arrow-right" @click="next(project[0])">Next</v-btn>
         </v-sheet>
       </div>
@@ -116,13 +117,15 @@ import Description from '../Description.vue'
 import Quote from '../Quote.vue'
 import { useRouter, useRoute } from 'vue-router'
 import nextProject from '@/composables/nextProject'
+import projects from '@/composables/projects'
 
 // Import your images so the bundler processes them correctly
 import design1 from '@/assets/images/assessment-design/design-1.png'
 import design2 from '@/assets/images/assessment-design/design-2.png'
 import design3 from '@/assets/images/assessment-design/design-3.png'
 
-const props = defineProps(['project'])
+const props = defineProps(['project', 'IDNumber'])
+const {works} = projects()
 const { next, previous } = nextProject()
 const router = useRoute()
 const route = useRouter()

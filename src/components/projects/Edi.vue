@@ -99,7 +99,7 @@
             </v-row>
           </v-col>
         </v-row>
-        <v-sheet class="d-flex mt-12">
+        <v-sheet class="d-flex mt-12 align-center">
           <v-btn
             size="large"
             variant="text"
@@ -109,6 +109,7 @@
           >
             Previous
           </v-btn>
+          <v-sheet class="font-weight-bold">{{ IDNumber }} / {{ works.length }}</v-sheet>
           <v-btn
             size="large"
             variant="text"
@@ -130,15 +131,17 @@ import Quote from '../Quote.vue'
 import { useRouter, useRoute } from 'vue-router'
 import nextProject from '@/composables/nextProject'
 import { useWindowSize } from '@vueuse/core'
+import projects from '@/composables/projects'
 
 // Responsive window width
 const { width } = useWindowSize()
 
 // Props and navigation
-const props = defineProps(['project'])
+const props = defineProps(['project', 'IDNumber'])
 const { next, previous } = nextProject()
 const router = useRoute()
 const route = useRouter()
+const { works } = projects()
 
 // Import images for use in :src
 import headerImg from '@/assets/images/edi-module/header_img_2.webp'

@@ -75,7 +75,7 @@
           </v-col>
         </v-row>
 
-        <v-sheet class="d-flex mt-12">
+        <v-sheet class="d-flex mt-12 align-center">
           <v-btn
             size="large"
             variant="text"
@@ -85,6 +85,8 @@
           >
             Previous
           </v-btn>
+
+           <v-sheet class="font-weight-bold">{{ IDNumber }} / {{ works.length }}</v-sheet>
 
           <v-btn
             size="large"
@@ -106,6 +108,7 @@ import Description from '../Description.vue'
 import { useRouter, useRoute } from 'vue-router'
 import nextProject from '@/composables/nextProject'
 import { useWindowSize } from '@vueuse/core'
+import projects from '@/composables/projects'
 
 // Import all images
 import bannerImg from '@/assets/images/afhea-self-study/afhe-banner.webp'
@@ -117,7 +120,8 @@ import af4 from '@/assets/images/afhea-self-study/af4.webp'
 import af5 from '@/assets/images/afhea-self-study/af5.webp'
 
 const { width } = useWindowSize()
-const props = defineProps(['project'])
+const { works } = projects()
+const props = defineProps(['project', 'IDNumber'])
 const { next, previous } = nextProject()
 const router = useRoute()
 const route = useRouter()

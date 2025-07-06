@@ -92,7 +92,7 @@
           </v-col>
         </v-row>
 
-        <v-sheet class="d-flex mt-12">
+        <v-sheet class="d-flex mt-12 align-center">
           <v-btn
             size="large"
             variant="text"
@@ -102,6 +102,7 @@
           >
             Previous
           </v-btn>
+          <v-sheet class="font-weight-bold">{{ IDNumber }} / {{ works.length }}</v-sheet>
           <v-btn
             size="large"
             variant="text"
@@ -114,12 +115,15 @@
         </v-sheet>
       </div>
     </v-container>
+
+
   </section>
 </template>
 
 <script setup>
 import { useWindowSize } from '@vueuse/core'
 import Description from '../Description.vue'
+import projects from '@/composables/projects'
 import Quote from '../Quote.vue'
 import nextProject from '@/composables/nextProject'
 import { useRouter, useRoute } from 'vue-router'
@@ -130,8 +134,9 @@ import bannerImageLazy from '@/assets/images/calculator/degree-calc-banner-lazy.
 import calcImage from '@/assets/images/calculator/calc-1.jpg'
 
 const { width } = useWindowSize()
+const {works} = projects()
 
-const props = defineProps(['project'])
+const props = defineProps(['project', 'IDNumber'])
 const { next, previous } = nextProject()
 const router = useRoute()
 const route = useRouter()

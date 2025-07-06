@@ -1,5 +1,5 @@
 <template> 
-    <component :is="selectedComponent" :project="project"></component> 
+    <component :is="selectedComponent" :IDNumber="projectPageId" :project="project"></component> 
     <RelatedProjects :works="works" :project="project" :key="route.params.id"/>
 </template>
 
@@ -101,5 +101,32 @@
         })
     })
 
+        const projectPageId = computed(() => {
+
+            const sortedWorks = works.value.sort((a, b) => {
+      
+                const titleA = new Date(a.date)
+                const titleB = new Date(b.date)
+
+                if(titleA < titleB) {
+                return 1
+                } 
+                if(titleA > titleB) {
+                return -1
+                } 
+                return 0
+            })
+
+        const IDNumber = works.value.find((d,i) => {
+            return d.slug === route.params.id
+        })
+        
+        console.log(IDNumber)
+            const outOffNumber = sortedWorks.indexOf(IDNumber)
+            return outOffNumber + 1
+        })
+
+
+    
 
 </script>
