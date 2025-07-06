@@ -38,7 +38,7 @@
                   :options="{'threshold':0.5}"
                   transition="scroll-y-reverse-transition"
                 >
-                  <div style="position:relative; padding-bottom:66.125%">
+                 <div style="position: relative; width: 100%; padding-top: 66.125%; aspect-ratio: 16/9;">
                     <iframe
                       id="kaltura_player"
                       src="https://cdnapisec.kaltura.com/p/1128062/sp/112806200/embedIframeJs/uiconf_id/27474902/partner_id/1128062?iframeembed=true&playerId=kaltura_player&entry_id=1_ml3m6qkt&flashvars[akamaiHD.loadingPolicy]=preInitialize&amp;flashvars[akamaiHD.asyncInit]=true&amp;flashvars[streamerType]=hdnetwork&amp;flashvars[localizationCode]=en&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[hotspots.plugin]=1&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_2xxcbsfu"
@@ -62,6 +62,7 @@
                   alt="Navigation page with hero"
                   :src="design1"
                   aspect-ratio="16/9"
+                  lazy-src="@/assets/images/placeholder.webp"
                 ></v-img>
               </v-col>
               <v-col cols="12" sm="12" md="12">
@@ -82,6 +83,7 @@
               </v-col>
               <v-col cols="12" sm="12">
                 <v-img
+                  lazy-src="@/assets/images/placeholder.webp"
                   cover
                   alt="Design considerations with flip card interaction"
                   :src="design2"
@@ -90,6 +92,7 @@
               </v-col>
               <v-col cols="12" sm="12">
                 <v-img
+                  lazy-src="@/assets/images/placeholder.webp"
                   cover
                   alt="Marking criteria section with learning outcome interaction, displaying different learning outcomes depending on the level."
                   :src="design3"

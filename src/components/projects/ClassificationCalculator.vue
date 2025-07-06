@@ -60,6 +60,7 @@
                       cover
                       :src="calcImage"
                       aspect-ratio="16/9"
+                      lazy-src="@/assets/images/placeholder.webp"
                     ></v-img>
                   </v-col>
                     <v-col cols="12" sm="12" md="12">
@@ -67,7 +68,7 @@
                       :options="{'threshold':0.5}"
                       transition="scroll-y-reverse-transition"
                     >
-                      <Quote>
+                      <Quote minHeight="'743px'">
                         <template v-slot:quote>
                           It was my first time working with [Ben] and he was an absolute
                           joy. [Ben] produced something that was far better than I ever
@@ -143,6 +144,7 @@ const route = useRouter()
   height: 0;
   overflow: hidden;
   max-width: 100%;
+  aspect-ratio: 16/9;
 }
 
 .iframe-wrapper iframe {

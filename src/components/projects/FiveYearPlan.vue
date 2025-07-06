@@ -23,7 +23,7 @@
           <v-col cols="12" sm="12" md="7">
             <v-row>
               <v-col cols="12">
-                <div style="padding:56.25% 0 0 0;position:relative;">
+               <div style="position: relative; width: 100%; aspect-ratio: 16/9;">
                   <iframe
                     src="https://player.vimeo.com/video/853811077?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                     frameborder="0"
@@ -41,6 +41,7 @@
                   cover
                   aspect-ratio="1/1"
                   :src="diagram"
+                  lazy-src="@/assets/images/placeholder.webp"
                 ></v-img>
               </v-col>
             </v-row>

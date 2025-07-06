@@ -23,7 +23,7 @@
               <v-col>
                 <v-row>
                   <v-col>
-                    <Quote>
+                    <Quote :minHeight="'237px'">
                       <template v-slot:quote>
                         This is a great resource. It's engaging, informative and inspiring. Thanks!
                       </template>
@@ -36,6 +36,8 @@
                 <v-row>
                   <v-col cols="12" sm="12" md="6">
                     <v-img
+                      alt="Mentorship program hero image"
+                      :lazy-src="img4Lazy"
                       cover
                       aspect-ratio="16/9"
                       :src="img4"
@@ -43,6 +45,8 @@
                   </v-col>
                   <v-col cols="12" sm="12" md="6">
                     <v-img
+                      alt="Mentorship program image"
+                      :lazy-src="img3Lazy"
                       cover
                       aspect-ratio="16/9"
                       :src="img3"
@@ -98,4 +102,6 @@ import heroImg from '@/assets/images/mentorship/mentorship-hero.webp'
 import heroLazyImg from '@/assets/images/mentorship/mentorship-hero-lazy.webp'
 import img3 from '@/assets/images/mentorship/mentorship-3.webp'
 import img4 from '@/assets/images/mentorship/mentorship-4.webp'
+import img3Lazy from '@/assets/images/mentorship/mentorship-3-lazy.webp'
+import img4Lazy from '@/assets/images/mentorship/mentorship-4-lazy.webp'
 </script>

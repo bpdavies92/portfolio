@@ -1,5 +1,5 @@
 <template>
-    <div class="" :class="{'mb-3' : marginBottom === false}">
+    <div class="" :class="{'mb-3' : marginBottom === false}" :min-height="minHeight ? minHeight : '0'">
         <div class="pa-12 purpleBackground quote">
             <v-icon icon="mdi-format-quote-open mr-3" size="x-large"></v-icon>
             <blockquote cite="https://www.huxley.net/bnw/four.html">
@@ -16,7 +16,7 @@
 import { ref } from "vue"
 
 
-    const props = defineProps(['marginBottom'])
+    const props = defineProps(['marginBottom', 'minHeight'])
 
     const marginBottom = ref(props.marginBottom ? props.marginBottom : false)
 

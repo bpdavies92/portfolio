@@ -34,7 +34,7 @@
           <v-col cols="12" md="7">
             <v-row>
               <v-col cols="12" sm="12" md="12">
-                <div style="position: relative; width: 100%; padding-top: 66.125%;">
+                <div style="position: relative; width: 100%; padding-top: 66.125%; aspect-ratio: 16/9;">
                   <iframe
                     id="kaltura_player"
                     src="https://cdnapisec.kaltura.com/p/1128062/sp/112806200/embedIframeJs/uiconf_id/27474902/partner_id/1128062?iframeembed=true&playerId=kaltura_player&entry_id=1_1wuvpsgv"
@@ -47,28 +47,28 @@
                 <p class="text-caption mt-3">Video introduction by Professor Fiona Saunders</p>
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-img height="500" alt="LEED conference workshop" cover aspect-ratio="16/9" :lazy-src="img2" :src="img2" />
+                <v-img height="500" alt="LEED conference workshop" cover aspect-ratio="16/9" lazy-src="@/assets/images/placeholder.webp" :src="img2" />
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-img height="500" alt="Dr Fiona Saunders introducing the LEED conference" cover aspect-ratio="16/9" :lazy-src="img3" :src="img3" />
+                <v-img height="500" alt="Dr Fiona Saunders introducing the LEED conference" cover aspect-ratio="16/9" lazy-src="@/assets/images/placeholder.webp" :src="img3" />
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-img height="500" alt="Professor Andy Dainty speaking at the LEED conference" cover aspect-ratio="16/9" :lazy-src="img4" :src="img4" />
+                <v-img height="500" alt="Professor Andy Dainty speaking at the LEED conference" cover aspect-ratio="16/9" lazy-src="@/assets/images/placeholder.webp" :src="img4" />
               </v-col>
               <v-col cols="12" sm="12" md="12">
                 <v-img height="500" alt="Participant looking at posters" cover aspect-ratio="16/9" :lazy-src="img5" :src="img5" />
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-img height="500" alt="Origami at conference check-in" cover aspect-ratio="16/9" :lazy-src="img7" :src="img7" />
+                <v-img height="500" alt="Origami at conference check-in" cover aspect-ratio="16/9" lazy-src="@/assets/images/placeholder.webp" :src="img7" />
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                  <v-img height="500" alt="Participant playing Jenga" cover aspect-ratio="16/9" :lazy-src="img12" :src="img12" />
+                  <v-img height="500" alt="Participant playing Jenga" cover aspect-ratio="16/9" lazy-src="@/assets/images/placeholder.webp" :src="img12" />
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                  <v-img height="500" alt="Workshop session" cover aspect-ratio="16/9" :lazy-src="img8" :src="img8" />
+                  <v-img height="500" alt="Workshop session" cover aspect-ratio="16/9" lazy-src="@/assets/images/placeholder.webp" :src="img8" />
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-img height="500" alt="Another workshop" cover aspect-ratio="16/9" :lazy-src="img10" :src="img10" />
+                <v-img height="500" alt="Another workshop" cover aspect-ratio="16/9" lazy-src="@/assets/images/placeholder.webp" :src="img10" />
               </v-col>
             </v-row>
 

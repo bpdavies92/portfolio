@@ -30,11 +30,13 @@
                   aspect-ratio="16/9"
                   alt="Knowledge check quiz"
                   :src="af1"
+                  lazy-src="@/assets/images/placeholder.webp"
                 />
               </v-col>
               <v-col cols="12" sm="12" md="12">
                 <v-img
                   cover
+                  lazy-src="@/assets/images/placeholder.webp"
                   aspect-ratio="16/9"
                   alt="Knowledge check quiz"
                   :src="af2"
@@ -46,6 +48,7 @@
                   alt="As I am infinity menu in hero"
                   max-height="400"
                   cover
+                  lazy-src="@/assets/images/placeholder.webp"
                   aspect-ratio="16/9"
                   :src="af3"
                 />
@@ -55,6 +58,7 @@
                   aspect-ratio="16/9"
                   alt="Example of staff member statement"
                   cover
+                  lazy-src="@/assets/images/placeholder.webp"
                   :src="af4"
                 />
               </v-col>
@@ -64,6 +68,7 @@
                   alt="Example of a quote section on the As I am website."
                   cover
                   :src="af5"
+                  lazy-src="@/assets/images/placeholder.webp"
                 />
               </v-col>
             </v-row>

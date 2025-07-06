@@ -33,6 +33,7 @@
                   alt="Introduction slide with introduction video by Rosie Bryce"
                   cover
                   aspect-ratio="16/9"
+                  lazy-src="@/assets/images/placeholder.webp"
                   :src="img2"
                 />
               </v-col>
@@ -41,6 +42,7 @@
                   alt="Learning outcomes slide"
                   cover
                   aspect-ratio="16/9"
+                  lazy-src="@/assets/images/placeholder.webp"
                   :src="img3"
                 />
               </v-col>
@@ -49,6 +51,7 @@
                   alt="Creating change from data"
                   cover
                   aspect-ratio="16/9"
+                  lazy-src="@/assets/images/placeholder.webp"
                   :src="img4"
                 />
               </v-col>
@@ -57,6 +60,7 @@
                   alt="A slide of a selected section of the data slide"
                   cover
                   aspect-ratio="16/9"
+                  lazy-src="@/assets/images/placeholder.webp"
                   :src="img5"
                 />
               </v-col>
@@ -65,6 +69,7 @@
                   alt="Better quality still from collecting data section"
                   cover
                   aspect-ratio="16/9"
+                  lazy-src="@/assets/images/placeholder.webp"
                   :src="img6"
                 />
               </v-col>
@@ -73,6 +78,7 @@
                   alt="Exploring the dashboard section"
                   cover
                   aspect-ratio="16/9"
+                  lazy-src="@/assets/images/placeholder.webp"
                   :src="img7"
                 />
               </v-col>
@@ -81,6 +87,7 @@
                   alt="Case study page"
                   cover
                   aspect-ratio="9/16"
+                  :lazy-src="img8Lazy"
                   :src="img8"
                 />
               </v-col>
@@ -117,6 +124,7 @@ import img5 from '@/assets/images/understanding-awarding-gap/understanding-the-a
 import img6 from '@/assets/images/understanding-awarding-gap/understanding-the-awarding-gap-7.webp'
 import img7 from '@/assets/images/understanding-awarding-gap/understanding-the-awarding-gap-5.webp'
 import img8 from '@/assets/images/understanding-awarding-gap/understanding-the-awarding-gap-9.webp'
+import img8Lazy from '@/assets/images/understanding-awarding-gap/understanding-the-awarding-gap-9-lazy.webp'
 
 const { width } = useWindowSize()
 const props = defineProps(['project'])

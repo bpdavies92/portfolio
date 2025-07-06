@@ -25,6 +25,7 @@
                   cover
                   aspect-ratio="16/9"
                   :src="img1"
+                  lazy-src="@/assets/images/placeholder.webp"
                 ></v-img>
               </v-col>
               <v-col cols="12" sm="12" md="12">
@@ -33,6 +34,7 @@
                   cover
                   aspect-ratio="16/9"
                   :src="img2"
+                  lazy-src="@/assets/images/placeholder.webp"
                 ></v-img>
               </v-col>
               <v-col cols="12" sm="12" md="12">
@@ -41,6 +43,7 @@
                   cover
                   aspect-ratio="16/9"
                   :src="img3"
+                  lazy-src="@/assets/images/placeholder.webp"
                 ></v-img>
               </v-col>
                 <v-col cols="12" sm="12" md="12">
@@ -49,6 +52,7 @@
                   cover
                   aspect-ratio="16/9"
                   :src="img4"
+                  lazy-src="@/assets/images/placeholder.webp"
                 ></v-img>
               </v-col>
               <v-col cols="12" sm="12" md="12">
@@ -57,6 +61,7 @@
                   cover
                   aspect-ratio="16/9"
                   :src="img5"
+                  lazy-src="@/assets/images/placeholder.webp"
                 ></v-img>
               </v-col>
             </v-row>

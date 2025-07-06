@@ -26,6 +26,7 @@
                   cover
                   aspect-ratio="16/9"
                   :src="img4"
+                  lazy-src="@/assets/images/placeholder.webp"
                 ></v-img>
               </v-col>
 
@@ -35,6 +36,7 @@
                   cover
                   aspect-ratio="16/9"
                   :src="img11"
+                  lazy-src="@/assets/images/placeholder.webp"
                 ></v-img>
               </v-col>
               <v-col cols="12">
@@ -42,6 +44,7 @@
                   alt="A still of the welcome video featuring Shuab Gamote"
                   cover
                   aspect-ratio="16/9"
+                  lazy-src="@/assets/images/placeholder.webp"
                   :src="img13"
                 ></v-img>
               </v-col>
@@ -51,6 +54,7 @@
                   cover
                   aspect-ratio="16/9"
                   :src="img17"
+                  lazy-src="@/assets/images/placeholder.webp"
                 ></v-img>
               </v-col>
                   <v-col cols="12" sm="12" md="12">
@@ -58,6 +62,7 @@
                   alt="Still of Framing our responses video"
                   cover
                   aspect-ratio="16/9"
+                  lazy-src="@/assets/images/placeholder.webp"
                   :src="img16"
                 ></v-img>
               </v-col>
@@ -66,6 +71,7 @@
                   alt="Still of Framing our responses video"
                   cover
                   aspect-ratio="16/9"
+                  lazy-src="@/assets/images/placeholder.webp"
                   :src="img15"
                 ></v-img>
               </v-col>
@@ -74,6 +80,7 @@
                   alt="Micro-aggressions slide home page"
                   cover
                   aspect-ratio="16/9"
+                  lazy-src="@/assets/images/placeholder.webp"
                   :src="img1"
                 ></v-img>
               </v-col>
@@ -83,6 +90,7 @@
                   cover
                   aspect-ratio="16/9"
                   :src="img8"
+                  lazy-src="@/assets/images/placeholder.webp"
                 ></v-img>
               </v-col>
                <v-col cols="12">
@@ -91,6 +99,7 @@
                   cover
                   aspect-ratio="16/9"
                   :src="img7"
+                  lazy-src="@/assets/images/placeholder.webp"
                 ></v-img>
               </v-col>
                <v-col cols="12" sm="12" md="12">
@@ -98,6 +107,7 @@
                   alt="Microaggressions slide home"
                   cover
                   aspect-ratio="16/9"
+                  lazy-src="@/assets/images/placeholder.webp"
                   :src="img10"
                 ></v-img>
               </v-col>
@@ -105,6 +115,7 @@
                 <v-img
                   alt="Building inclusive learning communities home page"
                   cover
+                  lazy-src="@/assets/images/placeholder.webp"
                   aspect-ratio="16/9"
                   :src="img9"
                 ></v-img>
@@ -114,6 +125,7 @@
                   alt="Microaggressions slide home"
                   cover
                   aspect-ratio="16/9"
+                  lazy-src="@/assets/images/placeholder.webp"
                   :src="img6"
                 ></v-img>
               </v-col>
@@ -122,11 +134,13 @@
                   alt="starting to take action slide"
                   cover
                   aspect-ratio="16/9"
+                  lazy-src="@/assets/images/placeholder.webp"
                   :src="img3"
                 ></v-img>
                 <v-img
                   alt="Microaggressions slide home"
                   cover
+                  lazy-src="@/assets/images/placeholder.webp"
                   aspect-ratio="16/9"
                   :src="img6"
                 ></v-img>

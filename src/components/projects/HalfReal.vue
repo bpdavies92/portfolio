@@ -28,6 +28,7 @@
                   alt=""
                   cover
                   :src="img1"
+                  lazy-src="@/assets/images/placeholder.webp"
                   aspect-ratio="16/9"
                 ></v-img>
               </v-col>
@@ -37,6 +38,7 @@
                   <v-img
                     alt=""
                     height="100%"
+                    lazy-src="@/assets/images/placeholder.webp"
                     cover
                     :src="img3"
                     aspect-ratio="16/9"
@@ -50,6 +52,7 @@
                     alt=""
                     height="100%"
                     cover
+                    lazy-src="@/assets/images/placeholder.webp"
                     :src="img4"
                     aspect-ratio="16/9"
                   ></v-img>
@@ -65,6 +68,7 @@
                     cover
                     :src="img5"
                     aspect-ratio="16/9"
+                    lazy-src="@/assets/images/placeholder.webp"
                   ></v-img>
                 </v-lazy>
               </v-col>
@@ -75,6 +79,7 @@
                     alt="half real exhibition space"
                     cover
                     :src="img6"
+                    lazy-src="@/assets/images/placeholder.webp"
                     aspect-ratio="16/9"
                   ></v-img>
                 </v-lazy>
@@ -87,6 +92,7 @@
                   alt="Half real poster"
                   aspect-ratio="16/9"
                   cover
+                  lazy-src="@/assets/images/placeholder.webp"
                   :src="img10"
                 ></v-img>
               </v-lazy>

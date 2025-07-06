@@ -141,6 +141,7 @@ const route = useRouter()
   padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
   height: 0;
   overflow: hidden;
+  aspect-ratio: 16/9 ;
 }
 
 .iframe-wrapper iframe {

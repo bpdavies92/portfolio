@@ -25,12 +25,13 @@
                   cover
                   aspect-ratio="16/9"
                   :src="img1"
+                  lazy-src="@/assets/images/placeholder.webp"
                 ></v-img>
               </v-col>
                 <v-col cols="12" sm="12" md="12">
                 <v-lazy :options="{'threshold':0.5}"
                   transition="scroll-y-reverse-transition">
-                  <Quote>
+                  <Quote :minHeight="'237px'">
                     <template v-slot:quote>
                       <p>Well put together with clear objectives and learning outcomes.</p>
                     </template>
@@ -47,6 +48,7 @@
                     alt="Dignity at work page"
                     aspect-ratio="16/9"
                     :src="img2"
+                    lazy-src="@/assets/images/placeholder.webp"
                   ></v-img>
                 </v-lazy>
               </v-col>
@@ -57,13 +59,14 @@
                     alt="Home page displaying all sections of the module"
                     aspect-ratio="16/9"
                     :src="img3"
+                    lazy-src="@/assets/images/placeholder.webp"
                   ></v-img>
                 </v-lazy>
               </v-col>
               <v-col cols="12" sm="12" md="12">
                 <v-lazy :options="{'threshold':0.5}"
                   transition="scroll-y-reverse-transition">
-                  <Quote>
+                  <Quote :min-height="'285px'">
                     <template v-slot:quote>
                       <p>I thought this was a well constructed course - a significant improvement over the previous version.</p>
                     </template>
@@ -82,6 +85,7 @@
                     cover
                     aspect-ratio="16/9"
                     :src="img4"
+                    lazy-src="@/assets/images/placeholder.webp"
                   ></v-img>
                 </v-lazy>
               </v-col>

@@ -24,6 +24,7 @@
             <v-row>
               <v-col>
                 <iframe
+                  min-height="166"
                   width="100%"
                   height="166"
                   scrolling="no"
@@ -55,6 +56,7 @@
             <v-row>
               <v-col>
                 <iframe
+                  
                   width="100%"
                   height="166"
                   scrolling="no"

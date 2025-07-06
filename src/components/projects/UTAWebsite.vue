@@ -33,6 +33,7 @@
                   alt="Assessment lifecycle webpage"
                   cover
                   :src="website1"
+                  :lazy-src="website1Lazy"
                 />
               </v-col>
               
@@ -42,6 +43,7 @@
                   alt="Active learning webpage"
                   cover
                   :src="website2"
+                  :lazy-src="website2Lazy"
                 />
               </v-col>
               <v-col cols="12" sm="12" md="12">
@@ -50,6 +52,7 @@
                   alt="Peer observation webpage"
                   cover
                   :src="website3"
+                  :lazy-src="website3Lazy"
                 />
               </v-col>
             </v-row>
@@ -71,11 +74,14 @@ import nextProject from '@/composables/nextProject'
 import { useWindowSize } from '@vueuse/core'
 
 // Import images
-import banner from '@/assets/images/uta-website/uta-website-banner.jpg'
+import banner from '@/assets/images/uta-website/uta-website-banner.webp'
 import bannerLazy from '@/assets/images/uta-website/uta-website-banner-lazy.webp'
-import website1 from '@/assets/images/uta-website/website-1.png'
-import website2 from '@/assets/images/uta-website/website-2.png'
-import website3 from '@/assets/images/uta-website/website-3.png'
+import website1 from '@/assets/images/uta-website/website-1.webp'
+import website2 from '@/assets/images/uta-website/website-2.webp'
+import website3 from '@/assets/images/uta-website/website-3.webp'
+import website3Lazy from '@/assets/images/uta-website/website-3-lazy.webp'
+import website2Lazy from '@/assets/images/uta-website/website-2-lazy.webp'
+import website1Lazy from '@/assets/images/uta-website/website-1-lazy.webp'
 
 const { width } = useWindowSize()
 const props = defineProps(['project'])
