@@ -886,6 +886,39 @@ const projects = () => {
                     icon : "mdi-pencil-ruler"
                 }
             ]
+        }, 
+        {
+            id: 20,
+            slug: "bob-north-two",
+            title: "BOB North 2016",
+            shortTitle: 'BOB North 2016',
+            end : "March 2016",
+            date : "03/01/2016",
+            location : "Leeds",
+            subtitle : "",
+            description : "<p class='text-body-1'></p>",
+            thumbnail : `${import.meta.env.VITE_BASE}/images/bob-two-1.webp`,
+            tags : ["video", "motion graphics", "video editing", "filming" ],
+            techUsed : [
+                {
+                    tech : "After Effects",
+                    icon : "mdi-movie-star"
+                },
+                {
+                    tech : "Camera",
+                    icon : "mdi-film"
+                }
+            ],
+            skills : [
+                {
+                    skill : "Video editing",
+                    icon : "mdi-movie-open-edit"
+                },
+                {
+                    skill : "Design",
+                    icon : "mdi-pencil-ruler"
+                }
+            ]
         }
     ])
 

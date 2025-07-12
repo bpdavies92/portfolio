@@ -29,6 +29,7 @@
     import LearningCommunities from "@/components/projects/LearningCommunities.vue"
     import UnderstandingAwardingGap from "@/components/projects/UnderstandingAwardingGap.vue"
     import Mentorship from "@/components/projects/Mentorship.vue"
+    import BOBNorthTwo from "@/components/projects/BOBNorthTwo.vue"
 
 
     const { works } = projects()  
@@ -80,6 +81,8 @@
             return Mentorship
             case "course-principles":
             return CoursePrinciples
+            case "bob-north-two":
+            return BOBNorthTwo
             // Add more cases as needed for other components
             // Ensure the component names match the ones you have imported
             // If you have a default component, you can return it here

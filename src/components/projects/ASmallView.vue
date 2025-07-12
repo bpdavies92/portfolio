@@ -50,7 +50,7 @@
                   ></v-img>
                  
                 </v-lazy>
-                 <p class="text-caption mt-3">Gabrielle de la Puente and Zarina Muhammad (The White Pube), 💧🌚👼🏿, 2016 </p>
+                 <p class="text-caption mt-3">Gabrielle de la Puente and Zarina Muhammad (The White Pube), 💧🌚👼🏿, 2016</p>
               </v-col>
               <v-col cols="12" sm="12">
                 <v-lazy
