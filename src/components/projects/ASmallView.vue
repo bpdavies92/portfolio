@@ -30,9 +30,11 @@
                     cover
                     aspect-ratio="16/9"
                     :src="img1"
-                    lazy-src="@/assets/images/placeholder.webp"
-                  ></v-img>
-      
+                    :lazy-src="img1Lazy"
+                  >
+                
+                </v-img>
+                <p class="text-caption mt-3">Exhibition: Michael Lacey, A Hole, a Mountain, 2017</p>
               </v-col>
               <v-col cols="12" sm="12">
                 <v-lazy
@@ -44,9 +46,11 @@
                     cover
                     aspect-ratio="16/9"
                     :src="img2"
-                    lazy-src="@/assets/images/placeholder.webp"
+                    :lazy-src="img2Lazy"
                   ></v-img>
+                 
                 </v-lazy>
+                 <p class="text-caption mt-3">Gabrielle de la Puente and Zarina Muhammad (The White Pube), 💧🌚👼🏿, 2016 </p>
               </v-col>
               <v-col cols="12" sm="12">
                 <v-lazy
@@ -58,9 +62,10 @@
                     cover
                     aspect-ratio="16/9"
                     :src="img3"
-                    lazy-src="@/assets/images/placeholder.webp"
+                    :lazy-src="img3Lazy"
                   ></v-img>
                 </v-lazy>
+                <p class="text-caption mt-3">A Small View logo</p>
               </v-col>
                 <v-col cols="12" sm="12">
                 <v-lazy
@@ -72,9 +77,11 @@
                     cover
                     aspect-ratio="9/16"
                     :src="img4"
-                    lazy-src="@/assets/images/placeholder.webp"
+                    :lazy-src="img4Lazy"
                   ></v-img>
                 </v-lazy>
+                 <p class="text-caption mt-3">Gabrielle de la Puente and Zarina Muhammad (The White Pube), 💧🌚👼🏿, 2016 </p>
+                 
               </v-col>
               <v-col cols="12" sm="12">
                 <v-lazy
@@ -86,9 +93,10 @@
                     cover
                     :src="img5"
                     aspect-ratio="16/9"
-                    lazy-src="@/assets/images/placeholder.webp"
+                    :lazy-src="img5Lazy"
                   ></v-img>
                 </v-lazy>
+                <p class="text-caption mt-3">Exhibition: Kit Brown, Symbiosis, 2015</p>
               </v-col>
               <v-col cols="12" sm="12">
                 <v-lazy
@@ -100,9 +108,10 @@
                     cover
                     :src="img6"
                     aspect-ratio="16/9"
-                    lazy-src="@/assets/images/placeholder.webp"
+                    :lazy-src="img6Lazy"
                   ></v-img>
                 </v-lazy>
+                <p class="text-caption mt-3">Exhibition: Roxy Topia and Paddy Gould, Got Worms?, 2016</p>
               </v-col>
             </v-row>
 
@@ -140,6 +149,12 @@ import img4 from '@/assets/images/a-small-view/a_small_view_4.webp'
 import img4Lazy from '@/assets/images/a-small-view/a_small_view_4_lazy.webp'
 import img5 from '@/assets/images/a-small-view/a_small_view_5.webp'
 import img6 from '@/assets/images/a-small-view/a_small_view_6.webp'
+import img1Lazy from '@/assets/images/a-small-view/a_small_view_1_lazy.webp'
+import img2Lazy from '@/assets/images/a-small-view/a_small_view_2_lazy.webp'
+import img3Lazy from '@/assets/images/a-small-view/a_small_view_3_lazy.webp'
+import img5Lazy from '@/assets/images/a-small-view/a_small_view_5_lazy.webp'
+import img6Lazy from '@/assets/images/a-small-view/a_small_view_6_lazy.webp'  
+
 
 const props = defineProps(['project', 'IDNumber'])
 const { next, previous } = nextProject()
