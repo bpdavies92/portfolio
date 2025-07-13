@@ -35,13 +35,13 @@
               <v-col cols="12" sm="12" md="12">
                 <lazy :options="{'threshold':0.5}"
                   transition="scroll-y-reverse-transition">
-                  <v-img aspect-ratio="16/9" alt="Prosumer chronicles" :lazy-src="img7Lazy" max-height="400" cover :src="img7"></v-img>
+                  <v-img aspect-ratio="16/9" alt="Prosumer chronicles" :lazy-src="img7Lazy" cover :src="img7"></v-img>
                 </lazy>
               </v-col>
               <v-col cols="12" sm="12" md="12">
                 <lazy :options="{'threshold':0.5}"
                   transition="scroll-y-reverse-transition">
-                  <v-img :lazy-src="img3Lazy" aspect-ratio="16/9" alt="Prosumer chronicles" max-height="400" cover :src="img3"></v-img>
+                  <v-img :lazy-src="img3Lazy" aspect-ratio="16/9" alt="Prosumer chronicles" cover :src="img3"></v-img>
                 </lazy>
               </v-col>
               <v-col cols="12" sm="12" md="12">

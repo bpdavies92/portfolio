@@ -118,19 +118,21 @@
           <!-- Mobile Search -->
           <v-list-item class="mb-n6 mr-auto ml-auto">
             <v-responsive v-if="width <= 960">
-              <v-text-field
-                ref="target"
-                v-model="input"
-                @focus="handleFocus"
-                @blur="handleBlur"
-                prepend-inner-icon="mdi-magnify"
-                single-line
-                class="mr-3 position-relative"
-                max-height="34"
-                label="Search"
-                variant="underlined"
-                updadeFocused="showResults"
-              />
+              <v-sheet width="300" class="mr-auto ml-auto">
+                <v-text-field
+                  ref="target"
+                  v-model="input"
+                  @focus="handleFocus"
+                  @blur="handleBlur"
+                  prepend-inner-icon="mdi-magnify"
+                  single-line
+                  class="mr-3 position-relative"
+                  max-height="34"
+                  label="Search"
+                  variant="underlined"
+                  updadeFocused="showResults"
+                />
+              </v-sheet>
             </v-responsive>
           </v-list-item>
 
@@ -139,7 +141,7 @@
             <transition name="grow" v-if="width <= 960">
               <v-sheet
                 v-show="showResults && input.length > 0"
-                class="overflow-auto search-sheet elevation-3"
+                class="overflow-auto search-sheet"
                 height="100vh"
               >
                 <v-list lines="3">

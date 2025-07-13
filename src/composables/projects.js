@@ -896,28 +896,32 @@ const projects = () => {
             date : "03/01/2016",
             location : "Leeds",
             subtitle : "",
-            description : "<p class='text-body-1'></p>",
+            description : "",
             thumbnail : `${import.meta.env.VITE_BASE}/images/bob-two-1.webp`,
-            tags : ["video", "motion graphics", "video editing", "filming" ],
+               tags : [ "event", "art", "design", "audio-visual" ],
             techUsed : [
                 {
-                    tech : "After Effects",
-                    icon : "mdi-movie-star"
+                    tech : "Audio-visual",
+                    icon : "mdi-speaker"    
                 },
                 {
-                    tech : "Camera",
-                    icon : "mdi-film"
-                }
+                    tech : "Photography",
+                    icon : "mdi-camera"
+                }   
             ],
             skills : [
                 {
-                    skill : "Video editing",
-                    icon : "mdi-movie-open-edit"
+                    skill : "Event planning",
+                    icon : "mdi-calendar-star"
                 },
                 {
-                    skill : "Design",
-                    icon : "mdi-pencil-ruler"
-                }
+                    skill : "Curatorial skills",
+                    icon : "mdi-floor-plan"
+                },
+                {
+                    skill : "Project management",
+                    icon : "mdi-notebook"
+                },
             ]
         }
     ])

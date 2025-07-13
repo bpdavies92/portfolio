@@ -5,7 +5,7 @@
       <v-row class="skills">
         <v-col class="description" cols="12" md="12">
           <div class="mt-3">
-            <h3>Description</h3>
+            <h3 v-if="d.description">Description</h3>
             <div v-html="d.description"></div>
           </div>
         </v-col>
