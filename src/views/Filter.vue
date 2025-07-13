@@ -2,6 +2,7 @@
   <v-container fluid>
     <section class="content-container ml-auto mr-auto placeholder" >
       <FilterOptions/>
+      <h3 class="tag-text text-md-h3 text-sm-h5 mb-3">#{{ route.query.filter }}</h3>
       <v-row no-gutters>
         <v-col v-for="(project, index) in filteredProjects" :key="index" cols="12" xs="12" sm="6" md="6" lg="4">
               <v-lazy
@@ -64,3 +65,12 @@
 
 
 </script>
+
+
+<style>
+
+.tag-text {
+  font-weight: bold;
+  text-transform: uppercase !important;
+}
+</style>
