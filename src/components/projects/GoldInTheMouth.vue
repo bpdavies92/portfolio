@@ -40,14 +40,14 @@
                 <v-lazy
                   :options="{'threshold':0.5}"
                   transition="scroll-y-reverse-transition">
-                  <v-img aspect-ratio="16/9" :src="gold5" lazy-src="@/assets/images/placeholder.webp"></v-img>
+                  <v-img aspect-ratio="16/9" cover :src="gold5" lazy-src="@/assets/images/placeholder.webp"></v-img>
                 </v-lazy>
               </v-col>
               <v-col cols="12" sm="12" md="12">
                 <v-lazy
                   :options="{'threshold':0.5}"
                   transition="scroll-y-reverse-transition">
-                  <v-img lazy-src="@/assets/images/placeholder.webp" aspect-ratio="16/9" :src="gold6"></v-img>
+                  <v-img cover lazy-src="@/assets/images/placeholder.webp" aspect-ratio="16/9" :src="gold6"></v-img>
                 </v-lazy>
               </v-col>
               <v-col cols="12">
@@ -60,6 +60,7 @@
                     lazy-src="@/assets/images/placeholder.webp"
                     aspect-ratio="16/9"
                     :src="gold2"
+
                   ></v-img>
                 </v-lazy>
               </v-col>

@@ -38,12 +38,12 @@
       <v-sheet
         
         v-show="showResults && input.length > 0"
-        class="overflow-auto search-sheet elevation-3 include"
+        class="overflow-auto search-sheet elevation-3 include rounded-lg"
         max-width="700"
         max-height="600"
         height="min-content"
       >
-        <v-list lines="two">
+        <v-list lines="two" class="ma-0 pa-0 ">
           <v-list-item
             v-for="(project, index) in results"
             :key="index"
