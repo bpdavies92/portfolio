@@ -24,30 +24,29 @@
           <v-col cols="12" sm="12" md="7">
             <v-row>
               <v-col cols="12">
-                <v-lazy 
-                  :options="{'threshold':0.5}"
-                  transition="scroll-y-reverse-transition">
+             
+              
                   <v-img
                     alt="My five year plan cycle diagram"
                     cover
                     aspect-ratio="16/9"
                     :src="gold1"
-                    lazy-src="@/assets/images/placeholder.webp"
+                    :lazy-src="gold1Lazy"
                   ></v-img>
-                </v-lazy>
+               
               </v-col>
             <v-col cols="12" sm="12" md="12">
                 <v-lazy
                   :options="{'threshold':0.5}"
                   transition="scroll-y-reverse-transition">
-                  <v-img aspect-ratio="16/9" cover :src="gold5" lazy-src="@/assets/images/placeholder.webp"></v-img>
+                  <v-img aspect-ratio="16/9" cover :src="gold5" :lazy-src="gold5Lazy"></v-img>
                 </v-lazy>
               </v-col>
               <v-col cols="12" sm="12" md="12">
                 <v-lazy
                   :options="{'threshold':0.5}"
                   transition="scroll-y-reverse-transition">
-                  <v-img cover lazy-src="@/assets/images/placeholder.webp" aspect-ratio="16/9" :src="gold6"></v-img>
+                  <v-img cover :lazy-src="gold6Lazy" aspect-ratio="16/9" :src="gold6"></v-img>
                 </v-lazy>
               </v-col>
               <v-col cols="12">
@@ -57,7 +56,7 @@
                   <v-img
                     alt="My five year plan cycle diagram"
                     cover
-                    lazy-src="@/assets/images/placeholder.webp"
+                    :lazy-src="gold2Lazy"
                     aspect-ratio="16/9"
                     :src="gold2"
 
@@ -73,7 +72,7 @@
                     cover
                     aspect-ratio="16/9"
                     :src="gold3"
-                    lazy-src="@/assets/images/placeholder.webp"
+                    :lazy-src="gold3Lazy"
                   ></v-img>
                 </v-lazy>
               </v-col>
@@ -86,7 +85,7 @@
                     cover
                     aspect-ratio="16/9"
                     :src="gold4"
-                    lazy-src="@/assets/images/placeholder.webp"
+                    :lazy-src="gold4Lazy"
                   ></v-img>
                 </v-lazy>
               </v-col>
@@ -118,11 +117,17 @@ import projects from '@/composables/projects'
 
 // Import images for proper bundling
 import gold1 from '@/assets/images/gold-in-the-mouth/gold-1.webp'
+import gold1Lazy from '@/assets/images/gold-in-the-mouth/gold-1-lazy.webp'
 import gold2 from '@/assets/images/gold-in-the-mouth/gold-2.webp'
+import gold2Lazy from '@/assets/images/gold-in-the-mouth/gold-2-lazy.webp'
 import gold3 from '@/assets/images/gold-in-the-mouth/gold-3.webp'
+import gold3Lazy from '@/assets/images/gold-in-the-mouth/gold-3-lazy.webp'
 import gold4 from '@/assets/images/gold-in-the-mouth/gold-4.webp'
+import gold4Lazy from '@/assets/images/gold-in-the-mouth/gold-4-lazy.webp'
 import gold5 from '@/assets/images/gold-in-the-mouth/gold-5.webp'
+import gold5Lazy from '@/assets/images/gold-in-the-mouth/gold-5-lazy.webp'
 import gold6 from '@/assets/images/gold-in-the-mouth/gold-6.webp'
+import gold6Lazy from '@/assets/images/gold-in-the-mouth/gold-6-lazy.webp'
 import gold7 from '@/assets/images/gold-in-the-mouth/gold-7.webp'
 import gold7Lazy from '@/assets/images/gold-in-the-mouth/gold-7-lazy.webp'
 
