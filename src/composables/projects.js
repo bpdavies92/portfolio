@@ -889,6 +889,44 @@ const projects = () => {
         }, 
         {
             id: 20,
+            slug: "the-sound-of-adult-children-determined-not-to-be-afraid",
+            title: "The sound of adult children determined not to be afraid",
+            shortTitle: 'The sound of adult children determined not to be afraid',
+            end : "August 2017",
+            start : "June",
+            date : "01/08/2017",
+            location : "Blackpool",
+            subtitle : "",
+            description : "",
+            thumbnail : `${import.meta.env.VITE_BASE}/images/adult-children-1.webp`,
+               tags : [ "event", "art", "design", "audio-visual" ],
+            techUsed : [
+                {
+                    tech : "Audio-visual",
+                    icon : "mdi-speaker"    
+                },
+                {
+                    tech : "Photography",
+                    icon : "mdi-camera"
+                }   
+            ],
+            skills : [
+                {
+                    skill : "Event planning",
+                    icon : "mdi-calendar-star"
+                },
+                {
+                    skill : "Curatorial skills",
+                    icon : "mdi-floor-plan"
+                },
+                {
+                    skill : "Project management",
+                    icon : "mdi-notebook"
+                },
+            ]
+        }, 
+         {
+            id: 21,
             slug: "bob-north-two",
             title: "BOB North 2016",
             shortTitle: 'BOB North 2016',

@@ -54,9 +54,11 @@
             <v-col cols="12" sm="12" md="4">
                 <h2>Press</h2>
                 <v-list>
-                  <v-list-item><b>Artist-led Hot 100 (A Small View)</b>, Published by a-n, words by Kevin Hunt, 2017, <a href="https://www.a-n.co.uk/news/new-artist-led-hot-100-launched-assembly-liverpool/">https://www.a- n.co.uk/news/new-artist-led-hot-100-launched-assembly-liverpool/</a></v-list-item>
-                  <v-list-item><b>Half-Real (review)</b>, published by The Skinny, words by Santini Basra, 2016, <a href="http://www.theskinny.co.uk/art/reviews/half-real-hanover-project-preston">www.theskinny.co.uk/art/reviews/half-real-hanover-project-preston</a></v-list-item>
-                  <v-list-item><b>The Holodeck (review)</b>, published by Art in Liverpool, Word by Kyle Nathan Brown, 2015, <a href="http://www.artinliverpool.com/?p=57712">http:// www.artinliverpool.com/?p=57712</a></v-list-item>
+                  <v-list-item><b><a target="blank" href="https://corridor8.co.uk/article/sound-adult-children-determined-not-afraid/">The Sound of Adult Children Determined Not To Be Afraid (review)</a></b>, published by Corridor8, 2017</v-list-item>
+                  <v-list-item><b><a target="blank" href="https://www.a-n.co.uk/news/new-artist-led-hot-100-launched-assembly-liverpool/">Artist-led Hot 100 (A Small View)</a></b>, Published by a-n, words by Kevin Hunt, 2017</v-list-item>
+                  <v-list-item><b><a target="blank" href="http://www.theskinny.co.uk/art/reviews/half-real-hanover-project-preston">Half-Real (review)</a></b>, published by The Skinny, words by Santini Basra, 2016</v-list-item>
+                  <v-list-item><b><a target="blank" href="http://www.artinliverpool.com/?p=57712">The Holodeck (review)</a></b>, published by Art in Liverpool, Word by Kyle Nathan Brown, 2015</v-list-item>
+  
                 </v-list>
             </v-col>
         </v-row>
