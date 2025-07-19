@@ -961,6 +961,44 @@ const projects = () => {
                     icon : "mdi-notebook"
                 },
             ]
+        }, 
+         {
+            id: 22,
+            slug: "wish-in-one-hand",
+            title: "Wish in one hand, sh*t in the other",
+            shortTitle: 'Wish in one hand, sh*t in the other',
+            end : "February 2019",
+            start: "January 2019",
+            date : "01/01/2019",
+            location : "Preston",
+            subtitle : "",
+            description : "",
+            thumbnail : `${import.meta.env.VITE_BASE}/images/wish-6.webp`,
+               tags : [ "event", "art", "design", "audio-visual" ],
+            techUsed : [
+                {
+                    tech : "Audio-visual",
+                    icon : "mdi-speaker"    
+                },
+                {
+                    tech : "Photography",
+                    icon : "mdi-camera"
+                }   
+            ],
+            skills : [
+                {
+                    skill : "Event planning",
+                    icon : "mdi-calendar-star"
+                },
+                {
+                    skill : "Curatorial skills",
+                    icon : "mdi-floor-plan"
+                },
+                {
+                    skill : "Project management",
+                    icon : "mdi-notebook"
+                },
+            ]
         }
     ])
 

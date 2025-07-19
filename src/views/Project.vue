@@ -31,6 +31,7 @@
     import Mentorship from "@/components/projects/Mentorship.vue"
     import BOBNorthTwo from "@/components/projects/BOBNorthTwo.vue"
     import TheSoundOfAdultChildren from "@/components/projects/TheSoundOfAdultChildren.vue"
+    import WishInOneHand from '@/components/projects/WishInOneHand.vue'
 
 
     const { works } = projects()  
@@ -86,6 +87,8 @@
             return BOBNorthTwo
             case "the-sound-of-adult-children-determined-not-to-be-afraid":
             return TheSoundOfAdultChildren
+            case "wish-in-one-hand":
+            return WishInOneHand
             // Add more cases as needed for other components
             // Ensure the component names match the ones you have imported
             // If you have a default component, you can return it here

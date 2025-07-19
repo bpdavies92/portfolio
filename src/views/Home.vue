@@ -24,7 +24,7 @@
       </v-container>
       
       <v-sheet color="transparent" width="100%" class="d-flex align-center content-container">
-        <v-btn  class="mr-auto ml-auto mt-6 mb-6 yellowBackground" @click="showMoreBtn += 6" v-show="showMoreBtn <= worksOrdered.length" prepend-icon="mdi-eye-circle-outline">See more</v-btn>
+        <v-btn  class="mr-auto ml-auto mt-6 mb-6 yellowBackground" @click="showMoreBtn += 6 ; cookies.set('see-more', showMoreBtn)" v-show="showMoreBtn <= worksOrdered.length" prepend-icon="mdi-eye-circle-outline">See more</v-btn>
       </v-sheet>
       
 </template>
@@ -35,15 +35,12 @@ import { computed, ref } from 'vue';
 import { useRouter } from 'vue-router';
 import FilterOptions from '@/components/FilterOptions.vue';
 import Card from '@/components/Card.vue'
-
-
-
-
-
+import { useCookies } from '@vueuse/integrations/useCookies'
 
 const { works } = projects()  
 const dataLoaded = ref(false)
 const isIntersecting = ref(false)
+const cookies = useCookies(['see-more'])
 
 
  const onIntersect = (isIntersecting, entries, observer) =>  {
@@ -51,7 +48,8 @@ const isIntersecting = ref(false)
         isIntersecting.value = isIntersecting.value
  }
 
-const showMoreBtn = ref(6)
+const showMoreBtn = ref(cookies.get('see-more') ? cookies.get('see-more') : 6);
+
 
 const worksOrdered = computed(() => {
 
