@@ -7,6 +7,7 @@
       elevation="3"
     >
       <v-img
+        eager
         alt=""
         class="align-end text-white"
         height="250"

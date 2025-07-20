@@ -41,6 +41,7 @@
             <v-col cols="12" sm="12" md="4">
               <h2>Awards/nominations</h2>
               <v-list lines density="compact">
+                <v-list-item ><b>Manchester Met Staff Awards nomination for Student Experience Initiative of the Year Award</b>, Manchester Metropolitan University, 2024</v-list-item>
                 <v-list-item ><b>Manchester Met Staff Awards nomination for Service Excellence Award</b>, Manchester Metropolitan University, 2023</v-list-item>
                 <v-list-item ><b>Manchester Met Staff Awards nomination for University Citizenship Award</b>, Manchester Metropolitan University, 2023</v-list-item>
                 <v-list-item ><b>Staff Bonus Scheme</b>, Manchester Metropolitan University, 2023</v-list-item>

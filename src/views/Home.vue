@@ -10,7 +10,7 @@
     </v-sheet>
   </template>
   <template v-else>
-    <v-lazy :options="{ threshold: 0.5 }" transition="scroll-y-reverse-transition">
+    <v-lazy :options="{ threshold: 0.1, rootMargin: ['10px 20px 30px 40px'] }" transition="scroll-y-reverse-transition">
       <v-sheet class="card-grid-spacing" v-show="index < showMoreBtn">
         <Card :project="project" :index="index" :works="works" />
       </v-sheet>
@@ -31,7 +31,7 @@
 
 <script setup>
 import projects from '@/composables/projects';
-import { computed, ref } from 'vue';
+import { computed, proxyRefs, ref } from 'vue';
 import { useRouter } from 'vue-router';
 import FilterOptions from '@/components/FilterOptions.vue';
 import Card from '@/components/Card.vue'
