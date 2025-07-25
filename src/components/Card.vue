@@ -5,9 +5,12 @@
       flat
       rounded="1"
       elevation="3"
-      @click="moveToProject(false)"
-      tableindex="1" 
+      @click="moveToProject"
+      @keydown.enter="moveToProject"
+      tabindex="0" 
       hover
+      role="button"
+      :aria-label="`Go to project: ${project.title}`"
     >
       <v-img
         eager
@@ -37,7 +40,7 @@
         <v-divider class="mt-6 mb-6"></v-divider>
 
         <v-chip-group>
-            <v-chip v-for="(tag, i) in project.tags.sort()" :key="i" @click="router.push({name: 'Filter', query:{filter: tag.toLowerCase()}})">{{ tag }}</v-chip>
+            <v-chip tabindex="-1" v-for="(tag, i) in project.tags.sort()" :key="i" @click="router.push({name: 'Filter', query:{filter: tag.toLowerCase()}})">{{ tag }}</v-chip>
         </v-chip-group>
       </v-card-text>
     </v-card>
@@ -56,8 +59,7 @@
 
     console.log(chips.value)
 
-    const moveToProject = (stop) => {
-    if(stop) return
+    const moveToProject = () => {
     router.push({ name: 'Project', params: { id: project.slug } }) 
     
     }
