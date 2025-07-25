@@ -285,28 +285,12 @@ const projects = () => {
             tags : [ "web design", "conference", "event", "pedagogy", "video" ],
             techUsed : [
                 {
-                    tech : "Audio-visual",
-                    icon : "mdi-speaker"
-                },
-                {
                     tech : "Video",
                     icon : "mdi-film"
-                },
-                {
-                    tech : "server",
-                    icon : "mdi-server"
                 },
                 {
                     tech : "Office 365",
                     icon : "mdi-microsoft-office"
-                },
-                {
-                    tech : "After Effects",
-                    icon : "mdi-movie-star"
-                },
-                {
-                    tech : "Video",
-                    icon : "mdi-film"
                 },
                 {
                     tech : "Premiere Pro",
@@ -319,28 +303,12 @@ const projects = () => {
             ],
             skills : [
                 {
-                    skill : "Event planning",
-                    icon : "mdi-calendar-star"
-                },
-                {
-                    skill : "Curatorial skills",
-                    icon : "mdi-floor-plan"
-                },
-                {
-                    skill : "Project Management",
-                    icon : "mdi-notebook"
-                },
-                {
                     skill : "Video editing",
                     icon : "mdi-film"
                 }, 
                 {
                     skill : "Design",
                     icon : "mdi-pencil-ruler"
-                },
-                {
-                    skill : "Motion graphics",
-                    icon : "mdi-motion"
                 },
                 {
                     skill : "Filming",

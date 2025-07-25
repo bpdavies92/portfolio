@@ -19,20 +19,24 @@
           <v-col class="position-relative" cols="12" md="5">
             <div class="sticky">
               <Description :d="d" :project="project" />
-              <v-btn
-                href="https://www.utaresources.mmu.ac.uk/leed-conference-23/"
-                block
-                color="secondary"
-                size="large"
-                prepend-icon="mdi-link"
-              >
-                Explore the conference website
-              </v-btn>
+        
             </div>
           </v-col>
 
           <v-col cols="12" md="7">
             <v-row>
+              <v-col cols="12" md="12" sm="12">
+                    <v-btn
+                href="https://www.utaresources.mmu.ac.uk/leed-conference-23/"
+                block
+                color="secondary"
+                target="blank"
+                size="large"
+                prepend-icon="mdi-link"
+              >
+                Explore the conference website
+              </v-btn>
+              </v-col>
               <v-col cols="12" sm="12" md="12">
                 <div style="position: relative; width: 100%; padding-top: 66.125%; aspect-ratio: 16/9;">
                   <iframe

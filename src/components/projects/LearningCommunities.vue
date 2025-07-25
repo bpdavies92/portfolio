@@ -137,13 +137,7 @@
                   lazy-src="@/assets/images/placeholder.webp"
                   :src="img3"
                 ></v-img>
-                <v-img
-                  alt="Microaggressions slide home"
-                  cover
-                  lazy-src="@/assets/images/placeholder.webp"
-                  aspect-ratio="16/9"
-                  :src="img6"
-                ></v-img>
+      
               </v-col>
             </v-row>
 

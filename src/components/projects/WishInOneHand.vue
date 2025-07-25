@@ -89,32 +89,6 @@
                   ></v-img>
                 </v-lazy>
               </v-col>
-              <v-col cols="12" sm="12" md="12">
-                <v-lazy
-                  :options="{'threshold':0.5}"
-                  transition="scroll-y-reverse-transition">
-                  <v-img
-                    alt="My five year plan cycle diagram"
-                    cover
-                    aspect-ratio="16/9"
-                    :src="wish5"
-                    :lazy-src="wish5Lazy"
-                  ></v-img>
-                </v-lazy>
-              </v-col>
-                            <v-col cols="12" sm="12" md="12">
-                <v-lazy
-                  :options="{'threshold':0.5}"
-                  transition="scroll-y-reverse-transition">
-                  <v-img
-                    alt="My five year plan cycle diagram"
-                    cover
-                    aspect-ratio="16/9"
-                    :src="wish6"
-                    :lazy-src="wish6Lazy"
-                  ></v-img>
-                </v-lazy>
-              </v-col>
                             <v-col cols="12" sm="12" md="12">
                 <v-lazy
                   :options="{'threshold':0.5}"

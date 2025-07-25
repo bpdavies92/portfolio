@@ -5,6 +5,9 @@
       flat
       rounded="1"
       elevation="3"
+      @click="moveToProject(false)"
+      tableindex="1" 
+      hover
     >
       <v-img
         eager
@@ -31,16 +34,12 @@
 
         {{ description[index] }}
 
-        <v-chip-group class="mt-6">
+        <v-divider class="mt-6 mb-6"></v-divider>
+
+        <v-chip-group>
             <v-chip v-for="(tag, i) in project.tags.sort()" :key="i" @click="router.push({name: 'Filter', query:{filter: tag.toLowerCase()}})">{{ tag }}</v-chip>
         </v-chip-group>
       </v-card-text>
-
-      <v-card-actions class="actions">
-        <v-btn @click="router.push({ name: 'Project', params: { id: project.slug } })" variant="elevated" prepend-icon="mdi-book" block color="secondary">
-          See more
-        </v-btn>
-      </v-card-actions>
     </v-card>
 </template>
 
@@ -52,6 +51,16 @@
     const {project, works, index, relatedProject} = defineProps(['project', 'works', 'index', 'relatedProject'])
 
     const router = useRouter()
+
+    const chips = ref(document.querySelector('.chip'))
+
+    console.log(chips.value)
+
+    const moveToProject = (stop) => {
+    if(stop) return
+    router.push({ name: 'Project', params: { id: project.slug } }) 
+    
+    }
 
     const description = computed(() => {
         return works.map((i, d) => {
@@ -67,3 +76,4 @@
     });
 
 </script>
+
