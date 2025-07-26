@@ -2,7 +2,6 @@
   <section  
     v-for="(d,i) in project"
     :key="i"
-    class="overflow-hidden"
   >
     <v-img
       eager
@@ -20,19 +19,9 @@
               <Description :d="d" :project="project"/>
             </div>
           </v-col>
+
           <v-col cols="12" sm="12" md="7">
             <v-row>
-              <v-col cols="12" sm="12">
-                <v-btn
-                  href="https://www.utaresources.mmu.ac.uk/assessment_design_toolkit/#/"
-                  block
-                  color="secondary"
-                  size="large"
-                  prepend-icon="mdi-link"
-                >
-                  Assessment design independent study
-                </v-btn>
-              </v-col>
                <v-col cols="12" sm="12">
                 <v-lazy   
                   :options="{'threshold':0.5}"

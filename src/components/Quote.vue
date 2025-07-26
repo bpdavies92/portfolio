@@ -1,6 +1,6 @@
 <template>
-    <div class="" :class="{'mb-3' : marginBottom === false}" :min-height="minHeight ? minHeight : '0'">
-        <div class="pa-12 purpleBackground quote">
+    <div :min-height="minHeight ? minHeight : '0'">
+        <div class="pa-md-12 pa-6 purpleBackground quote">
             <v-icon icon="mdi-format-quote-open mr-3" size="x-large"></v-icon>
             <blockquote cite="https://www.huxley.net/bnw/four.html">
                     <slot name="quote"></slot>

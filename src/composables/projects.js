@@ -484,10 +484,6 @@ const projects = () => {
                 {
                     skill : "Video editing",
                     icon : "mdi-box-cutter"
-                },
-                {
-                    skill : "Audio editing",
-                    icon : "mdi-box-cutter"
                 }
             ]
         },

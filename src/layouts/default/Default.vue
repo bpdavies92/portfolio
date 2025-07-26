@@ -9,9 +9,10 @@
 
       <v-app-bar-title
         class="ml-6 flex-sm-fill flex-1-1"
+        @click="router.push({name: 'Home'})"
 
       >
-        Benjamin Davies
+        <span tabindex="1" class="clicker-pointer" aria-label="home page">Benjamin Davies</span>
       </v-app-bar-title>
 
       <!-- Desktop Search -->
@@ -337,5 +338,9 @@ function handleResultClick(project) {
 .grow-leave-to {
   opacity: 0;
   /* transform: scaleY(0.8); */
+}
+
+.clicker-pointer {
+  cursor: pointer;
 }
 </style>
