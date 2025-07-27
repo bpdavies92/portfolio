@@ -81,18 +81,18 @@
             transition="fade-transition"
         >
           <v-row>
-            <v-col cols="12" sm="12" md="12" >
+            <v-col cols="12" sm="12" md="6" >
                 <h2>Software skills</h2>
                   <div class="software-skills text-center">
-                    <apexchart height="500" type="radar" :options="skillsOptions" :series="skillsSeries"></apexchart>
+                    <apexchart height="500" type="radar" :options="skillsOptions" :series="softwareSeries"></apexchart>
                   </div>
             </v-col>
-            <!-- <v-col cols="12" sm="12" md="6" >
-                <h2>Design</h2>
-                  <div class="software-skills">
-                    <apexchart type="radar" :options="skillsOptions" :series="skillsSeries"></apexchart>
+            <v-col cols="12" sm="12" md="6" >
+                <h2 class="mt-n12 mt-md-0">Design skills</h2>
+                  <div class="software-skills text-center">
+                    <apexchart height="500" min-height="500" type="radar" :options="designOptions" :series="designSeries"></apexchart>
                   </div>
-            </v-col> -->
+            </v-col>
           </v-row>
         </v-lazy>
     
@@ -166,10 +166,79 @@ const base = ref(import.meta.env.VITE_BASE)
   
 })
 
-const skillsSeries = ref([
+  const designOptions = ref({
+  
+  chart: {
+    id: 'software-skills',
+    type: 'radar', 
+      sparkline: {
+    // enabled: true
+    },
+    offsetX: 0,
+    offsetY: -50,
+     height: 500,  // or 100%, or smaller
+  width: 500,
+    toolbar: {
+    show: false,
+  },
+  },
+  xaxis: {
+    categories: ['Gen AI', 'Layout', 'Print', 'Problem-Solving', 'Prototyping', 'Web accessibility'],
+    labels: {
+      style: {
+        colors: ['#303030', '#303030', '#303030', '#303030', '#303030', '#303030'],  // Apply color to category labels
+        fontSize: '11px',
+        fontFamily: 'inherit',
+      },
+    },
+  },
+  yaxis: {
+    stepSize: 20,
+    labels: {
+      style: {
+        colors: '#303030',  // Color for radial axis numbers
+      },
+    },
+  },
+  stroke: {
+    colors: ['#303030',],
+  },
+    fill: {
+     colors: ['#303030',],
+  },
+         plotOptions: {
+          radar: {
+            polygons: {
+              
+              strokeColors: '#999999', // White radial lines
+              connectorColors: '#999999', // White connecting lines
+              fill: {
+                colors: ['#F2E7C4'], // Background fill of radar area (black)
+              },
+            },
+          }
+        }
+  
+})
+
+const softwareSeries = ref([
   {
     name: '',
-    data: [85, 70, 50, 70, 90, 70],
+    data: [70, 85, 70, 50, 90, 70],
+    colors: ['#303030', '#303030', '#303030', '#303030', '#303030'],
+    fill: ['#303030'],
+        labels: {
+    style: {
+      fontColor: '#303030', // Black color for category labels
+    },
+  },
+  }
+])
+
+const designSeries = ref([
+  {
+    name: '',
+    data: [90, 80, 90, 75, 90, 90],
     colors: ['#303030', '#303030', '#303030', '#303030', '#303030'],
     fill: ['#303030'],
         labels: {
