@@ -128,17 +128,41 @@ const base = ref(import.meta.env.VITE_BASE)
   },
   },
   xaxis: {
-    categories: ['After Effects', 'Illustrator','InDesign', 'Photoshop', 'Premiere Pro', 'Vue.js']
+    categories: ['After Effects', 'Illustrator', 'InDesign', 'Photoshop', 'Premiere Pro', 'Vue.js'],
+    labels: {
+      style: {
+        colors: ['#303030', '#303030', '#303030', '#303030', '#303030', '#303030'],  // Apply color to category labels
+        fontSize: '12px',
+        fontFamily: 'inherit',
+      },
+    },
   },
   yaxis: {
-    stepSize: 20
+    stepSize: 20,
+    labels: {
+      style: {
+        colors: '#303030',  // Color for radial axis numbers
+      },
+    },
   },
   stroke: {
-    colors: ['#F28080',],
+    colors: ['#303030',],
   },
     fill: {
-     colors: ['#F28080',],
-  }
+     colors: ['#303030',],
+  },
+         plotOptions: {
+          radar: {
+            polygons: {
+              
+              strokeColors: '#999999', // White radial lines
+              connectorColors: '#999999', // White connecting lines
+              fill: {
+                colors: ['#F2E7C4'], // Background fill of radar area (black)
+              },
+            },
+          }
+        }
   
 })
 
@@ -146,7 +170,13 @@ const skillsSeries = ref([
   {
     name: '',
     data: [85, 70, 50, 70, 90, 70],
-    colors: ['#2E93fA', '#66DA26', '#546E7A', '#E91E63', '#FF9800'],
+    colors: ['#303030', '#303030', '#303030', '#303030', '#303030'],
+    fill: ['#303030'],
+        labels: {
+    style: {
+      fontColor: '#303030', // Black color for category labels
+    },
+  },
   }
 ])
 

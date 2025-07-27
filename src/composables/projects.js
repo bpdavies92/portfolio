@@ -963,6 +963,43 @@ const projects = () => {
                     icon : "mdi-notebook"
                 },
             ]
+        },
+        {
+            id: 23,
+            slug: "ma-degree-show-installation",
+            title: "MA Degree Show installation",
+            shortTitle: 'MA Degree Show Installation',
+            end : "November 2016",
+            date : "11/01/2016",
+            location : "Preston",
+            subtitle : "",
+            description : "",
+            thumbnail : `${import.meta.env.VITE_BASE}/images/ma-3.webp`,
+               tags : [ "event", "art", "design", "audio-visual" ],
+            techUsed : [
+                {
+                    tech : "Audio-visual",
+                    icon : "mdi-speaker"    
+                },
+                {
+                    tech : "Photography",
+                    icon : "mdi-camera"
+                }   
+            ],
+            skills : [
+                {
+                    skill : "Event planning",
+                    icon : "mdi-calendar-star"
+                },
+                {
+                    skill : "Curatorial skills",
+                    icon : "mdi-floor-plan"
+                },
+                {
+                    skill : "Project management",
+                    icon : "mdi-notebook"
+                },
+            ]
         }
     ])
 
