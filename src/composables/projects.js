@@ -1000,6 +1000,43 @@ const projects = () => {
                     icon : "mdi-notebook"
                 },
             ]
+        },
+                {
+            id: 24,
+            slug: "leeds-beckett-ai-hub",
+            title: "Leeds Beckett staff AI Hub",
+            shortTitle: 'Leeds Beckett AI Hub',
+            end : "July 2025",
+            date : "7/10/2025",
+            location : "Leeds",
+            subtitle : "",
+            description : "",
+            thumbnail : `${import.meta.env.VITE_BASE}/images/ai-hub.webp`,
+               tags : [ "event", "art", "design", "audio-visual" ],
+            techUsed : [
+                {
+                    tech : "Audio-visual",
+                    icon : "mdi-speaker"    
+                },
+                {
+                    tech : "Photography",
+                    icon : "mdi-camera"
+                }   
+            ],
+            skills : [
+                {
+                    skill : "Event planning",
+                    icon : "mdi-calendar-star"
+                },
+                {
+                    skill : "Curatorial skills",
+                    icon : "mdi-floor-plan"
+                },
+                {
+                    skill : "Project management",
+                    icon : "mdi-notebook"
+                },
+            ]
         }
     ])
 

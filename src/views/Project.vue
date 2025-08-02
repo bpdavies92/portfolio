@@ -33,6 +33,7 @@
     import TheSoundOfAdultChildren from "@/components/projects/TheSoundOfAdultChildren.vue"
     import WishInOneHand from '@/components/projects/WishInOneHand.vue'
     import MaDegreeShow from "@/components/projects/MaDegreeShow.vue"
+    import AIHub from "@/components/projects/AIHub.vue"
 
 
     const { works } = projects()  
@@ -92,6 +93,8 @@
             return WishInOneHand
             case "ma-degree-show-installation":
             return MaDegreeShow
+            case "leeds-beckett-ai-hub":
+            return AIHub
             // Add more cases as needed for other components
             // Ensure the component names match the ones you have imported
             // If you have a default component, you can return it here

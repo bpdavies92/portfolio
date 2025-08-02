@@ -75,8 +75,8 @@
             </v-list>
           </v-col>
         </v-row>
-        <hr class="mt-12 mb-12">
-        <v-lazy
+        <!-- <hr class="mt-12 mb-12"> -->
+        <!-- <v-lazy
             :options="{'threshold':0.5}"
             transition="fade-transition"
         >
@@ -94,7 +94,7 @@
                   </div>
             </v-col>
           </v-row>
-        </v-lazy>
+        </v-lazy> -->
     
     </section>
   </v-container>
