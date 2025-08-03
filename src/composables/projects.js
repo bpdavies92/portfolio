@@ -168,7 +168,7 @@ const projects = () => {
             subtitle : "The UTA website was a significant development task. I collaborated with academic developers in the University Teaching Academy to create a reference section on the main Manchester Met website. The objective of this project was to establish a reference site for teaching and professional services staff, providing them with independent study support for common learning and teaching issues.",
             description : "<p class='text-body-1'>The UTA website was a significant development task. I collaborated with academic developers from the University Teaching Academy to create a microsite for UTA on the main Manchester Met website. The objective of this project was to establish a reference site for teaching and professional services staff, providing them with independent study support for common learning and teaching issues.</p><p class='text-body-1'>Visited by more than 50,000 people per year, the UTA website serves as an outward-looking reservoir of knowledge for professional service and academic staff from anywhere in the world who want to develop themselves.</p>",
             thumbnail : `${import.meta.env.VITE_BASE}/images/uta-website-1.webp`,
-            tags : [ "web development", "design", "padagogy", "droople" ],
+            tags : [ "web development", "design", "pedagogy", "droople" ],
             techUsed : [
                 {
                     tech : "Droople",
@@ -1012,30 +1012,68 @@ const projects = () => {
             subtitle : "",
             description : "",
             thumbnail : `${import.meta.env.VITE_BASE}/images/ai-hub.webp`,
-               tags : [ "event", "art", "design", "audio-visual" ],
+            tags : [ "web development", "design", "pedagogy", "sitecore" ],
             techUsed : [
                 {
-                    tech : "Audio-visual",
-                    icon : "mdi-speaker"    
+                    tech : "Sitecore",
+                    icon : "mdi-movie-star"
                 },
                 {
-                    tech : "Photography",
+                    tech : "Video",
                     icon : "mdi-camera"
-                }   
+                }, 
+                {
+                    tech : "InDesign",
+                    icon : "mdi-star"
+                },
+                
             ],
             skills : [
                 {
-                    skill : "Event planning",
-                    icon : "mdi-calendar-star"
+                    skill : "Code",
+                    icon : "mdi-code-braces"
                 },
                 {
-                    skill : "Curatorial skills",
-                    icon : "mdi-floor-plan"
+                    skill : "Design",
+                    icon : "mdi-pencil-ruler"
+                }, 
+                                {
+                    skill : "Print",
+                    icon : "mdi-printer"
+                }
+            ]
+        },
+           {
+            id: 25,
+            slug: "events-management",
+            title: "BA Events Management",
+            shortTitle: 'BA Events Management',
+            end : "March 2024",
+            date : "3/01/2024",
+            location : "Leeds",
+            subtitle : "",
+            description : "",
+            thumbnail : `${import.meta.env.VITE_BASE}/images/event-man-1.webp`,
+            tags : [ "video", "premiere pro"],
+            techUsed : [
+                {
+                    tech : "Video",
+                    icon : "mdi-film"
                 },
                 {
-                    skill : "Project management",
-                    icon : "mdi-notebook"
+                    tech : "Premiere Pro",
+                    icon : "mdi-movie-star"
                 },
+            ],
+            skills : [
+                {
+                    skill : "Video editing",
+                    icon : "mdi-box-cutter"
+                },
+                {
+                    skill : "Filming",
+                    icon : "mdi-camera"
+                }
             ]
         }
     ])

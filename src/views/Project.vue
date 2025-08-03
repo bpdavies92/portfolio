@@ -34,6 +34,7 @@
     import WishInOneHand from '@/components/projects/WishInOneHand.vue'
     import MaDegreeShow from "@/components/projects/MaDegreeShow.vue"
     import AIHub from "@/components/projects/AIHub.vue"
+    import EventsManagement from "@/components/projects/EventsManagement.vue"
 
 
     const { works } = projects()  
@@ -95,6 +96,8 @@
             return MaDegreeShow
             case "leeds-beckett-ai-hub":
             return AIHub
+            case "events-management":
+            return EventsManagement
             // Add more cases as needed for other components
             // Ensure the component names match the ones you have imported
             // If you have a default component, you can return it here
