@@ -1075,6 +1075,39 @@ const projects = () => {
                     icon : "mdi-camera"
                 }
             ]
+        },
+                   {
+            id: 26,
+            slug: "fareshare",
+            title: "FareShare placements",
+            shortTitle: 'BA Nutrition FareShare placements',
+            end : "July 2024",
+            date : "7/01/2024",
+            location : "Leeds",
+            subtitle : "",
+            description : "",
+            thumbnail : `${import.meta.env.VITE_BASE}/images/event-man-1.webp`,
+            tags : [ "video", "premiere pro"],
+            techUsed : [
+                {
+                    tech : "Video",
+                    icon : "mdi-film"
+                },
+                {
+                    tech : "Premiere Pro",
+                    icon : "mdi-movie-star"
+                },
+            ],
+            skills : [
+                {
+                    skill : "Video editing",
+                    icon : "mdi-box-cutter"
+                },
+                {
+                    skill : "Filming",
+                    icon : "mdi-camera"
+                }
+            ]
         }
     ])
 

@@ -35,6 +35,7 @@
     import MaDegreeShow from "@/components/projects/MaDegreeShow.vue"
     import AIHub from "@/components/projects/AIHub.vue"
     import EventsManagement from "@/components/projects/EventsManagement.vue"
+    import FareShare from "@/components/projects/FareShare.vue"
 
 
     const { works } = projects()  
@@ -98,6 +99,8 @@
             return AIHub
             case "events-management":
             return EventsManagement
+            case "fareshare":
+            return FareShare
             // Add more cases as needed for other components
             // Ensure the component names match the ones you have imported
             // If you have a default component, you can return it here
