@@ -37,6 +37,7 @@
     import EventsManagement from "@/components/projects/EventsManagement.vue"
     import FareShare from "@/components/projects/FareShare.vue"
     import BaActing from "@/components/projects/BaActing.vue"
+    import ZineGuide from "@/components/projects/ZineGuide.vue"
 
     const { works } = projects()  
     const router = useRouter()
@@ -103,6 +104,8 @@
             return FareShare
             case "ba-acting":
             return BaActing
+            case "zine-making-guide":
+            return ZineGuide
             default:
             return null
         }

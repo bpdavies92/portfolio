@@ -1109,7 +1109,72 @@ const projects = () => {
                 }
             ]
         },
-      
+             {
+            id: 27,
+            slug: "fareshare",
+            title: "BA Nutrition FareShare placements",
+            shortTitle: 'FareShare placement students',
+            end : "July 2024",
+            date : "7/16/2024",
+            location : "Leeds",
+            subtitle : "",
+            description : "",
+            thumbnail : `${import.meta.env.VITE_BASE}/images/fareshare-2.webp`,
+            tags : [ "video", "premiere pro"],
+            techUsed : [
+                {
+                    tech : "Photography",
+                    icon : "mdi-camera"
+                },
+                {
+                    tech : "Premiere Pro",
+                    icon : "mdi-movie-star"
+                },
+            ],
+            skills : [
+                {
+                    skill : "Video editing",
+                    icon : "mdi-box-cutter"
+                },
+                {
+                    skill : "Filming",
+                    icon : "mdi-camera"
+                }
+            ]
+        },
+                   {
+            id: 28,
+            slug: "zine-making-guide",
+            title: "Zine making guide",
+            shortTitle: 'Zine making guide for teaching and learning',
+            end : "May 2025",
+            date : "5/01/2025",
+            location : "Leeds",
+            subtitle : "",
+            description : "",
+            thumbnail : `${import.meta.env.VITE_BASE}/images/zine-1.webp`,
+            tags : [ "video", "premiere pro"],
+            techUsed : [
+                {
+                    tech : "Photography",
+                    icon : "mdi-camera"
+                },
+                {
+                    tech : "Premiere Pro",
+                    icon : "mdi-movie-star"
+                },
+            ],
+            skills : [
+                {
+                    skill : "Video editing",
+                    icon : "mdi-box-cutter"
+                },
+                {
+                    skill : "Filming",
+                    icon : "mdi-camera"
+                }
+            ]
+        },
     ])
 
     return { works }

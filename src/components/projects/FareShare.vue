@@ -27,7 +27,7 @@
                   transition="scroll-y-reverse-transition"
                 >
                   <div class="iframe-wrapper">
-                    <iframe src="https://leedsbeckettreplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=91458545-acea-4549-b3f8-b24a00e3bce7&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="169" width="300" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Course Principles: Introduction" ></iframe>
+                 <iframe src="https://leedsbeckettreplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=ae10cafd-477f-4daa-88f0-b20500f7404d&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="169" width="300" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Overview of FareShare" ></iframe>
                   </div>
                 </v-lazy>
               </v-col>
@@ -36,7 +36,7 @@
                   :options="{'threshold':0.5}"
                   transition="scroll-y-reverse-transition">
                   <div class="iframe-wrapper">
-                    <iframe src="https://leedsbeckettreplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=5ab603a0-a6b9-439f-8f6f-b24a015f30fd&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="169" width="300" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Course Principles: Course Identity" ></iframe>
+                    <iframe src="https://leedsbeckettreplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=fe791f0f-8ea7-491d-b627-b20500f74d7c&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="169" width="300" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Role at FareShare" ></iframe>
                   </div>
                 </v-lazy>
               </v-col>
@@ -45,7 +45,7 @@
                   :options="{'threshold':0.5}"
                   transition="scroll-y-reverse-transition">
                   <div class="iframe-wrapper">
-                   <iframe src="https://leedsbeckettreplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=a2cafddb-4382-4fa8-88b8-b24a0177f728&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="169" width="300" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Course Principles: Course Coherence" ></iframe>
+                  <iframe src="https://leedsbeckettreplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=7e5007e4-9292-4446-bb45-b20500f76d28&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="169" width="300" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="What have been the benefits of your placement at FareShare?" ></iframe>
                   </div>
                 </v-lazy>
               </v-col>
@@ -54,7 +54,7 @@
                   :options="{'threshold':0.5}"
                   transition="scroll-y-reverse-transition">
                   <div class="iframe-wrapper">
-                  <iframe src="https://leedsbeckettreplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=a69a2542-9c26-4320-a1ca-b24a00e3a939&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="169" width="300" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Course Principles: Student Agency" ></iframe>
+                 <iframe src="https://leedsbeckettreplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=239b6bd0-a0b7-4f1c-968a-b20500f7539f&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="What did you do to apply for your placement at FareShare?" ></iframe>
                   </div>
                 </v-lazy>
               </v-col>
@@ -93,8 +93,8 @@ import Description from '../Description.vue'
 import { useRouter, useRoute } from 'vue-router'
 import nextProject from '@/composables/nextProject'
 import { useWindowSize } from '@vueuse/core'
-import banner from '@/assets/images/course-principles/course-principles-banner.webp'
-import bannerLazy from '@/assets/images/course-principles/course-principles-banner-lazy.webp'  
+import banner from '@/assets/images/fareshare/fareshare-banner.webp'
+import bannerLazy from '@/assets/images/fareshare/fareshare-banner-lazy.webp'  
 import projects from '@/composables/projects'
 
 const { width } = useWindowSize()
