@@ -51,25 +51,28 @@
                 <p class="text-caption mt-3">Video introduction by Professor Fiona Saunders</p>
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-img height="500" alt="Dr Fiona Saunders introducing the LEED conference" cover aspect-ratio="16/9" :lazy-src="imgWeb1Lazy" :src="imgWeb1" />
+                <v-img  alt="Dr Fiona Saunders introducing the LEED conference" cover aspect-ratio="16/9" :lazy-src="img13Lazy" :src="img13" />
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-img height="500" alt="Dr Fiona Saunders introducing the LEED conference" cover aspect-ratio="16/9" :lazy-src="imgWeb2Lazy" :src="imgWeb2" />
+                <v-img  alt="Dr Fiona Saunders introducing the LEED conference" cover aspect-ratio="16/9" :lazy-src="imgWeb1Lazy" :src="imgWeb1" />
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-img height="500" alt="Dr Fiona Saunders introducing the LEED conference" cover aspect-ratio="16/9" :lazy-src="imgWeb3Lazy" :src="imgWeb3" />
+                <v-img  alt="Dr Fiona Saunders introducing the LEED conference" cover aspect-ratio="16/9" :lazy-src="imgWeb2Lazy" :src="imgWeb2" />
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-img height="500" alt="Dr Fiona Saunders introducing the LEED conference" cover aspect-ratio="16/9" :lazy-src="imgWeb4Lazy" :src="imgWeb4" />
+                <v-img  alt="Dr Fiona Saunders introducing the LEED conference" cover aspect-ratio="16/9" :lazy-src="imgWeb3Lazy" :src="imgWeb3" />
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-img height="500" alt="Dr Fiona Saunders introducing the LEED conference" cover aspect-ratio="16/9" :lazy-src="imgWeb5Lazy" :src="imgWeb5" />
+                <v-img  alt="Dr Fiona Saunders introducing the LEED conference" cover aspect-ratio="16/9" :lazy-src="imgWeb4Lazy" :src="imgWeb4" />
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-img height="500" alt="Dr Fiona Saunders introducing the LEED conference" cover aspect-ratio="16/9" :lazy-src="img3Lazy" :src="img3" />
+                <v-img  alt="Dr Fiona Saunders introducing the LEED conference" cover aspect-ratio="16/9" :lazy-src="imgWeb5Lazy" :src="imgWeb5" />
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-img height="500" alt="Participant looking at posters" cover aspect-ratio="16/9" :lazy-src="img5Lazy" :src="img5" />
+                <v-img  alt="Dr Fiona Saunders introducing the LEED conference" cover aspect-ratio="16/9" :lazy-src="img3Lazy" :src="img3" />
+              </v-col>
+              <v-col cols="12" sm="12" md="12">
+                <v-img  alt="Participant looking at posters" cover aspect-ratio="16/9" :lazy-src="img5Lazy" :src="img5" />
               </v-col>
             </v-row>
 
@@ -130,6 +133,9 @@ import img7Lazy from '@/assets/images/conference/leed-conf-7-lazy.webp'
 import img8Lazy from '@/assets/images/conference/leed-conf-8-lazy.webp'
 import img10Lazy from '@/assets/images/conference/leed-conf-10-lazy.webp'
 import img12Lazy from '@/assets/images/conference/leed-conf-12-lazy.webp'
+
+import img13Lazy from '@/assets/images/conference/conf-web-13-lazy.webp'
+import img13 from '@/assets/images/conference/conf-web-13.webp'
 
 import imgWeb1 from '@/assets/images/conference/conf-web-1.webp'
 import imgWeb1Lazy from '@/assets/images/conference/conf-web-1-lazy.webp'

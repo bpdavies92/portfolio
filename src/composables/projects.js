@@ -1078,20 +1078,20 @@ const projects = () => {
         },
                    {
             id: 26,
-            slug: "fareshare",
-            title: "FareShare placements",
-            shortTitle: 'BA Nutrition FareShare placements',
-            end : "July 2024",
-            date : "7/01/2024",
+            slug: "ba-acting",
+            title: "BA Acting VLE graphics",
+            shortTitle: 'BA Acting',
+            end : "May 2024",
+            date : "5/08/2024",
             location : "Leeds",
             subtitle : "",
             description : "",
-            thumbnail : `${import.meta.env.VITE_BASE}/images/event-man-1.webp`,
+            thumbnail : `${import.meta.env.VITE_BASE}/images/ba-acting-1.webp`,
             tags : [ "video", "premiere pro"],
             techUsed : [
                 {
-                    tech : "Video",
-                    icon : "mdi-film"
+                    tech : "Photography",
+                    icon : "mdi-camera"
                 },
                 {
                     tech : "Premiere Pro",
@@ -1108,7 +1108,8 @@ const projects = () => {
                     icon : "mdi-camera"
                 }
             ]
-        }
+        },
+      
     ])
 
     return { works }

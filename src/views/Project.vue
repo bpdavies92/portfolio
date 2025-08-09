@@ -36,7 +36,7 @@
     import AIHub from "@/components/projects/AIHub.vue"
     import EventsManagement from "@/components/projects/EventsManagement.vue"
     import FareShare from "@/components/projects/FareShare.vue"
-
+    import BaActing from "@/components/projects/BaActing.vue"
 
     const { works } = projects()  
     const router = useRouter()
@@ -101,16 +101,8 @@
             return EventsManagement
             case "fareshare":
             return FareShare
-            // Add more cases as needed for other components
-            // Ensure the component names match the ones you have imported
-            // If you have a default component, you can return it here
-            // or handle it as a fallback
-            // For example, you can return a default component like this:
-            // return DefaultComponent
-            // or return null if no match is found
-            // return DefaultComponent
-            // or return null if no match is found
-            // return null
+            case "ba-acting":
+            return BaActing
             default:
             return null
         }
