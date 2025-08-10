@@ -13,8 +13,9 @@
                                             <v-window
                                             continuous
                                             v-model="window"
+                                              class="fixed-window-height"
                                             >
-                            <v-window-item  v-for="(chunk, chunkIndex) in projectChunks" :key="chunkIndex" >
+                            <v-window-item   v-for="(chunk, chunkIndex) in projectChunks" :key="chunkIndex" >
                                 <v-row>
                                     <v-col v-for="(project, projectIndex) in chunk" :key="projectIndex" cols="12" sm="12" md="4">
                                         <Card :relatedProject="true" :works="works" :project="project" :index="projectIndex"/>
@@ -120,5 +121,7 @@
 </script>
 
 <style scoped>
-
+.fixed-window-height {
+  min-height: 450px; /* Adjust based on your card size */
+}
   </style>

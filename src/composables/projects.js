@@ -1012,7 +1012,7 @@ const projects = () => {
             subtitle : "Webpage highlighting generative AI resources, guidance, and workshops for teaching and learning at Leeds Beckett University.",
             description : "Webpage highlighting generative AI resources, guidance, and workshops for teaching and learning at Leeds Beckett University. A postcard was also designed to promote the hub. All content was displayed to Leeds Beckett staff during an AI symposium in July 2025.",
             thumbnail : `${import.meta.env.VITE_BASE}/images/ai-hub.webp`,
-            tags : [ "web development", "design", "sitecore" ],
+            tags : [ "web development", "graphic design", "sitecore", "photoshop" ],
             techUsed : [
                 {
                     tech : "Sitecore",
