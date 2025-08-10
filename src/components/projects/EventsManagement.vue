@@ -40,7 +40,14 @@
                   </div>
                 </v-lazy>
               </v-col>
-                <v-col>
+                <v-col cols="12" sm="12" md="12">
+                  <v-img
+                    alt="Exhibition hero"
+                    cover
+                    aspect-ratio="16/9"
+                    :src="img8"
+                    :lazy-src="img8Lazy"
+                  ></v-img>
                 <v-lazy
                   :options="{'threshold':0.5}"
                   transition="scroll-y-reverse-transition">
@@ -49,6 +56,25 @@
                   </div>
                 </v-lazy>
               </v-col>
+                              <v-col cols="12" sm="12" md="12">
+                <v-lazy
+                  :options="{'threshold':0.5}"
+                  transition="scroll-y-reverse-transition">
+                  <div class="iframe-wrapper">
+<iframe src="https://leedsbeckettreplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=ffc388c7-97ae-4a54-aa16-b162016e1141&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Group 4 Showcase" ></iframe>
+                  </div>
+                </v-lazy>
+              </v-col>
+                                            <v-col cols="12" sm="12" md="12">
+                <v-lazy
+                  :options="{'threshold':0.5}"
+                  transition="scroll-y-reverse-transition">
+                  <div class="iframe-wrapper">
+<iframe src="https://leedsbeckettreplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=7d641eab-fb1c-4129-9f1a-b1470100e702&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="169" width="300" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Abbey &amp; Imogen | Student reflections" ></iframe>
+                  </div>
+                </v-lazy>
+              </v-col>
+              
             </v-row>
           </v-col>
         </v-row>

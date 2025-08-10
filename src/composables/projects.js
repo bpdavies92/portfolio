@@ -11,8 +11,8 @@ const projects = () => {
             end : "February 2023",
             title: "Equality, diversity & inclusion",
             shortTitle: "EDI self-study",
-            subtitle : "An Equality, Diversity, and Inclusion training module that all staff at Manchester Met must complete every two years. This module was created using Articulate Rise and includes a variety of media types to accommodate different learning preferences.",
-            description : "<p class='text-body-1'>At Manchester Metropolitan University, it is mandatory for all staff to complete an Equality, Diversity, and Inclusion (EDI) training module once every two years. With funding from the Inclusive Learning Communities initiative, I was tasked with creating a second version of the EDI training I had developed a year prior. The aim was to make it more interactive and address the feedback provided by staff who had participated in the previous training.</p><p class='text-body-1'>This updated version incorporates more quiz-based summative assessments and includes a longer and more challenging summative quiz at the end. Overall, it offers a more interactive learning experience. I developed this module using Articulate Storyline, which provided me with additional tools to create custom interactions and will make it easier for other staff to update in the future.</p>",
+            subtitle : "Updated Manchester Met’s mandatory Equality, Diversity, and Inclusion (EDI) training module with funding from the Inclusive Learning Communities initiative.",
+            description : "Updated Manchester Met’s mandatory Equality, Diversity, and Inclusion (EDI) training module with funding from the Inclusive Learning Communities initiative. Building on the previous version I created, the update introduced more interactive elements, quiz-based assessments, and a longer final quiz. Developed in Articulate Storyline to enable custom interactions and easier future updates.",
             thumbnail : `${import.meta.env.VITE_BASE}/images/edi-card-img.webp`,
             tags : [ "articulate", "independent study", "quiz", "instructional design" ],
             techUsed : [
@@ -65,8 +65,8 @@ const projects = () => {
             location : "Manchester",
             title: "Associate Fellowship independent study",
             shortTitle: "AFHEA self-study",
-            subtitle : "The AF independent study is an Advance HE approved independent study for individuals at Manchester Met who wish to achieve AF Fellowship. This resource was designed for people who need more flexibility and incorporates an innovative learning journal idea that participants use to reflect on a series of activities outlined in an Articulate Storyline resource.",
-            description : "<p class='text-body-1'>The AF independent study is an Advance HE approved independent study for individuals at Manchester Met who wish to achieve AF Fellowship. This resource was designed for people who need more flexibility and incorporates an innovative learning journal idea that participants use to reflect on a series of activities outlined in an Articulate Storyline resource.</p>",
+            subtitle : "The AdvanceHE Associate Fellowship independent study is an approved program for individuals at Manchester Met seeking AF Fellowship.",
+            description : "The AdvanceHE Associate Fellowship independent study is an approved program for individuals at Manchester Met seeking AF Fellowship. This resource offers flexibility and features an innovative learning journal that participants use to reflect on a series of activities outlined in an Articulate Storyline module.",
             thumbnail : `${import.meta.env.VITE_BASE}/images/header_img_1.webp`,
             tags : [ "articulate", "independent study", "quiz", "instructional design" ],
             techUsed : [
@@ -115,8 +115,8 @@ const projects = () => {
             date : "01/05/2021",
             end : "May 2021",
             location : "Manchester",
-            subtitle : "My Five Year Plan is a Manchester Met initiative that focuses on program-based activities, providing students with a personal and professional development framework. In support of this key Manchester Met initiative, I created a video and diagram to help staff understand the project.",
-            description : "<p class='text-body-1'>'My Five Year Plan' is a Manchester Met initiative that emphasises program-based activities, offering students a personal and professional development framework. In support of this key Manchester Met initiative, I created a video and a diagram to help staff understand the project. The video guides viewers through the five stages of the My Five Year Plan process, offering valuable resource ideas at each stage for easy reference.</p>",
+            subtitle : "My Five Year Plan is a Manchester Met initiative focusing on program-based activities that provide students with a personal and professional development framework.",
+            description : "My Five Year Plan is a Manchester Met initiative focusing on program-based activities that provide students with a personal and professional development framework. To support this, I created a video and diagram to help staff understand the project. The video walks viewers through the five stages of the plan, offering resource ideas at each stage for easy reference.",
             thumbnail : `${import.meta.env.VITE_BASE}/images/header_img_5.webp`,  
             tags : [ "video", "design", "explainer" ],
             techUsed : [
@@ -165,13 +165,13 @@ const projects = () => {
             location: "Manchester",
             title: "University Teaching Academy website",
             shortTitle: "UTA website",
-            subtitle : "The UTA website was a significant development task. I collaborated with academic developers in the University Teaching Academy to create a reference section on the main Manchester Met website. The objective of this project was to establish a reference site for teaching and professional services staff, providing them with independent study support for common learning and teaching issues.",
-            description : "<p class='text-body-1'>The UTA website was a significant development task. I collaborated with academic developers from the University Teaching Academy to create a microsite for UTA on the main Manchester Met website. The objective of this project was to establish a reference site for teaching and professional services staff, providing them with independent study support for common learning and teaching issues.</p><p class='text-body-1'>Visited by more than 50,000 people per year, the UTA website serves as an outward-looking reservoir of knowledge for professional service and academic staff from anywhere in the world who want to develop themselves.</p>",
+            subtitle : "Web development for the University Teaching Academy (UTA) at Manchester Metropolitan University.",
+            description : "Web development for the University Teaching Academy (UTA) at Manchester Metropolitan University. Collaborating with Academic Developer staff in UTA, I designed a number of pages aimed at professional services and academic staff, providing support on topics ranging from assessment and peer observation to Advance HE Fellowship and learning outcomes. Webpages were created and edited using the CMS Drupal and were visited by more than 50,000 people per year.",
             thumbnail : `${import.meta.env.VITE_BASE}/images/uta-website-1.webp`,
-            tags : [ "web development", "design",  "droople" ],
+            tags : [ "web development", "design",  "Drupal",  "graphic design" ],
             techUsed : [
                 {
-                    tech : "Droople",
+                    tech : "Drupal",
                     icon : "mdi-movie-star"
                 },
                 {
@@ -199,8 +199,8 @@ const projects = () => {
             start : "March 2015",
             end : "June 2017",
             location : "Liverpool",
-            subtitle : "I co-coordinated a small gallery in Liverpool city center, where I organised art, photography, and other cultural exhibitions. I was responsible for creating posters and social media content, curating exhibitions, liaising with artists, installing audio visual equipment, and applying for funding. Moreover, I was responsible for completing risk assessments for each of the events.",
-            description : "<p class='text-body-1'>I co-coordinated a small gallery in Liverpool city center, where I organised art, photography, and other cultural exhibitions. I was responsible for creating posters and social media content, curating exhibitions, liaising with artists, installing audio visual equipment, and applying for funding. Moreover, I was responsible for completing risk assessments for each of the events.</p>",
+            subtitle : "A Small View is a gallery I co-founded and co-coordinated in Liverpool City Centre, showcasing art, photography, and cultural exhibitions.",
+            description : "A Small View is a gallery I co-founded and co-coordinated in Liverpool City Centre, showcasing art, photography, and cultural exhibitions. I was responsible for creating posters and social media content, curating exhibitions, liaising with artists, installing audiovisual equipment, applying for funding, and completing risk assessments for each event.",
             thumbnail : `${import.meta.env.VITE_BASE}/images/a_small_view_1.webp`,
             tags : [ "event", "art", "design", "audio-visual" ],
             techUsed : [
@@ -237,8 +237,8 @@ const projects = () => {
             date : "01/07/2022",
             end : "July 2022",
             location : "Manchester",
-            subtitle : "A collaboration with the Assessment team at Manchester Met, this undergraduate degree classification calculator was designed to help students calculate the grades they will need to achieve their desired degree classification. This resource was custom-made using the Vue.js JavaScript framework.",
-            description : "<p class='text-body-1'>This project was a collaboration with the Assessment team at Manchester Met to create an undergraduate degree classification calculator. This project was in response to the many queries the Assessment team receives from students asking what grades are needed to achieve specific results.</p><p class='text-body-1'>The calculator I developed allows students to input their current grades and credits, and then experiment with what combination of credits and grades they will need to achieve their desired result. The end result achieved the desired goal, and since the creation of the calculator, it has been made available to students.</p><p class='text-body-1'>Since July 2020, the calculator has been used by more than 38,000 students to calculate grades. Additionally, it was nominated for three Manchester Met Staff Awards in 2023.</p>",
+            subtitle : "Collaborating with Manchester Met’s Assessment team, I developed an undergraduate degree classification calculator that has helped over 38,000 students explore grade requirements.",
+            description : "This project, in collaboration with Manchester Met’s Assessment team, developed an undergraduate degree classification calculator to address common student queries about required grades. The calculator lets students input their current grades and credits to explore what they need to achieve their desired classification. Since its launch, over 38,000 students have used the tool, and it was nominated for three Manchester Met Staff Awards in 2023.",
             thumbnail : `${import.meta.env.VITE_BASE}/images/degree-calc-card-img.webp`,
             tags : [ "web development", "javascript", "css", "motion graphics", "video" ],
             techUsed : [
@@ -279,10 +279,10 @@ const projects = () => {
             date : "01/07/2023",
             end : "July 2023",
             location : "Manchester",
-            subtitle : "The LEED 2023 conference focused on Learning and Teaching at Manchester Met. The aim of the conference was to give staff a chance to share good practice and network with other colleagues from across the university. Conference themes revolved around the recently published education strategy and university aims outlined within that document.",
-            description : "<p class='text-body-1'>I played a key role in supporting the LEED 2023 conference, primarily by designing and developing the event website and creating/sourcing graphics. I collaborated with the University Teaching Academy to shape the conference programme and produced a promotional explainer video, which received over 300 views. On the day of the event, I also supported staff with tech troubleshooting—including Microsoft Forms, Excel, PDF editing, and AV setup.</p>",
+            subtitle : "Web development and audio/visual support for the Learning Enhancement and Educational Development (LEED) 2023 conference at Manchester Metropolitan University.",
+            description : "Web development and audio/visual support for the Learning Enhancement and Educational Development (LEED) 2023 conference at Manchester Metropolitan University. On the day of the conference, the website was used by more than 300 Manchester Met staff. I also created much of the event’s graphic design.",
             thumbnail : `${import.meta.env.VITE_BASE}/images/leed-conf-card-img-2.webp`,
-            tags : [ "web design", "conference", "event", "video" ],
+            tags : [ "web design", "conference", "event", "video", "graphic design" ],
             techUsed : [
                 {
                     tech : "Video",
@@ -324,8 +324,8 @@ const projects = () => {
             date : "01/09/2022",
             end : "September 2022",
             location : "Manchester",
-            subtitle : "This resource was designed to communicate approaches for welcoming international students to higher education learning. Accompanying this resource is a video featuring Dr. Jon Wright, discussing some of the factors that can interfere with effective communication when teaching an audience of international students.",
-            description : "<p class='text-body-1'>This resource was designed to communicate approaches for welcoming international students to higher education learning. Accompanying this resource is a video featuring Dr. Jon Wright, discussing some of the factors that can interfere with effective communication when teaching an audience of international students.</p>",
+            subtitle : "Webpage and video designed to communicate approaches for welcoming international students to higher education. ",
+            description : "Webpage designed to communicate approaches for welcoming international students to higher education. Accompanying the webpage is a video featuring Dr. Jon Wright, discussing factors that can interfere with effective communication when teaching international students.",
             thumbnail : `${import.meta.env.VITE_BASE}/images/internationalisation-1.webp`,
             tags : [ "articulate", "quiz",  "video", "web development" ],
             techUsed : [
@@ -370,7 +370,7 @@ const projects = () => {
             date : "01/08/2022",
             end : "August 2022",
             location : "Manchester",
-            subtitle : "These student narratives come from a series of focus groups that aimed to explore students' experiences at the university. Verbatim quotes are narrated by an actor to preserve student anonymity. In this selection of videos, these students share the importance of creating environments that encourage authentic vulnerability and trust.",
+            subtitle : "student narratives come from a series of focus groups that aimed to explore students' experiences at the university.",
             description : "<p class='text-body-1'>The selection of student narrative videos on this page comes from a series of focus groups designed to explore students' experiences at Manchester Metropolitan University. Verbatim quotes are narrated by an actor to protect student anonymity. These students emphasise the importance of creating environments that foster authentic vulnerability and trust.</p><p class='text-body-1'>This work was commissioned and funded by Inclusive Learning Communities (ILC). It is one of several projects I collaborated on with them, with the aim of addressing the awarding gap and identifying ways to reduce it.</p>",
             thumbnail : `${import.meta.env.VITE_BASE}/images/ilc-1.webp`,
             tags : [ "video", "premiere pro", "case study", "actor" ],
@@ -416,8 +416,8 @@ const projects = () => {
             date : "01/12/2021",
             start : "December 2021",
             end: "October 2023", 
-            subtitle : "The aim of the Critical Pedagogy podcast series is to illustrate the range of experimental, innovative, and inclusive pedagogical theories/strategies/activities used across all Faculties at Manchester Met. The series is external-facing and will serve as a digital repository of pedagogical knowledge that benefits staff and students alike.",
-            description : "<p class='text-body-1'>The aim of the Critical Pedagogy podcast series is to illustrate the range of experimental, innovative, and inclusive pedagogical theories/strategies/activities used across all Faculties at Manchester Met. The series is external-facing and will serve as a digital repository of pedagogical knowledge that benefits staff and students alike.</p>",
+            subtitle : "Critical Pedagogy podcast series showcasing a range of experimental, innovative, and inclusive pedagogical theories, strategies, and activities used across all faculties at Manchester Met.",
+            description : "Critical Pedagogy podcast series showcasing a range of experimental, innovative, and inclusive pedagogical theories, strategies, and activities used across all faculties at Manchester Met. I was responsible for audio recording, editing, and publishing the episodes.",
             thumbnail : `${import.meta.env.VITE_BASE}/images/crit-ped-1.webp`,
             tags : [ "audio", "podcast", "adobe audition" ],
             techUsed : [
@@ -458,8 +458,8 @@ const projects = () => {
             date : "01/11/2021",
             start : "",
             end : "November 2021",   
-            subtitle : "The Assessment Design Toolkit is an interactive, independent study resource. It is an externally available tool designed to assist staff in creating assessment tasks for units, reviewing assignment briefs produced by other colleagues, and providing a basic introduction to assessment at Manchester Met. I created this resource using Articulate Rise.",
-            description : "<p class='text-body-1'>The Assessment Design Toolkit is an interactive, independent study resource. It is an externally available tool designed to assist staff in creating assessment tasks for units, reviewing assignment briefs produced by other colleagues, and providing a basic introduction to assessment at Manchester Met. I created this resource using Articulate Rise.</p>",
+            subtitle : "Interactive resource designed to assist staff in creating assessment tasks, reviewing assignment briefs from colleagues, and providing a basic introduction to assessment at Manchester Met.",
+            description : "The Assessment Design Toolkit is an interactive independent study resource designed to assist staff in creating assessment tasks, reviewing assignment briefs from colleagues, and providing a basic introduction to assessment at Manchester Met. I developed this resource using Articulate Rise.",
             thumbnail : `${import.meta.env.VITE_BASE}/images/design-1.webp`,
             tags : [ "audio", "motion graphics", "video", "independent study" ],
             techUsed : [
@@ -534,8 +534,8 @@ const projects = () => {
             date : "01/09/2022",
             start : "",
             end : "September 2022",   
-            subtitle : "The As I am campaign celebrated diversity and inclusion by shedding light on our Black, Asian and Minority Ethnic staff and students’ stories of belonging here at Manchester Met.",
-            description : "<p class='text-body-1'>The 'As I am' campaign celebrates diversity and inclusion by shining a light on the stories of belonging from our Black, Asian, and Minority Ethnic staff and students here at Manchester Met. I contributed to the development of a website that featured many of the academics and students showcased during the exhibition.</p>",
+            subtitle : "The As I am campaign celebrated diversity and inclusion by shedding light on our Black, Asian and Minority Ethnic staff and students’ stories of belonging at Manchester Met.",
+            description : "The ‘As I Am’ campaign celebrates diversity and inclusion by highlighting stories of belonging from Black, Asian, and Minority Ethnic staff and students at Manchester Met. I contributed to developing the website that featured many of the academics and students showcased during the exhibition.",
             thumbnail : `${import.meta.env.VITE_BASE}/images/as-i-am-1.webp`,
             tags : [ "web development", "javascript", "css", "video" ],
             techUsed : [
@@ -564,8 +564,8 @@ const projects = () => {
             end : "March 2022",
             date: "01/03/2022",
             location : "Manchester",
-            subtitle : "Decolonising the Curriculum (DtC) is a project aimed at identifying, acknowledging, and challenging the ways in which colonialism has influenced perceived knowledge and learning. The material for this resource was compiled by Dr. Theresa Nicholson at Manchester Metropolitan University, and I developed it into an externally facing resource on the main university website.",
-            description : "<p class='text-body-1'>Decolonising the Curriculum (DtC) is a project aimed at identifying, acknowledging, and challenging the ways in which colonialism has influenced perceived knowledge and learning. The material for this resource was compiled by Dr. Theresa Nicholson at Manchester Metropolitan University, and I developed it into an externally facing resource on the main university website.</p>",
+            subtitle : "Webpage providing support and motivation for Manchester Met staff on Decolonising the Curriculum (DtC).",
+            description : "Webpage providing support and motivation for Manchester Met staff on Decolonising the Curriculum (DtC). The resources and guidance aim to identify, acknowledge, and challenge the ways colonialism has influenced knowledge and learning. Materials were compiled by Dr. Theresa Nicholson, and I developed the page using the Drupal CMS.",
             thumbnail : `${import.meta.env.VITE_BASE}/images/decol-2.webp`,
             tags : ["video", "web development", "independent study" ],
             techUsed : [
@@ -574,7 +574,7 @@ const projects = () => {
                     icon : "mdi-film",
                 },
                 {
-                    tech : "Droople",
+                    tech : "Drupal",
                     icon : "mdi-movie-star"
                 }
             ],
@@ -605,8 +605,8 @@ const projects = () => {
             end : "January 2018",
             date: "02/02/2018",
             location : "Manchester",
-            subtitle : "The Prosumer Chronicles‘ brings together prints, digital and sculptural work by White Wizard founder Dave Evans and London based artist Robin Tarbet. Both artists deal with the residue of technological progress, things such as polystyrene packaging and errant radio waves, using these by-products to explore the implications of perpetual growth.",
-            description : "<p class='text-body-1'>The Prosumer Chronicles‘ brings together prints, digital and sculptural work by White Wizard founder Dave Evans and London based artist Robin Tarbet. Both artists deal with the residue of technological progress, things such as polystyrene packaging and errant radio waves, using these by-products to explore the implications of perpetual growth.</p>",
+            subtitle : "This curatorial project at The Great Medical Disaster project space bringing together prints, digital, and sculptural works by Dave Evans and London-based artist Robin Tarbet.",
+            description : "This curatorial project at The Great Medical Disaster project space, The Prosumer Chronicles, brings together prints, digital, and sculptural works by White Wizard founder Dave Evans and London-based artist Robin Tarbet. Both artists explore the residue of technological progress—such as polystyrene packaging and errant radio waves—using these by-products to investigate the implications of perpetual growth.",
             thumbnail : `${import.meta.env.VITE_BASE}/images/pro-3.webp`,
             tags : [ "event", "art", "design", "audio-visual" ],
             techUsed : [
@@ -642,8 +642,8 @@ const projects = () => {
             end : "January 2018",
             date: "01/01/2018",
             location : "Manchester",
-            subtitle : "In (proud) collaboration with SEIZE projects, Leeds UK.A satellite event based on the deformation of the exhibition space, COLLAR uses the vacant unit outside of their own artist-led gallery to subvert the nature of what we better recognise as the event. Using alcohol as social lubricant – and taste as tool of critique – COLLAR practices the guise of curation in order to better facilitate conversation, to experiment a little.",
-            description : "<p class='text-body-1'>In (proud) collaboration with SEIZE projects, Leeds UK.</p><p class='text-body-1'>A satellite event based on the deformation of the exhibition space, COLLAR uses the vacant unit outside of their own artist-led gallery to subvert the nature of what we better recognise as the event. Using alcohol as social lubricant – and taste as tool of critique – COLLAR practices the guise of curation in order to better facilitate conversation, to experiment a little.</p>",
+            subtitle : "Co-curatorial project with SEIZE Projects in The Great Medical Disaster project space, Manchester.",
+            description : "Co-curatorial project with SEIZE Projects in The Great Medical Disaster project space, Manchester. The Morning Has Gold in Its Mouth examines the alteration of exhibition space. The event uses alcohol to facilitate social interaction and employs taste as a means of critical engagement. Through this approach, the show aims to foster discussion and encourage experimental practices.",
             thumbnail : `${import.meta.env.VITE_BASE}/images/gold-7.webp`,
             tags : [ "event", "art", "design", "audio-visual" ],
             techUsed : [
@@ -679,8 +679,8 @@ const projects = () => {
             end : "May 2023",
             date: "01/05/2023",
             location : "Manchester",
-            subtitle : "This resource is designed to help staff at Manchester Met navigate the Degree and Awards good hours Power BI dashboard. Being able to use this dashboard will provide a more detailed view of what student groups need more support.",
-            description : "<p class='text-body-1'>This resource is designed to help staff at Manchester Met navigate the Degree and Awards good hours Power BI dashboard. Being able to use this dashboard will provide a more detailed view of what student groups need more support.</p>",
+            subtitle : "Staff-facing resource created in Articulate Storyline to help Manchester Met staff navigate the Degree and Awards Good Honours Power BI dashboard.",
+            description : "Staff-facing resource created in Articulate Storyline to help Manchester Met staff navigate the Degree and Awards Good Honours Power BI dashboard. Using this dashboard provides a more detailed view of which student groups may need additional support.",
             thumbnail : `${import.meta.env.VITE_BASE}/images/understanding-1.webp`,  
             tags : [ "articulate", "independent study", "instructional design" ],
             techUsed : [
@@ -732,8 +732,8 @@ const projects = () => {
             end : "January 2023",
             date: "01/01/2023",
             location : "Manchester",
-            subtitle : "The 'Building Inclusive Learning Communities' resource is designed with staff at Manchester Metropolitan University in mind and is intended to offer guidance on discussing inclusion and a sense of belonging with other staff. The resource also includes student case studies, narrated by actors, which shed light on the students' own experiences.",
-            description : "<p class='text-body-1'>The 'Building Inclusive Learning Communities' resource is designed with staff at Manchester Metropolitan University in mind and is intended to offer guidance on discussing inclusion and a sense of belonging with other staff. The resource also includes student case studies, narrated by actors, which shed light on the students' own experiences.</p>",
+            subtitle : "Building Inclusive Learning Communities is a resource designed for staff at Manchester Metropolitan University.",
+            description : "Building Inclusive Learning Communities is a resource designed for staff at Manchester Metropolitan University. It offers guidance on discussing inclusion and fostering a sense of belonging among colleagues. The resource also includes student case studies, narrated by actors, which highlight the students’ own experiences.",
             thumbnail : `${import.meta.env.VITE_BASE}/images/learning-communities.webp`,
             tags : [ "articulate", "independent study", "instructional design" ],
             techUsed : [
@@ -785,8 +785,8 @@ const projects = () => {
             end : "February 2023",
             date: "01/02/2023",
             location : "Manchester",
-            subtitle : "This resource is designed to support current and future mentors for the Manchester Met PSF scheme (Professional Standards Framework, accredited by Advance HE). After an introductory activity and a brief refresher on the PSF Framework and reflective writing in two further sections, the learner is able to select the descriptor level(s) relevant to their mentorship for more self-directed activities and information.",
-            description : "<p class='text-body-1'>his resource is designed to support current and future mentors for the Manchester Met PSF scheme (Professional Standards Framework, accredited by Advance HE). After an introductory activity and a brief refresher on the PSF Framework and reflective writing in two further sections, the learner is able to select the descriptor level(s) relevant to their mentorship for more self-directed activities and information.</p>",
+            subtitle : "Designed an Articulate Rise resource to support current and future mentors for Manchester Met’s PSF (Professional Standards Framework) scheme, accredited by Advance HE.",
+            description : "Designed an Articulate Rise resource to support current and future mentors for Manchester Met’s PSF (Professional Standards Framework) scheme, accredited by Advance HE. Features an introductory activity, PSF framework refresher, and guidance on reflective writing, with self-directed activities tailored to the learner’s selected descriptor level.",
             thumbnail : `${import.meta.env.VITE_BASE}/images/mentorship-card-img.webp`,
             tags : [ "articulate", "independent study", "instructional design", "video" ],
             techUsed : [
@@ -828,7 +828,7 @@ const projects = () => {
             location : "Leeds",
             subtitle : "Animations providing an overview of Leeds Beckett University’s Course Principles.",
             description : "Animations providing an overview of Leeds Beckett University’s Course Principles. The Course Principles are a set of guidelines and reflective questions designed to support academic staff in implementing effective pedagogical practices during course development.",
-            thumbnail : `${import.meta.env.VITE_BASE}/images/course-principles-img.webp`,
+            thumbnail : `${import.meta.env.VITE_BASE}/images/course-principles.webp`,
             tags : ["video", "motion graphics", "video editing", "filming" ],
             techUsed : [
                 {
@@ -860,8 +860,8 @@ const projects = () => {
             start : "June",
             date : "01/08/2017",
             location : "Blackpool",
-            subtitle : "",
-            description : "",
+            subtitle : "Curatorial project combining visual art and humor to explore common experiences and anxieties.",
+            description : "Curatorial project in Collaboration With (ICW), a temporary project space in Blackpool founded by Garth Gratrix in partnership with East Street Arts. The group show combined visual art and humor to explore shared experiences and anxieties through works by artists including Craig Atkinson, Michael Lacey, Oliver Bradley-Baker, Kieran Healy, and Claire Dorsett.",
             thumbnail : `${import.meta.env.VITE_BASE}/images/adult-children-1.webp`,
                tags : [ "event", "art", "design", "audio-visual" ],
             techUsed : [
@@ -897,8 +897,8 @@ const projects = () => {
             end : "March 2016",
             date : "03/01/2016",
             location : "Leeds",
-            subtitle : "Curatorial project at BOB North 2016, held in the historic Post Office Building in Preston. I showcased a collection of Level 5 and 6 BA Fine Art student work.",
-            description : "Curatorial project at BOB North 2016, held in the historic Post Office Building in Preston. I showcased a collection of Level 5 and 6 BA Fine Art student work. This was my second time curating student work during a BOB North event, having previously done so in 2015.",
+            subtitle : "Curatorial project at BOB North 2016, held in the historic Post Office Building in Preston. I showcased a collection of Level 5 and 6 BA Fine Art student works.",
+            description : "Curatorial project at BOB North 2016, held in the historic Post Office Building in Preston. I showcased a collection of Level 5 and 6 BA Fine Art student works. This was my second time curating student work during a BOB North event, having previously done so in 2015.",
             thumbnail : `${import.meta.env.VITE_BASE}/images/bob-two-1.webp`,
                tags : [ "event", "art", "design", "audio-visual" ],
             techUsed : [
@@ -935,8 +935,8 @@ const projects = () => {
             start: "January 2019",
             date : "01/01/2019",
             location : "Preston",
-            subtitle : "",
-            description : "",
+            subtitle : "Curatorial project at the Hanover Project gallery centered on a commissioned story by artist Kyle Brown.",
+            description : "Curatorial project at the Hanover Project gallery centered on a commissioned story by artist Kyle Brown. The artworks were arranged around this narrative, allowing viewers to form their own interpretations and connections. Featured artists included Ellie Barrett, Inga Lineviciute, Jade Annaw, and Paula Kolar. Artist talks were organised for BA and MA Fine Art students at the University of Central Lancashire, featuring Inga Lineviciute and Ellie Barrett.",
             thumbnail : `${import.meta.env.VITE_BASE}/images/wish-6.webp`,
                tags : [ "event", "art", "design", "audio-visual" ],
             techUsed : [

@@ -18,27 +18,14 @@
              
               
                   <h2 class="mb-3">About me</h2>
-                  <p>I’m a developer and designer based in Manchester, UK, with nearly five years of experience at Manchester Metropolitan University. My work primarily involves developing resources focused on learning, teaching, and assessment. I hold a Master's degree from the University of Central Lancashire, which I earned in 2016. Over the years, I've had the opportunity to work across various media. Previously, I dabbled in building video game worlds and creating books. Currently, my efforts are centered around video production, web development, and e-learning. I have a strong passion for topics such as art, film, curation, and creativity.</p>
+                  <p>I’m a developer and designer based in Leeds, UK, with nearly five years of experience at Manchester Metropolitan University and almost two years at Leeds Beckett University. My work primarily involves developing resources focused on learning, teaching, and assessment. I hold a Master’s degree from the University of Central Lancashire, earned in 2016. Over the years, I’ve worked across a variety of media. In the past, I explored building video game worlds and creating books; currently, my focus is on video production, web development, and e-learning. I have a strong passion for art, film, curation, and creativity.</p>
               
              
             </v-col>
         </v-row>
         <hr class="mt-12 mb-12">
         <v-row class="achievements">
-            <v-col cols="12" sm="12" md="4">
-              <h2>Layout design</h2>
-              <v-list lines density="compact">
-                  <v-list-item>
-                    <b>Artist-Led Interviews: North</b>, book, self-published, October – November 2017
-                  </v-list-item>
-                  <v-list-item><b>The Archive of Gwyneth Davis</b>, book, published by Typ-ooo North, August – September 2017</v-list-item>
-                  <v-list-item><b>Works for Air</b>, catalogue, published by CRISAP, November 2016</v-list-item>
-                  <v-list-item><b>Of Carbonization</b>, artists book, self-published, August 2016</v-list-item>
-                  <v-list-item><b>A Guide To Living and Working in the Museum</b>, artists book, self-published, August 2016</v-list-item>
-                  <v-list-item><b>Twenty Fourteen</b>, catalogue, published by University of Central Lancashire, May 2014</v-list-item>
-              </v-list>
-            </v-col>
-            <v-col cols="12" sm="12" md="4">
+                <v-col cols="12" sm="12" md="4">
               <h2>Awards/nominations</h2>
               <v-list lines density="compact">
                 <v-list-item ><b>Manchester Met Staff Awards nomination for Student Experience Initiative of the Year Award</b>, Manchester Metropolitan University, 2024</v-list-item>
@@ -52,6 +39,20 @@
      2014</v-list-item>
               </v-list>
             </v-col>
+            <v-col cols="12" sm="12" md="4">
+              <h2>Layout design</h2>
+              <v-list lines density="compact">
+                  <v-list-item>
+                    <b>Artist-Led Interviews: North</b>, book, self-published, October – November 2017
+                  </v-list-item>
+                  <v-list-item><b>The Archive of Gwyneth Davis</b>, book, published by Typ-ooo North, August – September 2017</v-list-item>
+                  <v-list-item><b>Works for Air</b>, catalogue, published by CRISAP, November 2016</v-list-item>
+                  <v-list-item><b>Of Carbonization</b>, artists book, self-published, August 2016</v-list-item>
+                  <v-list-item><b>A Guide To Living and Working in the Museum</b>, artists book, self-published, August 2016</v-list-item>
+                  <v-list-item><b>Twenty Fourteen</b>, catalogue, published by University of Central Lancashire, May 2014</v-list-item>
+              </v-list>
+            </v-col>
+      
             <v-col cols="12" sm="12" md="4">
                 <h2>Press</h2>
                 <v-list>
