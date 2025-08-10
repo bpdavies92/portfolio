@@ -19,6 +19,52 @@
           </v-col>
           <v-col cols="12" sm="12" md="7">
             <v-row>
+
+            <v-col cols="12" sm="12" md="12">
+                <v-img
+                  alt="Exhibition hero"
+                  cover
+                  aspect-ratio="16/9"
+                  :src="img8"
+                  :lazy-src="img8Lazy"
+                ></v-img>
+              </v-col>
+                          <v-col cols="12" sm="12" md="12">
+                <v-img
+                  alt="Exhibition hero"
+                  cover
+                  aspect-ratio="16/9"
+                  :src="img7"
+                  :lazy-src="img7Lazy"
+                ></v-img>
+              </v-col>
+                                                      <v-col cols="12" sm="12" md="12">
+                <v-img
+                  alt="Exhibition hero"
+                  cover
+                  aspect-ratio="16/9"
+                  :src="img5"
+                  :lazy-src="img5Lazy"
+                ></v-img>
+              </v-col>
+            <v-col cols="12" sm="12" md="12">
+                <v-img
+                  alt="Exhibition hero"
+                  cover
+                  aspect-ratio="16/9"
+                  :src="img1"
+                  :lazy-src="img1Lazy"
+                ></v-img>
+              </v-col>
+                                        <v-col cols="12" sm="12" md="12">
+                <v-img
+                  alt="Exhibition hero"
+                  cover
+                  aspect-ratio="16/9"
+                  :src="img4"
+                  :lazy-src="img4Lazy"
+                ></v-img>
+              </v-col>
             <v-col cols="12" sm="12" md="12">
                 <v-img
                   alt="Exhibition hero"
@@ -28,15 +74,21 @@
                   :lazy-src="img2Lazy"
                 ></v-img>
               </v-col>
-              <v-col cols="12" sm="12" md="12">
+
+            <v-col cols="12" sm="12" md="12">
                 <v-img
                   alt="Exhibition hero"
                   cover
                   aspect-ratio="16/9"
-                  :src="img1"
-                  :lazy-src="img1Lazy"
+                  :src="img3"
+                  :lazy-src="img3Lazy"
                 ></v-img>
               </v-col>
+
+
+
+            
+
             </v-row>
           </v-col>
         </v-row>
@@ -85,11 +137,29 @@ const route = useRouter()
 import bannerImg from '@/assets/images/zine/zine-banner.webp'
 import bannerImgLazy from '@/assets/images/zine/zine-banner-lazy.webp'
 
-// import img1 from '@/assets/images/zine/zine-1.webp'
-// import img1Lazy from '@/assets/images/zine/zine-1-lazy.webp'
+import img1 from '@/assets/images/zine/zine-1.webp'
+import img1Lazy from '@/assets/images/zine/zine-1-lazy.webp'
 
-// import img2 from '@/assets/images/zine/zine-2.webp'
-// import img2Lazy from '@/assets/images/zine/zine-2-lazy.webp'
+import img2 from '@/assets/images/zine/zine-2.webp'
+import img2Lazy from '@/assets/images/zine/zine-2-lazy.webp'
+
+import img3 from '@/assets/images/zine/zine-3.webp'
+import img3Lazy from '@/assets/images/zine/zine-3-lazy.webp'
+
+import img4 from '@/assets/images/zine/zine-4.webp'
+import img4Lazy from '@/assets/images/zine/zine-4-lazy.webp'        
+
+import img5 from '@/assets/images/zine/zine-5.webp'
+import img5Lazy from '@/assets/images/zine/zine-5-lazy.webp'
+
+import img6 from '@/assets/images/zine/zine-6.webp'
+import img6Lazy from '@/assets/images/zine/zine-6-lazy.webp'    
+
+import img7 from '@/assets/images/zine/zine-7.webp'
+import img7Lazy from '@/assets/images/zine/zine-7-lazy.webp'
+
+import img8 from '@/assets/images/zine/zine-8.webp'
+import img8Lazy from '@/assets/images/zine/zine-8-lazy.webp'
 
 </script>
 

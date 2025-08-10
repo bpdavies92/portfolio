@@ -168,7 +168,7 @@ const projects = () => {
             subtitle : "The UTA website was a significant development task. I collaborated with academic developers in the University Teaching Academy to create a reference section on the main Manchester Met website. The objective of this project was to establish a reference site for teaching and professional services staff, providing them with independent study support for common learning and teaching issues.",
             description : "<p class='text-body-1'>The UTA website was a significant development task. I collaborated with academic developers from the University Teaching Academy to create a microsite for UTA on the main Manchester Met website. The objective of this project was to establish a reference site for teaching and professional services staff, providing them with independent study support for common learning and teaching issues.</p><p class='text-body-1'>Visited by more than 50,000 people per year, the UTA website serves as an outward-looking reservoir of knowledge for professional service and academic staff from anywhere in the world who want to develop themselves.</p>",
             thumbnail : `${import.meta.env.VITE_BASE}/images/uta-website-1.webp`,
-            tags : [ "web development", "design", "pedagogy", "droople" ],
+            tags : [ "web development", "design",  "droople" ],
             techUsed : [
                 {
                     tech : "Droople",
@@ -282,7 +282,7 @@ const projects = () => {
             subtitle : "The LEED 2023 conference focused on Learning and Teaching at Manchester Met. The aim of the conference was to give staff a chance to share good practice and network with other colleagues from across the university. Conference themes revolved around the recently published education strategy and university aims outlined within that document.",
             description : "<p class='text-body-1'>I played a key role in supporting the LEED 2023 conference, primarily by designing and developing the event website and creating/sourcing graphics. I collaborated with the University Teaching Academy to shape the conference programme and produced a promotional explainer video, which received over 300 views. On the day of the event, I also supported staff with tech troubleshooting—including Microsoft Forms, Excel, PDF editing, and AV setup.</p>",
             thumbnail : `${import.meta.env.VITE_BASE}/images/leed-conf-card-img-2.webp`,
-            tags : [ "web design", "conference", "event", "pedagogy", "video" ],
+            tags : [ "web design", "conference", "event", "video" ],
             techUsed : [
                 {
                     tech : "Video",
@@ -496,8 +496,8 @@ const projects = () => {
             date : "01/02/2016",
             start : "",
             end : "February 2016",   
-            subtitle : "Half‐Real was an international exhibition that investigated the meeting of visual art and gaming technology.",
-            description : "<p class='text-body-1'>'Half-Real' was an international exhibition that investigated the intersection of visual art and gaming technology. The title 'Half-Real' was derived from Jesper Juul's book of the same name, which referred to the video game as a medium consisting of real rules embedded within fictional worlds. The exhibition 'Half-Real' delved into these qualities within a fine art context, examining how artists are utilising the medium of video games, specifically, and computational media more broadly.</p>",
+            subtitle : "Curatorial project examining how artists are utilising the medium of video games specifically, and computational media more broadly.",
+            description : "<p>Curatorial project examining how artists are utilising the medium of video games specifically, and computational media more broadly. The exhibition showcased an international group of artists, including talks by Barcelona-based artist Serafín Álvarez and American/Belgian artists Auriea Harvey & Michaël Samyn. The exhibition was hosted at the <a target='blank' href='https://hanoverproject.wordpress.com/2015/12/15/half-real-28-01-16-24-02-16/'>Hanover Project</a>, Preston.</p><p>Artists: Serafín Álvarez | Paolo Pedercini | Auriea Harvey & Michaël Samyn | Rod Humble | Mike Treanor</p>",
             thumbnail : `${import.meta.env.VITE_BASE}/images/half-real-8.webp`,
             tags : [ "event", "art", "design", "audio-visual" ],
             techUsed : [
@@ -826,8 +826,8 @@ const projects = () => {
             end : "January 2025",
             date : "01/01/2025",
             location : "Leeds",
-            subtitle : "These videos provide a brief introduction to Leeds Beckett University’s Course Principles - a set of guidelines and reflective questions designed to support academic staff in implementing effective pedagogical practices during course development. The videos offer a quick overview of key principles to help enhance teaching and learning.",
-            description : "<p class='text-body-1'>These videos provide a brief introduction to Leeds Beckett University’s Course Principles - a set of guidelines and reflective questions designed to support academic staff in implementing effective pedagogical practices during course development. The videos offer a quick overview of key principles to help enhance teaching and learning.</p>",
+            subtitle : "Animations providing an overview of Leeds Beckett University’s Course Principles.",
+            description : "Animations providing an overview of Leeds Beckett University’s Course Principles. The Course Principles are a set of guidelines and reflective questions designed to support academic staff in implementing effective pedagogical practices during course development.",
             thumbnail : `${import.meta.env.VITE_BASE}/images/course-principles-img.webp`,
             tags : ["video", "motion graphics", "video editing", "filming" ],
             techUsed : [
@@ -897,8 +897,8 @@ const projects = () => {
             end : "March 2016",
             date : "03/01/2016",
             location : "Leeds",
-            subtitle : "",
-            description : "",
+            subtitle : "Curatorial project at BOB North 2016, held in the historic Post Office Building in Preston. I showcased a collection of Level 5 and 6 BA Fine Art student work.",
+            description : "Curatorial project at BOB North 2016, held in the historic Post Office Building in Preston. I showcased a collection of Level 5 and 6 BA Fine Art student work. This was my second time curating student work during a BOB North event, having previously done so in 2015.",
             thumbnail : `${import.meta.env.VITE_BASE}/images/bob-two-1.webp`,
                tags : [ "event", "art", "design", "audio-visual" ],
             techUsed : [
@@ -972,8 +972,8 @@ const projects = () => {
             end : "November 2016",
             date : "11/01/2016",
             location : "Preston",
-            subtitle : "",
-            description : "",
+            subtitle : "Final Master of Arts degree show at the University of Central Lancashire. I showcased an interactive multimedia video game artwork, along with a book created for my dissertation.",
+            description : "Final Master of Arts degree show at the University of Central Lancashire. I showcased an interactive multimedia video game artwork, along with a book created for my dissertation.",
             thumbnail : `${import.meta.env.VITE_BASE}/images/ma-3.webp`,
                tags : [ "event", "art", "design", "audio-visual" ],
             techUsed : [
@@ -1009,10 +1009,10 @@ const projects = () => {
             end : "July 2025",
             date : "7/10/2025",
             location : "Leeds",
-            subtitle : "",
-            description : "",
+            subtitle : "Webpage highlighting generative AI resources, guidance, and workshops for teaching and learning at Leeds Beckett University.",
+            description : "Webpage highlighting generative AI resources, guidance, and workshops for teaching and learning at Leeds Beckett University. A postcard was also designed to promote the hub. All content was displayed to Leeds Beckett staff during an AI symposium in July 2025.",
             thumbnail : `${import.meta.env.VITE_BASE}/images/ai-hub.webp`,
-            tags : [ "web development", "design", "pedagogy", "sitecore" ],
+            tags : [ "web development", "design", "sitecore" ],
             techUsed : [
                 {
                     tech : "Sitecore",
@@ -1051,8 +1051,8 @@ const projects = () => {
             end : "March 2024",
             date : "3/01/2024",
             location : "Leeds",
-            subtitle : "",
-            description : "",
+            subtitle : "Interviews and timelapse for the BA Events Management course at Leeds Beckett University.",
+            description : "Interviews and timelapse for the BA Events Management course at Leeds Beckett University. Working with events company Sparq, the team staged a mock Asda staff awards ceremony. The videos capture insights from Sparq staff and students, as well as a timelapse showing the work and equipment involved in creating an ambitious event.",
             thumbnail : `${import.meta.env.VITE_BASE}/images/event-man-1.webp`,
             tags : [ "video", "premiere pro"],
             techUsed : [
@@ -1084,27 +1084,23 @@ const projects = () => {
             end : "May 2024",
             date : "5/08/2024",
             location : "Leeds",
-            subtitle : "",
-            description : "",
+            subtitle : "Banners and module graphics designed for a new, innovative, modueless BA Acting course at Leeds Beckett University.",
+            description : "Banners and module graphics designed for a new, innovative, modueless BA Acting course at Leeds Beckett University.",
             thumbnail : `${import.meta.env.VITE_BASE}/images/ba-acting-1.webp`,
-            tags : [ "video", "premiere pro"],
+            tags : [ "photography", "graphic design", "photoshop" ],
             techUsed : [
                 {
-                    tech : "Photography",
-                    icon : "mdi-camera"
-                },
-                {
-                    tech : "Premiere Pro",
+                    tech : "Photoshop",
                     icon : "mdi-movie-star"
                 },
             ],
             skills : [
                 {
-                    skill : "Video editing",
+                    skill : "graphic design",
                     icon : "mdi-box-cutter"
                 },
                 {
-                    skill : "Filming",
+                    skill : "photography",
                     icon : "mdi-camera"
                 }
             ]
@@ -1117,8 +1113,8 @@ const projects = () => {
             end : "July 2024",
             date : "7/16/2024",
             location : "Leeds",
-            subtitle : "",
-            description : "",
+            subtitle : "Interviews for the BA Nutrition programme at Leeds Beckett University, created for students interested in placements at the charity FareShare.",
+            description : "Interviews for the BA Nutrition programme at Leeds Beckett University, created for students interested in placements at the charity FareShare. Filmed over a full day at FareShare’s headquarters and distribution centre, the videos feature staff members and students on placement, offering an insight into the experience and impact of working with the charity.",
             thumbnail : `${import.meta.env.VITE_BASE}/images/fareshare-2.webp`,
             tags : [ "video", "premiere pro"],
             techUsed : [
@@ -1150,10 +1146,10 @@ const projects = () => {
             end : "May 2025",
             date : "5/01/2025",
             location : "Leeds",
-            subtitle : "",
-            description : "",
+            subtitle : "Interactive guide showing how zines can be used in research and in teaching and learning within a higher education context.",
+            description : "Interactive guide showing how zines can be used in research and in teaching and learning within a higher education context. Zines are both an active form of learning and a way to encourage communication during their development. This resource was developed from a forum in Spring 2025 that focused on research and scholarship at Leeds Beckett University.",
             thumbnail : `${import.meta.env.VITE_BASE}/images/zine-1.webp`,
-            tags : [ "video", "premiere pro"],
+            tags : [ "video", "premiere pro", "articulate", "independent study"],
             techUsed : [
                 {
                     tech : "Photography",
@@ -1163,6 +1159,10 @@ const projects = () => {
                     tech : "Premiere Pro",
                     icon : "mdi-movie-star"
                 },
+                {
+                    tech : "Articulate Storyline",
+                    icon : "mdi-school"
+                }
             ],
             skills : [
                 {

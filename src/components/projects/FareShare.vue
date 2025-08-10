@@ -49,12 +49,21 @@
                   </div>
                 </v-lazy>
               </v-col>
-                <v-col>
+                <v-col cols="12" sm="12">
                 <v-lazy
                   :options="{'threshold':0.5}"
                   transition="scroll-y-reverse-transition">
                   <div class="iframe-wrapper">
                  <iframe src="https://leedsbeckettreplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=239b6bd0-a0b7-4f1c-968a-b20500f7539f&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="What did you do to apply for your placement at FareShare?" ></iframe>
+                  </div>
+                </v-lazy>
+              </v-col>
+              <v-col cols="12" sm="12">
+                <v-lazy
+                  :options="{'threshold':0.5}"
+                  transition="scroll-y-reverse-transition">
+                  <div class="iframe-wrapper">
+                <iframe src="https://leedsbeckettreplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=4dc1dc1a-4b24-4e07-9509-b15800b44eaa&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="169" width="300" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Tips for documenting &amp; vlogging about your learning journey" ></iframe>
                   </div>
                 </v-lazy>
               </v-col>
