@@ -37,9 +37,9 @@
 
         {{ description[index] }}
 
-        <v-divider class="mt-6 mb-6"></v-divider>
+        <v-divider class="mt-6 mb-6" v-if="!relatedProject"></v-divider>
 
-        <v-chip-group>
+        <v-chip-group v-if="!relatedProject" >
             <v-chip tabindex="-1" v-for="(tag, i) in project.tags.sort()" :key="i" @click="router.push({name: 'Filter', query:{filter: tag.toLowerCase()}})">{{ tag }}</v-chip>
         </v-chip-group>
       </v-card-text>

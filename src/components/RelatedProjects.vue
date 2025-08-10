@@ -13,7 +13,6 @@
                                             <v-window
                                             continuous
                                             v-model="window"
-                                            :show-arrows="tablet ? false : 'hover' "
                                             >
                             <v-window-item  v-for="(chunk, chunkIndex) in projectChunks" :key="chunkIndex" >
                                 <v-row>
@@ -25,6 +24,30 @@
                                             </v-window>
                         </div>
                         </v-container>
+
+                              <v-sheet class="d-flex justify-center align-center mt-6" color="transparent">
+                                  <v-btn
+                                    v-if="arrows"
+                                    class="arrow-button mr-2"
+                                    :class="{ 'arrow-left': window > 0, 'arrow-right': window < projectChunks.length - 1 }"
+                                    @click="window = Math.max(0, window - 1)"
+                                    :disabled="window <= 0"
+                                                              >
+                                    <v-icon>mdi-chevron-left</v-icon>
+                                                              </v-btn>
+                                                              
+                                  
+                                                              <v-btn
+                                    v-if="arrows"
+                                    class="arrow-button ml-2"
+                                    :class="{ 'arrow-left': window > 0, 'arrow-right': window < projectChunks.length - 1 }"
+                                    @click="window = Math.min(projectChunks.length - 1, window + 1)"
+                                    :disabled="window >= projectChunks.length - 1"
+                                                              >
+                                    <v-icon>mdi-chevron-right</v-icon>
+                                                              </v-btn>
+                              </v-sheet>
+                   
                 </div>
             </v-lazy>
 
