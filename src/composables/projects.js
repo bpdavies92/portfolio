@@ -110,8 +110,8 @@ const projects = () => {
         { 
             id : 2,
             slug : "five-year-plan",
-            title : "Five Year Plan",
-            shortTitle : "Five Year Plan",
+            title : "My Five Year Plan (My 5YP)",
+            shortTitle : "My Five Year Plan",
             date : "01/05/2021",
             end : "May 2021",
             location : "Manchester",
@@ -168,7 +168,7 @@ const projects = () => {
             subtitle : "Web development for the University Teaching Academy (UTA) at Manchester Metropolitan University",
             description : "Web development for the University Teaching Academy (UTA) at Manchester Metropolitan University. Collaborating with Academic Developer staff in UTA, I designed a number of pages aimed at professional services and academic staff, providing support on topics ranging from assessment and peer observation to Advance HE Fellowship and learning outcomes. Webpages were created and edited using the CMS Drupal and were visited by more than 50,000 people per year.",
             thumbnail : `${import.meta.env.VITE_BASE}/images/uta-website-1.webp`,
-            tags : [ "web development", "design",  "Drupal",  "graphic design" ],
+            tags : [ "web development", "design",  "drupal",  "graphic design" ],
             techUsed : [
                 {
                     tech : "Drupal",
@@ -240,7 +240,7 @@ const projects = () => {
             subtitle : "Collaborating with Manchester Met’s Assessment team, I developed an undergraduate degree classification calculator that has helped over 38,000 students explore grade requirements",
             description : "This project, in collaboration with Manchester Met’s Assessment team, developed an undergraduate degree classification calculator to address common student queries about required grades. The calculator lets students input their current grades and credits to explore what they need to achieve their desired classification. Since its launch, over 38,000 students have used the tool, and it was nominated for three Manchester Met Staff Awards in 2023.",
             thumbnail : `${import.meta.env.VITE_BASE}/images/degree-calc-card-img.webp`,
-            tags : [ "web development", "javascript", "css", "motion graphics", "video" ],
+            tags : [ "web development", "javascript", "css", "motion graphics", "video", "vue.js" ],
             techUsed : [
                 {
                     tech : "After Effects",
@@ -682,7 +682,7 @@ const projects = () => {
             subtitle : "Staff-facing resource created in Articulate Storyline to help Manchester Met staff navigate the Degree and Awards Good Honours Power BI dashboard",
             description : "Staff-facing resource created in Articulate Storyline to help Manchester Met staff navigate the Degree and Awards Good Honours Power BI dashboard. Using this dashboard provides a more detailed view of which student groups may need additional support.",
             thumbnail : `${import.meta.env.VITE_BASE}/images/understanding-1.webp`,  
-            tags : [ "articulate", "independent study", "instructional design" ],
+            tags : [ "articulate", "independent study", "video"],
             techUsed : [
                 {
                     tech : "Articulate Storyline",
@@ -896,7 +896,7 @@ const projects = () => {
             shortTitle: 'BOB North 2016',
             end : "March 2016",
             date : "03/01/2016",
-            location : "Leeds",
+            location : "Preston",
             subtitle : "Curatorial project at BOB North 2016, held in the historic Post Office Building in Preston. I showcased a collection of Level 5 and 6 BA Fine Art student works",
             description : "Curatorial project at BOB North 2016, held in the historic Post Office Building in Preston. I showcased a collection of Level 5 and 6 BA Fine Art student works. This was my second time curating student work during a BOB North event, having previously done so in 2015.",
             thumbnail : `${import.meta.env.VITE_BASE}/images/bob-two-1.webp`,
@@ -975,7 +975,7 @@ const projects = () => {
             subtitle : "Final Master of Arts degree show at the University of Central Lancashire. I showcased an interactive multimedia video game artwork, along with a book created for my dissertation",
             description : "Final Master of Arts degree show at the University of Central Lancashire. I showcased an interactive multimedia video game artwork, along with a book created for my dissertation.",
             thumbnail : `${import.meta.env.VITE_BASE}/images/ma-3.webp`,
-               tags : [ "event", "art", "design", "audio-visual" ],
+               tags : [ "event", "art", "graphic design", "audio-visual" ],
             techUsed : [
                 {
                     tech : "Audio-visual",
@@ -1054,7 +1054,7 @@ const projects = () => {
             subtitle : "Interviews and timelapse for the BA Events Management course at Leeds Beckett University",
             description : "Interviews and timelapse for the BA Events Management course at Leeds Beckett University. Working with events company Sparq, the team staged a mock Asda staff awards ceremony. The videos capture insights from Sparq staff and students, as well as a timelapse showing the work and equipment involved in creating an ambitious event.",
             thumbnail : `${import.meta.env.VITE_BASE}/images/event-man-1.webp`,
-            tags : [ "video", "premiere pro"],
+            tags : [ "video", "premiere pro", "after effects", "360 photography" ],
             techUsed : [
                 {
                     tech : "Video",
@@ -1064,6 +1064,14 @@ const projects = () => {
                     tech : "Premiere Pro",
                     icon : "mdi-movie-star"
                 },
+                {
+                    tech : "After Effects",
+                    icon : "mdi-movie-star"
+                },
+                {
+                    tech : "360 Photography",
+                    icon : "mdi-camera"
+                }
             ],
             skills : [
                 {
@@ -1093,6 +1101,14 @@ const projects = () => {
                     tech : "Photoshop",
                     icon : "mdi-movie-star"
                 },
+                {
+                    tech : "Illustrator",
+                    icon : "mdi-movie-star"
+                },
+                {
+                    tech : "Photography",
+                    icon : "mdi-camera"
+                }
             ],
             skills : [
                 {
@@ -1109,7 +1125,7 @@ const projects = () => {
             id: 27,
             slug: "fareshare",
             title: "BA Nutrition FareShare placements",
-            shortTitle: 'FareShare placement students',
+            shortTitle: 'BA Nutrition FareShare placements',
             end : "July 2024",
             date : "7/16/2024",
             location : "Leeds",
@@ -1119,13 +1135,17 @@ const projects = () => {
             tags : [ "video", "premiere pro"],
             techUsed : [
                 {
-                    tech : "Photography",
-                    icon : "mdi-camera"
-                },
-                {
                     tech : "Premiere Pro",
                     icon : "mdi-movie-star"
                 },
+                {
+                    tech : "After Effects",
+                    icon : "mdi-movie-star"
+                },
+                {
+                    tech : "Video",
+                    icon : "mdi-film"
+                }
             ],
             skills : [
                 {
@@ -1141,8 +1161,8 @@ const projects = () => {
                    {
             id: 28,
             slug: "zine-making-guide",
-            title: "Zine making guide",
-            shortTitle: 'Zine making guide for teaching and learning',
+            title: "Zine-making toolkit for teaching and research",
+            shortTitle: 'Zine-making toolkit',
             end : "May 2025",
             date : "5/01/2025",
             location : "Leeds",
@@ -1151,10 +1171,6 @@ const projects = () => {
             thumbnail : `${import.meta.env.VITE_BASE}/images/zine-1.webp`,
             tags : [ "video", "premiere pro", "articulate", "independent study"],
             techUsed : [
-                {
-                    tech : "Photography",
-                    icon : "mdi-camera"
-                },
                 {
                     tech : "Premiere Pro",
                     icon : "mdi-movie-star"
