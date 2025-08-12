@@ -86,12 +86,11 @@
                       aspect-ratio="16/9"
                       :lazy-src="img4Lazy"
                     ></v-img>
-                  </v-col>
-                  <v-col cols="12" sm="12" md="6">
-                    <v-img
+                      <v-img
                       eager
                       alt="Classification calculator"
                       cover
+                      class="mt-6"
                       :src="img1"
                       aspect-ratio="16/9"
                       :lazy-src="img1Lazy"
@@ -99,6 +98,7 @@
                   </v-col>
                  <v-col cols="12" sm="12" md="6">
                     <v-img
+                      class="mb-6"
                       eager
                       alt="Classification calculator"
                       cover
@@ -106,9 +106,7 @@
                       aspect-ratio="16/9"
                       :lazy-src="img2Lazy"
                     ></v-img>
-                  </v-col>
-                   <v-col cols="12" sm="12" md="6">
-                    <v-img
+                   <v-img
                       eager
                       alt="Classification calculator"
                       cover
@@ -117,6 +115,7 @@
                       :lazy-src="img3Lazy"
                     ></v-img>
                   </v-col>
+
 
 
                 </v-row>

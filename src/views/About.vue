@@ -26,7 +26,32 @@
         <hr class="mt-12 mb-12">
         <v-row class="achievements">
                 <v-col cols="12" sm="12" md="4">
-              <h2>Awards/nominations</h2>
+          <h2 >Education</h2>
+            <v-list lines density="compact">
+              <v-list-item><b>MA Fine Art Studio Practice</b>, University of Central Lancashire, 2014 – 2016, Distinction </v-list-item>
+    
+              <v-list-item><b>BA (Hons) Fine Art, University of Central Lancashire</b>, 2011 – 2014, First Class Honours</v-list-item>
+    
+              <v-list-item><b>Foundation Degree</b>, City of Liverpool College, 2010 – 2011, Distinction</v-list-item>
+            </v-list>
+
+              <h2 class="mt-6">Layout design</h2>
+              <v-list lines density="compact">
+                  <v-list-item>
+                    <b>Artist-Led Interviews: North</b>, book, self-published, October – November 2017
+                  </v-list-item>
+                  <v-list-item><b>The Archive of Gwyneth Davis</b>, book, published by Typ-ooo North, August – September 2017</v-list-item>
+                  <v-list-item><b>Works for Air</b>, catalogue, published by CRISAP, November 2016</v-list-item>
+                  <v-list-item><b>Of Carbonization</b>, artists book, self-published, August 2016</v-list-item>
+                  <v-list-item><b>A Guide To Living and Working in the Museum</b>, artists book, self-published, August 2016</v-list-item>
+                  <v-list-item><b>Twenty Fourteen</b>, catalogue, published by University of Central Lancashire, May 2014</v-list-item>
+              </v-list>
+
+             
+
+            </v-col>
+            <v-col cols="12" sm="12" md="4">
+             <h2 >Awards/nominations</h2>
               <v-list lines density="compact">
                 <v-list-item ><b>Manchester Met Staff Awards nomination for Student Experience Initiative of the Year Award</b>, Manchester Metropolitan University, 2024</v-list-item>
                 <v-list-item ><b>Manchester Met Staff Awards nomination for Service Excellence Award</b>, Manchester Metropolitan University, 2023</v-list-item>
@@ -38,19 +63,7 @@
                 <v-list-item ><b>Creative Focus Award nomination</b>, University of Central Lancashire,
      2014</v-list-item>
               </v-list>
-            </v-col>
-            <v-col cols="12" sm="12" md="4">
-              <h2>Layout design</h2>
-              <v-list lines density="compact">
-                  <v-list-item>
-                    <b>Artist-Led Interviews: North</b>, book, self-published, October – November 2017
-                  </v-list-item>
-                  <v-list-item><b>The Archive of Gwyneth Davis</b>, book, published by Typ-ooo North, August – September 2017</v-list-item>
-                  <v-list-item><b>Works for Air</b>, catalogue, published by CRISAP, November 2016</v-list-item>
-                  <v-list-item><b>Of Carbonization</b>, artists book, self-published, August 2016</v-list-item>
-                  <v-list-item><b>A Guide To Living and Working in the Museum</b>, artists book, self-published, August 2016</v-list-item>
-                  <v-list-item><b>Twenty Fourteen</b>, catalogue, published by University of Central Lancashire, May 2014</v-list-item>
-              </v-list>
+
             </v-col>
       
             <v-col cols="12" sm="12" md="4">
@@ -63,18 +76,6 @@
   
                 </v-list>
             </v-col>
-        </v-row>
-        <v-row class="achievements">
-          <v-col cols="12" sm="12" md="4">
-            <h2>Education</h2>
-            <v-list lines density="compact">
-              <v-list-item><b>MA Fine Art Studio Practice</b>, University of Central Lancashire, 2014 – 2016, Distinction </v-list-item>
-    
-              <v-list-item><b>BA (Hons) Fine Art, University of Central Lancashire</b>, 2011 – 2014, First Class Honours</v-list-item>
-    
-              <v-list-item><b>Foundation Degree</b>, City of Liverpool College, 2010 – 2011, Distinction</v-list-item>
-            </v-list>
-          </v-col>
         </v-row>
         <!-- <hr class="mt-12 mb-12"> -->
         <!-- <v-lazy
