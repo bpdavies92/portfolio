@@ -6,8 +6,8 @@
       aspect-ratio="16/9"
       cover
       eager
-      :src="img1"
-      :lazy-src="img1Lazy"
+      :src="img12"
+      :lazy-src="img12Lazy"
       loading="eager"
       preload
       class="mb-4"
