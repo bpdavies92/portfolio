@@ -1191,6 +1191,43 @@ const projects = () => {
                 }
             ]
         },
+        {
+            id: 29,
+            slug: "clt-conference-forum",
+            title: "Centre for Learning and Teaching conference and forum",
+            shortTitle: 'Conference and forum recordings',
+            end : "June 2025",
+            date : "6/26/2025",
+            location : "Leeds",
+            subtitle : "",
+            description : "",
+            thumbnail : `${import.meta.env.VITE_BASE}/images/deap-1.webp`,
+            tags : [ "video", "premiere pro", "event", "conference"],
+            techUsed : [
+                {
+                    tech : "Premiere Pro",
+                    icon : "mdi-movie-star"
+                },
+                {
+                    tech : "After Effects",
+                    icon : "mdi-movie-star"
+                },
+                {
+                    tech : "Video",
+                    icon : "mdi-film"
+                }
+            ],
+            skills : [
+                {
+                    skill : "Video editing",
+                    icon : "mdi-box-cutter"
+                },
+                {
+                    skill : "Filming",
+                    icon : "mdi-camera"
+                }
+            ]
+        },
     ])
 
     return { works }

@@ -38,6 +38,7 @@
     import FareShare from "@/components/projects/FareShare.vue"
     import BaActing from "@/components/projects/BaActing.vue"
     import ZineGuide from "@/components/projects/ZineGuide.vue"
+    import CltConferenceForum from "@/components/projects/CltConferenceForum.vue"
 
     const { works } = projects()  
     const router = useRouter()
@@ -106,6 +107,8 @@
             return BaActing
             case "zine-making-guide":
             return ZineGuide
+            case "clt-conference-forum":
+            return CltConferenceForum
             default:
             return null
         }
