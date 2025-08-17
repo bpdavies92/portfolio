@@ -20,14 +20,21 @@
           </v-col>
           <v-col cols="12" sm="12" md="7">
             <v-row>
-              <v-col>
+               <v-col cols="12" sm="12">
+                
+                  <div class="iframe-wrapper">
+                 <iframe src="https://leedsbeckettreplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=76f4c4d2-0e56-4d80-87bc-b30d00d6be7a&autoplay=false&offerviewer=false&showtitle=true&showbrand=false&captions=false&interactivity=all" height="169" width="300" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Confidence &amp; community through experiential learning | Carl Flattery | Conference DEAP25" ></iframe>
+                  </div>
+               
+              </v-col>
+              <v-col cols="12" sm="12">
                 <!-- iframe wrapper with aspect ratio 16:9 to reserve space -->
                 <v-lazy
                   :options="{'threshold':0.5}"
                   transition="scroll-y-reverse-transition"
                 >
                   <div class="iframe-wrapper">
-                    <iframe src="https://leedsbeckettreplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=91458545-acea-4549-b3f8-b24a00e3bce7&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="169" width="300" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Course Principles: Introduction" ></iframe>
+                   <iframe src="https://leedsbeckettreplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=036269cf-ed64-4762-970a-b26b00e5d41a&autoplay=false&offerviewer=false&showtitle=false&showbrand=false&captions=false&interactivity=all" height="169" width="300" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Creative professional portfolio: An example of authentic assessment | Dr Alison Taft | Winter DEAP25" ></iframe>
                   </div>
                 </v-lazy>
               </v-col>
@@ -36,7 +43,7 @@
                   :options="{'threshold':0.5}"
                   transition="scroll-y-reverse-transition">
                   <div class="iframe-wrapper">
-                    <iframe src="https://leedsbeckettreplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=5ab603a0-a6b9-439f-8f6f-b24a015f30fd&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="169" width="300" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Course Principles: Course Identity" ></iframe>
+                   <iframe src="https://leedsbeckettreplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=8eab404b-92e8-4638-b96d-b2b500fe7294&autoplay=false&offerviewer=false&showtitle=true&showbrand=false&captions=false&interactivity=all" height="169" width="300" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Scaling pedagogical enquiry | Professor Samuel Elkington | Spring DEAP25" ></iframe>
                   </div>
                 </v-lazy>
               </v-col>
@@ -45,19 +52,11 @@
                   :options="{'threshold':0.5}"
                   transition="scroll-y-reverse-transition">
                   <div class="iframe-wrapper">
-                   <iframe src="https://leedsbeckettreplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=a2cafddb-4382-4fa8-88b8-b24a0177f728&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="169" width="300" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Course Principles: Course Coherence" ></iframe>
+                  <iframe src="https://leedsbeckettreplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=88ddaf07-6832-4c37-b31f-b199006fcd50&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="169" width="300" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Oxfam pop-up shop | Marketing Management | DEAP conference" ></iframe>
                   </div>
                 </v-lazy>
               </v-col>
-                <v-col>
-                <v-lazy
-                  :options="{'threshold':0.5}"
-                  transition="scroll-y-reverse-transition">
-                  <div class="iframe-wrapper">
-                  <iframe src="https://leedsbeckettreplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=a69a2542-9c26-4320-a1ca-b24a00e3a939&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="169" width="300" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Course Principles: Student Agency" ></iframe>
-                  </div>
-                </v-lazy>
-              </v-col>
+             
             </v-row>
           </v-col>
         </v-row>
@@ -93,9 +92,10 @@ import Description from '../Description.vue'
 import { useRouter, useRoute } from 'vue-router'
 import nextProject from '@/composables/nextProject'
 import { useWindowSize } from '@vueuse/core'
-import banner from '@/assets/images/course-principles/course-principles-banner.webp'
-import bannerLazy from '@/assets/images/course-principles/course-principles-banner-lazy.webp'  
 import projects from '@/composables/projects'
+
+import banner from '@/assets/images/deap/deap-banner.webp'
+import bannerLazy from '@/assets/images/deap/deap-banner-lazy.webp'  
 
 const { width } = useWindowSize()
 const props = defineProps(['project', 'IDNumber'])

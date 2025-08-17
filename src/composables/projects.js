@@ -1194,15 +1194,16 @@ const projects = () => {
         {
             id: 29,
             slug: "clt-conference-forum",
-            title: "Centre for Learning and Teaching conference and forum",
-            shortTitle: 'Conference and forum recordings',
-            end : "June 2025",
-            date : "6/26/2025",
+            title: "DEAP conference and forum recordings",
+            shortTitle: 'DEAP Conference and forum',
+            start : "January",
+            end : "July 2025",
+            date : "1/26/2025",
             location : "Leeds",
-            subtitle : "",
-            description : "",
+            subtitle : "Videos featuring academic and professional services staff sharing examples of best teaching and learning practice from across Leeds Beckett University",
+            description : "These videos feature academic and professional services staff sharing examples of best teaching and learning practice from across Leeds Beckett University. On some occasions, a support officer assisted with planning and acted as an additional camera operator, capturing extra angles of the presentations.",
             thumbnail : `${import.meta.env.VITE_BASE}/images/deap-1.webp`,
-            tags : [ "video", "premiere pro", "event", "conference"],
+            tags : [ "web design", "conference", "event", "video", "graphic design" ],
             techUsed : [
                 {
                     tech : "Premiere Pro",
