@@ -1,5 +1,5 @@
 <template>
-  <section v-for="(d, i) in project" :key="i">
+  <section v-for="(d, i) in project" :key="i" class="position-relative">
     <v-img
       alt=""
      height="300"

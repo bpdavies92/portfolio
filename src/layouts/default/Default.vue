@@ -1,102 +1,97 @@
 <template>
-  <v-app clas>
+  <v-app>
     <!-- Top App Bar -->
-    <v-app-bar aria-label="Navigation Bar" role="banner" :elevation="0" class="overflow-visible">
-      <!-- Mobile Hamburger Icon -->
-      <template v-slot:prepend v-if="width <= 960">
-        <v-app-bar-nav-icon @click="menuOptions = true" class="menu-hamburger" />
-      </template>
+    <v-app-bar aria-label="Navigation Bar" role="banner" :elevation="0" class="overflow-visible "   >
 
-      <v-app-bar-title
-        class="ml-6 flex-sm-fill flex-1-1"
-        @click="router.push({name: 'Home'})"
+        <v-container fluid>
+          <v-sheet color="transparent" class="content-container d-flex align-center" >
 
-      >
-        <span tabindex="1" class="clicker-pointer" aria-label="home page">Benjamin Davies</span>
-      </v-app-bar-title>
-
-      <!-- Desktop Search -->
-      <v-responsive v-if="width >= 960" >
-        <v-text-field
-          ref="target"
-          v-click-outside="{
-            handler: onClickOutside,
-            include
-          }"
-          @keydown="focused = true"
-          v-model="input"
-          @focus="handleFocus"
-          prepend-inner-icon="mdi-magnify"
-          single-line
-          class="position-relative"
-          label="Search"
-          variant="underlined"
-        />
-
-
-        <!-- Desktop Search Results -->
-    <transition name="grow" v-if="width >= 960">
-      <v-sheet
-        
-        v-show="showResults && input.length > 0"
-        class="overflow-auto search-sheet elevation-3 include rounded-lg"
-        max-width="700"
-        max-height="600"
-        height="min-content"
-      >
-        <v-list lines="two" class="ma-0 pa-0 ">
-          <v-list-item
-            v-for="(project, index) in results"
-            :key="index"
-            ref="highlightRef"
-            link
-            height="min-content"
-            tabindex="0"
-            density="comfortable"
-            @mousedown.prevent="handleResultClick(project)"
-            @keyup.enter="handleResultClick(project)"
-            class="pt-3 pb-3"
-          >
-            <v-list-item-title class="mb-1 font-weight-bold">{{ project.title }}</v-list-item-title>
-            <div class="">
-            <v-chip-group class="">
-                <v-chip tabindex="-1" variant="outlined"  v-for="(tag, i) in project.tags.sort()" :key="i" @click="router.push({name: 'Filter', query:{filter: tag.toLowerCase()}})">{{ tag }}</v-chip>
-            </v-chip-group>
-            </div>
-          </v-list-item>
-
-
-        </v-list>
-        
-
-      </v-sheet>
-    </transition>
-      </v-responsive>
-
-      <v-spacer />
-
-      <!-- Navigation Buttons -->
-      <v-btn
-        v-if="width >= 960"
-        class="mr-3"
-        :variant="route.name === 'Home' ? 'outlined' : 'text'"
-        @click="router.push({ name: 'Home' })"
-        aria-label="Go to Projects"
-        role="link"
-      >
-        Projects
-      </v-btn>
-
-      <v-btn
-        v-if="width >= 960"
-        :variant="route.name === 'About' ? 'outlined' : 'text'"
-        @click="router.push({ name: 'About' })"
-        aria-label="Go to About"
-        role="link"
-        class="mr-6"
-      >
-        About
-      </v-btn>
+            <v-app-bar-title
+              class="flex-sm-fill flex-1-1"
+              @click="router.push({name: 'Home'})"
+            >
+              <span tabindex="1" class="clicker-pointer" aria-label="home page">Benjamin Davies</span>
+            </v-app-bar-title>
+            <!-- Desktop Search -->
+            <v-responsive v-if="width >= 960" >
+              <v-text-field
+                ref="target"
+                v-click-outside="{
+                  handler: onClickOutside,
+                  include
+                }"
+                @keydown="focused = true"
+                v-model="input"
+                @focus="handleFocus"
+                prepend-inner-icon="mdi-magnify"
+                single-line
+                class="position-relative"
+                label="Search"
+                variant="underlined"
+              />
+              <!-- Desktop Search Results -->
+                <transition name="grow" v-if="width >= 960">
+            <v-sheet
+          
+              v-show="showResults && input.length > 0"
+              class="overflow-auto search-sheet elevation-3 include rounded-lg"
+              max-width="700"
+              max-height="600"
+              height="min-content"
+            >
+              <v-list lines="two" class="ma-0 pa-0 ">
+                <v-list-item
+                  v-for="(project, index) in results"
+                  :key="index"
+                  ref="highlightRef"
+                  link
+                  height="min-content"
+                  tabindex="0"
+                  density="comfortable"
+                  @mousedown.prevent="handleResultClick(project)"
+                  @keyup.enter="handleResultClick(project)"
+                  class="pt-3 pb-3"
+                >
+                  <v-list-item-title class="mb-1 font-weight-bold">{{ project.title }}</v-list-item-title>
+                  <div class="">
+                  <v-chip-group class="">
+                      <v-chip tabindex="-1" variant="outlined"  v-for="(tag, i) in project.tags.sort()" :key="i" @click="router.push({name: 'Filter', query:{filter: tag.toLowerCase()}})">{{ tag }}</v-chip>
+                  </v-chip-group>
+                  </div>
+                </v-list-item>
+              </v-list>
+          
+            </v-sheet>
+                </transition>
+            </v-responsive>
+            <v-spacer />
+            <!-- Navigation Buttons -->
+            <v-btn
+              v-if="width >= 960"
+              class="mr-3"
+              :variant="route.name === 'Home' ? 'outlined' : 'text'"
+              @click="router.push({ name: 'Home' })"
+              aria-label="Go to Projects"
+              role="link"
+            >
+              Projects
+            </v-btn>
+            <v-btn
+              v-if="width >= 960"
+              :variant="route.name === 'About' ? 'outlined' : 'text'"
+              @click="router.push({ name: 'About' })"
+              aria-label="Go to About"
+              role="link"
+              class=""
+            >
+              About
+            </v-btn>
+          </v-sheet>
+        </v-container>
+                  <!-- Mobile Hamburger Icon -->
+            <template v-slot:append v-if="width <= 960">
+              <v-app-bar-nav-icon @click="menuOptions = true" class="menu-hamburger" />
+            </template>
     </v-app-bar>
 
     

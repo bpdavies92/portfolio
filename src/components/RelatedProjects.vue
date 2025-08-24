@@ -26,7 +26,7 @@
                         </div>
                         </v-container>
 
-                              <v-sheet class="d-flex justify-center align-center mt-6" color="transparent">
+                              <v-sheet class="d-flex justify-center align-center mt-6 mb-6" color="transparent">
                                   <v-btn
                                     v-if="arrows"
                                     class="arrow-button mr-2"

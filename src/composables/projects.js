@@ -1195,7 +1195,7 @@ const projects = () => {
             id: 29,
             slug: "clt-conference-forum",
             title: "DEAP conference and forum recordings",
-            shortTitle: 'DEAP Conference and forum',
+            shortTitle: 'DEAP conference and forum',
             start : "January",
             end : "July 2025",
             date : "1/26/2025",
