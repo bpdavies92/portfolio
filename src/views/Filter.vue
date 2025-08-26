@@ -3,9 +3,9 @@
     <section class="content-container ml-auto mr-auto placeholder" >
       <FilterOptions/>
       <v-sheet color="transparent" >
-        <h3 class="tag-text text-md-h3 text-sm-h5 mb-3 text-center mt-6">#{{ route.query.filter }}</h3>
+        <h3 class="tag-text text-md-h3 text-sm-h5 mb-12 text-center mt-6">#{{ route.query.filter }}</h3>
       </v-sheet>
-      <v-row no-gutters>
+      <v-row class="mb-12">
         <v-col v-for="(project, index) in filteredProjects" :key="index" cols="12" xs="12" sm="6" md="6" lg="4">
               <v-lazy
               :options="{'threshold':0.5}"

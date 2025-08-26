@@ -2,8 +2,8 @@
       <v-container fluid>
         <section class="content-container ml-auto mr-auto placeholder">
           <FilterOptions/>
-          <v-row no-gutters>
-          <v-col v-for="(project, index) in worksOrdered" :key="index" cols="12" sm="6" md="6" lg="4">
+          <v-row class="mb-12">
+          <v-col v-for="(project, index) in worksOrdered" :key="index" cols="12" sm="6" md="6" lg="4" v-show="index < showMoreBtn">
   <template v-if="index < 3">
     <v-sheet class="card-grid-spacing">
       <Card :project="project" :index="index" :works="works" />
