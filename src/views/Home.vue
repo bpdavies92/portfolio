@@ -2,7 +2,7 @@
       <v-container fluid>
         <section class="content-container ml-auto mr-auto placeholder">
           <FilterOptions/>
-          <v-row class="mb-12">
+          <v-row class="mb-md-12 mb-6">
           <v-col v-for="(project, index) in worksOrdered" :key="index" cols="12" sm="6" md="6" lg="4" v-show="index < showMoreBtn">
   <template v-if="index < 3">
     <v-sheet class="card-grid-spacing">
@@ -24,7 +24,7 @@
       </v-container>
       
       <v-sheet color="transparent" width="100%" class="d-flex align-center content-container">
-        <v-btn size="large"  class="mr-auto ml-auto mt-6 mb-6 yellowBackground" @click="showMoreBtn += 6 ; cookies.set('see-more', showMoreBtn)" v-show="showMoreBtn < worksOrdered.length" prepend-icon="mdi-eye-circle-outline">See more</v-btn>
+        <v-btn size="large"  class="mr-auto ml-auto mb-12  yellowBackground" @click="showMoreBtn += 6 ; cookies.set('see-more', showMoreBtn)" v-show="showMoreBtn < worksOrdered.length" prepend-icon="mdi-eye-circle-outline">See more</v-btn>
       </v-sheet>
       
 </template>

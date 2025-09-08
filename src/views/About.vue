@@ -1,6 +1,6 @@
 <template>
   <v-container fluid>
-    <section class="mt-12 text-body-1 content-container">
+    <section class="text-body-1 content-container mb-md-12 mb-6 mt-6">
     
         <v-row  class="achievements">
             <v-col cols="12" sm="12" md="6">
