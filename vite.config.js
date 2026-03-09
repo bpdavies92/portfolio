@@ -23,12 +23,6 @@ export default defineConfig({
     vuetify({
       autoImport: true,
     }),
-    [viteImagemin({
-      gifsicle: { optimizationLevel: 7 },
-      optipng: { optimizationLevel: 7 },
-      mozjpeg: { quality: 70 },
-      webp: { quality: 70 },
-    })]
   ],
   define: { 
     'process.env': {},

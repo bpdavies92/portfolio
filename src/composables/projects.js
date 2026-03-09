@@ -1229,6 +1229,45 @@ const projects = () => {
                 }
             ]
         },
+        ,
+        {
+            id: 29,
+            slug: "nuffield-theatre-performance",
+            title: "Nuffield Theatre performance photography",
+            shortTitle: 'DEAP conference and forum',
+            start : "January",
+            end : "April 2018",
+            date : "1/26/2017",
+            location : "Lancaster",
+            subtitle : "Selected photographic documentation of performances at the Nuffield Theatre, Lancaster",
+            description : "Selected photographic documentation of performances at the Nuffield Theatre, Lancaster.",
+            thumbnail : `${import.meta.env.VITE_BASE}/images/deap-1.webp`,
+           tags : [ "photography", "graphic design", "photoshop" ],
+            techUsed : [
+                {
+                    tech : "Photoshop",
+                    icon : "mdi-movie-star"
+                },
+                {
+                    tech : "Illustrator",
+                    icon : "mdi-movie-star"
+                },
+                {
+                    tech : "Photography",
+                    icon : "mdi-camera"
+                }
+            ],
+            skills : [
+                {
+                    skill : "graphic design",
+                    icon : "mdi-box-cutter"
+                },
+                {
+                    skill : "photography",
+                    icon : "mdi-camera"
+                }
+            ]
+        },
     ])
 
     return { works }

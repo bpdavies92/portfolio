@@ -39,6 +39,7 @@
     import BaActing from "@/components/projects/BaActing.vue"
     import ZineGuide from "@/components/projects/ZineGuide.vue"
     import CltConferenceForum from "@/components/projects/CltConferenceForum.vue"
+    import CltConferenceForum from "@/components/projects/NuffieldTheatre.vue
 
     const { works } = projects()  
     const router = useRouter()
@@ -109,6 +110,8 @@
             return ZineGuide
             case "clt-conference-forum":
             return CltConferenceForum
+            case "nuffield-theatre-performance":
+            return NuffieldTheatre
             default:
             return null
         }
