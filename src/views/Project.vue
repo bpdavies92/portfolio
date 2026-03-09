@@ -39,7 +39,7 @@
     import BaActing from "@/components/projects/BaActing.vue"
     import ZineGuide from "@/components/projects/ZineGuide.vue"
     import CltConferenceForum from "@/components/projects/CltConferenceForum.vue"
-    import CltConferenceForum from "@/components/projects/NuffieldTheatre.vue
+    import NuffieldTheatre from "@/components/projects/NuffieldTheatre.vue"
 
     const { works } = projects()  
     const router = useRouter()
