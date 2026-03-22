@@ -8,7 +8,6 @@
       alt=""
       height="300"
       aspect-ratio="16/9"
-      :lazy-src="bannerLazy"
       cover
       :src="banner"
     ></v-img>
@@ -172,7 +171,6 @@ import projects from '@/composables/projects'
 
 // Import the banner image properly
 import banner from '@/assets/images/critical-pedagogy/crit-ped-banner.webp'
-import bannerLazy from '@/assets/images/critical-pedagogy/crit-ped-banner-lazy.webp'
 
 const { width } = useWindowSize()
 const { works } = projects()

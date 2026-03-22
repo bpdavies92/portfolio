@@ -7,7 +7,6 @@
       cover
       eager
       :src="img12"
-      :lazy-src="img12Lazy"
       loading="eager"
       preload
       class="mb-4"
@@ -51,28 +50,28 @@
                 <p class="text-caption mt-3">Video introduction by Professor Fiona Saunders</p>
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-img  alt="Dr Fiona Saunders introducing the LEED conference" cover aspect-ratio="16/9" :lazy-src="img13Lazy" :src="img13" />
+                <v-img  alt="Dr Fiona Saunders introducing the LEED conference" cover aspect-ratio="16/9" :src="img13" />
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-img  alt="Dr Fiona Saunders introducing the LEED conference" cover aspect-ratio="16/9" :lazy-src="imgWeb1Lazy" :src="imgWeb1" />
+                <v-img  alt="Dr Fiona Saunders introducing the LEED conference" cover aspect-ratio="16/9" :src="imgWeb1" />
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-img  alt="Dr Fiona Saunders introducing the LEED conference" cover aspect-ratio="16/9" :lazy-src="imgWeb2Lazy" :src="imgWeb2" />
+                <v-img  alt="Dr Fiona Saunders introducing the LEED conference" cover aspect-ratio="16/9" :src="imgWeb2" />
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-img  alt="Dr Fiona Saunders introducing the LEED conference" cover aspect-ratio="16/9" :lazy-src="imgWeb3Lazy" :src="imgWeb3" />
+                <v-img  alt="Dr Fiona Saunders introducing the LEED conference" cover aspect-ratio="16/9" :src="imgWeb3" />
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-img  alt="Dr Fiona Saunders introducing the LEED conference" cover aspect-ratio="16/9" :lazy-src="imgWeb4Lazy" :src="imgWeb4" />
+                <v-img  alt="Dr Fiona Saunders introducing the LEED conference" cover aspect-ratio="16/9" :src="imgWeb4" />
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-img  alt="Dr Fiona Saunders introducing the LEED conference" cover aspect-ratio="16/9" :lazy-src="imgWeb5Lazy" :src="imgWeb5" />
+                <v-img  alt="Dr Fiona Saunders introducing the LEED conference" cover aspect-ratio="16/9" :src="imgWeb5" />
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-img  alt="Dr Fiona Saunders introducing the LEED conference" cover aspect-ratio="16/9" :lazy-src="img3Lazy" :src="img3" />
+                <v-img  alt="Dr Fiona Saunders introducing the LEED conference" cover aspect-ratio="16/9" :src="img3" />
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-img  alt="Participant looking at posters" cover aspect-ratio="16/9" :lazy-src="img5Lazy" :src="img5" />
+                <v-img  alt="Participant looking at posters" cover aspect-ratio="16/9" :src="img5" />
               </v-col>
             </v-row>
 
@@ -117,36 +116,15 @@ import nextProject from '@/composables/nextProject'
 import projects from '@/composables/projects'
 
 // Image imports
-import img2 from '@/assets/images/conference/leed-conf-2.webp'
-import img3 from '@/assets/images/conference/leed-conf-3.webp'
-import img4 from '@/assets/images/conference/leed-conf-4.webp'
 import img5 from '@/assets/images/conference/leed-conf-5.webp'
-import img7 from '@/assets/images/conference/leed-conf-7.webp'
-import img8 from '@/assets/images/conference/leed-conf-8.webp'
-import img10 from '@/assets/images/conference/leed-conf-10.webp'
 import img12 from '@/assets/images/conference/leed-conf-12.webp'
-import img2Lazy from '@/assets/images/conference/leed-conf-2-lazy.webp'
-import img3Lazy from '@/assets/images/conference/leed-conf-3-lazy.webp'
-import img4Lazy from '@/assets/images/conference/leed-conf-4-lazy.webp'
-import img5Lazy from '@/assets/images/conference/leed-conf-5-lazy.webp'
-import img7Lazy from '@/assets/images/conference/leed-conf-7-lazy.webp'
-import img8Lazy from '@/assets/images/conference/leed-conf-8-lazy.webp'
-import img10Lazy from '@/assets/images/conference/leed-conf-10-lazy.webp'
-import img12Lazy from '@/assets/images/conference/leed-conf-12-lazy.webp'
 
-import img13Lazy from '@/assets/images/conference/conf-web-13-lazy.webp'
 import img13 from '@/assets/images/conference/conf-web-13.webp'
-
 import imgWeb1 from '@/assets/images/conference/conf-web-1.webp'
-import imgWeb1Lazy from '@/assets/images/conference/conf-web-1-lazy.webp'
 import imgWeb2 from '@/assets/images/conference/conf-web-2.webp'
-import imgWeb2Lazy from '@/assets/images/conference/conf-web-2-lazy.webp'
 import imgWeb3 from '@/assets/images/conference/conf-web-3.webp'
-import imgWeb3Lazy from '@/assets/images/conference/conf-web-3-lazy.webp'
 import imgWeb4 from '@/assets/images/conference/conf-web-4.webp'
-import imgWeb4Lazy from '@/assets/images/conference/conf-web-4-lazy.webp'
 import imgWeb5 from '@/assets/images/conference/conf-web-5.webp'
-import imgWeb5Lazy from '@/assets/images/conference/conf-web-5-lazy.webp'
 
 const props = defineProps(['project', 'IDNumber'])
 const { works } = projects()

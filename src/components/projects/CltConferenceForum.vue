@@ -3,7 +3,6 @@
     <v-img
       alt=""
       height="300"
-      :lazy-src="bannerLazy"
       aspect-ratio="16/9"
       cover
       :src="banner"
@@ -94,8 +93,7 @@ import nextProject from '@/composables/nextProject'
 import { useWindowSize } from '@vueuse/core'
 import projects from '@/composables/projects'
 
-import banner from '@/assets/images/deap/deap-banner.webp'
-import bannerLazy from '@/assets/images/deap/deap-banner-lazy.webp'  
+import banner from '@/assets/images/deap/deap-banner.webp'  
 
 const { width } = useWindowSize()
 const props = defineProps(['project', 'IDNumber'])

@@ -3,7 +3,6 @@
     <v-img
       alt=""
       height="300"
-      :lazy-src="bannerLazy"
       aspect-ratio="16/9"
       cover
       :src="banner"
@@ -21,28 +20,19 @@
           <v-col cols="12" sm="12" md="7">
             <v-row>
               <v-col>
-                <!-- iframe wrapper with aspect ratio 16:9 to reserve space -->
-                <v-lazy
-                  :options="{'threshold':0.5}"
-                  transition="scroll-y-reverse-transition"
-                >
-                  <div class="iframe-wrapper">
-                    <iframe
-                      :id="`kaltura_player_${i}_1`"
-                      src="https://cdnapisec.kaltura.com/p/1128062/sp/112806200/embedIframeJs/uiconf_id/27474902/partner_id/1128062?iframeembed=true&playerId=kaltura_player&entry_id=1_esf6pwvv"
-                      allowfullscreen
-                      sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation"
-                      allow="autoplay *; fullscreen *; encrypted-media *"
-                      frameborder="0"
-                      title="There were times when I felt uncomfortable"
-                    ></iframe>
-                  </div>
-                </v-lazy>
+                <div class="iframe-wrapper">
+                  <iframe
+                    :id="`kaltura_player_${i}_1`"
+                    src="https://cdnapisec.kaltura.com/p/1128062/sp/112806200/embedIframeJs/uiconf_id/27474902/partner_id/1128062?iframeembed=true&playerId=kaltura_player&entry_id=1_esf6pwvv"
+                    allowfullscreen
+                    sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation"
+                    allow="autoplay *; fullscreen *; encrypted-media *"
+                    frameborder="0"
+                    title="There were times when I felt uncomfortable"
+                  ></iframe>
+                </div>
               </v-col>
                  <v-col cols="12" sm="12">
-                <v-lazy
-                  :options="{'threshold':0.5}"
-                  transition="scroll-y-reverse-transition">
                   <div class="iframe-wrapper">
                     <iframe
                       :id="`kaltura_player_${i}_2`"
@@ -54,12 +44,8 @@
                       title="Small acts of kindness"
                     ></iframe>
                   </div>
-                </v-lazy>
               </v-col>
                <v-col cols="12" sm="12">
-                <v-lazy
-                  :options="{'threshold':0.5}"
-                  transition="scroll-y-reverse-transition">
                   <div class="iframe-wrapper">
                     <iframe
                       :id="`kaltura_player_${i}_3`"
@@ -71,12 +57,8 @@
                       title="Safe spaces"
                     ></iframe>
                   </div>
-                </v-lazy>
               </v-col>
                 <v-col>
-                <v-lazy
-                  :options="{'threshold':0.5}"
-                  transition="scroll-y-reverse-transition">
                   <div class="iframe-wrapper">
                     <iframe
                       :id="`kaltura_player_${i}_4`"
@@ -88,7 +70,6 @@
                       title="I felt invisible"
                     ></iframe>
                   </div>
-                </v-lazy>
               </v-col>
             </v-row>
           </v-col>
@@ -125,8 +106,7 @@ import Description from '../Description.vue'
 import { useRouter, useRoute } from 'vue-router'
 import nextProject from '@/composables/nextProject'
 import { useWindowSize } from '@vueuse/core'
-import banner from '@/assets/images/ilc/ilc-banner.webp'
-import bannerLazy from '@/assets/images/ilc/ilc-banner-lazy.webp'  
+import banner from '@/assets/images/ilc/ilc-banner.webp'  
 import projects from '@/composables/projects'
 
 const { width } = useWindowSize()

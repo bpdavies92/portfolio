@@ -7,7 +7,6 @@
       alt=""
       height="300"
       aspect-ratio="16/9"
-      :lazy-src="wish12Lazy"
       cover
       :src="wish12"
       eager
@@ -31,142 +30,87 @@
                     cover
                     aspect-ratio="16/9"
                     :src="wish1"
-                    :lazy-src="wish1Lazy"
                   ></v-img>
                
               </v-col>
             <v-col cols="12" sm="12" md="12">
-                <v-lazy
-                  :options="{'threshold':0.5}"
-                  transition="scroll-y-reverse-transition">
-                  <v-img aspect-ratio="16/9" cover :src="wish5" :lazy-src="wish5Lazy"></v-img>
-                </v-lazy>
+                <v-img aspect-ratio="16/9" cover :src="wish5"></v-img>
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-lazy
-                  :options="{'threshold':0.5}"
-                  transition="scroll-y-reverse-transition">
-                  <v-img cover :lazy-src="wish6Lazy" aspect-ratio="16/9" :src="wish6"></v-img>
-                </v-lazy>
+                <v-img cover aspect-ratio="16/9" :src="wish6"></v-img>
               </v-col>
               <v-col cols="12">
-                <v-lazy
-                  :options="{'threshold':0.5}"
-                  transition="scroll-y-reverse-transition">
-                  <v-img
-                    alt="My five year plan cycle diagram"
-                    cover
-                    :lazy-src="wish2Lazy"
-                    aspect-ratio="16/9"
-                    :src="wish2"
-
-                  ></v-img>
-                </v-lazy>
+                <v-img
+                  alt="My five year plan cycle diagram"
+                  cover
+                  aspect-ratio="16/9"
+                  :src="wish2"
+                ></v-img>
               </v-col>
                 <v-col cols="12" sm="12" md="12">
-                <v-lazy
-                  :options="{'threshold':0.5}"
-                  transition="scroll-y-reverse-transition">
                   <v-img
                     alt="My five year plan cycle diagram"
                     cover
                     aspect-ratio="16/9"
                     :src="wish3"
-                    :lazy-src="wish3Lazy"
                   ></v-img>
-                </v-lazy>
-              </v-col>
+                </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-lazy
-                  :options="{'threshold':0.5}"
-                  transition="scroll-y-reverse-transition">
                   <v-img
                     alt="My five year plan cycle diagram"
                     cover
                     aspect-ratio="16/9"
                     :src="wish4"
-                    :lazy-src="wish4Lazy"
                   ></v-img>
-                </v-lazy>
-              </v-col>
+                </v-col>
                             <v-col cols="12" sm="12" md="12">
-                <v-lazy
-                  :options="{'threshold':0.5}"
-                  transition="scroll-y-reverse-transition">
                   <v-img
                     alt="My five year plan cycle diagram"
                     cover
                     aspect-ratio="16/9"
                     :src="wish7"
-                    :lazy-src="wish7Lazy"
                   ></v-img>
-                </v-lazy>
-              </v-col>
+                </v-col>
                             <v-col cols="12" sm="12" md="12">
-                <v-lazy
-                  :options="{'threshold':0.5}"
-                  transition="scroll-y-reverse-transition">
                   <v-img
                     alt="My five year plan cycle diagram"
                     cover
                     aspect-ratio="16/9"
                     :src="wish8"
-                    :lazy-src="wish8Lazy"
                   ></v-img>
-                </v-lazy>
-              </v-col>
+                </v-col>
                             <v-col cols="12" sm="12" md="12">
-                <v-lazy
-                  :options="{'threshold':0.5}"
-                  transition="scroll-y-reverse-transition">
                   <v-img
                     alt="My five year plan cycle diagram"
                     cover
                     aspect-ratio="16/9"
                     :src="wish9"
-                    :lazy-src="wish9Lazy"
                   ></v-img>
-                </v-lazy>
-              </v-col>
+                </v-col>
                             <v-col cols="12" sm="12" md="12">
-                <v-lazy
-                  :options="{'threshold':0.5}"
-                  transition="scroll-y-reverse-transition">
                   <v-img
                     alt="My five year plan cycle diagram"
                     cover
                     aspect-ratio="16/9"
                     :src="wish10"
-                    :lazy-src="wish10Lazy"
                   ></v-img>
-                </v-lazy>
-              </v-col>
+                </v-col>
                             <v-col cols="12" sm="12" md="12">
-                <v-lazy
-                  :options="{'threshold':0.5}"
-                  transition="scroll-y-reverse-transition">
                   <v-img
                     alt="My five year plan cycle diagram"
                     cover
                     aspect-ratio="16/9"
                     :src="wish11"
-                    :lazy-src="wish11Lazy"
                   ></v-img>
-                </v-lazy>
-              </v-col>
+                </v-col>
                             <v-col cols="12" sm="12" md="12">
-                <v-lazy
-                  :options="{'threshold':0.5}"
-                  transition="scroll-y-reverse-transition">
                   <v-img
                     alt="My five year plan cycle diagram"
                     cover
                     aspect-ratio="16/9"
                     :src="wish12"
-                    :lazy-src="wish12Lazy"
                   ></v-img>
-                </v-lazy>
-              </v-col>
+                </v-col>
             </v-row>
   
 
@@ -195,34 +139,17 @@ import projects from '@/composables/projects'
 
 // Import images for proper bundling
 import wish1 from '@/assets/images/wish-in-one-hand/wish-1.webp'
-import wish1Lazy from '@/assets/images/wish-in-one-hand/wish-1-lazy.webp'
 import wish2 from '@/assets/images/wish-in-one-hand/wish-2.webp'
-import wish2Lazy from '@/assets/images/wish-in-one-hand/wish-2-lazy.webp'
 import wish3 from '@/assets/images/wish-in-one-hand/wish-3.webp'
-import wish3Lazy from '@/assets/images/wish-in-one-hand/wish-3-lazy.webp'
 import wish4 from '@/assets/images/wish-in-one-hand/wish-4.webp'
-import wish4Lazy from '@/assets/images/wish-in-one-hand/wish-4-lazy.webp'
 import wish5 from '@/assets/images/wish-in-one-hand/wish-5.webp'
-import wish5Lazy from '@/assets/images/wish-in-one-hand/wish-5-lazy.webp'
 import wish6 from '@/assets/images/wish-in-one-hand/wish-6.webp'
-import wish6Lazy from '@/assets/images/wish-in-one-hand/wish-6-lazy.webp'
 import wish7 from '@/assets/images/wish-in-one-hand/wish-7.webp'
-import wish7Lazy from '@/assets/images/wish-in-one-hand/wish-7-lazy.webp'
-
 import wish8 from '@/assets/images/wish-in-one-hand/wish-8.webp'
-import wish8Lazy from '@/assets/images/wish-in-one-hand/wish-8-lazy.webp'
-
 import wish9 from '@/assets/images/wish-in-one-hand/wish-9.webp'
-import wish9Lazy from '@/assets/images/wish-in-one-hand/wish-9-lazy.webp'
-
 import wish10 from '@/assets/images/wish-in-one-hand/wish-10.webp'
-import wish10Lazy from '@/assets/images/wish-in-one-hand/wish-10-lazy.webp'
-
 import wish11 from '@/assets/images/wish-in-one-hand/wish-11.webp'
-import wish11Lazy from '@/assets/images/wish-in-one-hand/wish-11-lazy.webp'
-
 import wish12 from '@/assets/images/wish-in-one-hand/wish-12.webp'
-import wish12Lazy from '@/assets/images/wish-in-one-hand/wish-12-lazy.webp'
 
 const props = defineProps(['project', 'IDNumber'])
 const { works } = projects()

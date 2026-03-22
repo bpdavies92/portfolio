@@ -137,20 +137,7 @@
               
               </v-col>
               
-                                          <v-col cols="12" sm="12">
-                <v-lazy
-                :options="{'threshold':0.5}"
-                  transition="scroll-y-reverse-transition"
-                >
-                  <v-img
-                    alt="Got worms exhibition"
-                    cover
-                    :src="img9"
-                    aspect-ratio="16/9"
-                  ></v-img>
-                </v-lazy>
-                
-              </v-col>
+
               
                                           <v-col cols="12" sm="12">
                 <v-lazy
@@ -204,7 +191,7 @@ import img5 from '@/assets/images/the-nuffield-theatre/theatre-5.webp'
 import img6 from '@/assets/images/the-nuffield-theatre/theatre-6.webp'
 import img7 from '@/assets/images/the-nuffield-theatre/theatre-7.webp'
 import img8 from '@/assets/images/the-nuffield-theatre/theatre-8.webp'
-import img9 from '@/assets/images/the-nuffield-theatre/theatre-9.webp'
+
 import img10 from '@/assets/images/the-nuffield-theatre/theatre-10.webp'
 import img11 from '@/assets/images/the-nuffield-theatre/theatre-12.webp'
 import img12 from '@/assets/images/the-nuffield-theatre/theatre-13.webp'

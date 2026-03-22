@@ -6,7 +6,6 @@
     <v-img
       alt="Prosumer chronicles"
      height="300"
-     :lazy-src="img6Lazy"
       aspect-ratio="16/9"
       cover
       :src="img6"
@@ -23,39 +22,22 @@
           <v-col cols="12" sm="12" md="7">
             <v-row>
             <v-col cols="12" sm="12">
-                <v-img alt="Prosumer chronicles" aspect-ratio="16/9"  cover :src="img6" :lazy-src="img6Lazy"></v-img>
+                <v-img alt="Prosumer chronicles" aspect-ratio="16/9"  cover :src="img6"></v-img>
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <lazy                   
-                  :options="{'threshold':0.5}"
-                  transition="scroll-y-reverse-transition">
-                  <v-img aspect-ratio="16/9" alt="Prosumer chronicles" :src="img1" :lazy-src="img1Lazy"></v-img>
-                </lazy>
+                <v-img aspect-ratio="16/9" alt="Prosumer chronicles" :src="img1"></v-img>
               </v-col>
         <v-col cols="12" sm="12" md="12">
-                <lazy                   
-                  :options="{'threshold':0.5}"
-                  transition="scroll-y-reverse-transition">
-                  <v-img aspect-ratio="16/9" alt="Prosumer chronicles" :src="img2" :lazy-src="img2Lazy"></v-img>
-                </lazy>
+                <v-img aspect-ratio="16/9" alt="Prosumer chronicles" :src="img2"></v-img>
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <lazy :options="{'threshold':0.5}"
-                  transition="scroll-y-reverse-transition">
-                  <v-img :lazy-src="img3Lazy" aspect-ratio="16/9" alt="Prosumer chronicles" cover :src="img3"></v-img>
-                </lazy>
+                <v-img aspect-ratio="16/9" alt="Prosumer chronicles" cover :src="img3"></v-img>
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <lazy :options="{'threshold':0.5}"
-                  transition="scroll-y-reverse-transition">
-                  <v-img :lazy-src="img4Lazy" aspect-ratio="16/9" alt="Prosumer chronicles" cover :src="img4"></v-img>
-                </lazy>
+                <v-img aspect-ratio="16/9" alt="Prosumer chronicles" cover :src="img4"></v-img>
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <lazy :options="{'threshold':0.5}"
-                  transition="scroll-y-reverse-transition">
-                  <v-img :lazy-src="img5Lazy" aspect-ratio="16/9" alt="Prosumer chronicles" cover :src="img5"></v-img>
-                </lazy>
+                <v-img aspect-ratio="16/9" alt="Prosumer chronicles" cover :src="img5"></v-img>
               </v-col>
 
             </v-row>
@@ -86,23 +68,17 @@ import projects from '@/composables/projects'
 // Import images so bundler includes them and paths resolve
 
 import img1 from '@/assets/images/adult-children/adult-children-1.webp'
-import img1Lazy from '@/assets/images/adult-children/adult-children-1-lazy.webp'
 
 import img2 from '@/assets/images/adult-children/adult-children-2.webp'
-import img2Lazy from '@/assets/images/adult-children/adult-children-2-lazy.webp'
 
 import img3 from '@/assets/images/adult-children/adult-children-3.webp'
-import img3Lazy from '@/assets/images/adult-children/adult-children-3-lazy.webp'
 
 import img4 from '@/assets/images/adult-children/adult-children-4.webp'
-import img4Lazy from '@/assets/images/adult-children/adult-children-4-lazy.webp'
 
 import img5 from '@/assets/images/adult-children/adult-children-5.webp'
-import img5Lazy from '@/assets/images/adult-children/adult-children-5-lazy.webp'
 
 
 import img6 from '@/assets/images/adult-children/adult-children-6.webp'
-import img6Lazy from '@/assets/images/adult-children/adult-children-6-lazy.webp'
 
 const { width } = useWindowSize()
 const { works } = projects()

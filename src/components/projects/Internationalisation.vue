@@ -4,7 +4,6 @@
       alt=""
       height="300"
       aspect-ratio="16/9"
-      :lazy-src="bannerImgLazy"
       cover
       :src="bannerImg"
       eager
@@ -45,14 +44,12 @@
                   cover
                   aspect-ratio="16/9"
                   :src="img2"
-                  lazy-src="@/assets/images/placeholder.webp"
                 ></v-img>
               </v-col>
               <v-col cols="12" sm="12" md="6">
                 <v-img
                   alt="Internationalisation success page"
                   cover
-                  lazy-src="@/assets/images/placeholder.webp"
                   aspect-ratio="16/9"
                   :src="img3"
                 ></v-img>
@@ -63,7 +60,6 @@
                 <v-img
                   alt="Internationalisation video motion graphics frame showing what to do and what not to do in terms of idioms"
                   cover
-                  lazy-src="@/assets/images/placeholder.webp"
                   aspect-ratio="16/9"
                   :src="img1"
                 ></v-img>
@@ -74,7 +70,6 @@
                 <v-img
                   alt="Working with international students webpage"
                   cover
-                  :lazy-src="img4Lazy"
                   aspect-ratio="16/9"
                   :src="img4"
                 ></v-img>
@@ -124,10 +119,8 @@ const route = useRouter()
 
 // Import images
 import bannerImg from '@/assets/images/internationalisation/Internationalisation-banner.webp'
-import bannerImgLazy from '@/assets/images/internationalisation/Internationalisation-banner-lazy.webp'
 import img1 from '@/assets/images/internationalisation/internationalisation-1.webp'
 import img2 from '@/assets/images/internationalisation/international-2.webp'
 import img3 from '@/assets/images/internationalisation/international-3.webp'
 import img4 from '@/assets/images/internationalisation/international-4.webp'
-import img4Lazy from '@/assets/images/internationalisation/international-4-lazy.webp'
 </script>

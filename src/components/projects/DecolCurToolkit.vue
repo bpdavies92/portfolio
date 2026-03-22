@@ -9,7 +9,6 @@
       height="300"
       aspect-ratio="16/9"
       cover
-      :lazy-src="bannerImgLazy"
       :src="bannerImg"
     ></v-img>
 
@@ -93,7 +92,6 @@ import projects from '@/composables/projects'
 
 // Import images here
 import bannerImg from '@/assets/images/decol-curr/decol-curr-banner.jpg'
-import bannerImgLazy from '@/assets/images/decol-curr/decol-curr-banner-lazy.webp'
 import decolCurrImg from '@/assets/images/decol-curr/decol-1.jpg'
 
 const { width } = useWindowSize()

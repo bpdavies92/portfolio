@@ -6,7 +6,6 @@
       aspect-ratio="16/9"
       cover
       :src="bannerImg"
-      :lazy-src="bannerImgLazy"
     eager
     ></v-img>
     <v-container fluid class="mt-12">
@@ -25,7 +24,6 @@
                   cover
                   aspect-ratio="16/9"
                   :src="img2"
-                  :lazy-src="img2Lazy"
                 ></v-img>
               </v-col>
               <v-col cols="12" sm="12" md="12">
@@ -34,7 +32,6 @@
                   cover
                   aspect-ratio="16/9"
                   :src="img1"
-                  :lazy-src="img1Lazy"
                 ></v-img>
               </v-col>
             </v-row>
@@ -83,13 +80,10 @@ const route = useRouter()
 
 // Import images
 import bannerImg from '@/assets/images/ai-hub/ai-hub-banner.webp'
-import bannerImgLazy from '@/assets/images/ai-hub/ai-hub-banner-lazy.webp'
 
 import img1 from '@/assets/images/ai-hub/ai-hub-1.webp'
-import img1Lazy from '@/assets/images/ai-hub/ai-hub-1-lazy.webp'
 
 import img2 from '@/assets/images/ai-hub/ai-hub-2.webp'
-import img2Lazy from '@/assets/images/ai-hub/ai-hub-2-lazy.webp'
 
 </script>
 

@@ -9,7 +9,6 @@
       aspect-ratio="16/9"
       cover
       :src="bannerImg"
-      :lazy-src="bannerImgLazy"
       eager
     ></v-img>
 
@@ -30,13 +29,11 @@
                   aspect-ratio="16/9"
                   alt="Knowledge check quiz"
                   :src="af1"
-                  lazy-src="@/assets/images/placeholder.webp"
                 />
               </v-col>
               <v-col cols="12" sm="12" md="12">
                 <v-img
                   cover
-                  lazy-src="@/assets/images/placeholder.webp"
                   aspect-ratio="16/9"
                   alt="Knowledge check quiz"
                   :src="af2"
@@ -48,7 +45,6 @@
                   alt="As I am infinity menu in hero"
                   max-height="400"
                   cover
-                  lazy-src="@/assets/images/placeholder.webp"
                   aspect-ratio="16/9"
                   :src="af3"
                 />
@@ -58,7 +54,6 @@
                   aspect-ratio="16/9"
                   alt="Example of staff member statement"
                   cover
-                  lazy-src="@/assets/images/placeholder.webp"
                   :src="af4"
                 />
               </v-col>
@@ -68,7 +63,6 @@
                   alt="Example of a quote section on the As I am website."
                   cover
                   :src="af5"
-                  lazy-src="@/assets/images/placeholder.webp"
                 />
               </v-col>
             </v-row>
@@ -112,7 +106,6 @@ import projects from '@/composables/projects'
 
 // Import all images
 import bannerImg from '@/assets/images/afhea-self-study/afhe-banner.webp'
-import bannerImgLazy from '@/assets/images/afhea-self-study/afhe-banner-lazy.webp'
 import af1 from '@/assets/images/afhea-self-study/af1.webp'
 import af2 from '@/assets/images/afhea-self-study/af2.webp'
 import af3 from '@/assets/images/afhea-self-study/af3.webp'

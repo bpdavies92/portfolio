@@ -7,7 +7,6 @@
       alt=""
       height="300"
       aspect-ratio="16/9"
-      :lazy-src="gold7Lazy"
       cover
       :src="gold7"
       eager
@@ -31,63 +30,38 @@
                     cover
                     aspect-ratio="16/9"
                     :src="gold1"
-                    :lazy-src="gold1Lazy"
                   ></v-img>
                
               </v-col>
             <v-col cols="12" sm="12" md="12">
-                <v-lazy
-                  :options="{'threshold':0.5}"
-                  transition="scroll-y-reverse-transition">
-                  <v-img aspect-ratio="16/9" cover :src="gold5" :lazy-src="gold5Lazy"></v-img>
-                </v-lazy>
+                <v-img aspect-ratio="16/9" cover :src="gold5"></v-img>
               </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-lazy
-                  :options="{'threshold':0.5}"
-                  transition="scroll-y-reverse-transition">
-                  <v-img cover :lazy-src="gold6Lazy" aspect-ratio="16/9" :src="gold6"></v-img>
-                </v-lazy>
+                <v-img cover aspect-ratio="16/9" :src="gold6"></v-img>
               </v-col>
               <v-col cols="12">
-                <v-lazy
-                  :options="{'threshold':0.5}"
-                  transition="scroll-y-reverse-transition">
-                  <v-img
-                    alt="My five year plan cycle diagram"
-                    cover
-                    :lazy-src="gold2Lazy"
-                    aspect-ratio="16/9"
-                    :src="gold2"
-
-                  ></v-img>
-                </v-lazy>
+                <v-img
+                  alt="My five year plan cycle diagram"
+                  cover
+                  aspect-ratio="16/9"
+                  :src="gold2"
+                ></v-img>
               </v-col>
                 <v-col cols="12" sm="12" md="12">
-                <v-lazy
-                  :options="{'threshold':0.5}"
-                  transition="scroll-y-reverse-transition">
                   <v-img
                     alt="My five year plan cycle diagram"
                     cover
                     aspect-ratio="16/9"
                     :src="gold3"
-                    :lazy-src="gold3Lazy"
                   ></v-img>
-                </v-lazy>
-              </v-col>
+                </v-col>
               <v-col cols="12" sm="12" md="12">
-                <v-lazy
-                  :options="{'threshold':0.5}"
-                  transition="scroll-y-reverse-transition">
-                  <v-img
-                    alt="My five year plan cycle diagram"
-                    cover
-                    aspect-ratio="16/9"
-                    :src="gold4"
-                    :lazy-src="gold4Lazy"
-                  ></v-img>
-                </v-lazy>
+                <v-img
+                  alt="My five year plan cycle diagram"
+                  cover
+                  aspect-ratio="16/9"
+                  :src="gold4"
+                ></v-img>
               </v-col>
             </v-row>
   
@@ -117,19 +91,12 @@ import projects from '@/composables/projects'
 
 // Import images for proper bundling
 import gold1 from '@/assets/images/gold-in-the-mouth/gold-1.webp'
-import gold1Lazy from '@/assets/images/gold-in-the-mouth/gold-1-lazy.webp'
 import gold2 from '@/assets/images/gold-in-the-mouth/gold-2.webp'
-import gold2Lazy from '@/assets/images/gold-in-the-mouth/gold-2-lazy.webp'
 import gold3 from '@/assets/images/gold-in-the-mouth/gold-3.webp'
-import gold3Lazy from '@/assets/images/gold-in-the-mouth/gold-3-lazy.webp'
 import gold4 from '@/assets/images/gold-in-the-mouth/gold-4.webp'
-import gold4Lazy from '@/assets/images/gold-in-the-mouth/gold-4-lazy.webp'
 import gold5 from '@/assets/images/gold-in-the-mouth/gold-5.webp'
-import gold5Lazy from '@/assets/images/gold-in-the-mouth/gold-5-lazy.webp'
 import gold6 from '@/assets/images/gold-in-the-mouth/gold-6.webp'
-import gold6Lazy from '@/assets/images/gold-in-the-mouth/gold-6-lazy.webp'
 import gold7 from '@/assets/images/gold-in-the-mouth/gold-7.webp'
-import gold7Lazy from '@/assets/images/gold-in-the-mouth/gold-7-lazy.webp'
 
 const props = defineProps(['project', 'IDNumber'])
 const { works } = projects()

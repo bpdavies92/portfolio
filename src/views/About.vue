@@ -10,7 +10,7 @@
               height="500"
               :src="aboutImg"
               eager
-              :lazy-src="aboutImgLazy"
+
               >
               </v-img>
             </v-col>
@@ -109,7 +109,6 @@
 import { ref } from "vue";
 // import VueApexCharts from 'vue-apexcharts'
 import aboutImg from '@/assets/images/me.webp'
-import aboutImgLazy from '@/assets/images/me-lazy.webp'
 
 const base = ref(import.meta.env.VITE_BASE)
 

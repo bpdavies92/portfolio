@@ -7,7 +7,6 @@
     eager
       alt=""
       height="300"
-      :lazy-src="bannerLazy"
       aspect-ratio="16/9"
       cover
       :src="banner"
@@ -42,7 +41,6 @@
                   cover
                   aspect-ratio="1/1"
                   :src="diagram"
-                  lazy-src="@/assets/images/placeholder.webp"
                 ></v-img>
               </v-col>
             </v-row>
@@ -83,7 +81,6 @@ import projects from '@/composables/projects'
 
 // Import your images for proper bundling
 import banner from '@/assets/images/five-year-plan/five-year-plan-banner.webp'
-import bannerLazy from '@/assets/images/five-year-plan/five-year-plan-banner-lazy.webp'
 import diagram from '@/assets/images/five-year-plan/my_5yp_diagram.webp'
 
 const { width } = useWindowSize()

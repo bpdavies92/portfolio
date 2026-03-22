@@ -51,7 +51,6 @@
                   alt="Navigation page with hero"
                   :src="design1"
                   aspect-ratio="16/9"
-                  lazy-src="@/assets/images/placeholder.webp"
                 ></v-img>
               </v-col>
               <v-col cols="12" sm="12" md="12">
@@ -72,7 +71,6 @@
               </v-col>
               <v-col cols="12" sm="12">
                 <v-img
-                  lazy-src="@/assets/images/placeholder.webp"
                   cover
                   alt="Design considerations with flip card interaction"
                   :src="design2"
@@ -81,7 +79,6 @@
               </v-col>
               <v-col cols="12" sm="12">
                 <v-img
-                  lazy-src="@/assets/images/placeholder.webp"
                   cover
                   alt="Marking criteria section with learning outcome interaction, displaying different learning outcomes depending on the level."
                   :src="design3"
