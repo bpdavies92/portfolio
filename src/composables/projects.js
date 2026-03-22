@@ -1231,17 +1231,17 @@ const projects = () => {
         },
         ,
         {
-            id: 29,
+            id: 30,
             slug: "nuffield-theatre-performance",
-            title: "Nuffield Theatre performance photography",
-            shortTitle: 'DEAP conference and forum',
-            start : "January",
+            title: "The Nuffield Theatre photography",
+            shortTitle: 'Nuffield Theatre performance photography',
+            start : "January 2017",
             end : "April 2018",
             date : "1/26/2017",
             location : "Lancaster",
             subtitle : "Selected photographic documentation of performances at the Nuffield Theatre, Lancaster",
             description : "Selected photographic documentation of performances at the Nuffield Theatre, Lancaster.",
-            thumbnail : `${import.meta.env.VITE_BASE}/images/deap-1.webp`,
+            thumbnail : `${import.meta.env.VITE_BASE}/images/theatre-1.webp`,
            tags : [ "photography", "graphic design", "photoshop" ],
             techUsed : [
                 {
@@ -1249,21 +1249,13 @@ const projects = () => {
                     icon : "mdi-movie-star"
                 },
                 {
-                    tech : "Illustrator",
-                    icon : "mdi-movie-star"
-                },
-                {
-                    tech : "Photography",
+                    tech : "DSLR",
                     icon : "mdi-camera"
                 }
             ],
             skills : [
                 {
-                    skill : "graphic design",
-                    icon : "mdi-box-cutter"
-                },
-                {
-                    skill : "photography",
+                    skill : "Photography",
                     icon : "mdi-camera"
                 }
             ]

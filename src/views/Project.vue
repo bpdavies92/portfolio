@@ -110,6 +110,8 @@
             return ZineGuide
             case "clt-conference-forum":
             return CltConferenceForum
+            case "nuffield-theatre-performance":
+            return NuffieldTheatre
             default:
             return null
         }
