@@ -1,10 +1,10 @@
 <template>
   <v-app>
     <!-- Top App Bar -->
-    <v-app-bar aria-label="Navigation Bar" role="banner" :elevation="0" class="overflow-visible "   >
+    <v-app-bar color="background" aria-label="Navigation Bar" role="banner" :elevation="0" class="overflow-visible "   >
 
         <v-container fluid>
-          <v-sheet color="transparent" class="content-container d-flex align-center" >
+          <v-sheet color="background" class="content-container d-flex align-center" >
 
             <v-app-bar-title
               class="flex-sm-fill flex-1-1"
